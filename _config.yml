@@ -23,7 +23,8 @@ github_username:  jmuijsenberg
 
 # Build settings
 markdown: kramdown
-theme: mailbox
+theme: minima
+
 plugins:
   - jekyll-feed
 
