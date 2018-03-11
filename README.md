@@ -1,50 +1,69 @@
-# MaterialDocs
+# Jekyll Cayman theme
 
-**Rate this theme on [ThemeJekyll](https://themejekyll.github.io/theme/materialdocs/)!**
+This is a [Jekyll][1] theme for [@jasonlong][2]'s [Cayman theme][4] on [GitHub Pages][3].
 
-![MaterialDocs Screenshot](https://themejekyll.github.io/assets/screenshots/materialdocs/materialdocs-screenshot-2.jpg)
+Cayman is a clean, responsive theme for [GitHub Pages](https://pages.github.com). This theme is available as an option if you use the [Automatic Page Generator](https://help.github.com/articles/creating-pages-with-the-automatic-generator/) or you can copy the template and styles to use on your own.
 
-MaterialDocs is a material two-column Jekyll theme designed for documentation websites.  It is built with [Material Design Lite](https://getmdl.io).
+You can preview the theme at https://jasonlong.github.io/cayman-theme or with real content at https://jasonlong.github.io/geo_pattern.
 
-## Installation
+![](https://cl.ly/image/1T3r3d18311V/content)
 
-Add this line to your Jekyll site's `Gemfile`:
+# How to use it?
 
-```ruby
-gem "jekyll-materialdocs"
+Download the theme @ https://github.com/pietromenna/jekyll-cayman-theme/archive/master.zip
+
+Unzip it and use it as a regular jekyll folder.
+
+```
+$ unzip jekyll-cayman-theme-master.zip
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-theme: jekyll-materialdocs
+Get inside the newly extracted folder
+```
+$ cd jekyll-cayman-theme-master
 ```
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install jekyll-materialdocs
-
-## Usage
-
-MaterialDocs supports a few optional custom values in the YAML front matter.
-```yaml
-menu: Example Page # will use this as the menu item text instead of title
-parent: index.md # will make this menu item a child of the index.md item
-weight: 2 # smaller weights rise to the top of the menu
+Get the required gems
+```
+$ bundle install
 ```
 
-MaterialDocs also supports changing the color scheme by setting `mdl_colors` in _config.yml to a supported Material Design Lite scheme (e.g. indigo-pink, deep_orange-blue).  Use the [MDL theme builder](https://getmdl.io/customize/index.html) to find color schemes.
+Use it!
 
-The footer copyright notice may be overridden by setting `copyright` in _config.yml.
+```
+$ jekyll serve
+```
 
-## Contributing
+For more details read about [Jekyll][1] on its web page.
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/chromatical/jekyll-materialdocs.
+# Setup
 
-## License
+Some important configuration can be done in the file `_config.yml`. Please, check the Setup section in that file.
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+## baseurl
+
+`baseurl` parameter is required in the case the site doesn't sit on the root of the domain. For example: https://pietromenna.github.io/jekyll-cayman-theme
+
+In the case above the baseurl should be set to "/jekyll-cayman-theme".
+
+In the case the site sits in the root, you can leave `baseurl` as empty "".
+
+# Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/pietromenna/jekyll-cayman-theme.
+
+# Development
+
+To set up your environment to develop this theme, run `bundle install`.
+
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+
+# License
+
+This work is licensed under a [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) license.
+
+[1]: https://jekyllrb.com/
+[2]: https://github.com/jasonlong
+[3]: https://pages.github.com/
+[4]: https://github.com/jasonlong/cayman-theme
