@@ -16,11 +16,10 @@
 title: Design Matrix Tool Suite
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
-  Tool suite to visualize software dependencies using a design structure matrix
+  Tool suite to visualize complex software dependencies using a design structure matrix.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  jmuijsenberg
 
 # Build settings
 markdown: kramdown

@@ -4,15 +4,13 @@ title: About
 permalink: /about/
 ---
 
-About DSM tool suite. Constisting of DSM viewer and code analyzers
+About DSM tool suite which can be used to visualize complex software dependencies using a Design Structure Matrix.
+The tool suite consists of a viewer and analyzers for C++, .Net, Java, Visual Studio and Sparx Systems Enterprise Architect UML models.
 
-You can find the viewer at:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+You can find the viewer installer at:
+[dsm viewer installer](https://dsmsuite.github.io/assets/DsmSuite.Viewer.msi)
 
-You can find the anaylyzers at:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+You can find the analyzers installer at:
+[dsm code analyzers](https://dsmsuite.github.io/assets/DsmSuite.Analyzers.msi)
 
-
-[jekyll-organization]: https://github.com/jekyll
+[dsmsuite-organization]: https://github.com/dsmsuite
