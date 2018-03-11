@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-About DSM tool suite which can be used to visualize complex software dependencies using a Design Structure Matrix.
+These pages describe the DSM tool suite which can be used to visualize complex software dependencies using a Design Structure Matrix.
 The tool suite consists of a viewer and analyzers for C++, .Net, Java, Visual Studio and Sparx Systems Enterprise Architect UML models.
 
 You can find the viewer installer at:
