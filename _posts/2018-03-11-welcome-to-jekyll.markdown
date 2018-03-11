@@ -10,6 +10,7 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 Jekyll also offers powerful support for code snippets:
 
+# Image test
 Inline-style: 
 ![alt text](https://dsmsuite.github.io/images/dsm_tool_suite_overview.png "Logo Title Text 1")
 
