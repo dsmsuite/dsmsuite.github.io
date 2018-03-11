@@ -2,7 +2,7 @@
 title: Elements
 feature_text: |
   A demo of Markdown and HTML includes
-feature_image: "assets/zara-walker-71279-unsplash.jpg"
+feature_image: "assets/default-social-image.png"
 excerpt: "A demo of Markdown and HTML includes"
 aside: true
 ---
