@@ -1,22 +1,24 @@
 ---
 layout: page
-title: About
-subtitle: Project Goals
-desc: About.
+title: About title
+subtitle: About subtitle
+desc: About description
 permalink: /about/
 ---
+
+# About header
 
 <div class="pretty-links">
 
 <div class="lead lead-about">Lead about
 </div>
 
-My motivation
+Some about text
 
 
 ---
 
-My motivation
+More about text
 
 Som
 </div>
