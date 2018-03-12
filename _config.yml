@@ -1,107 +1,69 @@
-# Site configuration
-# 1. Files excluded from Jekyll builds
-# 2. Installed Gems
-# 3. Gem settings
-# 4. Jekyll settings
-# 5. Collections
-# 6. Jekyll collections settings
-# 7. Site settings
-# 8. Site navigation
+# The main config file for your Jekyll template
 
-# 1. Files excluded from Jekyll builds
-exclude:
-- README.md
-- CODE_OF_CONDUCT.md
-- CONTRIBUTING.md
-- screenshot.png
-- LICENSE
-- CNAME
-- Gemfile
-- Gemfile.lock
-- alembic-jekyll-theme.gemspec
+# Site settings
+title: Jackal               # used for the html title of every page
+desc: >
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 
-# 2. Installed Gems
-plugins:
-- jekyll-sitemap
-- jekyll-mentions
-- jekyll-paginate
-- jekyll-seo-tag
-- jekyll-redirect-from
-- jekyll-default-layout
-- jekyll-feed
-- jemoji
+url: http://jackal.com      # put your website hosting url here
+baseurl: ''                 # the subpath of your site, e.g. /blog
+permalink: /:year/:title/   # how should we display posts url
 
-# 3. Gem settings
-paginate: 2 # jekyll-paginate > items per page
-paginate_path: blog/page:num # jekyll-paginate > blog page
-jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
-twitter:
-  username: DavidDarnes # jekyll-seo-tag > Owners twitter username
-author: jmuijsenberg
+# Meta settings
+email: jackal@gmail.com
+author: The Jackal
+twitter_username: clenemt
+github_username: clenemt
+github_source: jackal
 
-# 4. Jekyll settings
-sass:
-  style: compressed # Style compression
-permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
-excerpt_separator: <!-- more --> # Marks end of excerpt in posts
-timezone: Europe/London # Timezone for blog posts and alike
+# Put your ga tracking code below
+google_analytics: 'UA-XXXXXXXX-X'
 
-# 5. Collections
-collections:
-  posts:
-    title: Posts # Needed for Siteleaf
-    output: true
-    description: "My thoughts and ideas" # The post list page content
-    feature_text: |
-      Welcome to the blog
-    feature_image: "https://picsum.photos/2560/600?image=866"
+# Pagination settings
+paginate: 5                           # number of posts to show per page
+paginate_path: "/articles/page:num/"  # link scheme for articles, should be letf as is
 
-# 6. Jekyll collections settings
+# Navigation settings
+# Used to define the navigation menu items
+# > Title is the tile of the navigation item, url the url and desc is the tooltip
+navigation:
+  - title: Articles
+    url: /articles/
+    desc: Stuffs I write about
+  - title: Projects
+    url: /projects/
+    desc: Stuffs I like to do
+  - title: Work
+    url: /work/
+    desc: Stuffs I hate to do
+  - title: About
+    url: /about/
+    desc: Learn about me
+
+# Used by Jekyll to recognize what is a post and what is a page
 defaults:
   -
+    scope:
+      path: ''
+      type: posts
     values:
-      image: "/assets/default-social-image.png" # Default image for sharing
+      layout: post
 
-# 7. Site settings
-encoding: utf-8 # Make sure the encoding is right
-lang: en-GB # Set the site language
-title: "DSM tool suite" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/logo.svg" # Site logo, also used in jekyll-seo-tag
-description: "DSM tool suite for visualization of complex software dependenciesAlembic is a starting point for Jekyll projects." # Site description and default description, also used in jekyll-seo-tag
-url: "https://github.com/dsmsuite" # Site url, also used in jekyll-seo-tag
-baseurl: ""
-repo: "https://dsmsuite.github.io/"
-email: 
-# disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
-# avatarurl: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
-# google_analytics: ''
-# service_worker: false # Will turn off the service worker if set to false
-css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
+# Markdown parser settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false          # you can change this if you feel like it
+  parse_block_html: true    # allow parsing html inside markdown
 
-# 8. Site navigation
-navigation_header:
-  Home: /
-  DSM Viewer: /elements/
-  Code Analyzers: /categories/
-  Downloads: /search/
-  Blog: /blog/
-  Source Code: https://github.com/dsmsuite
+# Build settings
+include:
+  - _pages                  # all your pages can be put inside pages (except articles)
+exclude:
+  - README.md
+  - vendor
+gems:
+  - jekyll-paginate
 
-navigation_footer:
-  Created by Johan van den Muijsenberg
-
-social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
-  LinkedIn: https://nl.linkedin.com/in/johan-van-den-muijsenberg-a314542
-  GitHub: "https://github.com/dsmsuite"
-
-sharing_links: # Appear at the bottom of single blog posts, uncomment and comment out as desired. Colours set the button colour
-  Twitter: "#0d94e7"
-  facebook: "#3B5998"
-  Google+: "#DC4E41"
-  # Pinterest: "#BD081C"
-  # LinkedIn: "#0077B5"
-  # tumblr: "#36465D"
-  # Reddit: "#FF4500"
-  # Hacker News: "#ff6600"
-  # Designer News: "#2D72D9"
-  # Email: ""

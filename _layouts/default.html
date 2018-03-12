@@ -1,46 +1,23 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="en">
 
-  <head>
-    <!-- General meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% include head.html %}
 
-    {% if page.indexing == false %}
-      <meta name="robots" content="noindex">
-    {% endif %}
+  <body>
 
-    {% if page.collectionpage %}
-      {% seo title=false %}
+    <div class="site">
 
-      {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
-      <title>{{ collectiondata.title }} - {{ site.title }}</title>
-      <meta property="og:title" content="{{ collectiondata.title }}">
-      <meta name="description" content="{{ collectiondata.description }}">
-      <meta property="og:description" content="{{ collectiondata.description }}">
-    {% else %}
-      {% seo %}
-    {% endif %}
+      {% include header.html %}
 
-    <link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
-    <meta name="theme-color" content="{{ site.manifest.theme_color | default: '#242e2b' }}"/>
+      <div class="site-content">
+        {{ content }}
+      </div>
+      <!-- site-content -->
 
-    {% if site.css_inline == true %}
-      {% include site-styles.html %}
-    {% else %}
-      <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
-    {% endif %}
+      {% include footer.html %}
 
-    {% if site.avatarurl %}{% include site-favicons.html %}{% endif %}
+    </div>
 
-    {% if site.google_analytics %}{% include site-analytics.html %}{% endif %}
-  </head>
-
-  <body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
-    {% include site-icons.svg %}
-
-    {{ content }}
-
-    {% if site.service_worker != false %}{% include site-sw.html %}{% endif %}
   </body>
 
 </html>
