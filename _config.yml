@@ -1,7 +1,7 @@
 # The main config file for your Jekyll template
 
 # Site settings
-title: Jackal               # used for the html title of every page
+title: DSM Tool Suite        # used for the html title of every page
 desc: >
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -12,14 +12,14 @@ baseurl: ''                 # the subpath of your site, e.g. /blog
 permalink: /:year/:title/   # how should we display posts url
 
 # Meta settings
-email: jackal@gmail.com
-author: The Jackal
-twitter_username: clenemt
-github_username: clenemt
-github_source: jackal
+# email: jackal@gmail.com
+# author: The Jackal
+# twitter_username: clenemt
+github_username: jmuijsenberg
+github_source: jmuijsenberg
 
 # Put your ga tracking code below
-google_analytics: 'UA-XXXXXXXX-X'
+# google_analytics: 'UA-XXXXXXXX-X'
 
 # Pagination settings
 paginate: 5                           # number of posts to show per page
@@ -29,15 +29,15 @@ paginate_path: "/articles/page:num/"  # link scheme for articles, should be letf
 # Used to define the navigation menu items
 # > Title is the tile of the navigation item, url the url and desc is the tooltip
 navigation:
-  - title: Articles
-    url: /articles/
-    desc: Stuffs I write about
-  - title: Projects
+  - title: Home
     url: /projects/
     desc: Stuffs I like to do
-  - title: Work
+  - title: Usage
     url: /work/
     desc: Stuffs I hate to do
+  - title: Blog
+    url: /articles/
+    desc: Stuffs I write about
   - title: About
     url: /about/
     desc: Learn about me
