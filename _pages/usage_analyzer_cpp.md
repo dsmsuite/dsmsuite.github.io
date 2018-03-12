@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Project
-permalink: work/sample-work/
-subtitle: Sample work
+permalink: projects/sample-project/
+subtitle: Sample project
 ---
 
+## CPP analyzer
 ## Liber orbes sternentemque nunc mortalia rotae supplex
 
 Lorem **markdownum fugiens** lanigerosve [genus doctis
