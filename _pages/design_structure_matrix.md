@@ -3,7 +3,7 @@ layout: page
 title: DSM home title
 subtitle: DSM home subtitle
 desc: DSM home description
-permalink: /home/
+permalink: /design_structure_matrix/
 ---
 
 # DSM Home Header

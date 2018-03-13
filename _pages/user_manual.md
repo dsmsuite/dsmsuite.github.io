@@ -3,7 +3,7 @@ layout: page
 title: Usage title
 subtitle:  Usage subtitle
 desc: Usage description
-permalink: /usage/
+permalink: /user_manual/
 ---
 
 <p>Lorem markdownum liquidas. Ad qui saxo prodis una, dextra medicamina fremit voce, Iuppiter, sum morte, et. Est hos est vultum ocius dextra praetulit aequoris hominem.</p>

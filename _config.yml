@@ -29,18 +29,18 @@ paginate_path: "/articles/page:num/"  # link scheme for articles, should be letf
 # Used to define the navigation menu items
 # > Title is the tile of the navigation item, url the url and desc is the tooltip
 navigation:
-  - title: Home
-    url: /home/
-    desc: An overview of the benifit of dsm
-  - title: Usage
-    url: /usage/
-    desc: How to use tool suite
+  - title: Getting Started
+    url: /user_manual/
+    desc: How to use the DSM tool suite
+  - title: DSM benefits
+    url: /dsm_benefits/
+    desc: On the benefits of DSM
   - title: Blog
     url: /articles/
-    desc: Stuffs I write about
+    desc: Updates on the DSM tool suite
   - title: About
     url: /about/
-    desc: Learn about me
+    desc: About the goals of the DSM tool suite
 
 # Used by Jekyll to recognize what is a post and what is a page
 defaults:
