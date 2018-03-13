@@ -6,20 +6,10 @@ desc: An introduction to DSM
 permalink: /introduction/
 ---
 
-# What is a design structure matrix
+some text
 
-# What are the benefits of using it
+[dsm detail info](https://dsmsuite.github.io/introduction.html).
 
-<div class="pretty-links">
-
-<div class="lead lead-about">Lead about
-</div>
-
-DSM home some text
-
----
-
-DSM home some more text
 
 </div>
 

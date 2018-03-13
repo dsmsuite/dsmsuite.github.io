@@ -2,6 +2,6 @@
 layout: default
 ---
 
-<div class="lead pretty-links">
-	Intro page text.
-</div>
+# Index page
+
+Some text

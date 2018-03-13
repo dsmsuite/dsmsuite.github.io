@@ -31,8 +31,8 @@ paginate_path: "/articles/page:num/"  # link scheme for articles, should be letf
 navigation:
   - title: Introduction
     url: /introduction/
-    desc: What a design structure matrix is and how it can be used
-  - title: User manual
+    desc: DSM introduction
+  - title: Getting Started
     url: /user_manual/
     desc: DSM tool suite user manual
   - title: Blog
@@ -40,7 +40,7 @@ navigation:
     desc: Updates on the DSM tool suite
   - title: About
     url: /about/
-    desc: About the goals of the DSM tool suite
+    desc: DSM tool suite goals
 
 # Used by Jekyll to recognize what is a post and what is a page
 defaults:
