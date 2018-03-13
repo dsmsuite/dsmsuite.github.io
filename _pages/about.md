@@ -6,20 +6,7 @@ desc: About description
 permalink: /about/
 ---
 
-# About header
-
-<div class="pretty-links">
-
-<div class="lead lead-about">Lead about
-</div>
-
-Some about text
+About text
 
 
----
-
-More about text
-
-Som
-</div>
 

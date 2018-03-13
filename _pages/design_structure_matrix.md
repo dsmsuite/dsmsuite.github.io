@@ -1,23 +1,12 @@
 ---
 layout: page
-title: DSM home title
-subtitle: DSM home subtitle
-desc: DSM home description
+title: DSM article title
+subtitle: DSM article subtitle
+desc: DSM article description
 permalink: /design_structure_matrix/
 ---
 
-# DSM Home Header
+DSM article text
 
-<div class="pretty-links">
 
-<div class="lead lead-about">Lead about
-</div>
-
-DSM home some text
-
----
-
-DSM home some more text
-
-</div>
 

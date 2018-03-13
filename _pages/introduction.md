@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Introduction
-subtitle: What is a design structure matrix 
-desc: An introduction to DSM
+title: Introduction title
+subtitle: Introduction subtitle
+desc: Introduction description
 permalink: /introduction/
 ---
 
-some text
+Introduction text
 
-[more dsm detail info](design_structure_matrix.md)
+[link to other page](design_structure_matrix.md)
 
 
 </div>
