@@ -29,12 +29,12 @@ paginate_path: "/articles/page:num/"  # link scheme for articles, should be letf
 # Used to define the navigation menu items
 # > Title is the tile of the navigation item, url the url and desc is the tooltip
 navigation:
-  - title: Getting Started
+  - title: Introduction
+    url: /introduction/
+    desc: What a design structure matrix is and how it can be used
+  - title: User manual
     url: /user_manual/
-    desc: How to use the DSM tool suite
-  - title: DSM benefits
-    url: /dsm_benefits/
-    desc: On the benefits of DSM
+    desc: DSM tool suite user manual
   - title: Blog
     url: /articles/
     desc: Updates on the DSM tool suite
