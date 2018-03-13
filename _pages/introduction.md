@@ -8,7 +8,7 @@ permalink: /introduction/
 
 some text
 
-[dsm detail info](https://dsmsuite.github.io/introduction.html).
+[dsm detail info](design_structure_matrix.md)
 
 
 </div>
