@@ -13,6 +13,14 @@ Defect rate
 
 [metric]: https://dsmsuite.github.io/assets/img/CostOfComplexity.png "Impact of complexity on defect rate"
 
+Inline-style: 
+![alt text](https://dsmsuite.github.io/assets/img/CostOfComplexity.png "Logo Title Text 1")
+
+Reference-style: 
+![alt text][logo]
+
+[logo]: https://dsmsuite.github.io/assets/img/CostOfComplexity.png "Logo Title Text 2"
+
 Lower productivity 
 - 50% decline as developer moves from periphery to core (conservatively) 
 
