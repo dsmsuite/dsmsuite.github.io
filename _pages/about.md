@@ -6,21 +6,20 @@ desc: About description
 permalink: /about/
 ---
 
-These page describe the advantages of using a design structure matrix to visualize complex software dependencies.
-It also explains how this visualization method can be applied using the open source DSM suite. 
-See https://github.com/dsmsuite for the source code of the DSM suite.
+Although the DSM approach is very effective, there are currently not many tools that support DSM visualization.
+xisting open source DSM tools offered insufficient functionality and fully featured commercials tools are quite expensive. 
 
-## Goals
-Although the approach is very effective, there are currently not many tools that support DSM visualization.
-Unfortunately, the open source tools currently available offer insufficient support, 
-which forces them to use commercial tools.
-Availability of adequate open source tools would lower the threshold for deploying DSMs. 
+The aim of the open source DSM suite is to offer a free solution and thereby lowering the threshold for applying DSMs. 
+
+## DSM Suite Goals
 
 The goals of the DSM suite are:
--To provide an open source DSM visualization tool.
--To support a number of well known programming languages and environments.
--To allow for easy extension to support new programming languages and environments.
--To allow integration into continuous integration build chain.
+* To provide an open source DSM visualization tool.
+* To support a number of well known programming languages and environments.
+* To allow for easy extension to support new programming languages and environments.
+* To allow integration into continuous integration build chain.
+
+See https://github.com/dsmsuite for the source code of the DSM suite.
 
 ## History
 
@@ -28,9 +27,10 @@ The DSM suite is based on the source of the DSM plugin for Visual Studio as can 
 found at https://github.com/tecsoft/dsm-vs-addin.
 
 To achieve the goals above the following major modifications have been made:
--Converted it from a plug-in into a standalone application.
--Separated the C# code analyzer from the plug-in and converted it into command line executable.
--Separated the building of the DSM model from the plug-in and converted it into command line executable.
--Added command line code analyzers for C++, Java, UML and Visual Studio.
+* Converted it from a plug-in into a standalone application.
+* Separated the C# code analyzer from the plug-in and converted it into command line executable.
+* Separated the building of the DSM model from the plug-in and converted it into command line executable.
+* Added command line code analyzers for C++, Java, UML and Visual Studio.
 
 I also did some cleanup of the code and used resharper to fix coding issues. 
+
