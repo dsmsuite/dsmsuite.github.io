@@ -7,7 +7,7 @@ permalink: /about/
 ---
 
 Although the DSM approach is very effective, there are currently not many tools that support DSM visualization.
-Existing open source DSM tools offered insufficient functionality and fully featured commercials tools are quite expensive. 
+Existing open source DSM tools offer insufficient functionality and fully featured commercials tools are quite expensive. 
 
 The aim of the open source DSM suite is to offer a free solution and thereby lowering the threshold for applying DSMs. 
 
