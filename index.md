@@ -11,16 +11,6 @@ Defect rate
 - 3.1X increase between periphery and core
 - 2.6X for McCabe, combined effect 8.3X
 
-[metric]: https://dsmsuite.github.io/assets/img/CostOfComplexity.png "Impact of complexity on defect rate"
-
-Inline-style: 
-![alt text](https://dsmsuite.github.io/assets/img/CostOfComplexity.png "Logo Title Text 1")
-
-Reference-style: 
-![alt text][logo]
-
-[logo]: https://dsmsuite.github.io/assets/img/CostOfComplexity.png "Logo Title Text 2"
-
 Lower productivity 
 - 50% decline as developer moves from periphery to core (conservatively) 
 
@@ -36,9 +26,11 @@ is delivered in half the time, at half the cost, with 8x less bugs.
 And although the impact of poor dependencies can the impact of cyclomatic complexity problems in this area often go undetected.
 while modularity of cyclomatic complexity issues are easily visible from the IDE.
 
+[logo]: https://dsmsuite.github.io/assets/img/CostOfComplexity.png "Logo Title Text 2"
+
 Due lack of visibility poor architecture poor from start of degrade over time.
 
-[nunit degrade]: https://dsmsuite.github.io/assets/img/nunit.gif
+[logo]: https://dsmsuite.github.io/assets/img/nunit.gif "Logo Title Text 2"
 
 Source http://edmundkirwan.com/general/junit.html 
 
