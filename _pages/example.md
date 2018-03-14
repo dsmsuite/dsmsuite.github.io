@@ -3,10 +3,10 @@ layout: page
 title: About title
 subtitle: About subtitle
 desc: About description
-permalink: /about/
+permalink: /notabout/
 ---
 
-About text
+Not About text
 
 From cheat sheet
 
