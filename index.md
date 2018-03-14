@@ -2,17 +2,14 @@
 layout: default
 ---
 
-# Index page
 
-Some text
-
-## The cost of  complexity
+## The cost of software complexity
 
 It is well known that software complexity has a large impact of software quality. 
 
-Architectural complexity is expensive as was shown by a study of Dan Sturtevant:
+A study by Dan Sturtevant has shown that architectural complexity is expensive.
 
-More defects
+Defect rate
 - 3.1X increase between periphery and core
 - 2.6X for McCabe, combined effect 8.3X
 
@@ -22,57 +19,45 @@ Lower productivity
 Higher staff turnover 
 - 10x increase in voluntary and involuntary terminations
 
-Metric plaatje
+> Metric plaatje
+> for more info
+> https://sdm.mit.edu/news/news_articles/webinar_050613/sturtevant_050613.pdf
+> https://www.youtube.com/watch?v=tO4OinbOWaE
 
-https://sdm.mit.edu/news/news_articles/webinar_050613/sturtevant_050613.pdf
-
-https://www.youtube.com/watch?v=tO4OinbOWaE
-
-This study confirms the earlier results from an US Air Force study, which showed that well-structured software 
+This study confirms the results from an earlier US Air Force study, which showed that well-structured software 
 is delivered in half the time, at half the cost, with 8x less bugs. 
-
-## Why controlling software complexity matters
-
-Stakeholder Needs
-* Business                                                                           
-* Agility (adapt to increasingly fast changing markets)
-* Early value delivery (earning money, early market entry and getting feedback)
-* High and sustainable productivity (low cost and high profitability)
-* Customer 
-* Good enough software (sufficient feature set and quality) 
-* Employee
-* Sense of Accomplishment
 
 ## Impact of Poor Software Dependencies
 
-* Rigidity
+Rigidity
 * Software difficult to change, even in simple ways
-* Fragility
+
+Fragility
 * Software often breaks in many places every time it is changed
-* Immobility
+
+Immobility
 * Software can not be isolated, so not reused across projects
-* Viscosity
+
+Viscosity
 * Design preserving design harder than the hacks
+
 Insufficient Testability
-• Can not unit test due to excessive dependencies
+* Can not unit test due to excessive dependencies
 
 Robert martin
 
 ## Reasons we fail
 
-Reasons - Human
+Human
 • Lack of awareness design principles
 • Lack of training/coaching
 • Project/human short term focus
 • Consistent high project pressure will lead to accumulation of technical debt and will hurt productivity
-Reasons – Architecture Control
-• Insufficient software architecture definition
-• In many cases architectural definition absent or provides insufficient guidance 
-• PowerPoint architecture
+Architecture Control
+• Insufficient software architecture definition. In many cases architectural definition absent or provides insufficient guidance  (PowerPoint architecture).
 • Insufficient software architecture control
 • No validation if implementation conforms architectural definition
-• Developers can easily violate intended architecture
-• By modifying source code
+• Developers can easily violate intended architecture by modifying source code
 Reasons – Architecture Visualization
 • UML not suitable for managing software architecture
 • Difficult to keep in synch with code
@@ -84,7 +69,7 @@ Reasons – Architecture Visualization
 And although the impact of poor dependencies can the impact of cyclomatic complexity problems in this area often go undetected.
 while modularity of cyclomatic complexity issues are easily visible from the IDE.
 
-Due lack of visibiilit poor architecture ight from start of degrade over time.
+Due lack of visibility poor architecture poor from start of degrade over time.
 
 Nunit plaatje
 
