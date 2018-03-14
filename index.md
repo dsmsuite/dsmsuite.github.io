@@ -83,3 +83,8 @@ Nunit plaatje
 • Dependencies between elements
 • Has been used for very complex systems
 
+At a given moment the complexity can reach a level that complete rewriting is cheaper. 
+Often, however, time is lacking and the risks are unacceptably high. For that reason, 
+defining a software architecture in terms of existing source code elements via a 
+Design Structure Matrix (DSM) is a very attractive alternative.
+

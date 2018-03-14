@@ -11,6 +11,10 @@ It also explains how this visualization method can be applied using the open sou
 See https://github.com/dsmsuite for the source code of the DSM suite.
 
 ## Goals
+Although the approach is very effective, there are currently not many tools that support DSM visualization.
+Unfortunately, the open source tools currently available offer insufficient support, 
+which forces them to use commercial tools.
+Availability of adequate open source tools would lower the threshold for deploying DSMs. 
 
 The goals of the DSM suite are:
 -To provide an open source DSM visualization tool.
