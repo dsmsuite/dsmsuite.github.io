@@ -6,26 +6,196 @@ desc: Introduction description
 permalink: /introduction/
 ---
 
-Design Structure Matrix
-your code as model
+Design Structure Matrix - Your code as model
 
+# Why dependencies matter
+Ideally, software can be easily modified, is understandable, reliable and reusable. 
+In practice, this often remains an ideal and in the course of time the software becomes increasingly rigid, 
+opaque and fragile.
+
+Nunit plaatje
+
+Many projects however suffer for the following issues caused by poor software dependencies:
+
+Rigidity
+* Software difficult to change, even in simple ways
+
+Fragility
+* Software often breaks in many places every time it is changed
+
+Immobility
+* Software can not be isolated, so not reused across projects
+
+Viscosity
+* Design preserving design harder than the hacks
+
+Insufficient Testability
+* Can not unit test due to excessive dependencies
+
+# Why we fail
+
+Reasons - Human
+• Lack of awareness design principles
+• Lack of training/coaching
+• Project/human short term focus
+• Consistent high project pressure will lead to accumulation of technical debt and will hurt productivity
+Reasons – Architecture Control
+• Insufficient software architecture definition
+• In many cases architectural definition absent or provides insufficient guidance 
+• PowerPoint architecture
+• Insufficient software architecture control
+• No validation if implementation conforms architectural definition
+• Developers can easily violate intended architecture
+• By modifying source code
+Reasons – Architecture Visualization
+• UML not suitable for managing software architecture
+• Difficult to keep in synch with code
+• Easily overwhelmed by dependencies
+• Dependencies in model not in any view
+
+
+# Dependency Structure Matrix
+
+• Consists of two parts
+• Matrix to visualize dependencies 
+• Algorithms which can be applied on the matrix
+• Can be used to manage dependencies any kind of system which has
+• A hierarchy of elements 
+• Dependencies between elements
+• Has been used for very complex systems
+
+#Example in UML
+
+# Key strengths
+
+# Communication
+
+# Concise
+
+# Discover dependency patterns
+
+# Layering
+
+# Interfaces
+
+# Support refactoring
+
+# Metrics
+
+# How define architecture
+
+Conceptual
+Detail
+
+# How does it fit in development cycle
+
+# Common Use Cases
+Discover the Architecture and Identify Issues with Interdependencies 
+DSM Analysis
+Specify/Enforce Architectures
+Layers, Components, Interfaces with Dependency Rules 
+Track, Measure and Report on Changes and Trends
+Metrics
+Re-engineer/Refactor 
+Impact Analysis 
+
+
+
+
+• Find actual layering by partitioning algorithms
+• Algorithm tries to get as much as possible dependencies below identity line
+
+• Found actual layering after applying partitioning algorithm
+
+• Discover type of layering - Strict
+
+• Discover type of layering - Relaxed
+
+• Discover public, internal and unused code
+
+• Discover utility modules used in entire software
+
+• Discover modules with large change impact
+
+• System Cycle 
+• Cycles between classes in same module
+• Intercomponent Cycle
+• Cycles between classes in different modules
+• Hierarchical Cycle
+• Classes involved in cycle or creating cycle between modules
+
+• Fix hierarchical cycle by moving element
+
+• Result
+
+• Can be used to visualize desired architecture.
+• Can be encoded using rules.
+
+• Discover the Architecture and Identify Issues with Interdependencies 
+• DSM Analysis
+• Specify/Enforce Architectures
+• Layers, Components, Interfaces with Dependency Rules 
+• Track, Measure and Report on Changes and Trends
+• Metrics
+• Re-engineer/Refactor 
+• Impact Analysis 
+
+• Lattix DSM Tool (commercial)
+www.lattix.com
+• Intelij IDEA Ultimate Java IDE (commercial)
+https://www.jetbrains.com/idea/
+• CppDepend/NDepend/JArchitect (commercial)
+https://www.cppdepend.com/
+https://www.ndepend.com/
+https://www.jarchitect.com/
+• Visual Studio DSM plug-in .NET (open source)
+http://www.tom-carter.net/
+• VC++ solution importer for plugin above
+
+
+
+
+
+Summary
+
+• Is a powerful technique for analyzing, improving, and managing complex system architectures and dependencies
+• Can be adopted at any stage of the project
+
+• Design Structure Matrix Methods and Applications
+• Steven D. Eppinger and Tyson R. Browning
+
+
+
+
+
+• www.dsmweb.org
+• General information on DSMs
+• Achieving Agility Through Architecture Visibility 
+• Carl Hinsman, Neeraj Sangal and Judith Stafford
+
+
+
+
+Demo
+
+
+
+This document show
 Ideally, software can be easily modified, understandable, reliable and reusable. 
 In practice, this often remains an ideal and in the course of time the software becomes increasingly rigid, 
 opaque and fragile. 
+
+Nunit plaatje
+
 This makes adjustments more and more difficult to implement. 
 Also, components are difficult to isolate and therefore not reusable and individually testable. 
 All these problems are caused by software dependencies.
 Many software projects struggle with software dependencies. 
-One of the reasons is that the software architecture is often fixed at a conceptual level 
-that has insufficient precision with regard to which dependencies are allowed and 
-which are not. 
+ 
 
-In addition, adaptations at the source code level may inadvertently add dependencies, 
-causing the documented and actual architecture to deviate from each other. Also, the widely used UML notation is not suitable for representation of large amounts of dependencies.
-At a given moment the complexity can reach a level that complete rewriting is cheaper. 
-Often, however, time is lacking and the risks are unacceptably high. For that reason, 
-defining a software architecture in terms of existing source code elements via a 
-Design Structure Matrix (DSM) is a very attractive alternative.
+Also, the widely used UML notation is not suitable for representation of large amounts of dependencies.
+
+
  
 Elements with many incoming and outgoing relationships make a UML diagram unclear.
 
