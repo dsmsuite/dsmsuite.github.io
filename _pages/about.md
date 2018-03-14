@@ -28,3 +28,5 @@ To achieve the goals above the following major modifications have been made:
 -Separated the C# code analyzer from the plug-in and converted it into command line executable.
 -Separated the building of the DSM model from the plug-in and converted it into command line executable.
 -Added command line code analyzers for C++, Java, UML and Visual Studio.
+
+I also did some cleanup of the code and used resharper to fix coding issues. 
