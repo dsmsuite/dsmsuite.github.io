@@ -12,7 +12,7 @@ User manual text
 
 The DSM suite consists of the following elements:
 
-[picture]
+![Technical Overview](https://dsmsuite.github.io/assets/img/user_manual/technical_overview.png "Technical Overview")
 
 * A dependency analyzer. The following analzyers are currently supported:
 	* .Net: Analyzes dependencies between .NET classes using .NET binaries as input
@@ -29,6 +29,10 @@ If none of the provided analyzers suites your needs, it is possible to write an 
 output it produces confirm the XML schema used by the DSM builder.
 
 ### The DSI dependency file format
+
+The DSM builder can only import files according the DSI fiel format:
+
+![DSI XSD Schema](https://dsmsuite.github.io/assets/img/user_manual/xsd_schema.png "DSI XSD Schema")
 
 ## Installation
 Download and install the DSM viewer and the analyzer required for your programming environment.
@@ -49,45 +53,55 @@ The XML schema file dsi.xsd needs to be copied to the directory where your run t
 As a first step you need to run an analyzer to extract dependencies.
 
 ## .Net analyzer
-The following settings are defined:
+This analyzer parses assemblies using Mono.Cecil to determine dependencies between .Net classes.
+Hierarchy bases ion namespaces.
+
+The following settings are defined for this analyzer:
 
 | Setting           | Description   | 
 | ------------------|:-------------:|
-| LoggingEnabled    | right-aligned |
-| AssemblyDirectory | centered      |
-| OutputFilename    | are neat      |
+| LoggingEnabled    | Log information to file for diagnostic purposes |
+| AssemblyDirectory | Directory where assemblies to be analyzed can be found     |
+| OutputFilename    | File name with dsi extension to which results will be written      |
 
 ## java analyzer
-The following settings are defined:
+This analyzer reads a Jdeps .out file to determine dependencies betweeen Java classes.
+The Jdeps executable is part of the Java 8 SDK.
+Hierarchy bases ion namespaces.
+
+The following settings are defined for this analyzer:
 
 | Setting            | Description   | 
 | -------------------|:-------------:|
-| LoggingEnabled     | right-aligned |
+| LoggingEnabled    | Log information to file for diagnostic purposes |
 | JdepsDotInputFile  | centered      |
-| OutputFilename     | are neat      |
+| OutputFilename    | File name with dsi extension to which results will be written      
 
 ## C++ analyzer
-The following settings are defined:
+This analyzer parses C/C++ source files a determines
+Hierarchy bases ion directory structure.
+
+The following settings are defined for this analyzer:
 
 | Setting                           | Description   | 
 | ----------------------------------|:-------------:|
-| LoggingEnabled                    | right-aligned |
-| RootDirectory                     | centered      |
-| SourceCodeDirectories             | are neat      |
-| AdditionalIncludeDirectories      | right-aligned |
-| IgnorePaths                       | centered      |
-| JoinRelativeSourceAndIncludePaths | are neat      |
+| LoggingEnabled    | Log information to file for diagnostic purposes |
+| RootDirectory                     | Root of source code directory used to determine root of names in DSM |
+| SourceCodeDirectories             | List of directories where source cod can be found      |
+| AdditionalIncludeDirectories      |  List of addtional directories where include files can be found. Think of system and third party include files|
+| IgnorePaths                       | List of directories in the source direrctories which need to be excluded      |
+| JoinRelativeSourceAndIncludePaths | Locate cpp and h file together     |
 | RelativeIncludePath               | centered      |
 | RelativeSourcePath                | are neat      |
 | ResolveAmbigiousRelations         | are neat      |
-| OutputFilename                    | are neat      |
+| OutputFilename    | File name with dsi extension to which results will be written      
 
 ## Visual Studio analyzer
 The following settings are defined:
 
 | Setting                           | Description   | 
 | ----------------------------------|:-------------:|
-| LoggingEnabled                    | right-aligned |
+| LoggingEnabled    | Log information to file for diagnostic purposes |
 | SolutionFilename                  | centered      |
 | AnalyzeMode                       | are neat      |
 | SystemIncludeDirectories          | right-aligned |
@@ -95,7 +109,7 @@ The following settings are defined:
 | MergeSourceAndIncludeFiles        | are neat      |
 | RelativeIncludePath               | centered      |
 | RelativeSourcePath                | are neat      |
-| OutputFilename                    | are neat      |
+| OutputFilename    | File name with dsi extension to which results will be written      
 
 ## UML analyzer
 The following settings are defined:
@@ -113,12 +127,29 @@ The following settings are defined:
 
 | Setting                           | Description   | 
 | ----------------------------------|:-------------:|
-| LoggingEnabled                    | right-aligned |
-| InputFilename                     | centered      |
-| OutputFilename                    | are neat      |
+| LoggingEnabled    | Log information to file for diagnostic purposes |
+| InputFilename    | File name with dsi extension used as input |     
+| OutputFilename    | File name with dsm extension to which results will be written      
 
 ## Viewing and modifying the DSM
 
+![DSM viewer](https://dsmsuite.github.io/assets/img/user_manual/dsm_viewer.png "DSM viewer")
+
+The DSM viewer has the following features:
+
+* Opening DSM file
+* Modifying the DSM file 	
+	* Move elements up or down
+	* Partition a section of the DSM model
+	* Saving the changes in the DSM file
+* Changing the view of the DSM
+	* Change the zoom level
+	* Highlight cyclic dependencies on or off
+* Reporting
+	* Report all cyclic dependencies
+	* Report all dependency between two elements by selecting a cell and right clicking it
+	
+	
 
 
 
