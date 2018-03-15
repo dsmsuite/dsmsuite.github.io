@@ -37,12 +37,12 @@ The DSM builder can only import files according the DSI fiel format:
 ## Installation
 Download and install the DSM viewer and the analyzer required for your programming environment.
 
-[dsm viewer and builder]
-[.Net analyzer]
-[java analyzer]
-[C++ analyzer]
-[Visual Studio analyzer]
-[UML analyzer]
+[dsm viewer and builder] (https://dsmsuite.github.io/downloads/DsmSuite.Viewer.msi)
+[.Net analyzer] (https://dsmsuite.github.io/downloads/DotNetAnalyzer.msi)
+[java analyzer] (https://dsmsuite.github.io/downloads/JdepsAnalyzer.msi)
+[C++ analyzer] (https://dsmsuite.github.io/downloads/CppAnalyzer.msi)
+[Visual Studio analyzer] (https://dsmsuite.github.io/downloads/VisualStudioAnalyzer.msi)
+[UML analyzer] (https://dsmsuite.github.io/downloads/UmlAnalyzer.msi)
 
 Before running the analyzer and builder you need to configure it using XML settings files. Example configuration
 and batch files are put into the program files directory by the installer. 
@@ -53,8 +53,14 @@ The XML schema file dsi.xsd needs to be copied to the directory where your run t
 As a first step you need to run an analyzer to extract dependencies.
 
 ## .Net analyzer
+
 This analyzer parses assemblies using Mono.Cecil to determine dependencies between .Net classes.
 Hierarchy bases ion namespaces.
+
+### Pre requisites
+None
+
+### Configuration
 
 The following settings are defined for this analyzer:
 
@@ -65,9 +71,14 @@ The following settings are defined for this analyzer:
 | OutputFilename    | File name with dsi extension to which results will be written      |
 
 ## java analyzer
+
 This analyzer reads a Jdeps .out file to determine dependencies betweeen Java classes.
-The Jdeps executable is part of the Java 8 SDK.
 Hierarchy bases ion namespaces.
+
+### Pre requisites
+Java SDK 8 installed which contains Jdeps.
+
+### Configuration
 
 The following settings are defined for this analyzer:
 
@@ -80,6 +91,11 @@ The following settings are defined for this analyzer:
 ## C++ analyzer
 This analyzer parses C/C++ source files a determines
 Hierarchy bases ion directory structure.
+
+### Pre requisites
+None
+
+### Configuration
 
 The following settings are defined for this analyzer:
 
@@ -97,6 +113,11 @@ The following settings are defined for this analyzer:
 | OutputFilename    | File name with dsi extension to which results will be written      
 
 ## Visual Studio analyzer
+
+### Pre requisites
+Visual Studio 2012 or higher
+
+### Configuration
 The following settings are defined:
 
 | Setting                           | Description   | 
@@ -112,6 +133,12 @@ The following settings are defined:
 | OutputFilename    | File name with dsi extension to which results will be written      
 
 ## UML analyzer
+
+### Pre requisites
+Sparx Systems Enterprise Architect installed
+
+### Configuration
+
 The following settings are defined:
 
 # Running the DSM builder
