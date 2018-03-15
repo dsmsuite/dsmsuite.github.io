@@ -17,22 +17,20 @@ Lower productivity
 Higher staff turnover 
 - 10x increase in voluntary and involuntary terminations
 
+For information see [presentation]: https://sdm.mit.edu/news/news_articles/webinar_050613/sturtevant_050613.pdf 
+or[video]: https://www.youtube.com/watch?v=tO4OinbOWaE.
+
 This study confirms the results from an earlier US Air Force study, which showed that well-structured software 
 is delivered in half the time, at half the cost, with 8x less bugs. 
-
-> For information see [presentation]: https://sdm.mit.edu/news/news_articles/webinar_050613/sturtevant_050613.pdf 
-> or[video]: https://www.youtube.com/watch?v=tO4OinbOWaE.
 
 And although the impact of poor dependencies can the impact of cyclomatic complexity problems in this area often go undetected.
 while modularity of cyclomatic complexity issues are easily visible from the IDE.
 
-Inline-style: 
-![alt text](https://dsmsuite.github.io/assets/img/CostOfComplexity.png "Logo Title Text 1")
+![Impact of dependencies vs cyclomatic complexity](https://dsmsuite.github.io/assets/img/index/cost_of_complexity.png "Impact of dependencies vs cyclomatic complexity")
 
 Due lack of visibility poor architecture poor from start of degrade over time.
 
-Inline-style: 
-![alt text](https://dsmsuite.github.io/assets/img/nunit.gif "Logo Title Text 1")
+![evolution of junit dependencies across releases](https://dsmsuite.github.io/assets/img/index/nunit.gif "evolution of junit dependencies across releases")
 
 Source http://edmundkirwan.com/general/junit.html 
 
@@ -51,4 +49,4 @@ A design structure matrix:
 	* Dependencies between elements
 • Has been used for very complex systems
 
-
+![example dsm](https://dsmsuite.github.io/assets/img/index/dsm_example.png "example dsm")
