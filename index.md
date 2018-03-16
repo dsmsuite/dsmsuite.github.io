@@ -5,10 +5,6 @@ layout: default
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](another-page).
-[Link to another page about](about).
-[Link to another page old](old_index).
-[Link to another page intro](introduction).
-[Link to another page manual](user_manual).
 
 There should be whitespace between paragraphs.
 
