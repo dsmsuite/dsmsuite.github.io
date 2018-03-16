@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Welcome to dsm overview
+## Welcome to another page
 
 _yay_
 
