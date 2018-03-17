@@ -51,10 +51,7 @@ architectural definition.
 This is essential because developers can easily violate intended architecture by simply modifying the source code
 
 **Architecture Visualization**
-* UML is not suitable for managing software architecture, because it is difficult to keep the model in synch with code. One is also easily overwhelmed when showing all dependencies. 
-This is even the case for a very simple design as is shown below.
-
-![uml](https://dsmsuite.github.io/assets/img/index/uml.png "uml")
+* UML is not suitable for managing software architecture, because it is difficult to keep the model in synch with code. One is also easily overwhelmed when showing all dependencies. For this reason dependencies are often ignored on a view making the view incomplete.
 	
 ## Design structure matrix
 
@@ -69,17 +66,8 @@ Using a design structure matrix to visualize the code architecture addresses som
 * It can be used to validate that the actual code architecture conforms to the architecture.
 * It can be easily kept in sync with the code.
 
-Is a powerful technique for analyzing, improving, and managing complex system architectures and dependencies
-• Can be adopted at any stage of the project
-# Common Use Cases
-Discover the Architecture and Identify Issues with Interdependencies 
-DSM Analysis
-Specify/Enforce Architectures
-Layers, Components, Interfaces with Dependency Rules 
-Track, Measure and Report on Changes and Trends
-Metrics
-Re-engineer/Refactor 
-Impact Analysis 
+Is a powerful technique for analyzing, improving, and managing complex system architectures and dependencies and can be adopted at any stage of the project
+
 > For more information on design structure matix see the [DSM Overview](dsm_overview).
 
 [next](dsm_overview)
