@@ -15,7 +15,7 @@ The goals of the DSM suite are:
 * To allow for easy extension to support other programming languages and environments.
 * To allow integration into a continuous integration build chain.
 
-See [github]{https://github.com/dsmsuite) for the source code of the DSM tool suite.
+See [github](https://github.com/dsmsuite) for the source code of the DSM tool suite.
 
 ## History
 
@@ -34,9 +34,10 @@ I also did some cleanup of the code and used JetBrains Resharper to inspect and 
 
 Although I provided a solution for a few commonly used programming languages, I can not possibly provide them for all possible programming languages and environments. 
 For this reason I have designed the tool suite in such a way that you can add your own code analyzer.
-Although the DSM tool suite has been developed in C# code analyzers can be developed in any other language. The only requirement is that its output conforms to the XSD schema mentioned in the user guide.
+Although the DSM tool suite has been developed in C#, code analyzers can be developed in any language. The only requirement is that its output conforms to the XSD schema mentioned in the user guide.
 
 I you have a code analyzer for a specific programming language or environment, please let me know, so I share this information on this web site.
+
 Also let me know if when you would like to contribute to the DSM tool suite development. 
 
-[back](./)
+[home](./)
