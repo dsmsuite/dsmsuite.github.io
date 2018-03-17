@@ -2,57 +2,7 @@
 layout: default
 ---
 
-## Welcome to dsm overview
-
-Design Structure Matrix - Your code as model
-
-# Why dependencies matter
-Ideally, software can be easily modified, is understandable, reliable and reusable. 
-In practice, this often remains an ideal and in the course of time the software becomes increasingly rigid, 
-opaque and fragile.
-
-Nunit plaatje
-
-Many projects however suffer for the following issues caused by poor software dependencies:
-
-Rigidity
-* Software difficult to change, even in simple ways
-
-Fragility
-* Software often breaks in many places every time it is changed
-
-Immobility
-* Software can not be isolated, so not reused across projects
-
-Viscosity
-* Design preserving design harder than the hacks
-
-Insufficient Testability
-* Can not unit test due to excessive dependencies
-
-# Why we fail
-
-Reasons - Human
-• Lack of awareness design principles
-• Lack of training/coaching
-• Project/human short term focus
-• Consistent high project pressure will lead to accumulation of technical debt and will hurt productivity
-Reasons – Architecture Control
-• Insufficient software architecture definition
-• In many cases architectural definition absent or provides insufficient guidance 
-• PowerPoint architecture
-• Insufficient software architecture control
-• No validation if implementation conforms architectural definition
-• Developers can easily violate intended architecture
-• By modifying source code
-Reasons – Architecture Visualization
-• UML not suitable for managing software architecture
-• Difficult to keep in synch with code
-• Easily overwhelmed by dependencies
-• Dependencies in model not in any view
-
-
-# Dependency Structure Matrix
+## What is a Dependency Structure Matrix
 
 • Consists of two parts
 • Matrix to visualize dependencies 
@@ -62,30 +12,60 @@ Reasons – Architecture Visualization
 • Dependencies between elements
 • Has been used for very complex systems
 
-#Example in UML
+## Uml example
+
+![uml](https://dsmsuite.github.io/assets/img/dsm_overview/uml.png "uml")
+
+## How to read a Dsm
+
+![dsm definition](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_1_definition.png "dsm definition")
+
+# Example in UML
 
 # Key strengths
 
-# Communication
-
 # Concise
+
+![dsm fully expanded](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_2a_expanded.png "dsm fully expanded")
+
+![dsm partly collapsed](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_2b_partly_collapsed.png "dsm partly collapsed")
+
+# Partitioning
+
+
+![dsm strict layering](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_3a_partioning_before.png "dsm strict layering")
+
+![dsm relaxed layering](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_3b_partioning_after.png "dsm relaxed layering")
 
 # Discover dependency patterns
 
-# Layering
 
-# Interfaces
+![dsm encapsulation pattern](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_5a_encapsulation_pattern.png "dsm encapsulation pattern")
+
+![dsm bus pattern](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_5b_bus_pattern.png "dsm bus pattern")
+
+![dsm change propagator pattern](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_5c_change_propagator_pattern.png "dsm change propagator pattern")
 
 # Support refactoring
 
-# Metrics
+![dsm cycles](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_6a_cycles.png "dsm cycles")
 
-# How define architecture
+![dsm refactoring before](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_6b_refactoring_before.png "dsm refactoring before")
 
-Conceptual
-Detail
+![dsm refactoring after](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_6c_refactoring_after.png "dsm refactoring after")
 
 # How does it fit in development cycle
+
+# More information
+
+• Design Structure Matrix Methods and Applications
+• Steven D. Eppinger and Tyson R. Browning
+![dsm book](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_book.jpg "dsm book")
+
+• www.dsmweb.org
+• General information on DSMs
+
+
 
 # Common Use Cases
 Discover the Architecture and Identify Issues with Interdependencies 
@@ -159,15 +139,7 @@ Summary
 • Is a powerful technique for analyzing, improving, and managing complex system architectures and dependencies
 • Can be adopted at any stage of the project
 
-• Design Structure Matrix Methods and Applications
-• Steven D. Eppinger and Tyson R. Browning
 
-
-
-
-
-• www.dsmweb.org
-• General information on DSMs
 • Achieving Agility Through Architecture Visibility 
 • Carl Hinsman, Neeraj Sangal and Judith Stafford
 
