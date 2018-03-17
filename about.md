@@ -7,9 +7,9 @@ Existing open source DSM tools offer insufficient functionality and fully featur
 
 The aim of the DSM tool suite is to offer a free solution and thereby significantly lowering the  threshold for applying DSMs. 
 
-## DSM tool suite goals
+## Goals
 
-The goals of the DSM suite are:
+The goals of the DSM tool suite are:
 * To provide a free open source tool suite for DSM visualization.
 * To support a number of well known programming languages and environments.
 * To allow for easy extension to support other programming languages and environments.
@@ -33,6 +33,7 @@ I also did some cleanup of the code and used JetBrains Resharper to inspect and 
 ## Contribute
 
 Although I provided a solution for a few commonly used programming languages, I can not possibly provide them for all possible programming languages and environments. 
+
 For this reason I have designed the tool suite in such a way that you can add your own code analyzer.
 Although the DSM tool suite has been developed in C#, code analyzers can be developed in any language. The only requirement is that its output conforms to the XSD schema mentioned in the user guide.
 
