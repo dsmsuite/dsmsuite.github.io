@@ -6,81 +6,68 @@ layout: default
 
 Ideally, software can be easily modified, is understandable, reliable and reusable. 
 In practice, this often remains an ideal and in the course of time the software becomes increasingly rigid, 
-opaque and fragile. An example of the evolution of the JUnit architecture illustrates this:
+opaque and fragile. 
+
+An animated view of the evolution of the design of JUnit illustrates this ([source](http://edmundkirwan.com/general/junit.html)):
 
 ![evolution of junit dependencies across releases](https://dsmsuite.github.io/assets/img/index/nunit.gif "evolution of junit dependencies across releases")
 
-[source](http://edmundkirwan.com/general/junit.html)
+## The cost of software complexity
+A study by Dan Sturtevant has investigated the impact of software dependencies. It classified modules into the following types:
 
-### The cost of software complexity
-A study by Dan Sturtevant has investigated the impact of software dependencies. It found that:
+peripheral (few dependencies), utility (many ingoing dependencies), control(many outgoing dependencies) and core (many in- and outgoing dependencies).
 
-Defect rate
-* A 3.1X increase between modules with many dependencies versus few dependencies
-* A 2.6X increase between modules with high cyclomatic complexity versus low complexity
-* A combined effect 8.3X
+It then found the following results:
 
-![Impact of dependencies vs cyclomatic complexity](https://dsmsuite.github.io/assets/img/index/cost_of_complexity.png "Impact of dependencies vs cyclomatic complexity")
+*Defect rate*
+* 3.1X increase between periphery and core
+* 2.6X for McCabe, combined effect 8.3X
 
-Lower productivity 
-- A 50% decline when developers works on modules with many dependencies versus few dependencies
+*Lower productivity* 
+* 50% decline as developer moves from periphery to core (conservatively) 
 
-Higher staff turnover 
-- A 10x increase in voluntary and involuntary terminations for developers work on modules with many dependencies versus few dependencies
+*Higher staff turnover*
+* 10x increase in voluntary and involuntary terminations as developer moves from periphery to core
 
-> For detailed information about this study see the [presentation]https://sdm.mit.edu/news/news_articles/webinar_050613/sturtevant_050613.pdf 
-> or the [video]https://www.youtube.com/watch?v=tO4OinbOWaE.
+> For detailed information about this study see the [presentation](https://sdm.mit.edu/news/news_articles/webinar_050613/sturtevant_050613.pdf) 
+> or the [video](https://www.youtube.com/watch?v=tO4OinbOWaE).
 
 This study confirms the results from an earlier US Air Force study, which showed that well-structured software 
 is delivered in half the time, at half the cost, with 8x less bugs. 
 
-### The impact of poor dependencies
-
-* *Rigidity*: Software difficult to change, even in simple ways
-
-* *Fragility*: Software often breaks in many places every time it is changed
-
-* *Immobility*: Software can not be isolated, so not reused across projects
-
-* *Viscosity*: * Design preserving design harder than the hacks
-
-* *Insufficient Testability*: Can not unit test due to excessive dependencies
-
 ## Why we fail
 
-Although the impact of poor dependencies is well known, many projects are struggling with it.
+Although the impact of poor dependencies is well known, many projects are still struggling with it.
 This can have one of the following reasons:
 
-### Human
-* Lack of training/coaching
-* Project/human short term focus. Consistent high project pressure will lead to accumulation of technical debt and will hurt productivity
+*Human*
+* Consistent high project pressure will lead to accumulation of technical debt and will hurt productivity
 
-### Architecture Control
-* Insufficient software architecture definition. In many cases architectural definition absent or is too high level to provide guidance.
-* Insufficient software architecture control. No validation if implementation conforms architectural definition. Developers can easily violate intended architecture by modifying source code
+*Architecture Control*
+* In many cases architectural definition absent or is too high level to provide sufficient guidance. Also no validation is performed if implementation conforms architectural definition. 
+This is required because developers can easily violate intended architecture by simply modifying the source code
 
-### Architecture Visualization
-* UML not suitable for managing software architecture
-* Difficult to keep in synch with code
-* Easily overwhelmed by dependencies
-* Dependencies in model not in any view
+*Architecture Visualization*
+UML is not suitable for managing software architecture, because it is difficult to keep the model in synch with code. One is also easily overwhelmed when showing all dependencies. 
+This is even for very simples design as is shown below.
 
 ![uml](https://dsmsuite.github.io/assets/img/index/uml.gif "uml")
 	
 ## Design structure matrix
 
 A design structure matrix consists of a matrix to visualize dependencies of hierarchically organized elements and a set of algorithms which can be applied on the matrix to sort the elements.
-It can be used to manage dependencies any kind of system which has a hierarchy of elements and dependencies between elements and has been used for very complex systems.
+The technique has been used to visualize very complex systems.
 
 ![example dsm](https://dsmsuite.github.io/assets/img/index/dsm_example.png "example dsm")
 
-A design structure matrix can be used to visualize the code architecture. It  and can help in gaining understanding it and support architectural refactoring. 
+A design structure matrix can be used to visualize the code architecture. It addresses the following reasons:
+* It can be used to visualize very systems.
+* It can provide an architecture definition at a level between the conceptual architecture and the actual code.
+* It can be used to verify that the actual code architecture conform  to the conceptual architecture.
+* It can be easily kept in sync with the code.
 
-Using design strucure matix can help:
-* Provide architecture definition a a level between a conceptual architecture and the actual code
-* Verify if teh actual code architecture conform  to the conceptual architecture.
+> For more information on design structure matix see the DSM Overview.
 
-Whereas the problems with poor modularity and high cyclomatic can be easily spotted by the developer by simple looking at a source file, problematic dependencies often go undetected.
 [back](./)
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
