@@ -109,15 +109,7 @@ Fix hierarchical cycle by moving element
 
 
 
-# Common Use Cases
-Discover the Architecture and Identify Issues with Interdependencies 
-DSM Analysis
-Specify/Enforce Architectures
-Layers, Components, Interfaces with Dependency Rules 
-Track, Measure and Report on Changes and Trends
-Metrics
-Re-engineer/Refactor 
-Impact Analysis 
+
 
 
 
