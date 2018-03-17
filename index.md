@@ -23,6 +23,8 @@ It found out that:
 * 2.6X for McCabe
 * Combined effect 8.3X
 
+![cost of complexity](https://dsmsuite.github.io/assets/img/index/cost_of_complexity.png "cost of complexity")
+
 **Lower productivity**
 * 50% decline as developer moves from periphery to core (conservatively) 
 
@@ -44,29 +46,30 @@ This can have one of the following reasons:
 * Consistent high project pressure will lead to accumulation of technical debt and will hurt productivity
 
 **Architecture Control**
-* In many cases an architectural definition is absent or is too high conceptual level to provide sufficient guidance on which dependencies are allowed. Also no validation is performed if implementation conforms architectural definition. 
-This is required because developers can easily violate intended architecture by simply modifying the source code
+* In many cases an architectural definition is absent or is too high conceptual level to provide guidance on which dependencies are allowed. Also no validation is performed if the implementation conforms to the 
+architectural definition. 
+This is essential because developers can easily violate intended architecture by simply modifying the source code
 
 **Architecture Visualization**
 * UML is not suitable for managing software architecture, because it is difficult to keep the model in synch with code. One is also easily overwhelmed when showing all dependencies. 
-This is even for very simples design as is shown below.
+This is even the case for a very simple design as is shown below.
 
 ![uml](https://dsmsuite.github.io/assets/img/index/uml.png "uml")
 	
 ## Design structure matrix
 
-A design structure matrix consists of a matrix to visualize dependencies of hierarchically organized elements and a set of algorithms which can be applied on the matrix to sort the elements.
+A design structure matrix consists of a matrix to visualize dependencies of hierarchically organized elements and a set of algorithms which can be applied on the matrix to sort the elements in order to discover layering.
 The technique has been used to visualize very complex systems. An example of a design structure matrix is shown below:
 
 ![example dsm](https://dsmsuite.github.io/assets/img/index/dsm_example.png "example dsm")
 
-A design structure matrix can be used to visualize the code architecture. It addresses the following reasons:
-* It can be used to visualize very systems.
-* It can provide an architecture definition at a level between the conceptual architecture and the actual code.
-* It can be used to verify that the actual code architecture conform  to the conceptual architecture.
+Using a design structure matrix to visualize the code architecture addresses some of the problems described above:
+* It can be used to visualize very complex software systems without overwhelming the user.
+* It can provide detailed guidance by providing an architecture definition at a level between the conceptual architecture and the actual code.
+* It can be used to validate that the actual code architecture conforms to the architecture.
 * It can be easily kept in sync with the code.
 
-> For more information on design structure matix see the DSM Overview.
+> For more information on design structure matix see the [DSM Overview](dsm_overview).
 
 [next](dsm_overview)
 

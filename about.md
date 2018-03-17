@@ -39,6 +39,6 @@ Although the DSM tool suite has been developed in C#, code analyzers can be deve
 
 I you have a code analyzer for a specific programming language or environment, please let me know, so I share this information on this web site.
 
-Also let me know if when you would like to contribute to the DSM tool suite development. 
+Also let me know if you would like to contribute to the DSM tool suite development. 
 
 [home](./)
