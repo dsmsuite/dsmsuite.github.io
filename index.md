@@ -13,20 +13,19 @@ An animated view of the evolution of the design of JUnit illustrates this ([sour
 ![evolution of junit dependencies across releases](https://dsmsuite.github.io/assets/img/index/nunit.gif "evolution of junit dependencies across releases")
 
 ## The cost of software complexity
-A study by Dan Sturtevant has investigated the impact of software dependencies. It classified modules into the following types:
+A study by Dan Sturtevant has investigated the impact of software dependencies. It classified modules into the following types 
+peripheral (few dependencies), utility (many ingoing dependencies), control (many outgoing dependencies) and core (many in- and outgoing dependencies).
 
-peripheral (few dependencies), utility (many ingoing dependencies), control(many outgoing dependencies) and core (many in- and outgoing dependencies).
+It found out that:
 
-It then found the following results:
-
-*Defect rate*
+**Defect rate**
 * 3.1X increase between periphery and core
 * 2.6X for McCabe, combined effect 8.3X
 
-*Lower productivity* 
+**Lower productivity**
 * 50% decline as developer moves from periphery to core (conservatively) 
 
-*Higher staff turnover*
+**Higher staff turnover**
 * 10x increase in voluntary and involuntary terminations as developer moves from periphery to core
 
 > For detailed information about this study see the [presentation](https://sdm.mit.edu/news/news_articles/webinar_050613/sturtevant_050613.pdf) 
@@ -40,14 +39,14 @@ is delivered in half the time, at half the cost, with 8x less bugs.
 Although the impact of poor dependencies is well known, many projects are still struggling with it.
 This can have one of the following reasons:
 
-*Human*
+**Human**
 * Consistent high project pressure will lead to accumulation of technical debt and will hurt productivity
 
-*Architecture Control*
+**Architecture Control**
 * In many cases architectural definition absent or is too high level to provide sufficient guidance. Also no validation is performed if implementation conforms architectural definition. 
 This is required because developers can easily violate intended architecture by simply modifying the source code
 
-*Architecture Visualization*
+**Architecture Visualization**
 UML is not suitable for managing software architecture, because it is difficult to keep the model in synch with code. One is also easily overwhelmed when showing all dependencies. 
 This is even for very simples design as is shown below.
 
