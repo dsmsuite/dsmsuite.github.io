@@ -23,7 +23,7 @@ layout: default
 # Feature overview
 
 
-	                                          | Lattix | Intelij  | JArchitect | DsmSuite  |
+|	                                          | Lattix | Intelij  | JArchitect | DsmSuite  |
 |                                             |        | Ultimate | CppDepend  |           |
 |                                             |        |          | NDepend    |		   | 	
 |:--------------------------------------------|:-------|:---------|:-----------|:----------|
