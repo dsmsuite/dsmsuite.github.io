@@ -23,9 +23,7 @@ layout: default
 # Feature overview
 
 
-|	                                          | Lattix | Intelij  | JArchitect | DsmSuite  |
-|                                             |        | Ultimate | CppDepend  |           |
-|                                             |        |          | NDepend    |		   | 	
+|	                                          | Lattix | Intelij Ultimate  | JArchitect CppDepend NDepend | DsmSuite  |
 |:--------------------------------------------|:-------|:---------|:-----------|:----------|
 | **Visualization dependencies**              |        |          |            |           |           
 | Hierarchical matrix	                      | Yes	   | Yes	  | Yes        | Yes	   |  
