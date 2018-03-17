@@ -5,6 +5,8 @@ layout: default
 Although using a DSM is a very effective approach for managing software dependencies, there are not many tools that support DSM visualization.
 Existing open source DSM tools offer insufficient functionality and fully featured commercials tools are quite expensive. 
 
+For details on tools supporting DSM see the [dsm tools](dsm_tools)
+
 The aim of the DSM tool suite is to offer a free solution and thereby significantly lowering the  threshold for applying DSMs. 
 
 ## Goals
