@@ -20,7 +20,8 @@ It found out that:
 
 **Defect rate**
 * 3.1X increase between periphery and core
-* 2.6X for McCabe, combined effect 8.3X
+* 2.6X for McCabe
+* Combined effect 8.3X
 
 **Lower productivity**
 * 50% decline as developer moves from periphery to core (conservatively) 
@@ -28,8 +29,8 @@ It found out that:
 **Higher staff turnover**
 * 10x increase in voluntary and involuntary terminations as developer moves from periphery to core
 
-> For detailed information about this study see the [presentation](https://sdm.mit.edu/news/news_articles/webinar_050613/sturtevant_050613.pdf) 
-> or the [video](https://www.youtube.com/watch?v=tO4OinbOWaE).
+> For detailed information about this study see this [presentation](https://sdm.mit.edu/news/news_articles/webinar_050613/sturtevant_050613.pdf) 
+> or this [video](https://www.youtube.com/watch?v=tO4OinbOWaE).
 
 This study confirms the results from an earlier US Air Force study, which showed that well-structured software 
 is delivered in half the time, at half the cost, with 8x less bugs. 
@@ -43,19 +44,19 @@ This can have one of the following reasons:
 * Consistent high project pressure will lead to accumulation of technical debt and will hurt productivity
 
 **Architecture Control**
-* In many cases architectural definition absent or is too high level to provide sufficient guidance. Also no validation is performed if implementation conforms architectural definition. 
+* In many cases an architectural definition is absent or is too high conceptual level to provide sufficient guidance on which dependencies are allowed. Also no validation is performed if implementation conforms architectural definition. 
 This is required because developers can easily violate intended architecture by simply modifying the source code
 
 **Architecture Visualization**
-UML is not suitable for managing software architecture, because it is difficult to keep the model in synch with code. One is also easily overwhelmed when showing all dependencies. 
+* UML is not suitable for managing software architecture, because it is difficult to keep the model in synch with code. One is also easily overwhelmed when showing all dependencies. 
 This is even for very simples design as is shown below.
 
-![uml](https://dsmsuite.github.io/assets/img/index/uml.gif "uml")
+![uml](https://dsmsuite.github.io/assets/img/index/uml.png "uml")
 	
 ## Design structure matrix
 
 A design structure matrix consists of a matrix to visualize dependencies of hierarchically organized elements and a set of algorithms which can be applied on the matrix to sort the elements.
-The technique has been used to visualize very complex systems.
+The technique has been used to visualize very complex systems. An example of a design structure matrix is shown below:
 
 ![example dsm](https://dsmsuite.github.io/assets/img/index/dsm_example.png "example dsm")
 
@@ -67,7 +68,7 @@ A design structure matrix can be used to visualize the code architecture. It add
 
 > For more information on design structure matix see the DSM Overview.
 
-[back](./)
+[next](dsm_overview)
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
