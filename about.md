@@ -9,7 +9,7 @@ For details on tools supporting DSM see the [dsm tools](dsm_tools)
 
 The aim of the DSM tool suite is to offer a free solution and thereby significantly lowering the  threshold for applying DSMs. 
 
-## Goals
+# Goals
 
 The goals of the DSM tool suite are:
 * To provide a free open source tool suite for DSM visualization.
@@ -19,7 +19,7 @@ The goals of the DSM tool suite are:
 
 See [github](https://github.com/dsmsuite) for the source code of the DSM tool suite.
 
-## History
+# History
 
 The DSM suite is based on the source of the [DSM plugin for Visual Studio](https://github.com/tecsoft/dsm-vs-addin). 
 This open source DSM implementation provided the best starting point for developing the DSM tool suite.
@@ -32,7 +32,7 @@ To achieve the goals above the following major modifications have been made:
 
 I also did some cleanup of the code and used JetBrains Resharper to inspect and fix coding issues. 
 
-## Contribute
+# Contribute
 
 Although I provided a solution for a few commonly used programming languages, I can not possibly provide them for all possible programming languages and environments. 
 
@@ -42,5 +42,3 @@ Although the DSM tool suite has been developed in C#, code analyzers can be deve
 I you have a code analyzer for a specific programming language or environment, please let me know, so I share this information on this web site.
 
 Also let me know if you would like to contribute to the DSM tool suite development. 
-
-[home](./)

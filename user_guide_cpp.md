@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Analyzing C/C++ code
+# Analyzing C/C++ code
 The C++ analyzer parses C/C++ source files a determines dependencies based on header file includes.
 The element hierarchy bases on directory structure of the source code. Namespaces are not taken into account.
 
@@ -32,3 +32,6 @@ The following settings are defined:
 | ResolveMethod           | How to resolve ambiguity when filenames are not unique                         |
 | OutputFilename          | Filename with dsi extension to which results will be written                   |     
 
+## Example
+
+[back](user_guide)

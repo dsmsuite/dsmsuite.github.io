@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Analyzing .Net code
+# Analyzing .Net code
 
 The .Net analyzer parses assemblies using Mono.Cecil to determine dependencies between .Net classes.
 The element hierarchy is based on namespaces.
@@ -20,3 +20,6 @@ The following settings are defined:
 | AssemblyDirectory | Directory where assemblies to be analyzed can be found        |
 | OutputFilename    | Filename with dsi extension to which results will be written  |
 
+## Example
+
+[back](user_guide)

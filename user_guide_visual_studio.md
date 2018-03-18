@@ -2,7 +2,7 @@
 layout: default
 ---
   
-## Analyzing VC++ projects
+# Analyzing VC++ projects
 
 The Visual studio analyzer parses C/C++ source files a determines dependencies based on header file includes.
 The element hierarchy bases on directory structure of the source code. Namespaces are not taken into account.
@@ -13,10 +13,10 @@ The element hierarchy bases on directory structure of the source code. Namespace
 This analyzer can also analyze just the project dependencies. 
 This is suitable for Visual Studio solution with many projects or with a mix of C++ and .Net projects.
 
-### Pre requisites
+## Pre requisites
 * Visual Studio 2012 or higher.
 
-### Settings
+## Settings
 
 The following settings are defined:
 
@@ -33,3 +33,6 @@ The following settings are defined:
 | MergeSourcePath          | Relative path where source files can be found e.g. 'src'                       |
 | OutputFilename           | Filename with dsi extension to which results will be written                   |   
 
+## Example
+
+[back](user_guide)

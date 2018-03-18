@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Analyzing Java code
+# Analyzing Java code
 
 This Java analyzer reads a Jdeps .dot file to determine dependencies between Java classes.
 The element hierarchy is based on namespaces.
@@ -23,3 +23,6 @@ The following settings are defined:
 | JdepsDotInputFile | Filename of Jdeps .dot file used to extract dependency information |
 | OutputFilename    | Filename with dsi extension to which results will be written       |     
 
+## Example
+
+[back](user_guide)
