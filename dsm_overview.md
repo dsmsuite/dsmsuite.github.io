@@ -72,7 +72,7 @@ while the elements with many outgoing relationships (consumers) have shifted to 
  
 Cyclic relations can be easily spotted, because the type of relations remain above the diagonal.
 
-![dsm before partioningng](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_3a_partioning_before.png "dsm before partioning")
+![dsm before partioning](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_3a_partioning_before.png "dsm before partioning")
 
 ![dsm after partioning](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_3b_partioning_after.png "dsm after partioning")
 
@@ -118,11 +118,11 @@ There are different types of cyclic relations.
 
 Each type requires a specific type of refactoring
 
-| Dependency type    | Description                                                 | Required refactoring       |
-|:-------------------|:------------------------------------------------------------|:---------------------------|
-| System Cycle       | Cycles between elements in same module                       | Introduce interface        |
-| Intercomponent     | Cycle Cycles between elements in different modules           | Introduce interface        |
-| Hierarchical Cycle | elements involved in cycle or creating cycle between modules | Move element to other module |
+| Dependency type    | Description                                                    | Required refactoring       |
+|:-------------------|:---------------------------------------------------------------|:---------------------------|
+| System Cycle       | Cycles between elements in same component                      | Introduce interface        |
+| Intercomponent     | Cycle Cycles between elements in different component           | Introduce interface        |
+| Hierarchical Cycle | elements involved in cycle or creating cycle between component | Move element to other module |
 
 #### Remove a cyclic relation
 
@@ -161,14 +161,17 @@ increasing reuse between product variants.
 
 Where a well-documented software architecture is missing, it can be mapped with a DSM analysis of the source code.
 
-# More information
-
-* **Design Structure Matrix Methods and Applications**: book by Steven D. Eppinger and Tyson R. Browning
-![dsm book](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_book.jpg "dsm book")
+# References
 
 * **www.dsmweb.org**: General information on DSMs
 
 * **List of supporting supportings DSM visualization**: See [dsm_tools](dsm_tools)
+
+* **Design Structure Matrix Methods and Applications**: book by Steven D. Eppinger and Tyson R. Browning
+
+![dsm book](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_book.jpg "dsm book")
+
+
 
 
 
