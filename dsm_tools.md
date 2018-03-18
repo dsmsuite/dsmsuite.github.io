@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Tools for evaluating code architectures.
+# Tools supporting DSM visualization
 
 # Overview of tools
 
@@ -16,6 +16,10 @@ layout: default
 | [DSM plugin](https://github.com/tecsoft/dsm-vs-addin)     | Software architecture analysis             | open source | 
 | [DSMSuite](https://dsmsuite.github.io/)                   | Software architecture analysis             | open source | 
 
+> The tools CppDepend, Ndepend and JArchitect are identical, but support different programming languages. They will be listed below a XDepend
+
+> The DSMSuite is based on the DSM plugin. Because they currently have the features they will not be compared in the table below.
+
 > Other well known tools for architecture analysis and refactoring are [Structure101](http://structure101.com/) 
 > and [SonarSource](https://www.sonarsource.com/). Both however do not support DSM visualization. 
 > The continuous inspection tool [sonarqube](https://www.sonarqube.org/) used to support DSM visualization, but this feature was dropped. 
@@ -23,7 +27,7 @@ layout: default
 # Feature overview
 
 
-|	                                          | Lattix | Intelij Ultimate  | JArchitect CppDepend NDepend | DsmSuite  |
+|	                                          | Lattix | Intelij Ultimate  | XDepend | DsmSuite |
 |:--------------------------------------------|:-------|:---------|:-----------|:----------|
 | **Visualization dependencies**              |        |          |            |           |           
 | Hierarchical matrix	                      | Yes	   | Yes	  | Yes        | Yes	   |  
@@ -45,5 +49,3 @@ layout: default
 Intelij Ultimate, JArchitect, CppDepend, NDepend and the DsmSuite have more or less similar DSM capabilities.
 If architecture refactoring is necessary, then Lattix is the best choice. 
 Structure101 also supports architectural refactoring, but does not support DSM visualization. 
-
-[back](about)
