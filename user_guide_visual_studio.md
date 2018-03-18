@@ -23,7 +23,6 @@ The following settings are defined:
 | Setting                  | Description                                                                    | 
 | -------------------------|:-------------------------------------------------------------------------------|
 | LoggingEnabled           | Log information to file for diagnostic purposes                                |
-| RootDirectory            | Root of source code directory used to determine root of names in DSM           |
 | SolutionFilename         | Full path to visual studio solution file                                       |
 | AnalyzeMode              | Analyze source file or project dependencies                                    |
 | IncludeDirectories       | List of additional directories where include files can be found. Think of system and third party include files. |

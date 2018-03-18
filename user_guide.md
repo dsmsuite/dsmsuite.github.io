@@ -43,6 +43,9 @@ it must conform the DSI file XSD schema below:
 
 # Installation
 
+System requirements:
+* Windows platform with .NET 4.5.2 framework
+
 Download the DSM viewer and the analyzer which best suits your needs.
 
 | Name                   | Description                                        | Download link 
