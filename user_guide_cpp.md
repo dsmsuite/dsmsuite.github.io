@@ -84,8 +84,8 @@ Example for analyzing C++ in a D:\MyProject directory.
 **Analyze.bat**
 
 ```
-DsmSuite.Analyzer.Cpp.ex" AnalyzerCppSettings.xml
-DsmSuite.DsmBuilder.exe BuilderCppSettings.xml
+DsmSuite.Analyzer.Cpp.exe AnalyzerSettings.xml
+DsmSuite.DsmBuilder.exe BuilderSettings.xml
 ```
 
 [back](user_guide)

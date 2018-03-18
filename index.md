@@ -51,7 +51,7 @@ architectural definition.
 This is essential because developers can easily violate intended architecture by simply modifying the source code
 
 **Architecture Visualization**
-* UML is not suitable for managing software architecture, because it is difficult to keep the model in synch with code. One is also easily overwhelmed when showing all dependencies. For this reason dependencies are often ignored on a view making the view incomplete.
+* UML is not suitable for managing software architecture, because it is difficult to keep the model in sync with code. One is also easily overwhelmed when showing all dependencies. For this reason dependencies are often ignored on a view making the view incomplete.
 	
 # Design structure matrix
 

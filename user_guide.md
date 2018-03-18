@@ -13,10 +13,10 @@ The DSM suite consists of the following components:
 * The DSM builder which uses the DSI file to build a DSM file. 
 * The DSM viewer which reads the DSM file and visualize the element hierarchy and dependencies.
 
-The analzyers and the builder are command line tools, so they can be easily integrated into continuous integration.
+The analyzers and the builder are command line tools, so they can be easily integrated into continuous integration.
 
 > The DSI file must conform to the XSD schema described below. The DSM file format can be changed without any notice. 
-> For backwards compatibility it currently it still is unchanged with respect to the original DSM plugin format, 
+> For backwards compatibility it currently it still is unchanged with respect to the original DSM plug in format, 
 > but this could change in the future.
 
 ## Analyzers
@@ -32,7 +32,10 @@ The DSM builder uses a DSI file to create a DSM file. To build the DSM file it:
 * It flags cyclic relations, so the can accentuated in the DSM.
 In the future it might also evaluate dependency rules to verify that the code conforms to the defined architecture.
 
-## The DSI file format
+## DSM Viewer
+The DSM viewer can be used to view dependency information.
+
+# The DSI file format
 
 Each analyzer must export its results to DSI file. To ensure that the DSM builder can only import this file,
 it must conform the DSI file XSD schema below:
@@ -59,7 +62,7 @@ Download the DSM viewer and the analyzer which best suits your needs.
 
 Before running the analyzer and builder you need to configure it using XML settings files. 
 
-## Analyzing code
+# Analyzing code
 
 The following steps are required to be able to view dependencies in the DSM viewer.
 
@@ -67,7 +70,7 @@ The following steps are required to be able to view dependencies in the DSM view
 2. Build the DSM file.
 3. Open the DSM file to show it in the viewer.
 
-### Step 1: Running the analyzer
+## Step 1: Running the analyzer
 
 Follow the detailed instruction of the selected analyzer:
 
@@ -97,7 +100,7 @@ The following settings are defined:
 
 C:\Program Files (x86)\DsmSuite\DsmViewer\DsmSuite.DsmBuilder.exe BuilderSettings.xml
 
-## Step 3: Viewing and modifying the DSM
+### Step 3: Viewing and modifying the DSM
 
 ![DSM viewer](https://dsmsuite.github.io/assets/img/user_manual/dsm_viewer.png "DSM viewer")
 
