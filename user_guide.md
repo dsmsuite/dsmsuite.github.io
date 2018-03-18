@@ -76,30 +76,23 @@ Follow the detailed instruction of the selected analyzer:
 | Visual Studio analyzer | [Analyzing VC++ projects](user_guide_visual_studio)     |
 | UML analyzer           | [Analyzing Sparx System EA UML models](user_guide_uml)  |
 
-The result of the analyzes step is a output file conforming to DSI file XSD schema.
+This step results in DSI file.
 
 ## Step 2: Running the DSM builder
 
-### Purpose
-
-The DSM builder uses a DSI file to create a DSM file. To build the DSM file it:
-* It reads the components and elements from the DSI file.
-* It builds an element hierarchy as can be observed on the left side of the DSM viewer.
-* It reads the relations between the elements from the file.
-* It calculates the derived dependency weights for all cells.
-* It flags cyclic relations, so the can accentuated in the DSM.
-
-### Settings
+### Configure the builder
 
 The following settings are defined:
 
-| Setting          | Description                                                                   | 
-|:-----------------|:------------------------------------------------------------------------------|
-| LoggingEnabled   | Log information to file for diagnostic purposes                               |
-| InputFilename    | File name with .dsi extension used as input to extract dependency information |     
-| OutputFilename   | File name with .dsm extension used as output to write DSM information         |      
+| Setting          | Description                                                          | 
+|:-----------------|:---------------------------------------------------------------------|
+| LoggingEnabled   | Log information to file for diagnostic purposes                      |
+| InputFilename    | File name with .dsi extension used to extract dependency information |     
+| OutputFilename   | File name with .dsm extension used to write DSM information          |      
 
+### Run the analyzer
 
+C:\Program Files (x86)\DsmSuite\DsmViewer\DsmSuite.DsmBuilder.exe BuilderSettings.xml
 
 ## Step 3: Viewing and modifying the DSM
 
