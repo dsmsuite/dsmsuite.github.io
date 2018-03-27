@@ -34,8 +34,6 @@ The following settings are defined:
 | IncludeDirectories      | List of additional directories where include files can be found. Think of system and third party include files. |
 | IgnorePaths             | List of directories in the source code tree which need to be excluded          |
 | MergeEnabled            | Option to merge matching include and source file to single location in the DSM |
-| MergeIncludePath        | Relative path where include files can be found e.g. 'inc'                      |
-| MergeSourcePath         | Relative path where source files can be found e.g. 'src'                       |
 | ResolveMethod           | How to resolve ambiguity when filenames are not unique                         |
 | OutputFilename          | Filename with dsi extension to which results will be written                   |     
 
@@ -62,8 +60,6 @@ Example for analyzing C++ in a D:\MyProject directory.
     <string>D:\MyProject\Generated</string>
   </IgnorePaths>
   <MergeEnabled>false</MergeEnabled>
-  <MergeIncludePath>include</MergeIncludePath>
-  <MergeSourcePath>src</MergeSourcePath>
   <ResolveMethod>AddBestMatch</ResolveMethod>
   <OutputFilename>MyProject.dsi</OutputFilename>
 </AnalyzerSettings>

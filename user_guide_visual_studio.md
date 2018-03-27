@@ -26,8 +26,6 @@ The following settings are defined:
 | IncludeDirectories       | List of additional directories where include files can be found. Think of system and third party include files. |
 | EnvironmentVariables     | List of key/value pairs. It replace '$(key)' in include paths by 'Value'       |
 | MergeEnabled             | Option to merge matching include and source file to single location in the DSM |
-| MergeIncludePath         | Relative path where include files can be found e.g. 'inc'                      |
-| MergeSourcePath          | Relative path where source files can be found e.g. 'src'                       |
 | OutputFilename           | Filename with dsi extension to which results will be written                   |   
 
 ## Example
@@ -55,8 +53,6 @@ Example for analyzing C++ in a D:\MyProject\MyProject.sln directory.
     </EnvironmentVariable>
   </EnvironmentVariables>
   <MergeEnabled>false</MergeEnabled>
-  <MergeIncludePath>include</MergeIncludePath>
-  <MergeSourcePath>src</MergeSourcePath>
   <OutputFilename>MyProject.dsi</OutputFilename>
 </AnalyzerSettings>
 ```
