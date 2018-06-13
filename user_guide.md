@@ -10,10 +10,11 @@ layout: default
 
 The DSM suite consists of the following components:
 * An analyzer, which extracts information on elements and their relations from source, binaries or other data. An analyzer exports this information to a DSI file.
+* A transformer which can be use to apply transformations on the DSI file to obtain a transformed DSM representation.
 * The DSM builder which uses the DSI file to build a DSM file. 
 * The DSM viewer which reads the DSM file and visualize the element hierarchy and dependencies.
 
-The analyzers and the builder are command line tools, so they can be easily integrated into continuous integration.
+The analyzers, transfoemr and the builder are command line tools, so they can be easily integrated into continuous integration.
 
 > The DSI file must conform to the XSD schema described below. The DSM file format can be changed without any notice. 
 > For backwards compatibility it currently it still is unchanged with respect to the original DSM plug in format, 
