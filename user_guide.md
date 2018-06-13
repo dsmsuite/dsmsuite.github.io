@@ -51,16 +51,17 @@ System requirements:
 
 Download the DSM viewer, the transformer and the analyzer which best suits your needs.
 
-| Name                   | Description                                        | Download link 
-|:-----------------------|:---------------------------------------------------|:---------------------------------------------------------------------------
-| DSM viewer             | DSM viewer and DSM builder                         | [download](https://dsmsuite.github.io/downloads/DsmSuite.Viewer.msi).
-| Transformer            | Perform transformation on DSI file                 | [download](https://dsmsuite.github.io/downloads/DsmSuite.Transformer.msi)
-| .Net analyzer          | Dependencies between .NET classes                  | [download](https://dsmsuite.github.io/downloads/DsmSuite.DotNetAnalyzer.msi)
-| Java analyzer          | Dependencies between Java classes                  | [download](https://dsmsuite.github.io/downloads/DsmSuite.JdepsAnalyzer.msi)
-| C++ analyzer           | Dependencies between C++ source files              | [download](https://dsmsuite.github.io/downloads/DsmSuite.CppAnalyzer.msi)
-| Visual Studio analyzer | Dependencies between VC++ source files or projects | [download](https://dsmsuite.github.io/downloads/DsmSuite.VisualStudioAnalyzer.msi)
-| UML analyzer           | Dependencies between UML elements                  | [download](https://dsmsuite.github.io/downloads/DsmSuite.UmlAnalyzer.msi)
-| GrapML analyzer        | Dependencies between GraphML elements              | [download](https://dsmsuite.github.io/downloads/DsmSuite.GraphMLAnalyzer.msi)
+| Name                   | Description                                        | Download link                                                                       |
+|:-----------------------|:---------------------------------------------------|:------------------------------------------------------------------------------------|
+| DSM viewer             | DSM viewer and DSM builder                         | [download](https://dsmsuite.github.io/downloads/DsmSuite.Viewer.msi)                |
+| Transformer            | Perform transformation on DSI file                 | [download](https://dsmsuite.github.io/downloads/DsmSuite.Transformer.msi)           |
+| .Net analyzer          | Dependencies between .NET classes                  | [download](https://dsmsuite.github.io/downloads/DsmSuite.DotNetAnalyzer.msi)        |
+| Java analyzer          | Dependencies between Java classes                  | [download](https://dsmsuite.github.io/downloads/DsmSuite.JdepsAnalyzer.msi)         |
+| C++ analyzer           | Dependencies between C++ source files              | [download](https://dsmsuite.github.io/downloads/DsmSuite.CppAnalyzer.msi)           |
+| Visual Studio analyzer | Dependencies between VC++ source files or projects | [download](https://dsmsuite.github.io/downloads/DsmSuite.VisualStudioAnalyzer.msi)  |
+| UML analyzer           | Dependencies between UML elements                  | [download](https://dsmsuite.github.io/downloads/DsmSuite.UmlAnalyzer.msi)           |
+| GrapML analyzer        | Dependencies between GraphML elements              | [download](https://dsmsuite.github.io/downloads/DsmSuite.GraphMLAnalyzer.msi)       |
+
 Before running the analyzer and builder you need to configure it using XML settings files. 
 
 # Analyzing code
