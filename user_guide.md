@@ -49,17 +49,18 @@ it must conform the DSI file XSD schema below:
 System requirements:
 * Windows platform with .NET 4.5.2 framework
 
-Download the DSM viewer and the analyzer which best suits your needs.
+Download the DSM viewer, the transformer and the analyzer which best suits your needs.
 
 | Name                   | Description                                        | Download link 
 |:-----------------------|:---------------------------------------------------|:---------------------------------------------------------------------------
 | DSM viewer             | DSM viewer and DSM builder                         | [download](https://dsmsuite.github.io/downloads/DsmSuite.Viewer.msi).
-| .Net analyzer          | Dependencies between .NET classes                  | [download](https://dsmsuite.github.io/downloads/DotNetAnalyzer.msi)
-| Java analyzer          | Dependencies between Java classes                  | [download](https://dsmsuite.github.io/downloads/JdepsAnalyzer.msi)
-| C++ analyzer           | Dependencies between C++ source files              | [download](https://dsmsuite.github.io/downloads/CppAnalyzer.msi)
-| Visual Studio analyzer | Dependencies between VC++ source files or projects | [download](https://dsmsuite.github.io/downloads/VisualStudioAnalyzer.msi)
-| UML analyzer           | Dependencies between UML elements                  | [download](https://dsmsuite.github.io/downloads/UmlAnalyzer.msi)
-
+| Transformer            | Perform transformation on DSI file                 | [download](https://dsmsuite.github.io/downloads/DsmSuite.Transformer.msi)
+| .Net analyzer          | Dependencies between .NET classes                  | [download](https://dsmsuite.github.io/downloads/DsmSuite.DotNetAnalyzer.msi)
+| Java analyzer          | Dependencies between Java classes                  | [download](https://dsmsuite.github.io/downloads/DsmSuite.JdepsAnalyzer.msi)
+| C++ analyzer           | Dependencies between C++ source files              | [download](https://dsmsuite.github.io/downloads/DsmSuite.CppAnalyzer.msi)
+| Visual Studio analyzer | Dependencies between VC++ source files or projects | [download](https://dsmsuite.github.io/downloads/DsmSuite.VisualStudioAnalyzer.msi)
+| UML analyzer           | Dependencies between UML elements                  | [download](https://dsmsuite.github.io/downloads/DsmSuite.UmlAnalyzer.msi)
+| GrapML analyzer        | Dependencies between GraphML elements              | [download](https://dsmsuite.github.io/downloads/DsmSuite.GraphMLAnalyzer.msi)
 Before running the analyzer and builder you need to configure it using XML settings files. 
 
 # Analyzing code
@@ -67,8 +68,9 @@ Before running the analyzer and builder you need to configure it using XML setti
 The following steps are required to be able to view dependencies in the DSM viewer.
 
 1. Analyze code with the selected analyzer.
-2. Build the DSM file.
-3. Open the DSM file to show it in the viewer.
+2. Transform the DSI dependency file.
+3. Build the DSM file.
+4. Open the DSM file to show it in the viewer.
 
 ## Step 1: Running the analyzer
 
@@ -84,7 +86,27 @@ Follow the detailed instruction of the selected analyzer:
 
 This step results in DSI file.
 
-## Step 2: Running the DSM builder
+## Step 2: Transformations
+
+### Configure the transformer
+
+The following settings are defined:
+
+| Setting                | Description                                                          | 
+|:-----------------------|:---------------------------------------------------------------------|
+| LoggingEnabled         | Log information to file for diagnostic purposes                      |
+| InputFilename          | File name with .dsi extension used to extract dependency information |     
+| MergeHeader            | Move C/C++ header to implementation                                  |  
+| AddTransitiveRelations | Add transitive relations                                             |     
+| RenameEnabled          | Rename rules are enabled to transform the DSM                        |  
+| RenameRules            | Set of rules specifyingg rename actions                              | 
+| OutputFilename         | File name with .dsi extension used to write transformed information  |      
+
+### Run the transformer
+
+C:\Program Files (x86)\DsmSuite\Transformer\DsmSuite.Transformer.exe TransformerSettings.xml
+
+## Step 3: Running the DSM builder
 
 ### Configure the builder
 
@@ -100,7 +122,9 @@ The following settings are defined:
 
 C:\Program Files (x86)\DsmSuite\DsmViewer\DsmSuite.DsmBuilder.exe BuilderSettings.xml
 
-### Step 3: Viewing and modifying the DSM
+
+
+### Step 4: Viewing and modifying the DSM
 
 ![DSM viewer](https://dsmsuite.github.io/assets/img/user_manual/dsm_viewer.png "DSM viewer")
 
