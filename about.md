@@ -17,8 +17,6 @@ The goals of the DSM tool suite are:
 * To allow for easy extension to support other programming languages and environments.
 * To allow integration into a continuous integration build chain.
 
-See [github](https://github.com/dsmsuite) for the source code of the DSM tool suite.
-
 # History
 
 The DSM suite is based on the source of the [DSM plugin for Visual Studio](https://github.com/tecsoft/dsm-vs-addin). 
@@ -31,6 +29,10 @@ To achieve the goals above the following major modifications have been made:
 * Added command line code analyzers for C++, Java, UML and Visual Studio.
 
 I also did some cleanup of the code and used JetBrains Resharper to inspect and fix coding issues. 
+
+# Source Code
+
+See [github](https://github.com/dsmsuite) for the source code of the DSM tool suite.
 
 # Contribute
 
