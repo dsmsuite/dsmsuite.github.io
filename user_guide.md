@@ -10,11 +10,11 @@ layout: default
 
 The DSM suite consists of the following components:
 * An analyzer, which extracts information on elements and their relations from source, binaries or other data. An analyzer exports this information to a DSI file.
-* A transformer which can be use to apply transformations on the DSI file to obtain a transformed DSM representation.
+* A transformer which can be use to apply transformations on the DSI file.
 * The DSM builder which uses the DSI file to build a DSM file. 
 * The DSM viewer which reads the DSM file and visualize the element hierarchy and dependencies.
 
-The analyzers, transfoemr and the builder are command line tools, so they can be easily integrated into continuous integration.
+The analyzers, transformer and the builder are command line tools, so they can be easily integrated into continuous integration.
 
 > The DSI file must conform to the XSD schema described below. The DSM file format can be changed without any notice. 
 > For backwards compatibility it currently it still is unchanged with respect to the original DSM plug in format, 
@@ -24,13 +24,17 @@ The analyzers, transfoemr and the builder are command line tools, so they can be
 A few standard analyzers are provided. If none of the provided analyzers suites your needs, 
 it is possible to write an own analyzer as long as its writes the result to a DSI file.
 
+## Transformer
+The transformer applied transformations on the DSI file. It for example can add transitive relations or rename elements.
+This will later result in a modified DSM. 
+
 ## DSM builder
 The DSM builder uses a DSI file to create a DSM file. To build the DSM file it:
-* It reads the components and elements from the DSI file.
-* It builds an element hierarchy as can be observed on the left side of the DSM viewer.
-* It reads the relations between the elements from the file.
-* It calculates the derived dependency weights for all cells.
-* It flags cyclic relations, so the can accentuated in the DSM.
+* Reads the components and elements from the DSI file.
+* Builds an element hierarchy as can be observed on the left side of the DSM viewer.
+* Reads the relations between the elements from the file.
+* Calculates the derived dependency weights for all cells.
+* Flags cyclic relations, so the can emphasised in the DSM.
 In the future it might also evaluate dependency rules to verify that the code conforms to the defined architecture.
 
 ## DSM Viewer
@@ -45,6 +49,28 @@ it must conform the DSI file XSD schema below:
 
 [download XSD](https://dsmsuite.github.io/downloads/dsi.xsd "XSD Schema")
 
+Each element has the following properties:
+
+| Name          | Description                                                   |
+|:--------------|:--------------------------------------------------------------|
+| id            | An integer uniquely defining the element.                     |
+| name          | A dot separated name of the element.                          |
+|               | Each element in the dot separate name represents a part       |
+|               | in a hierarchy e.g. a directory or a namespace.               |
+| type          | The type of element e.g. class, enum of file.                 |
+| nested        | True when the element is nested e.g. a nested class.          |
+| source        | The source from which the element was generated               |
+|               | e.g. the full path of the source file.                        |
+
+Each relation has the following properties:
+
+| Name                   | Description                                          |
+|:-----------------------|:-----------------------------------------------------|
+| providerId             | The id of the provider element.                      |
+| consumerId             | The id of the consumer element.                      |
+| type                   | The type of relation e.g. include, inherit, realize. |
+| weight                 | The strength of the relation.                        |
+
 # Installation
 
 System requirements:
@@ -54,8 +80,8 @@ Download the DSM viewer, the transformer and the analyzer which best suits your 
 
 | Name                   | Description                                        | Download link                                                                       |
 |:-----------------------|:---------------------------------------------------|:------------------------------------------------------------------------------------|
-| DSM viewer             | DSM viewer and DSM builder                         | [download](https://dsmsuite.github.io/downloads/DsmSuite.Viewer.msi)                |
-| Transformer            | Perform transformation on DSI file                 | [download](https://dsmsuite.github.io/downloads/DsmSuite.Transformer.msi)           |
+| DSM viewer             | DSM viewer and builder                             | [download](https://dsmsuite.github.io/downloads/DsmSuite.Viewer.msi)                |
+| Transformer            | Perform transformations on a DSI file              | [download](https://dsmsuite.github.io/downloads/DsmSuite.Transformer.msi)           |
 | .Net analyzer          | Dependencies between .NET classes                  | [download](https://dsmsuite.github.io/downloads/DsmSuite.DotNetAnalyzer.msi)        |
 | Java analyzer          | Dependencies between Java classes                  | [download](https://dsmsuite.github.io/downloads/DsmSuite.JdepsAnalyzer.msi)         |
 | C++ analyzer           | Dependencies between C++ source files              | [download](https://dsmsuite.github.io/downloads/DsmSuite.CppAnalyzer.msi)           |
@@ -65,16 +91,16 @@ Download the DSM viewer, the transformer and the analyzer which best suits your 
 
 Before running the analyzer and builder you need to configure it using XML settings files. 
 
-# Analyzing code
+# Using the DSM Suite
 
 The following steps are required to be able to view dependencies in the DSM viewer.
 
-1. Analyze code with the selected analyzer.
-2. Transform the DSI dependency file.
+1. Analyze the code with a suitable analyzer.
+2. Optionally transform the DSI dependency file.
 3. Build the DSM file.
 4. Open the DSM file to show it in the viewer.
 
-## Step 1: Running the analyzer
+## Step 1: Perform dependency analysis
 
 Follow the detailed instruction of the selected analyzer:
 
@@ -84,25 +110,54 @@ Follow the detailed instruction of the selected analyzer:
 | Java analyzer          | [Analyzing Java code](user_guide_java)                  |
 | C++ analyzer           | [Analyzing C/C++ code](user_guide_cpp)                  |
 | Visual Studio analyzer | [Analyzing VC++ projects](user_guide_visual_studio)     |
+| GraphML analyzer       | [Analyzing GraphML files](user_guide_graphml)           | 
 | UML analyzer           | [Analyzing Sparx System EA UML models](user_guide_uml)  |
 
 This step results in DSI file.
 
-## Step 2: Transformations
+## Step 2: Optionally apply transformations
 
 ### Configure the transformer
 
 The following settings are defined:
 
-| Setting                | Description                                                          | 
-|:-----------------------|:---------------------------------------------------------------------|
-| LoggingEnabled         | Log information to file for diagnostic purposes                      |
-| InputFilename          | File name with .dsi extension used to extract dependency information |     
-| MergeHeader            | Move C/C++ header to implementation                                  |  
-| AddTransitiveRelations | Add transitive relations                                             |     
-| RenameEnabled          | Rename rules are enabled to transform the DSM                        |  
-| RenameRules            | Set of rules specifyingg rename actions                              | 
-| OutputFilename         | File name with .dsi extension used to write transformed information  |      
+| Setting                | Description                                                           | 
+|:-----------------------|:----------------------------------------------------------------------|
+| LoggingEnabled         | Log information to file for diagnostic purposes.                      |
+| InputFilename          | File name with .dsi extension used to extract dependency information. |     
+| MergeHeader            | Move C/C++ header to implementation.                                  |  
+| AddTransitiveRelations | Add transitive relations.                                             |     
+| RenameEnabled          | Rename rules are enabled to transform the DSM.                        |  
+| RenameRules            | Set of rules specifying rename actions.                               | 
+| OutputFilename         | File name with .dsi extension used to write transformed information.  |      
+
+## Example
+
+Example for analyzing C++ in a D:\MyProject directory.
+
+**AnalyzerSettings.xml**
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LoggingEnabled>false</LoggingEnabled>
+  <RootDirectory>D:\MyProject</RootDirectory>
+  <SourceDirectories>
+    <string>D:\MyProject</string>
+  </SourceDirectories>
+  <IncludeDirectories>
+    <string>C:\Program Files (x86)\Windows Kits\10\Include</string>
+    <string>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include</string>
+  </IncludeDirectories>
+  <IgnorePaths>
+    <string>D:\MyProject\Generated</string>
+  </IgnorePaths>
+  <MergeEnabled>false</MergeEnabled>
+  <ResolveMethod>AddBestMatch</ResolveMethod>
+  <OutputFilename>MyProject.dsi</OutputFilename>
+</AnalyzerSettings>
+```
 
 ### Run the transformer
 
@@ -120,11 +175,37 @@ The following settings are defined:
 | InputFilename    | File name with .dsi extension used to extract dependency information |     
 | OutputFilename   | File name with .dsm extension used to write DSM information          |      
 
-### Run the analyzer
+## Example
+
+Example for analyzing C++ in a D:\MyProject directory.
+
+**AnalyzerSettings.xml**
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LoggingEnabled>false</LoggingEnabled>
+  <RootDirectory>D:\MyProject</RootDirectory>
+  <SourceDirectories>
+    <string>D:\MyProject</string>
+  </SourceDirectories>
+  <IncludeDirectories>
+    <string>C:\Program Files (x86)\Windows Kits\10\Include</string>
+    <string>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include</string>
+  </IncludeDirectories>
+  <IgnorePaths>
+    <string>D:\MyProject\Generated</string>
+  </IgnorePaths>
+  <MergeEnabled>false</MergeEnabled>
+  <ResolveMethod>AddBestMatch</ResolveMethod>
+  <OutputFilename>MyProject.dsi</OutputFilename>
+</AnalyzerSettings>
+```
+
+### Run the builder
 
 C:\Program Files (x86)\DsmSuite\DsmViewer\DsmSuite.DsmBuilder.exe BuilderSettings.xml
-
-
 
 ### Step 4: Viewing and modifying the DSM
 
