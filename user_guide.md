@@ -27,8 +27,7 @@ A few standard analyzers are provided. If none of the provided analyzers suites 
 it is possible to write an own analyzer as long as its writes the result to a DSI file.
 
 ## Transformer
-The transformer applied transformations on the DSI file. It for example can add transitive relations or rename elements.
-This will later result in a modified DSM. 
+The transformer applies transformations on the DSI file. It for example can add transitive relations or transform elements so they are moved in the element hierarchy.
 
 ## DSM builder
 The DSM builder uses a DSI file to create a DSM file. To build the DSM file it:
@@ -44,7 +43,7 @@ The DSM viewer can be used to view dependency information.
 
 # The DSI file format
 
-Each analyzer must export its results to DSI file. To ensure that the DSM builder can only import this file,
+Each analyzer must export its results to DSI file. To ensure that the DSM builder can import this file,
 it must conform the DSI file XSD schema below:
 
 ![DSI XSD Schema](https://dsmsuite.github.io/assets/img/user_manual/xsd_schema.png "DSI XSD Schema")
@@ -98,7 +97,7 @@ Each element has the following properties:
 | id            | An integer uniquely defining the element.                     |
 | name          | A dot separated name of the element. Each element in the dot separate name represents a part in a hierarchy e.g. a directory or a namespace.               |
 | type          | The type of element e.g. class, enum of file.                 |
-| source        | The source from which the element was generated   e.g. the full path of the source file.             |
+| source        | The source from which the element was generated e.g. the full path of the source file.             |
 
 Each relation has the following properties:
 
