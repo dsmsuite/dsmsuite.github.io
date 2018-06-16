@@ -10,7 +10,7 @@ opaque and fragile. The underlying cause is that the dependency structure of the
 
 ![evolution of junit dependencies across releases](https://dsmsuite.github.io/assets/img/index/nunit.gif "evolution of junit dependencies across releases")
 
-*Figure 1: The evolution of the dependency structure of JUnit. ([source](http://edmundkirwan.com/general/junit.html))*
+*Figure 1: The evolution of the dependency structure of JUnit*
 
 # The cost of software complexity
 A study by Dan Sturtevant investigated the impact of software dependencies on defect rate, productivity and staff turnover. It classified modules into the following types:
