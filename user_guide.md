@@ -50,7 +50,10 @@ it must conform the DSI file XSD schema below:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns="urn:dsi-schema" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns="urn:dsi-schema" 
+	   attributeFormDefault="unqualified" 
+	   elementFormDefault="qualified" 
+	   xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="system">
     <xs:complexType>
       <xs:sequence>
