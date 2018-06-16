@@ -6,11 +6,11 @@ layout: default
 
 Ideally, software can be easily modified, is understandable, reliable and reusable. 
 In practice, this often remains an ideal and over the course of time the software becomes increasingly rigid, 
-opaque and fragile. 
-
-An animated view of the evolution of the design of JUnit shows an example of this. ([source](http://edmundkirwan.com/general/junit.html)):
+opaque and fragile. The underlying cause is that the dependency structure of the software degrades over time.
 
 ![evolution of junit dependencies across releases](https://dsmsuite.github.io/assets/img/index/nunit.gif "evolution of junit dependencies across releases")
+
+*Figure 1: The evolution of the dependency structure of JUnit*
 
 # The cost of software complexity
 A study by Dan Sturtevant investigated the impact of software dependencies on defect rate, productivity and staff turnover. It classified modules into the following types:
@@ -28,6 +28,8 @@ The outcome of the study was that software dependencies have the following impac
 
 ![cost of complexity](https://dsmsuite.github.io/assets/img/index/cost_of_complexity.png "cost of complexity")
 
+*Figure 2: Defect rate*
+
 **Lower productivity**
 * 50% decline as developer moves from periphery to core (conservatively) 
 
@@ -40,7 +42,7 @@ The outcome of the study was that software dependencies have the following impac
 This study confirms the results from an earlier US Air Force study, which showed that well-structured software 
 is delivered in half the time, at half the cost, with 8x less bugs. 
 
-> For detailed information about this study see this [document](https://dsmsuite.github.io/documents/mitre_architecture_report.pdf) 
+> For detailed information about this study see this [document](https://dsmsuite.github.io/documents/mitre-architecture-report.pdf) 
 
 # Why we fail
 
@@ -65,6 +67,7 @@ a set of algorithms which can be applied on the matrix to sort the elements in o
 The technique has been used to visualize very complex systems. An example of a design structure matrix is shown below:
 
 ![example dsm](https://dsmsuite.github.io/assets/img/index/dsm_example.png "example dsm")
+*Figure 3: Design structure matrix*
 
 Using a design structure matrix to visualize the code architecture addresses some of the problems described above:
 * It can be used to visualize very complex software systems without overwhelming the user.

@@ -33,17 +33,17 @@ I also did some cleanup of the code and used JetBrains Resharper to inspect and 
 # Source Code
 
 See [github](https://github.com/dsmsuite) for the source code of the DSM tool suite. There are three repositories:
-* DsmViewer: Repository containing the DSM viewer and builder.
+* DsmViewer: Repository containing the viewer and builder.
 * Analyzers: Repository containing all code analyzers.
 * dsmsuite.github.io: Repository containing these documentation pages.
 
 # Reporting defects and suggestions
 
-If you find defects or have suggestions please subsmit a ticket for the appropriate repository.
+If you find a defect or have a suggestion please subsmit a issue for the appropriate repository.
 
-* [documenation]https://github.com/dsmsuite/dsmsuite.github.io/issues
-* [viewwe]https://github.com/dsmsuite/dsmviewer/issues
-* [analyzers]https://github.com/dsmsuite/analyzers/issues
+* [submit a documenation issue](https://github.com/dsmsuite/dsmsuite.github.io/issues)
+* [submit a viewer issue](https://github.com/dsmsuite/dsmviewer/issues)
+* [submit an analyzer issue](https://github.com/dsmsuite/analyzers/issues)
 
 # Contribute
 
