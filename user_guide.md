@@ -8,8 +8,6 @@ layout: default
 
 *Figure 1: DSM Suite Key Components*
 
-The analyzers, transformer and the builder are command line tools, so they can be easily integrated into continuous integration.
-
 The DSM suite consists of the following components:
 
 ## Analyzer
@@ -38,6 +36,9 @@ In the future it might also evaluate dependency rules to verify that the code co
 
 ## DSM Viewer
 The DSM viewer reads the DSM file and visualizes the element hierarchy and dependencies.
+
+# Continuous Integration
+The analyzers, transformer and the builder are command line tools, so they can be easily integrated into continuous integration.
 
 # The DSI file format
 
@@ -96,7 +97,7 @@ Each element has the following properties:
 | Name          | Description                                                   |
 |:--------------|:--------------------------------------------------------------|
 | id            | An unique integer value defining the element.                     |
-| name          | An unique name of the element. The name consists of dot separated elements. Each element represents a part in a elemenmt hierarchy e.g. a directory or a namespace.               |
+| name          | An unique name of the element. The name consists of dot separated elements. Each element represents a part in a element hierarchy e.g. a directory or a namespace.               |
 | type          | The type of element e.g. class, enum of file.                 |
 | source        | The source from which the element was generated e.g. the full path of the source file.             |
 
@@ -111,9 +112,10 @@ Each relation has the following properties:
 
 # Installation
 
-System requirements:
+## System requirements:
 * Windows platform with .NET 4.5.2 framework
 
+## Downloads
 Download the viewer and the analyzer which best suits your needs. Optionally you can download the transformer, when needed.
 
 | Name                   | Description                                        | Download link                                                                       |
@@ -124,7 +126,7 @@ Download the viewer and the analyzer which best suits your needs. Optionally you
 | C++ analyzer           | Dependencies between C++ source files              | [download](https://dsmsuite.github.io/downloads/DsmSuite.CppAnalyzer.msi)           |
 | Visual Studio analyzer | Dependencies between VC++ source files or projects | [download](https://dsmsuite.github.io/downloads/DsmSuite.VisualStudioAnalyzer.msi)  |
 | UML analyzer           | Dependencies between UML elements                  | [download](https://dsmsuite.github.io/downloads/DsmSuite.UmlAnalyzer.msi)               |
-| Transformer            | Perform transformations on a DSI file              | [download](https://dsmsuite.github.io/downloads/DsmSuite.Transformer.msi)           |
+| Transformer            | Perform transformations                        | [download](https://dsmsuite.github.io/downloads/DsmSuite.Transformer.msi)           |
 
 The analyzer, transformer and builder are configured using a XML settings file, which is specified at the command line.
 
@@ -173,11 +175,12 @@ The following settings are defined:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<TransformerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<TransformerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		     xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <LoggingEnabled>false</LoggingEnabled>
   <InputFilename>Input.dsi</InputFilename>
   <MergeHeader>false</MergeHeader>
-  <TransformaationEnabled>true</TransformaationEnabled>
+  <TransformationEnabled>true</TransformationEnabled>
   <TransformationRules>
     <TransformationRule>
       <From>Header Files.</From>
@@ -211,7 +214,8 @@ The following settings are defined:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<BuilderSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<BuilderSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <LoggingEnabled>false</LoggingEnabled>
   <InputFilename>Input.dsi</InputFilename>
   <OutputFilename>Output.dsm</OutputFilename>
