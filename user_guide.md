@@ -12,7 +12,7 @@ layout: default
 
 The DSM suite consists of the following components:
 * An analyzer, which extracts information on elements and their relations from source, binaries or other data. An analyzer exports this information to a DSI file.
-* A transformer which can be use to apply transformations on the DSI file. These transformations can be used to apply refactorings as described in the DSM overview as dexcribed in key strength 4.
+* A transformer which can be use to apply transformations on the DSI file. These transformations can be used to apply refactorings as described in the [DSM Overview](dsm_overview) as described under key strength 4.
 * The DSM builder which uses the DSI file to build a DSM file. 
 * The DSM viewer which reads the DSM file and visualize the element hierarchy and dependencies.
 
