@@ -32,7 +32,10 @@ I also did some cleanup of the code and used JetBrains Resharper to inspect and 
 
 # Source Code
 
-See [github](https://github.com/dsmsuite) for the source code of the DSM tool suite.
+See [github](https://github.com/dsmsuite) for the source code of the DSM tool suite. There are three repositories:
+* DsmViewer: Repository containing the DSM viewer and builder.
+* Analyzers: Repository containing all code analyzers.
+* dsmsuite.github.io: Repository containing these documentation pages.
 
 # Contribute
 
