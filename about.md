@@ -37,6 +37,14 @@ See [github](https://github.com/dsmsuite) for the source code of the DSM tool su
 * Analyzers: Repository containing all code analyzers.
 * dsmsuite.github.io: Repository containing these documentation pages.
 
+# Reporting defects and suggestions
+
+If you find defects or have suggestions please subsmit a ticket for the appropriate repository.
+
+* [documenation]https://github.com/dsmsuite/dsmsuite.github.io/issues
+* [viewwe]https://github.com/dsmsuite/dsmviewer/issues
+* [analyzers]https://github.com/dsmsuite/analyzers/issues
+
 # Contribute
 
 Although I provided a solution for a few commonly used programming languages, I can not possibly provide them for all possible programming languages and environments. 
@@ -45,7 +53,5 @@ For this reason I have designed the DSM suite in such a way that you can add you
 Although the DSM suite has been developed in C#, code analyzers can be developed in any language. The only requirement is that its output conforms to the XSD schema mentioned in the [user guide](user_guide).
 
 I you have a code analyzer for a specific programming language or environment, please let me know, so I share this information on these pages.
- 
-If you find defects or have suggestions please subsmit a ticket for the appropriate repository.
 
 Also let me know if you would like to contribute to the DSM tool suite development. 
