@@ -19,7 +19,7 @@ The goals of the DSM tool suite are:
 
 # History
 
-The DSM suite is based on the source of the [DSM plugin for Visual Studio](https://github.com/tecsoft/dsm-vs-addin). 
+The DSM suite is based on the source code of the [DSM plugin for Visual Studio](https://github.com/tecsoft/dsm-vs-addin). 
 This open source DSM implementation provided the best starting point for developing the DSM tool suite.
 
 To achieve the goals above the following major modifications have been made:
@@ -41,9 +41,11 @@ See [github](https://github.com/dsmsuite) for the source code of the DSM tool su
 
 Although I provided a solution for a few commonly used programming languages, I can not possibly provide them for all possible programming languages and environments. 
 
-For this reason I have designed the tool suite in such a way that you can add your own code analyzer.
-Although the DSM tool suite has been developed in C#, code analyzers can be developed in any language. The only requirement is that its output conforms to the XSD schema mentioned in the [user guide](user_guide).
+For this reason I have designed the DSM suite in such a way that you can add your own code analyzer.
+Although the DSM suite has been developed in C#, code analyzers can be developed in any language. The only requirement is that its output conforms to the XSD schema mentioned in the [user guide](user_guide).
 
-I you have a code analyzer for a specific programming language or environment, please let me know, so I share this information on this web site.
+I you have a code analyzer for a specific programming language or environment, please let me know, so I share this information on these pages.
+ 
+If you find defects or have suggestions please subsmit a ticket for the appropriate repository.
 
 Also let me know if you would like to contribute to the DSM tool suite development. 
