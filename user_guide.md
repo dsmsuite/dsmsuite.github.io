@@ -4,30 +4,28 @@ layout: default
 
 # Technical Overview
 
-## Key components
-
 ![Technical Overview](https://dsmsuite.github.io/assets/img/user_manual/technical_overview.png "Technical Overview")
 
-*Figure 1: DSM Suite Technical Overview*
-
-The DSM suite consists of the following components:
-* An analyzer, which extracts information on elements and their relations from source, binaries or other data. An analyzer exports this information to a DSI file.
-* A transformer which can be use to apply transformations on the DSI file. These transformations can for example add transitive relations or transform elements so they are moved in the element hierarchy to assist in refactoring analysis as as described in the [DSM Overview](dsm_overview).
-* The DSM builder which uses the DSI file to build a DSM file. 
-* The DSM viewer which reads the DSM file and visualize the element hierarchy and dependencies.
+*Figure 1: DSM Suite Key Components*
 
 The analyzers, transformer and the builder are command line tools, so they can be easily integrated into continuous integration.
+
+The DSM suite consists of the following components:
+
+## Analyzer
+An analyzer, which extracts information on elements and their relations from source, binaries or other data. An analyzer exports this information to a DSI file.
+
+A few standard analyzers are provided. If none of the provided analyzers suites your needs, 
+it is possible to write your own analyzer as long as its writes the result to a DSI file.
 
 > The DSI file must conform to the XSD schema described below. The DSM file format can be changed without any notice. 
 > For backwards compatibility it currently it still is unchanged with respect to the original DSM plug in format, 
 > but this could change in the future.
 
-## Analyzers
-A few standard analyzers are provided. If none of the provided analyzers suites your needs, 
-it is possible to write an own analyzer as long as its writes the result to a DSI file.
-
 ## Transformer
-The transformer applies transformations on the DSI file. It for example can add transitive relations or transform elements so they are moved in the element hierarchy.
+A transformer can be used to apply transformations on the DSI file. These transformations can for example:
+* Add transitive relations e.g. for C++ not only direct includes, but also indirect includes.
+* Transform elements, so they are moved in the element hierarchy. This feature can be used to analysis potential refactorings  as as described in the [DSM Overview](dsm_overview).
 
 ## DSM builder
 The DSM builder uses a DSI file to create a DSM file. To build the DSM file it:
@@ -39,7 +37,7 @@ The DSM builder uses a DSI file to create a DSM file. To build the DSM file it:
 In the future it might also evaluate dependency rules to verify that the code conforms to the defined architecture.
 
 ## DSM Viewer
-The DSM viewer can be used to view dependency information.
+The DSM viewer reads the DSM file and visualizes the element hierarchy and dependencies.
 
 # The DSI file format
 
@@ -97,8 +95,8 @@ Each element has the following properties:
 
 | Name          | Description                                                   |
 |:--------------|:--------------------------------------------------------------|
-| id            | An integer uniquely defining the element.                     |
-| name          | A dot separated name of the element. Each element in the dot separate name represents a part in a hierarchy e.g. a directory or a namespace.               |
+| id            | An unique integer value defining the element.                     |
+| name          | An unique name of the element. The name consists of dot separated elements. Each element represents a part in a elemenmt hierarchy e.g. a directory or a namespace.               |
 | type          | The type of element e.g. class, enum of file.                 |
 | source        | The source from which the element was generated e.g. the full path of the source file.             |
 
@@ -116,7 +114,7 @@ Each relation has the following properties:
 System requirements:
 * Windows platform with .NET 4.5.2 framework
 
-Download the viewer and the analyzer which best suits your needs. Optionally download the transformer.
+Download the viewer and the analyzer which best suits your needs. Optionally you can download the transformer, when needed.
 
 | Name                   | Description                                        | Download link                                                                       |
 |:-----------------------|:---------------------------------------------------|:------------------------------------------------------------------------------------|
@@ -165,13 +163,11 @@ The following settings are defined:
 | InputFilename          | File name with .dsi extension used to extract dependency information. |     
 | MergeHeader            | Move C/C++ header to implementation.                                  |  
 | AddTransitiveRelations | Add transitive relations.                                             |     
-| TransformaationEnabled | Transformation rules are enabled to transform the DSM.                |  
+| TransformationEnabled  | Transformation rules are enabled to transform the DSM.                |  
 | TransformationRules    | Set of rules specifying transformation actions.                       | 
 | OutputFilename         | File name with .dsi extension used to write transformed information.  |      
 
 ## Example
-
-Below an example settings file is shown.
 
 **TransformerSetting**
 
@@ -210,8 +206,6 @@ The following settings are defined:
 | OutputFilename   | File name with .dsm extension used to write DSM information          |      
 
 ## Example
-
-Example for analyzing C++ in a D:\MyProject directory.
 
 **BuilderSettings.xml**
 
