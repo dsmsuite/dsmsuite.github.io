@@ -40,7 +40,7 @@ The outcome of the study was that software dependencies have the following impac
 This study confirms the results from an earlier US Air Force study, which showed that well-structured software 
 is delivered in half the time, at half the cost, with 8x less bugs. 
 
-> For detailed information about this study see this [document](https://dsmsuite.github.io/documents/mitre_architecture_report.pdf) 
+> For detailed information about this study see this [document](https://dsmsuite.github.io/documents/mitre-architecture-report.pdf) 
 
 # Why we fail
 
