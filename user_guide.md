@@ -96,12 +96,9 @@ Each element has the following properties:
 | Name          | Description                                                   |
 |:--------------|:--------------------------------------------------------------|
 | id            | An integer uniquely defining the element.                     |
-| name          | A dot separated name of the element.                          |
-|               | Each element in the dot separate name represents a part       |
-|               | in a hierarchy e.g. a directory or a namespace.               |
+| name          | A dot separated name of the element. Each element in the dot separate name represents a part in a hierarchy e.g. a directory or a namespace.               |
 | type          | The type of element e.g. class, enum of file.                 |
-| source        | The source from which the element was generated               |
-|               | e.g. the full path of the source file.                        |
+| source        | The source from which the element was generated   e.g. the full path of the source file.             |
 
 Each relation has the following properties:
 
