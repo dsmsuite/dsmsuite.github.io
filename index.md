@@ -6,12 +6,10 @@ layout: default
 
 Ideally, software can be easily modified, is understandable, reliable and reusable. 
 In practice, this often remains an ideal and over the course of time the software becomes increasingly rigid, 
-opaque and fragile. 
-
-The underlying cause is that the dependency structure of the software degrades over time.
-
+opaque and fragile. The underlying cause is that the dependency structure of the software degrades over time.
 
 ![evolution of junit dependencies across releases](https://dsmsuite.github.io/assets/img/index/nunit.gif "evolution of junit dependencies across releases")
+
 *Figure 1: The evolution of the dependency structure of JUnit. ([source](http://edmundkirwan.com/general/junit.html))*
 
 # The cost of software complexity
@@ -29,6 +27,7 @@ The outcome of the study was that software dependencies have the following impac
 * Combined effect 8.3X
 
 ![cost of complexity](https://dsmsuite.github.io/assets/img/index/cost_of_complexity.png "cost of complexity")
+
 *Figure 2: Defect rate*
 
 **Lower productivity**
