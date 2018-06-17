@@ -76,4 +76,4 @@ Using a design structure matrix to visualize the code architecture addresses som
 
 Is a powerful technique for analyzing, improving, and managing software architecture and can be adopted at any stage of the project
 
-> For more information on design structure matrix see the [DSM Overview](dsm_overview).
+> For more information on design structure matrix see the [DSM Overview](dsm_overview) or [DSM Powerpoint](https://dsmsuite.github.io/documements/DsmPresentation.pptx)
