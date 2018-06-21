@@ -143,7 +143,7 @@ that take place at the architectural level and thus affect multiple components.
 Without the use of a DSM, such analyzes are unreliable, 
 because the software designed and the actual software architecture often do not match.
 
-> To perform this kind of refactoring on the DSM model transformation rules can be applied using the transformer. After transformation on the DSI file, this file needs to be used to create a new DSM file, whcih in tutn can be imported in the viewer. 
+> To perform this kind of refactoring transformation rules can be applied on the DSI file using the transformer. After transformation on the DSI file, the DSI file needs to be used to create a new DSM file, which in turn can be imported in the viewer. 
 
 > The commercial [Lattix  DSM tool](http://lattix.com/) allows direct manipulation of the elements in the DSM, which id more convenient.
 
