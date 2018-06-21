@@ -15,7 +15,7 @@ The element hierarchy is based on namespaces.
 The following settings are defined:
 
 | Setting           | Description                                                   | 
-| ------------------|:--------------------------------------------------------------|
+|:------------------|:--------------------------------------------------------------|
 | LoggingEnabled    | Log information to file for diagnostic purposes               |
 | AssemblyDirectory | Directory where assemblies to be analyzed can be found        |
 | OutputFilename    | Filename with dsi extension to which results will be written  |
