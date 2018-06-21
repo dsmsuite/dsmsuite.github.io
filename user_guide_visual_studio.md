@@ -36,24 +36,23 @@ Example for analyzing C++ in a D:\MyProject\MyProject.sln directory.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <LoggingEnabled>false</LoggingEnabled>
-  <SolutionFilename>D:\MyProject\MyProject.sln</SolutionFilename>
+  <SolutionFilename />
   <AnalyzeMode>IncludeDependencies</AnalyzeMode>
-  <RootDirectory>D:\MyProject</RootDirectory>
+  <ViewMode>LogicalView</ViewMode>
+  <RootDirectory />
   <IncludeDirectories>
-    <string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0</string>
+    <string>C:\Program Files (x86)\Windows Kits\10\Include</string>
     <string>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include</string>
   </IncludeDirectories>
   <EnvironmentVariables>
     <EnvironmentVariable>
-      <Key>FrameworkSdkDir</Key>
-      <Value>C:\Program Files (x86)\Windows Kits\10\Include</Value>
+      <Key>exampleKey</Key>
+      <Value>exampleValue</Value>
     </EnvironmentVariable>
   </EnvironmentVariables>
-  <MergeEnabled>false</MergeEnabled>
-  <OutputFilename>MyProject.dsi</OutputFilename>
+  <OutputFilename>Output.dsi</OutputFilename>
 </AnalyzerSettings>
 ```
 
