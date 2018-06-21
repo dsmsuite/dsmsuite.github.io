@@ -42,6 +42,8 @@ Use the following command:
 
 DsmSuite.Analyzer.Cpp.exe AnalyzerSettings.xml
 
+If the setting file does not exist a default one will be created.
+
 ## AnalyzerSettings.xml example 
 
 Example for analyzing C++ in a D:\MyProject source directory.
