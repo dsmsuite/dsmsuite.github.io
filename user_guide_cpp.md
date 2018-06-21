@@ -45,23 +45,20 @@ Example for analyzing C++ in a D:\MyProject directory.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <LoggingEnabled>false</LoggingEnabled>
-  <RootDirectory>D:\MyProject</RootDirectory>
+  <RootDirectory>C:\</RootDirectory>
   <SourceDirectories>
-    <string>D:\MyProject</string>
+    <string>C:\</string>
   </SourceDirectories>
   <IncludeDirectories>
-    <string>C:\Program Files (x86)\Windows Kits\10\Include</string>
-    <string>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include</string>
+    <string>C:\</string>
   </IncludeDirectories>
   <IgnorePaths>
-    <string>D:\MyProject\Generated</string>
+    <string>C:\</string>
   </IgnorePaths>
-  <MergeEnabled>false</MergeEnabled>
   <ResolveMethod>AddBestMatch</ResolveMethod>
-  <OutputFilename>MyProject.dsi</OutputFilename>
+  <OutputFilename>Output.dsi</OutputFilename>
 </AnalyzerSettings>
 ```
 
