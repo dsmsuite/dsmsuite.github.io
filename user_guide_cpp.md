@@ -33,7 +33,6 @@ The following settings are defined:
 | SourceDirectories       | List of directories where source code can be found                             |
 | IncludeDirectories      | List of additional directories where include files can be found. Think of system and third party include files. |
 | IgnorePaths             | List of directories in the source code tree which need to be excluded          |
-| MergeEnabled            | Option to merge matching include and source file to single location in the DSM |
 | ResolveMethod           | How to resolve ambiguity when filenames are not unique                         |
 | OutputFilename          | Filename with dsi extension to which results will be written                   |     
 
