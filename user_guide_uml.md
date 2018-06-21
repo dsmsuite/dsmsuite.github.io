@@ -4,7 +4,7 @@ layout: default
   
 # Analyzing Sparx System EA UML models
 
-This analyzer read Sparx System Enterprise Architect UML models. 
+This analyzer reads Sparx System Enterprise Architect UML models. 
 The element hierarchy bases on UML package and structure in the model.
 
 ## Pre requisites
