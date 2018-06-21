@@ -24,7 +24,7 @@ The following settings are defined:
 
 Use the following command (Example for analyzing [ArgoUML](http://argouml.tigris.org/) binaries):
 
-jdeps -verbose:class -recursive -dotoutput D:\DsmAnalysis\Java d:\ArgoUml\argouml.jar 
+jdeps -verbose:class -recursive -dotoutput D:\ArgoUmlAnalysisResults d:\ArgoUml\argouml.jar 
 DsmSuite.Analyzer.Jdeps.exe AnalyzerSettings.xml
 
 If the setting file does not exist a default one will be created.
@@ -35,7 +35,7 @@ If the setting file does not exist a default one will be created.
 <?xml version="1.0" encoding="utf-8"?>
 <AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <LoggingEnabled>false</LoggingEnabled>
-  <InputFilename>C:example.dot\</InputFilename>
+  <InputFilename>D:\ArgoUmlAnalysisResults\argouml.jar.dot</InputFilename>
   <OutputFilename>Output.dsi</OutputFilename>
 </AnalyzerSettings>
 ```
