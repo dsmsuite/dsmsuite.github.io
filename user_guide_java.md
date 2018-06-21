@@ -24,9 +24,9 @@ The following settings are defined:
 
 Use the following command (Example for analyzing [ArgoUML](http://argouml.tigris.org/) binaries):
 
-&npsp;jdeps -verbose:class -recursive -dotoutput D:\ArgoUmlAnalysisResults d:\ArgoUml\argouml.jar 
+jdeps -verbose:class -recursive -dotoutput D:\ArgoUmlAnalysisResults d:\ArgoUml\argouml.jar 
 
-&npsp;DsmSuite.Analyzer.Jdeps.exe AnalyzerSettings.xml
+DsmSuite.Analyzer.Jdeps.exe AnalyzerSettings.xml
 
 If the setting file does not exist a default one will be created.
 
