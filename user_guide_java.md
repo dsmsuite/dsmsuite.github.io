@@ -28,11 +28,10 @@ Example for analyzing [ArgoUML](http://argouml.tigris.org/) binaries.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <LoggingEnabled>false</LoggingEnabled>
-  <JdepsDotInputFile>D:\DsmAnalysis\Java\argouml.jar.dot</JdepsDotInputFile>
-  <OutputFilename>D:\DsmAnalysis\Java\argouml.dsi</OutputFilename>
+  <InputFilename>C:example.dot\</InputFilename>
+  <OutputFilename>Output.dsi</OutputFilename>
 </AnalyzerSettings>
 ```
 
