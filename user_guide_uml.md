@@ -30,11 +30,10 @@ Example for analyzing the [DSMViewer UML model](https://github.com/dsmsuite/dsms
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <LoggingEnabled>false</LoggingEnabled>
-  <ModelFilename>D:\DsmAnalysis\UML\DsmViewer.eap</ModelFilename>
-  <OutputFilename>D:\DsmAnalysis\UML\uml.dsi</OutputFilename>
+  <InputFilename>Model.eap</InputFilename>
+  <OutputFilename>Output.dsi</OutputFilename>
 </AnalyzerSettings>
 ```
 
