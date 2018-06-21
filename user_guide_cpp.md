@@ -27,7 +27,7 @@ How this ambiguity is resolved  can be configured:
 The following settings are defined:
 
 | Setting                 | Description                                                                    | 
-| ------------------------|:-------------------------------------------------------------------------------|
+|:------------------------|:-------------------------------------------------------------------------------|
 | LoggingEnabled          | Log information to file for diagnostic purposes                                |
 | RootDirectory           | Root of source code directory used to determine root of names in DSM           |
 | SourceDirectories       | List of directories where source code can be found                             |
