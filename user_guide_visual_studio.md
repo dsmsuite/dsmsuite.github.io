@@ -30,7 +30,7 @@ The following settings are defined:
 | AnalyzeMode              | Analyze source file or project dependencies                                    |
 | ViewMode                 | Based the element hierarchy on directorie or solution folders and project filters | 
 | IncludeDirectories       | List of additional directories where include files can be found. Think of system and third party include files. |
-| EnvironmentVariables     | List of key/value pairs. It replace '$(key)' in include paths by 'Value'       |
+| EnvironmentVariables     | List of key/value pairs. It replaces '$(key)' in include paths by 'Value'       |
 | OutputFilename           | Filename with dsi extension to which results will be written                   |   
 
 ## Performing analysis
