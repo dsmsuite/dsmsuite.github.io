@@ -48,7 +48,8 @@ Example for analyzing C++ in a D:\MyProject source directory.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <LoggingEnabled>false</LoggingEnabled>
   <RootDirectory> D:\MyProject</RootDirectory>
   <SourceDirectories>
