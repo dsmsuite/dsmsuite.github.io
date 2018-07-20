@@ -5,7 +5,7 @@ layout: default
 # Why software dependencies matter
 
 Ideally, software can be easily modified, is understandable, reliable and reusable. 
-In practice, this often remains an ideal and over the course of time the software becomes increasingly rigid, 
+In practice, this often remains an ideal and over the course of time software becomes increasingly rigid, 
 opaque and fragile. The underlying cause is that the dependency structure of the software degrades over time.
 
 ![evolution of junit dependencies across releases](https://dsmsuite.github.io/assets/img/index/nunit.gif "evolution of junit dependencies across releases")
@@ -13,7 +13,7 @@ opaque and fragile. The underlying cause is that the dependency structure of the
 *Figure 1: The evolution of the dependency structure of JUnit*
 
 # The cost of software complexity
-A study by Dan Sturtevant investigated the impact of software dependencies on defect rate, productivity and staff turnover. It classified modules into the following types:
+In a study by Dan Sturtevant the impact of software dependencies on defect rate, productivity and staff turnover has been investigated. This study classifies modules into the following types:
 * Peripheral: Few dependencies
 * Utility: Many ingoing dependencies
 * Control: Many outgoing dependencies
@@ -28,7 +28,7 @@ The outcome of the study was that software dependencies have the following impac
 
 ![cost of complexity](https://dsmsuite.github.io/assets/img/index/cost_of_complexity.png "cost of complexity")
 
-*Figure 2: Defect rate*
+*Figure 2: Defect rate vs architectural classification and mccabe*
 
 **Lower productivity**
 * 50% decline as developer moves from periphery to core (conservatively) 
@@ -46,10 +46,11 @@ is delivered in half the time, at half the cost, with 8x less bugs.
 
 # Why we fail
 
-Although the impact of poor dependencies is well known, many projects are still struggling with it.
+Although the impact of dependencies is well known, many projects are still struggling with poor dependencies.
 This can have one of the following reasons:
 
 **Human**
+* Lack awareness and education of developer
 * Consistent high project pressure will lead to accumulation of technical debt and will hurt productivity
 
 **Architecture Control**
