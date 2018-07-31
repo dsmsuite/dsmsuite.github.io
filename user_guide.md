@@ -214,8 +214,8 @@ The following settings are defined:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<BuilderSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-		 xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?>
+<BuilderSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <LoggingEnabled>false</LoggingEnabled>
   <InputFilename>Input.dsi</InputFilename>
   <OutputFilename>Output.dsm</OutputFilename>

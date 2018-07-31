@@ -17,10 +17,11 @@ The goals of the DSM tool suite are:
 * To allow for easy extension to support other programming languages and environments.
 * To allow integration into a continuous integration build chain.
 
-# History
+# Credits
 
-The DSM suite is based on the source code of the [DSM plugin for Visual Studio](https://github.com/tecsoft/dsm-vs-addin). 
-This open source DSM implementation provided the best starting point for developing the DSM tool suite.
+The DSM suite is based on the source code of the [DSM plugin for Visual Studio](https://github.com/tecsoft/dsm-vs-addin) developed by Tom Carter. This open source DSM implementation provided the best starting point for developing the DSM tool suite.
+
+# History
 
 To achieve the goals above the following major modifications have been made:
 * Converted it from a Visual Studio plug-in into a standalone application.
