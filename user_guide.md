@@ -159,15 +159,18 @@ This step results in DSI file.
 
 The following settings are defined:
 
-| Setting                | Description                                                           | 
-|:-----------------------|:----------------------------------------------------------------------|
-| LoggingEnabled         | Log information to file for diagnostic purposes.                      |
-| InputFilename          | File name with .dsi extension used to extract dependency information. |     
-| MergeHeader            | Move C/C++ header to implementation.                                  |  
-| AddTransitiveRelations | Add transitive relations.                                             |     
-| TransformationEnabled  | Transformation rules are enabled to transform the DSM.                |  
-| TransformationRules    | Set of rules specifying transformation actions.                       | 
-| OutputFilename         | File name with .dsi extension used to write transformed information.  |      
+| Setting                                                      | Description                                                           | 
+|:-------------------------------------------------------------|:----------------------------------------------------------------------|
+| LoggingEnabled                                               | Log information to file for diagnostic purposes.                      |
+| InputFilename                                                | File name with .dsi extension used to extract dependency information. |  
+| AddTransitiveRelationsSettings.enabled                       | Add transitive relations.                                             | 
+| MoveElementsSettings.Enabled                                 | Transformation rules are enabled to move elements in the DSM.         | 
+| MoveElementsSettings.Rules                                   | Set of rules specifying move transformation actions.                  | 
+| MoveHeaderElementsSettings.Enabled                           | Move C/C++ header to implementation.                                  |  
+| SplitProductAndTestElementsSettings.Enabled                  | Split test and product code enabled                                   |
+| SplitProductAndTestElementsSettings.TestElementIdentifier    | Name of test code packages                                            |
+| SplitProductAndTestElementsSettings.ProductElementIdentifier | Name of product code packages                                         |
+| OutputFilename                                               | File name with .dsi extension used to write transformed information.  |      
 
 ## Example
 
@@ -175,19 +178,29 @@ The following settings are defined:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<TransformerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-		     xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<TransformerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <LoggingEnabled>false</LoggingEnabled>
   <InputFilename>Input.dsi</InputFilename>
-  <MergeHeader>false</MergeHeader>
-  <TransformationEnabled>true</TransformationEnabled>
-  <TransformationRules>
-    <TransformationRule>
-      <From>Header Files.</From>
-      <To>Source Files.</To>
-    </TransformationRule>
-  </TransformationRules>
-  <AddTransitiveRelations>true</AddTransitiveRelations>
+  <AddTransitiveRelationsSettings>
+    <Enabled>true</Enabled>
+  </AddTransitiveRelationsSettings>
+  <MoveElementsSettings>
+    <Enabled>true</Enabled>
+    <Rules>
+      <MoveElementRule>
+        <From>Header Files.</From>
+        <To>Source Files.</To>
+      </MoveElementRule>
+    </Rules>
+  </MoveElementsSettings>
+  <MoveHeaderElementsSettings>
+    <Enabled>false</Enabled>
+  </MoveHeaderElementsSettings>
+  <SplitProductAndTestElementsSettings>
+    <Enabled>true</Enabled>
+    <TestElementIdentifier>Test</TestElementIdentifier>
+    <ProductElementIdentifier>Src</ProductElementIdentifier>
+  </SplitProductAndTestElementsSettings>
   <OutputFilename>Output.dsi</OutputFilename>
 </TransformerSettings>
 ```
