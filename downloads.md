@@ -1,17 +1,94 @@
-# System requirements:
+# Downloads
+
+## System requirements:
 * Windows platform with .NET 4.5.2 framework
 
-# Downloads
-Download the viewer and the analyzer which best suits your needs. Optionally you can download the transformer, when needed.
+## DSM Viewer
 
-| Name                   | Description                                        | Download link                                                                       |
-|:-----------------------|:---------------------------------------------------|:------------------------------------------------------------------------------------|
-| DSM viewer             | DSM viewer and builder                             | [download](https://dsmsuite.github.io/downloads/DsmSuite.Viewer.msi)                |
-| .Net analyzer          | Dependencies between .NET classes                  | [download](https://dsmsuite.github.io/downloads/DsmSuite.DotNetAnalyzer.msi)        |
-| Java analyzer          | Dependencies between Java classes                  | [download](https://dsmsuite.github.io/downloads/DsmSuite.JdepsAnalyzer.msi)         |
-| C++ analyzer           | Dependencies between C++ source files              | [download](https://dsmsuite.github.io/downloads/DsmSuite.CppAnalyzer.msi)           |
-| Visual Studio analyzer | Dependencies between VC++ source files or projects | [download](https://dsmsuite.github.io/downloads/DsmSuite.VisualStudioAnalyzer.msi)  |
-| UML analyzer           | Dependencies between UML elements                  | [download](https://dsmsuite.github.io/downloads/DsmSuite.UmlAnalyzer.msi)           |
-| Transformer            | Perform transformations                        | [download](https://dsmsuite.github.io/downloads/DsmSuite.Transformer.msi)               |
+### Release history
 
-The analyzer, transformer and builder are configured using a XML settings file, which is specified at the command line.
+| Date                   | Version      | Description                                | 
+|:-----------------------|:-------------|:-------------------------------------------|
+| 13 aug 2018            | 1.0.0.0      | Initial release                            | 
+
+#### Download 
+
+[download](https://dsmsuite.github.io/downloads/DsmSuite.Viewer_1.0.0.0.msi) 
+
+## Transformer           
+
+### Release history
+
+| Date                   | Version      | Description                                | 
+|:-----------------------|:-------------|:-------------------------------------------|
+| 13 aug 2018            | 1.0.0.0      | Initial release                            | 
+
+#### Download 
+
+[download](https://dsmsuite.github.io/downloads/DsmSuite.Transformer_1.0.0.0.msi) 
+
+## .Net analyzer
+
+### Release history
+
+| Date                   | Version      | Description                                | 
+|:-----------------------|:-------------|:-------------------------------------------|
+| 13 aug 2018            | 1.0.0.0      | Initial release                            | 
+
+#### Download 
+
+[download](https://dsmsuite.github.io/downloads/DsmSuite.DotNetAnalyzer_1.0.0.0.msi) 
+         
+## Java analyzer         
+
+### Release history
+
+| Date                   | Version      | Description                                | 
+|:-----------------------|:-------------|:-------------------------------------------|
+| 13 aug 2018            | 1.0.0.0      | Initial release                            | 
+
+#### Download 
+
+[download](https://dsmsuite.github.io/downloads/DsmSuite.JdepsAnalyzer_1.0.0.0.msi) 
+
+## C++ analyzer          
+
+### Release history
+
+| Date                   | Version      | Description                                | 
+|:-----------------------|:-------------|:-------------------------------------------|
+| 13 aug 2018            | 1.0.0.0      | Initial release                            | 
+
+#### Download 
+
+[download](https://dsmsuite.github.io/downloads/DsmSuite.CppAnalyzer_1.0.0.0.msi) 
+
+## Visual Studio analyzer
+
+### Release history
+
+| Date                   | Version      | Description                                | 
+|:-----------------------|:-------------|:-------------------------------------------|
+| 13 aug 2018            | 1.0.0.0      | Initial release                            | 
+
+#### Download 
+
+[download](https://dsmsuite.github.io/downloads/DsmSuite.VisualStudioAnalyzer_1.0.0.0.msi) 
+
+## UML analyzer         
+
+### Release history
+
+| Date                   | Version      | Description                                | 
+|:-----------------------|:-------------|:-------------------------------------------|
+| 13 aug 2018            | 1.0.0.0      | Initial release                            | 
+
+#### Download 
+
+[download](https://dsmsuite.github.io/downloads/DsmSuite.UmlAnalyzer_1.0.0.0.msi)
+
+
+
+
+
+

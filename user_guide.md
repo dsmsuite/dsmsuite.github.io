@@ -112,10 +112,8 @@ Each relation has the following properties:
 
 # Installation
 
-## System requirements:
-* Windows platform with .NET 4.5.2 framework
+Download the viewer and the analyzer which best suits your needs. Optionally you can download the transformer, when needed.
 
-## Downloads
 See [downloads](downloads)
 
 # Using the DSM Suite
