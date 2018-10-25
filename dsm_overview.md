@@ -168,9 +168,14 @@ Where a well-documented software architecture is missing, it can be mapped with 
 
 * **List of supporting supportings DSM visualization**: See [dsm_tools](dsm_tools)
 
-* **Design Structure Matrix Methods and Applications**: book by Steven D. Eppinger and Tyson R. Browning
+* **Design Structure Matrix Methods and Applications** Steven D. Eppinger and Tyson R. Browning
 
 ![dsm book](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_book.jpg "dsm book")
+
+* **Achieving Agility Through Architecture Visibility** Carl Hinsman, Neeraj Sangal and Judith Stafford
+
+* **Architecture migration using DSM in a large scale software project** Takashi Maki, Ricoh
+
 
 
 
