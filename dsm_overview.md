@@ -164,33 +164,21 @@ Where a well-documented software architecture is missing, it can be mapped with 
 
 # References
 
-* **General information on DSMs**
+* **General information on DSMs** (www.dsmweb.org)
 
-[web] (www.dsmweb.org)
+* **List of supporting supportings DSM visualization** [dsm_tools](dsm_tools)
 
-* **List of supporting supportings DSM visualization**
+* **Technical Debt in Large Systems: Understanding the cost of software complexity** [pdf](https://dsmsuite.github.io/documents/sturtevant_050613.pdf) 
 
-[dsm_tools](dsm_tools)
+* **Achieving Agility Through Architecture Visibility** Carl Hinsman, Neeraj Sangal and Judith Stafford [pdf](https://dsmsuite.github.io/documents/AchievingAgilityThroughArchitectureVisibility.pdf)
 
-* **Technical Debt in Large Systems: Understanding the cost of software complexity**
+* **Architecture migration using DSM in a large scale software project** Takashi Maki, Ricoh [pdf](https://dsmsuite.github.io/documents/Maki_Architecture_Migration_Using_DSM_in_Large_Scale_Software_Project.pdf)
 
-[presentation](https://dsmsuite.github.io/documents/sturtevant_050613.pdf) 
+* **Well structured software is easier to maintain** [pdf](https://dsmsuite.github.io/documents/mitre-architecture-report.pdf) 
 
 * **Design Structure Matrix Methods and Applications** Steven D. Eppinger and Tyson R. Browning
 
 ![book](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_book.jpg "dsm book")
-
-* **Achieving Agility Through Architecture Visibility** Carl Hinsman, Neeraj Sangal and Judith Stafford
-
-[pdf](https://dsmsuite.github.io/documents/AchievingAgilityThroughArchitectureVisibility.pdf)
-
-* **Architecture migration using DSM in a large scale software project** Takashi Maki, Ricoh
-
-[pdf](https://dsmsuite.github.io/documents/Maki_Architecture_Migration_Using_DSM_in_Large_Scale_Software_Project.pdf)
-
-* **Well structured software is easier to maintain**
-
-[pdf](https://dsmsuite.github.io/documents/mitre-architecture-report.pdf) 
 
 
 
