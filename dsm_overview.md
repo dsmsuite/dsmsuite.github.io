@@ -164,8 +164,6 @@ Where a well-documented software architecture is missing, it can be mapped with 
 
 # References
 
-* **General information on DSMs** [www.dsmweb.org](www.dsmweb.org)
-
 * **List of supporting supportings DSM visualization** [dsm tools](dsm_tools)
 
 * **Technical Debt in Large Systems: Understanding the cost of software complexity** [pdf](https://dsmsuite.github.io/documents/sturtevant_050613.pdf) 
