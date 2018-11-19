@@ -1,0 +1,73 @@
+@import '//fonts.googleapis.com/css?family=Lato:400,400italic|Arvo:700,400,400italic';
+
+html
+{
+    background: #F0F0F0;
+}
+
+body {
+    background: #F0F0F0;
+    margin-left: auto;
+    margin-right: auto;	
+    padding: 10px;
+    font: 15px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #4E443C;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+	width: 1064px;
+}
+
+iframe
+{
+    background: #FFFFFF;
+	margin: 10px;
+	width:1000px;
+}
+
+img
+{
+	margin-left: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-rendering: optimizelegibility;
+}
+
+h1 {
+    color: #0388A6;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2, h2 a {
+    color: #0388A6;
+}
+
+h3, h3 a {
+    color: #0388A6;
+}
+
+a {
+  color: #0388A6;
+}
+
+pre {
+  border:1px solid #000;
+  overflow-x:auto;
+  background: #222;
+  color: #fff;
+  text-shadow: none;
+}
+
+.caption
+{
+	margin-left: 10px;
+	font-style: italic; 
+}
+
+.cell
+{
+  color: #0388A6;
+	font-family: sans-serif;
+}

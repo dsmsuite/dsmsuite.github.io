@@ -1,0 +1,50 @@
+@import '//fonts.googleapis.com/css?family=Lato:400,400italic|Arvo:700,400,400italic';
+
+body {
+    background: #F8F8F8;
+	padding: 10px;	
+    padding: 0;
+    font: 15px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #4E443C;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+p 
+{
+    color: #666666;
+    font: 15px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	margin-left: 32px;	
+}
+
+img
+{
+	margin: 0px;
+}
+
+.caption
+{
+	margin-left: 10px;
+	font-style: italic; 
+}
+
+.cell
+{
+    color: #0388A6;
+	font-family: sans-serif;
+}
+
+.previous
+{
+	width:32px;
+}
+
+.next
+{
+	width:32px;
+}
+
+.content
+{
+	width:1000px;
+	text-align:center;
+}
