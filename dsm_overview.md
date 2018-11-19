@@ -164,13 +164,20 @@ Where a well-documented software architecture is missing, it can be mapped with 
 
 # References
 
-* **www.dsmweb.org**: General information on DSMs
+* **List of supporting supportings DSM visualization** [dsm tools](dsm_tools)
 
-* **List of supporting supportings DSM visualization**: See [dsm_tools](dsm_tools)
+* **Technical Debt in Large Systems: Understanding the cost of software complexity** [pdf](https://dsmsuite.github.io/documents/sturtevant_050613.pdf) 
 
-* **Design Structure Matrix Methods and Applications**: book by Steven D. Eppinger and Tyson R. Browning
+* **Achieving Agility Through Architecture Visibility** Carl Hinsman, Neeraj Sangal and Judith Stafford [pdf](https://dsmsuite.github.io/documents/AchievingAgilityThroughArchitectureVisibility.pdf)
 
-![dsm book](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_book.jpg "dsm book")
+* **Architecture migration using DSM in a large scale software project** Takashi Maki, Ricoh [pdf](https://dsmsuite.github.io/documents/Maki_Architecture_Migration_Using_DSM_in_Large_Scale_Software_Project.pdf)
+
+* **Well structured software is easier to maintain** [pdf](https://dsmsuite.github.io/documents/mitre-architecture-report.pdf) 
+
+* **Design Structure Matrix Methods and Applications** Steven D. Eppinger and Tyson R. Browning
+
+![book](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_book.jpg "dsm book")
+
 
 
 
