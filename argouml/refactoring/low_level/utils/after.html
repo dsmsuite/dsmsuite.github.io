@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="nl">
+<head>
+    <link rel="stylesheet" type="text/css" href="../../../css/carousel.css" />
+    <title>Achteraf</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="previous">
+                <a href="before.html">
+                    <img src="../../../navigation/previous.png" />
+                </a>
+            </td>
+            <td class="content">
+                <img src="./after.png" />
+            </td>
+            <td class="next">
+                <a>
+                    <img src="../../../navigation/no_next.png" />
+                </a>
+            </td>
+        </tr>
+    </table>
+    <p class="caption">Achteraf</p>
+    <p>
+        Nadat we de package 'util' <span class="cell">[22-30]</span> opgesplitst hebben, zien we beter welk soort functionaliteit door wie gebruikt wordt.
+	    We zien bijvoorbeeld dat maar twee interne subsystemen de operating system wrapper 'osdep' <span class="cell">[24]</span> gebruiken.
+	    Als we 'external' uitklappen zouden we zien alleen de sub-package 'org.agrouml.util.ui' <span class="cell">[28]</span> nu het externe subsysteem 'swidgets' gebruikt.
+	    Het is nu dus eenvoudiger regels te definieren voor de in- en uitgaande relaties van de opgesplitste 'util' sub-packages, omdat deze specifieke functionaliteit bevatten.
+    </p>
+</body>
+</html>

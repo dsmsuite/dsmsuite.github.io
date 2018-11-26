@@ -1,0 +1,728 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="nl">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Een analyse van ArgoUML met Design Structure Matrix</title>
+</head>
+<body>
+    <h1>Een analyse van ArgoUML met Design Structure Matrix</h1>
+    <h2>Inleiding</h2>
+    <h3>Doel</h3>
+    <p>
+        In het Java Magazine artikel 'Een Design Structure Matrix geeft grip op softwareafhankelijkheden' zijn de basis concepten van DSM's uitgelegd 
+	    en is duidelijk gemaakt welke voordelen het gebruik ervan kan opleveren. 
+	</p>
+	<p>
+	    Deze beschrijving vult dit artikel aan en laat zien hoe de daarin beschreven concepten in praktijk gebruikt kunnen worden ten behoeve van de beoordeling, bewaking 
+		en verbetering van een software architectuur.
+		In gevallen waar een formele software architectuur ontbreekt of deze geheel niet voldoet kan de aanpak ook gebruikt worden om de software architectuur te ontdekken op basis van  
+		de relaties tussen classes zoals die aanwezig zijn in de code.
+    </p>
+    <p>
+        In deze beschrijving gebruiken we een DSM representatie van de code structuur om:
+    </p>
+    <ul>
+        <li>Een architectuur te <a href="#Beoordeel">beoordelen</a> door te kijken in hoeverre de implementatie conform de gedocumenteerde architectuur is.
+        </li>
+        <li>De architectuur te <a href="#Borg">borgen</a> door de definitie van afhankelijkheidsregels. 
+	        Door te bewaken dat code conform deze regels geïmplementeerd wordt kan degradatie van de architectuur voorkomen worden.
+        </li>
+        <li>De architectuur te <a href="#Verbeter">verbeteren</a> door aanpassingen van de code structuur te simuleren in de DSM. 
+	        Deze werkwijze maakt het mogelijk snel een aantal verschillende scenario's te evalueren alvorens tot daadwerkelijke code aanpassingen over te gaan.
+        </li>
+		<li>De architectuur te <a href="#Ontdek">ontdekken</a> van een deel van de applicatie dat veel cyclische relaties heeft. 
+        </li>
+    </ul>
+    <h3>Notatie</h3>
+    <p>
+        In dit artikel wordt vaak verwezen naar rijen of cellen van een DSM. De notatie hiervoor is als volgt:
+    </p>
+    <ul>
+        <li><span class="cell">[1]</span> Rij 1
+        </li>
+        <li><span class="cell">[1-2]</span> Rij 1 t/m 2
+        </li>
+        <li><span class="cell">[1,2]</span> Cel in rij 1 en kolom 2
+        </li>
+        <li><span class="cell">[1-2,2]</span> Cellen in rij 1 t/m 2 en kolom 2
+        </li>
+        <li><span class="cell">[1-2,2-3]</span> Cellen in rij 1 t/m 2 en kolom 2 t/m 3
+        </li>
+    </ul>
+    <h2>Case</h2>
+    <p>
+        Als case is het open source modeling tool ArgoUML genomen, omdat:
+    </p>
+    <ul>
+        <li>Deze code publiekelijk beschikbaar is.
+        </li>
+        <li>Deze code ruim 1900 classes bevat, waardoor het een realistisch voorbeeld is dat vergelijkbaar is met de dagelijkse praktijk.
+        </li>
+        <li>Er voldoende ontwerp informatie beschikbaar is, zodat gecontroleerd kan worden in hoeverre de implementatie conform het beschreven ontwerp is.
+        </li>
+        <li>Het een bekend en goed gedocumenteerd probleem domein (UML 1.4) betreft, zodat het voorbeeld voor elke ontwikkelaar te begrijpen is.
+        </li>
+    </ul>
+    <p>
+        ArgoUML is een open source UML 1.4 modeling tool geschreven in de Java programmeer taal. 
+	    ArgoUML kan code voor verschillende programmeer talen genereren. Tevens is het mogelijk om met deze tool code te reverse engineeren. 
+        Uniek is dat het tool de ontwerper ondersteunt door middel van checklisten en automatisch gegenereerde design kritieken 
+	    op basis van een aantal vooraf gedefinieerde design regels.
+    </p>
+    <p>
+        Voor een overzicht van de features zie <a href="http://argouml.tigris.org/tours/" target="_blank">ArgoUML Tour</a>.
+    </p>
+    <img src="./screenshot/screenshot.png" usemap="#descriptions" alt="ArgoUML user interface" />
+    <p class="caption">
+        Figuur 1: ArgoUML user interface
+    </p>
+    <p>
+        De case is uitgewerkt zonder enige voorkennis van ArgoUML en er is gebruik gemaakt van het commercieel beschikbare DSM tool Lattix.
+    </p>
+    <h2>Gedocumenteerd Ontwerp</h2>
+    <h3>UML Beschrijving</h3>
+    <p>
+        Het ontwerp van ArgoUML is beschreven in het <a href="http://argouml.tigris.org/wiki/Cookbook" target="_blank">ArgoUML Cookbook</a>. Dit Cookbook bevat een
+        tekstuele beschrijving van het ontwerp aangevuld met een beperkt aantal UML diagrammen. Dat zelfs in het ontwerp van een UML tool de UML 
+	    notatie zelf nauwelijks gebruikt wordt is veelzeggend.
+    </p>
+    <p>
+        Als we de informatie samenvatten komen we tot onderstaand architectuur diagram. Van elke laag en subsysteem is een korte beschrijving beschikbaar 
+	    via tooltips in het diagram. Ook kan via het diagram genavigeerd worden naar de Cookbook beschrijving van de betreffende laag of subsysteem.
+    </p>
+    <img src="./cookbook/argouml_design_uml.png" usemap="#descriptions" alt="ArgoUML ontwerp diagram">
+    <map name="descriptions" id="descriptions">
+        <area shape="rect"
+            coords="10,10,130,44"
+            title="Loadable Subsystems Layer - Subsystemen in deze laag zijn optioneel en individueel laadbaar."
+            href="http://argouml.tigris.org/wiki/%3C%3CLayer%3E%3E_Loadable_subsystems" target="_blank">
+        <area shape="rect"
+            coords="414,57,546,133"
+            title="org.argouml.ocl - Editing van OCL constraint strings."
+            href="http://argouml.tigris.org/wiki/%3C%3CSubsystem%3E%3E_OCL" target="_blank">
+        <area shape="rect"
+            coords="555,57,686,133"
+            title="org.argouml.cognitive - Generatie gebruikersfeedback op het actieve UML model op basis van design heuristieken."
+            href="http://argouml.tigris.org/wiki/%3C%3CSubsystem%3E%3E_Critics_and_other_cognitive_tools" target="_blank">
+        <area shape="rect"
+            coords="696,57,826,133"
+            title="org.argouml.language.* - Ondersteuning voor programmeer taal. Een subsysteem per ondersteunde programmeer taal."
+            href="http://argouml.tigris.org/wiki/%3C%3CSubsystem%3E%3E_Other_source_languages_%28C%2B%2B%2C_Python%2C_etc%29" target="_blank">
+        <area shape="rect"
+            coords="10,168,115,204"
+            title="Top Level Layer - Subsystemen in deze laag zorgen voor het opstarten van de applicatie."
+            href="http://argouml.tigris.org/wiki/%3C%3CLayer%3E%3E_Top_Level_subsystem" target="_blank">
+        <area shape="rect"
+            coords="181,214,313,295"
+            title="org.argouml.application - Opstarten van applicatie en initialisatie van alle subsystemen."
+            href="http://argouml.tigris.org/wiki/%3C%3CSubsystem%3E%3E_Application" target="_blank">
+        <area shape="rect"
+            coords="10,323,115,358"
+            title="View and Control Layer - Subsystemen in deze laag bevatten de hoofd functionaliteit van de applicatie."
+            href="http://argouml.tigris.org/wiki/%3C%3CLayer%3E%3E_View_and_Control_subsystems" target="_blank">
+        <area shape="rect"
+            coords="18,409,146,489"
+            title="org.argouml.uml.diagram - Visualisatie van diagrammen en de mogelijkheid deze te manipuleren."
+            href="http://argouml.tigris.org/wiki/%3C%3CSubsystem%3E%3E_Diagrams" target="_blank">
+        <area shape="rect"
+            coords="161,409,292,489"
+            title="org.argouml.core.propertypanels.module - Bekijken en aanpassen van model element properties."
+            href="http://argouml.tigris.org/wiki/%3C%3CSubsystem%3E%3E_Property_panels" target="_blank">
+        <area shape="rect"
+            coords="306,409,436,489"
+            title="org.argouml.ui.explorer - Treeview van model elementen, diagrammen en andere objecten."
+            href="http://argouml.tigris.org/wiki/%3C%3CSubsystem%3E%3E_Explorer" target="_blank">
+        <area shape="rect"
+            coords="451,409,582,489"
+            title="org.argouml.moduleloader - Mechanisme om optionele modules te laden. "
+            href="http://argouml.tigris.org/wiki/%3C%3CSubsystem%3E%3E_Module_loader" target="_blank">
+        <area shape="rect"
+            coords="598,409,726,489"
+            title="org.argouml.cognitive.ToDoItem - Administratie van todo items. Todo items kunnen worden aangemaakt o.a. op basis van design feedback."
+            href="http://argouml.tigris.org/wiki/%3C%3CSubsystem%3E%3E_To_Do_items" target="_blank">
+        <area shape="rect"
+            coords="146,530,274,609"
+            title="org.argouml.ui - User interface framework met menu's, tabs and panelen. Andere susbsystemen voorzien de acties en inhoud."
+            href="http://argouml.tigris.org/wiki/%3C%3CSubsystem%3E%3E_The_GUI" target="_blank">
+        <area shape="rect"
+            coords="537,530,670,609"
+            title="org.argouml.uml.reveng - Beheert alle reverse engineering subsystemen en bevat generieke reverse engineering functies."
+            href="http://argouml.tigris.org/wiki/%3C%3CSubsystem%3E%3E_Reverse_Engineering_Subsystem" target="_blank">
+        <area shape="rect"
+            coords="683,530,813,609"
+            title="org.argouml.uml.generator - Beheert alle code generation engineering subsystemen en bevat generieke code generation functies."
+            href="http://argouml.tigris.org/wiki/%3C%3CSubsystem%3E%3E_Code_Generation_Subsystem" target="_blank">
+        <area shape="rect"
+            coords="25,690,146,768"
+            title="org.argouml.notation - Editing van tekstuele beschrijvingen van model elementen."
+            href="http://argouml.tigris.org/wiki/%3C%3CSubsystem%3E%3E_Notation" target="_blank">
+        <area shape="rect"
+            coords="356,690,483,768"
+            title="org.argouml.profile - Gebruik, definitie en beheer van UML profielen."
+            href="http://argouml.tigris.org/wiki/%3C%3CSubsystem%3E%3E_Profile" target="_blank">
+        <area shape="rect"
+            coords="524,690,656,768"
+            title="org.argouml.kernel"
+            href="http://argouml.tigris.org/wiki/%3C%3CSubsystem%3E%3E_Persistence" target="_blank">
+        <area shape="rect"
+            coords="695,690,825,768"
+            title="org.argouml.persistence - Opslag van gebruikers data files door verschillende subsystemen."
+            href="http://argouml.tigris.org/wiki/%3C%3CSubsystem%3E%3E_Persistence" target="_blank">
+        <area shape="rect"
+            coords="10,796,117,833"
+            title="Low Level Layer - Deze laag bevat infrastructuur subsystemen."
+            href="http://argouml.tigris.org/wiki/%3C%3CLayer%3E%3E_Low-level_subsystems" target="_blank">
+        <area shape="rect"
+            coords="25,846,155,925"
+            title="org.argouml.configuration - Opslag van configureerbare aspecten."
+            href="http://argouml.tigris.org/wiki/%3C%3CSubsystem%3E%3E_Configuration" target="_blank">
+        <area shape="rect"
+            coords="166,848,296,924"
+            title="org.argouml.model - Encapsulatie van gebruikte repository type (e.g. MDR, EMF/UML2, NSUML), zodat de rest van de applicatie hier geen kennis van hoeft te hebben."
+            href="http://argouml.tigris.org/wiki/%3C%3CSubsystem%3E%3E_Model" target="_blank">
+        <area shape="rect"
+            coords="311,848,436,924"
+            title="org.argouml.i18n - Ondersteuning voor meertaligheid."
+            href="http://argouml.tigris.org/wiki/%3C%3CSubsystem%3E%3E_Internationalization">
+        <area shape="rect"
+            coords="450,848,579,924"
+            title="org.argouml.swingext - Extensie van swing user elementen."
+            href="http://argouml.tigris.org/wiki/%3C%3CLayer%3E%3E_Low-level_subsystems" target="_blank">
+        <area shape="rect"
+            coords="591,848,723,924"
+            title="org.argouml.taskmgmt - Monitor en controleer achtergrond taken."
+            href="http://argouml.tigris.org/wiki/%3C%3CSubsystem%3E%3E_TaskManagement" target="_blank">
+        <area shape="rect"
+            coords="10,952,115,989"
+            title="External Subsystems Layer - Deze laag bevat externe libraries die gebruikt worden door de applicatie en ontwikkeld worden worden buiten de context van ArgoUML."
+            href="http://argouml.tigris.org/wiki/External_subsystems" target="_blank">
+        <area shape="rect"
+            coords="27,1003,159,1083"
+            title="org.tigris.swidgets - Custom user interface elementen."
+            href="http://argouml.tigris.org/wiki/%3C%3CLayer%3E%3E_Low-level_subsystems" target="_blank">
+        <area shape="rect"
+            coords="169,1003,301,1083"
+            title="org.tigris.toolbar - Custom toolbar. "
+            href="http://argouml.tigris.org/wiki/%3C%3CLayer%3E%3E_Low-level_subsystems" target="_blank">
+        <area shape="rect"
+            coords="311,1003,440,1083"
+            title="org.tigris.gef - Graph Editing Framework voor implementatie van grafische aspecten."
+            href="http://argouml.tigris.org/wiki/%3C%3CLayer%3E%3E_Low-level_subsystems" target="_blank">
+        <area shape="rect"
+            coords="453,1003,584,1083"
+            title="tudresden.ocl - OCL implementatie."
+            href="http://argouml.tigris.org/wiki/%3C%3CLayer%3E%3E_Low-level_subsystems" target="_blank">
+        <area shape="rect"
+            coords="31,1103,162,1184"
+            title="org.antlr - ANother Tool for Language Recognition voor bouwen recognizers, compilers en translators vanuit grammaticale beschrijvingen. Gebruikt voor Java source code reverse engineering."
+            href="http://argouml.tigris.org/wiki/%3C%3CLayer%3E%3E_Low-level_subsystems" target="_blank">
+        <area shape="rect"
+            coords="172,1103,301,1184"
+            title="JRE - Java Runtime en bijbehorende utilities"
+            href="http://argouml.tigris.org/wiki/%3C%3CLayer%3E%3E_Low-level_subsystems" target="_blank">
+        <area shape="rect"
+            coords="313,1103,443,1184"
+            title="org.apache.log4j - Framework voor debug logging en tracing."
+            href="http://argouml.tigris.org/wiki/%3C%3CSubsystem%3E%3E_Logging" target="_blank">
+    </map>
+    <p class="caption">
+        Figuur 2: ArgoUML ontwerp diagram
+    </p>
+    <h3>DSM Beschrijving</h3>
+    <p>
+        Op basis van bovenstaande ontwerp informatie kan een DSM gemaakt worden van de verwachte
+        structuur van ArgoUML met daarin weergegeven de niet toegestane relaties.
+    </p>
+    <img src="./cookbook/argouml_design_dsm.png" alt="ArgoUML ontwerp DSM">
+    <p class="caption">
+        Figuur 3: ArgoUML ontwerp DSM (grijze driehoekjes in een cel geven niet toegestane relaties weer)
+    </p>
+    <p>
+        Relaties zijn niet toegestaan tenzij:
+    </p>
+    <ol>
+        <li>De relatie expliciet gedocumenteerd is in een UML diagram van het Cookbook (cellen met dependency strength 1).
+        </li>
+        <li>Het een ingaande relatie is voor low level en externe subsystemen. Deze subsystemen mogen door iedereen gebruikt worden.
+        </li>
+        <li>Het een uitgaande relatie is van het 'application' subsysteem, die alle subsystemen kent i.v.m. initialisatie.
+        </li>
+    </ol>
+    <h2><a id="Beoordeel">Beoordeel architectuur</a></h2>
+    <p>
+        Om de architectuur te kunnen beoordelen worden de volgende stappen uitgevoerd:
+    </p>
+    <ol>
+        <li>Creëer een DSM model door het importeren van de ArgoUML Java binaries in een DSM tool.</li>
+        <li>Structureer het DSM model zover mogelijk conform de in het Cookbook gedefinieerde lagen en subsystemen.</li>
+        <li>Vergelijk de gedocumenteerde software architectuur met de resulterende DSM.</li>
+    </ol>
+    <h3>Stap 1: Creëer het DSM model</h3>
+    <p>
+        We importeren alle binaries in de ArgoUML installatie directory. Na de import actie heeft elke binary (.jar file) in de DSM onder zich een hierarchie van een of meerdere namespaces.
+        Elke namespace kan classes bevatten. We scheiden de ArgoUML en externe binaries.
+    </p>
+    <img src="./assessment/jars_internal.png" alt="ArgoUML applicatie binaries">
+    <p class="caption">
+        Figuur 4: Initiele DSM : Weergave ArgoUML applicatie binaries en hun dependencies
+    </p>
+    <h3>Stap 2: Structureer het DSM model volgens het gedocumenteerd ontwerp</h3>
+    <p>
+        Het bovenstaande DSM model is georganiseerd op basis van de structuur van het deployment
+            model. We willen echter een DSM georganiseerd op basis van een logisch model te
+            vergelijken met de elementen in de ontwerp beschrijving. De resulterende DSM van figuur 5 bereiken als volgt:
+    </p>
+    <ul>
+        <li>We maken onder '$root/argouml' de vier beschreven layers aan: 
+	        'loadable' <span class="cell">[1-13]</span>, 
+	        'top level' <span class="cell">[14]</span>, 
+		    'view and control' <span class="cell">[15-25]</span> en 
+		    'low level' <span class="cell">[26-34]</span> conform het ontwerp.
+        </li>
+        <li>Loadable subsystemen zijn optioneel en kunnen dus geen ingaande relaties hebben. In de
+            initiële DSM van figuur 4 zijn alle binaries boven 'argouml.jar' dus waarschijnlijk loadable subsystemen. 
+		    We verplaatsen ze naar de 'loadable' layer. Om de DSM compact te houden clusteren we de binaries
+            in deze layer verder in de sub-layers 
+		    'diagrams' <span class="cell">[1-4]</span>, 
+		    'propertypanels' <span class="cell">[5]</span>, 
+		    'transformer' <span class="cell">[6]</span>, 
+		    'languages' <span class="cell">[7-12]</span> en
+  		    'notation' <span class="cell">[13]</span>.
+        </li>
+        <li>De binary 'argouml.jar' bevat een aantal namespaces. We verplaatsen ze naar de
+            layer zoals beschreven in het ontwerp:
+            <ul>
+                <li>Het subsysteem 'application' <span class="cell">[14]</span> hoort thuis in de 'top level' layer.
+                </li>
+                <li>De subsystemen 
+		           'taskmgnt' <span class="cell">[26]</span>,
+		           'swingext' <span class="cell">[27]</span>, 
+			       'configuration' <span class="cell">[31]</span> en
+			       'i18n' <span class="cell">[30]</span> horen thuis in de 'low level' layer. 
+                </li>
+                <li>Op basis van de naamgeving voegen we ook de niet gedocumenteerde subsystemen 
+			        'util' <span class="cell">[28]</span> en 
+			        'gefext' <span class="cell">[29]</span> aan de 'low level' layer toe. 
+			         Deze keuze wordt bevestigd het feit dat deze subsystemen geen relaties met bovenliggende lagen hebben. 
+                </li>
+                <li>Van de overige subsystemen nemen we aan dat ze in de 'view and control' layer thuis horen.
+                </li>
+            </ul>
+        </li>
+        <li>De namespaces binnen de binaries 'argouml-mdr.jar', 'argouml-euml.jar' en
+            'argouml-model.jar' beginnen allemaal met 'org.argouml.model'. Volgens het ontwerp is
+            dit een deel van de 'low level' layer. We maken een subsysteem 'model' <span class="cell">[32-34]</span>
+            in deze layer aan en verplaatsen de binaries naar deze layer.
+        </li>
+        <li>Om de DSM compact te houden clusteren we de externe binaries <span class="cell">[35-46]</span>.
+        </li>
+    </ul>
+    <p>Het resultaat is de onderstaande DSM:</p>
+    <img src="./assessment/dsm_initial.png" alt="Initiele DSM op basis van ontwerp elementen">
+    <p class="caption">
+        Figuur 5: Aangepaste DSM gestructureerd op basis van het gedocumenteerd ontwerp
+    </p>
+    <h3>Stap 3 : Beoordeel architectuur</h3>
+    <p>
+        Als we bovenstaande DSM vergelijken met de ontwerp documentatie valt het volgende op:
+    </p>
+    <ul>
+        <li>De 'loadable' layer <span class="cell">[1-13]</span>:
+		    <ul>
+                <li>Bevat meer subsystemen dan gedocumenteerd. 
+	                De gedocumenteerde subsystemen 'critics' en 'ocl' ontbreken. 
+                    Er zit overigens wel een 'critics' package in het loadable subsystem voor Java.
+                </li>
+                <li>De subsystemen zijn niet onafhankelijk, wat vereist is als ze
+                    individueel te laden zijn. Er bestaat namelijk een relatie van 'diagrams' naar
+                    'notation' <span class="cell">[13,1]</span>. 
+                </li>
+            </ul>
+        </li>
+        <li>De 'top level' layer <span class="cell">[14]</span>:
+		    <ul>
+                <li>Heeft ingaande relaties <span class="cell">[14,15-25]</span>, wat uiteraard niet is toegestaan.
+                </li>
+            </ul>
+        </li>
+        <li>De 'view and control' layer <span class="cell">[15-25]</span>:
+			<ul>
+                <li>Bevat andere subsystemen dan gedocumenteerd.
+                </li>
+                <li>Heeft veel cyclische relaties tussen de subsystemen, 
+		            waardoor deze laag een monolitisch karakter heeft.
+		            Dit is ongewenst en was op basis van de ontwerp documentatie niet te verwachten.
+                </li>
+            </ul>
+        </li>
+        <li>De 'low level' layer <span class="cell">[26-34]</span>:
+			<ul>
+                <li>Bevat meer subsystemen dan gedocumenteerd.
+                </li>
+            </ul>
+        </li>
+        <li>De 'external' layer <span class="cell">[35-46]</span> meer libraries bevat dan gedocumenteerd namelijk:
+            <ul>
+                <li>Annarascpp - A Java C Preprocessor (org.anarres.cpp) <span class="cell">[35]</span>
+                </li>
+                <li>Batik - SVG image support (org.apache.batik) <span class="cell">[37]</span>
+                </li>
+                <li>Commonslogging (org.apache.commons.logging) <span class="cell">[38]</span>
+                </li>
+                <li>Eclipse modeling framework (org.eclipse.emf en org.eclipse.uml) <span class="cell">[39]</span>
+                </li>
+                <li>Meta Data Repository (mdr) <span class="cell">[42]</span>
+                </li>
+                <li>Openide (openide) <span class="cell">[44]</span>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <h2><a id="Borg">Borg architectuur</a></h2>
+    <p>
+        Nadat we de code architectuur in kaart gebracht hebben leggen we een aantal architectuur regels vast ter beperking van mogelijke afhankelijkheden in de software.  
+	    Door deze regels nu al vast te leggen en te gaan bewaken kan verdere degradatie van de architectuur voorkomen worden. 
+	</p>
+	<p>
+        Als input gebruiken we primair de ontwerp beschrijving in het Cookbook. We vullen dit aan met een analyse van de in de code gevonden afhankelijkheden.
+    </p>
+    <h3>Stap 1: Definieer regels voor gebruik externe subsystemen</h3>
+    <p>
+        Ten aanzien van het gebruik van externe subsystemen observeren we dat:
+    </p>
+    <ul>
+        <li>Voor code engineering geldt:
+	        <ul>
+                <li><span class="cell">[35,12]</span> De C preprocessor 'anarres' alleen door het c++ language subsysteem 
+	                gebruikt mag worden ten behoeve van reverse engineering. 
+                </li>
+                <li><span class="cell">[36,7-12]</span> Het language recognition tool 'antlr' alleen gebruikt mag worden door 
+	                de language subsystemen ten behoeve van reverse engineering. 
+                </li>
+            </ul>
+        </li>
+        <li>Voor de user interface geldt:
+	        <ul>
+                <li><span class="cell">[37,20]</span> Batik SVG image support alleen gebruikt wordt door 'org.argouml.uml' 
+	                ten behoeve van exporteren van diagrammen naar SVG formaat. 
+                </li>
+                <li><span class="cell">[40]</span> Het graph editing framework wordt gebruikt ten behoeve van visualisatie en niet door de non-ui
+                    subsystemen 'languages' <span class="cell">[40,7-12]</span> en 'notation' <span class="cell">[40,13]</span>,  
+	                'moduleloader' <span class="cell">[40,25]</span>, 'taskmgmt' <span class="cell">[40,26]</span>,
+                    'configuration' <span class="cell">[40,31]</span> en 'model' <span class="cell">[40,32-34]</span>.
+                </li>
+                <li><span class="cell">[45-46]</span> De libraries 'swidgets' en 'toolbar' worden gebruikt door de ui subsystemen 
+                     'propertypanels' <span class="cell">[45-46,5]</span>, 'org.argouml.uml <span class="cell">[45-46,20]</span>, 
+	                 'org.argouml.ui' <span class="cell">[45-46,21]</span>, 'org.argouml.cognitive' <span class="cell">[45-46,24]</span>
+                    en 'org.argouml.util' <span class="cell">[45-46,28]</span>.  
+                </li>
+            </ul>
+        </li>
+        <li>Voor logging geldt:
+	        <ul>
+                <li><span class="cell">[41,1-34]</span> Alle subsystemen moeten voor logging gebruik maken van 'log4j'. 
+                </li>
+                <li><span class="cell">[38,1-34]</span> Om die reden is rechtstreeks gebruik van 'commons_logging' niet toegestaan. 
+                </li>
+            </ul>
+        </li>
+        <li>Voor 'ocl' library van tu dresden geldt:
+	        <ul>
+                <li><span class="cell">[43,7-12]</span> Deze library wordt gebruikt door het loadable subsystem 'languages'
+                    waarschijnlijk ten behoeve van code generatie van asserts op basis van OCL constraints. 
+                </li>
+                <li><span class="cell">[43,18-20]</span> Deze library wordt daarnaast gebruikt door de volgende UML gerelateerde subsystemen 
+                    'org.argouml.ocl', 'orgargouml.profile' en 'org'argouml.uml'. 
+                </li>
+            </ul>
+        </li>
+        <li>Een aantal externe subsystemen maar door één ander subsysteem gebruikt wordt:
+	        <ul>
+                <li><span class="cell">[39,33]</span> Het eclipse modeling framework wordt alleen gebruikt door 'argouml-euml.jar'.  
+                </li>
+                <li><span class="cell">[42,32]</span> Het meta data repository framework wordt alleen gebruikt door 'argouml-mdr.jar'. 
+                </li>
+                <li><span class="cell">[44,32]</span> Openide wordt alleen gebruikt door 'argouml-mdr.jar'.  
+                </li>
+            </ul>
+        </li>
+        <li><span class="cell">[1-34,35-46]</span> De externe libaries uiteraard niets van ArgoUML mogen gebruiken.
+        </li>
+    </ul>
+    <p>
+        We leggen deze observaties door middel van afhankelijkheidsregels vast in de DSM. De DSM ziet er dan als volgt uit:
+    </p>
+    <img src="./rules/rules_external.png" alt="#########">
+    <p class="caption">
+        Figuur 6: Regels gebruik externe subsystemen (grijze driehoekjes in een cel geven niet toegestane relaties weer)
+    </p>
+    <h3>Stap 2: Definieer regels voor interne subsystemen</h3>
+    <p>
+        Ten aanzien van het gebruik van interne subsystemen observeren we dat:
+    </p>
+    <ul>
+        <li>Voor de layering geldt dat een subsysteem geen subsystemen in een bovenliggende layer mag gebruiken.
+	        <ul>
+                <li><span class="cell">[1-13,14-34]</span> De 'loadable' layer mag door niemand gebruikt worden.
+                </li>
+                <li><span class="cell">[14,15-34]</span> De 'top level' layer mag niet door de 'view and control' en de 'low level' layer gebruikt worden.  
+		            We zien een uitzondering in de vorm van relaties naar de 'top level' layer toe <span class="cell">[14,15-25]</span>.
+                </li>
+                <li><span class="cell">[15-25,26-34]</span>
+                    De 'view and control' layer mag niet door de 'low level' layer gebruikt worden.
+                </li>
+            </ul>
+        </li>
+        <li>Voor 'loadable' subsystemen geldt:
+	        <ul>
+                <li><span class="cell">[1-13]</span> Ze geen onderlinge afhankelijkheden mogen hebben, omdat
+                    ze anders niet individueel laadbaar zijn. We zien een uitzondering in de vorm van de relatie
+                    van 'diagrams' naar 'notation' <span class="cell">[13,1]</span>. 
+                </li>
+                <li><span class="cell">[1-13]</span> Ze de interface gedefinieerd in 'module loader' dienen te implementeren. 
+	                Bij de loadable module voor 'idl' is dit niet het geval. Er is namelijk geen relatie vanuit deze module naar de module loader <span class="cell">[25,11]</span>.
+                </li>
+            </ul>
+        </li>
+        <li>Voor 'view and control' subsystemen geldt:
+	        <ul>
+                <li><span class="cell">[15-25]</span> Ze niet zo onafhankelijk zijn als we op basis van het ontwerp verwacht hadden. 
+	                Deze laag zou grondig gerefactored moeten worden. Op dit moment is moeilijk te bepalen welke relaties toegestaan zijn en welke niet. 
+                </li>
+            </ul>
+        </li>
+        <li>Voor 'low level' subsystemen geldt:
+	        <ul>
+                <li><span class="cell">[26-34]</span> De subsystemen over het algemeen onafhankelijk zijn zoals te verwachten. Uitzonderingen
+                    zijn 'org.argouml.i18n' <span class="cell">[30]</span> dat ingaande relaties en 'org.argouml.util' <span class="cell">[28]</span> dat uitgaande relaties heeft.
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <p>
+        We leggen deze observaties weer door middel van afhankelijkheidsregels vast in de DSM. De DSM ziet er dan als volgt uit:
+    </p>
+    <img src="./rules/rules_internal.png" alt="#########">
+    <p class="caption">
+        Figuur 7: Regels gebruik interne subsystemen (grijze driehoekjes in een cel geven niet toegestane relaties weer, rood is een overtreding van een regel)
+    </p>
+    <h2><a id="Verbeter">Verbeter architectuur - Top level layer</a></h2>
+    <p>
+        De analyse met behulp van DSM's heeft aan het licht gebracht, dat er ongewenste afhankelijkheden zijn. 
+		Om de software beter onderhoudbaar en testbaar te maken gaan we de software stapsgewijs verbeteren.
+	</p>
+	<p>
+		Het doel van eerste verbetering is om de cyclische afhankelijkheden van de 'top level' layer te elimineren. We doen dit in een aantal stappen.
+    </p>
+    <h3>Stap 1: Verplaats 'api' en 'events' packages</h3>
+    <p>
+        In de eerste stap elimineren we de cyclische afhankelijkheden veroorzaakt door de 'api' en '.events' packages. 
+    </p>
+    <iframe id="dsm1" src="./refactoring/top_level/api/before.html" frameborder="0" height="560" name="dsm1"></iframe>
+    <p class="caption">
+        Figuur 8: Verplaats 'api' en 'events' packages
+    </p>
+    <h3>Stap 2: Verplaats 'ApplicationVersion' class</h3>
+    <p>
+        In de tweede stap elimineren we de cyclische afhankelijkheden veroorzaakt door de 'ApplicationVersion' class.
+    </p>
+    <iframe id="dsm2" src="./refactoring/top_level/appversion/before.html" frameborder="0" height="700" name="dsm2"></iframe>
+    <p class="caption">
+        Figuur 9: Verplaats ApplicationVersion class
+    </p>
+    <h3>Stap 3: Verplaats ResourceLoader classes</h3>
+    <p>
+        In de derde stap elimineren we de cyclische afhankelijkheden veroorzaakt door de resourceloader classes.
+    </p>
+    <iframe id="dsm3" src="./refactoring/top_level/resloader/before.html" frameborder="0" height="580" name="dsm3"></iframe>
+    <p class="caption">
+        Figuur 10: Verplaats ResourceLoader classes
+    </p>
+    <p>
+        Na uitvoeren van deze derde stap zijn alle ingaande relaties verwijderd. De architectuur
+        bevat nu vier onafhankelijke lagen zoals gedocumenteerd.
+    </p>
+    <h2>Verbeter architectuur - Low level layer</h2>
+    <p>
+        Op zich zijn er in de 'low level' layer geen grote dependency problemen. Subsystemen in de
+        'low level' layer zijn zoals verwacht over het algemeen onafhankelijk. Uitzonderingen zijn
+        'org.argouml.i18n' dat ingaande relaties en 'org.argouml.util' dat uitgaande relaties heeft.
+    </p>
+    <h3>Stap 1: Splits argouml.util op</h3>
+    <p>
+        Als we kijken naar de package 'utils' zien we dat die een weinig specifieke naam heeft. Een
+        dergelijk package fungeert in de praktijk vaak als een soort vergaarbak van allerlei classes. Dit
+        wordt bevestigd in dit geval door het feit dat de package is gegroeid van 11 classes in
+        versie 0.10.1 naar 34 classes in versie 0.34. Een nadeel is dat het lastig te
+        definiëren is welke dependencies een dergelijk onsamenhangende package wel of niet mag hebben. We gaan
+        daarom kijken of we de package kunnen opsplitsen.
+    </p>
+    <iframe id="dsm4" src="./refactoring/low_level/utils/before.html" frameborder="0" height="770" name="dsm4"></iframe>
+    <p class="caption">
+        Figuur 11: Opsplitsen argouml.util
+    </p>
+    <h2>Verbeter architectuur - View and control layer - Structureer volgens ontwerp</h2>
+    <p>
+        We zien dat de subsystemen in de 'view and control' layer niet overeenkomen met de gedocumenteerde subsystemen. 
+		Een eerste stap is om dit meer in lijn te brengen. We doen dit in een aantal stappen.
+    </p>
+    <h3>Stap 1: Verplaats explorer</h3>
+    <p>
+        De eerste stap om de DSM meer in lijn te brengen met het ontwerp is om de 'explorer' uit 'ui' package te halen.
+    </p>
+    <iframe id="dsm5" src="./refactoring/view_and_control/explorer/before.html" frameborder="0" height="600" name="dsm5"></iframe>
+    <p class="caption">
+        Figuur 13: Verplaats explorer
+    </p>
+    <h3>Stap 2: Cluster cognitive</h3>
+    <p>
+        De tweede stap om de DSM meer in lijn te brengen met het ontwerp is om de cognitive aspecten the clusteren in een 'cognitive' package.
+    </p>
+    <iframe id="dsm6" src="./refactoring/view_and_control/cognitive/before.html" frameborder="0" height="700" name="dsm6"></iframe>
+    <p class="caption">
+        Figuur 15: Cluster cognitive
+    </p>
+    <h3>Stap 3: Verplaats code engineering</h3>
+    <p>
+        De derde en laatste stap om de DSM meer in lijn te brengen met het ontwerp is om de code generatie en reverse engineering uit de 'uml' package te halen.
+    </p>
+    <iframe id="dsm7" src="./refactoring/view_and_control/language/before.html" frameborder="0" height="625" name="dsm7"></iframe>
+    <p class="caption">
+        Figuur 16: Verplaats code engineering
+    </p>
+    <h3>Tussenresultaat</h3>
+	<p>
+        Nadat we de 'view and control' layer zoveel mogelijk in lijn gebracht hebben met het gedocumenteerde ontwerp, zien we dat de modules goed overeenkomen, maar dat de
+		dependencies tussen de modules nog steeds problematisch zijn. Het zijn met name de modules 'org.argouml.uml' <span class="cell">[13]</span>
+        en 'org.argouml.ui' <span class="cell">[14]</span> die voor problemen zorgen. 
+		Bovendien zijn deze modules ook nog eens onderling sterk gekoppeld.
+    </p>
+    <img src="./refactoring/view_and_control/endresult.png" alt="" />
+    <p class="caption">
+        Figuur 17: ArgoUML werkelijke structuur view and control layer
+    </p>
+    <p>
+        Omdat de gedocumenteerde architectuur voor de 'view and control' layer niet overeenkomt met de in de code gevonden structuur, 
+		besluiten we voor deze layer een andere aanpak te kiezen.
+    </p>
+    <h2><a id="Ontdek">Ontdek architectuur - View and control layer</a></h2>
+    <p>
+		We laten de bestaande indeling geheel los en onderzoeken met behulp van een DSM in hoeverre op basis van de 
+		class dependencies een andere indeling in subsystemen handiger zou zijn.
+    </p>
+    <h3>Proces</h3>
+    <p>
+        Een stap voor stap beschrijving van een dergelijke aanpak zou erg uitgebreid worden.  We beschrijven daarom alleen het gevolgde proces.
+    </p>
+    <ul>
+        <li>Verwijder de bestaande indeling voor 'view and control' layer. Deze layer bevat circa 1200 classes.
+        </li>
+        <li>Partioneer de 'view and control' layer in de DSM. Door een partionering algorithme los te laten op deze layer, ontdekken we de in code aanwezige structuur. 
+	        Deze kan significant afwijken van de gedocumenteerde structuur. 
+            In het geval van ArgoUML ontdekken we circa 70 partities in de 'view and control' layer. Als partitie wordt herkend:
+	        <ul>
+                <li>Een verzameling van onafhankelijke classes.
+                </li>
+                <li>Een verzameling van cyclisch gekoppelde classes.
+                </li>
+            </ul>
+        </li>
+        <li>Vervolgens kijken we of we in de gevonden partities een bepaalde abstractie kunnen ontdekken. We kijken daarbij naar:
+	        <ul>
+                <li>Het probleem domein.
+                </li>
+                <li>De naamgeving van de classes.
+                </li>
+                <li>De onderlinge relaties tussen de classes.
+                </li>
+                <li>De oorspronkelijke namespace van de classes.
+                </li>
+            </ul>
+            We geven de partitie een naam op basis van de gevonden abstractie.
+        </li>
+        <li>We beperken het aantal partities door de gevonden partities in een hierarchie te ordenen.
+             Daar waar nodig verplaatsen we classes naar een andere partitie.
+        </li>
+    </ul>
+    <h3>Eindresultaat</h3>
+    <p>
+        We zien dat het aantal cyclische relaties op architectuur nivo sterk gereduceerd is. We zien de volgende modules in de 'view and control' layer:
+    </p>
+	<ul>
+		<li><span class="cell">[3]</span> Profile - UML profielen.</li>
+	    <li><span class="cell">[4-6]</span> Cognitive - Design kritieken, checklists en todo items.</li>
+		<li><span class="cell">[7-13]</span> User Interface - Hoofdelementen in user interface.</li>
+	    <li><span class="cell">[14-15]</span> Code generation en reverse engineering.</li>
+		<li><span class="cell">[16-20]</span> UML - Diagrammen, elementen en relaties.</li>
+	    <li><span class="cell">[21-27]</span> User interface core - Framework implementatie</li>	
+		<li><span class="cell">[28]</span> Graphics - Exporteer diagram als afbeelding.</li>
+	    <li><span class="cell">[29]</span> Printing - Print diagram.</li>
+		<li><span class="cell">[30-32]</span> Persistency</li>
+	    <li><span class="cell">[33-35]</span> OCL - Constraints.</li>
+		<li><span class="cell">[36-38]</span> Notation - UML notation.</li>
+	    <li><span class="cell">[39-45]</span> Kernel - Core functionality.</li>	
+	    <li><span class="cell">[46]</span> Module loader.</li>
+		<li><span class="cell">[47]</span> Events.</li>
+	    <li><span class="cell">[48]</span> API.</li>	
+	</ul>
+	<p>
+        De belangrijkste verschillen zijn dat de 'ui' package opgesplitst is in twee packages en er functionaliteit naar de kernel verplaatst is.
+    </p>
+    <img src="./refactoring/final.png" alt="" />
+    <p class="caption">
+        Figuur 18: Eind resultaat overview
+    </p>
+    <p>
+        We zien echter ook dat niet alleen het aantal cyclische relaties op architectuur nivo sterk gereduceerd is, 
+		maar dat dit ook binnen de modules het geval is. 
+	</p>
+	<p>
+		De classes in de 'uml' package hebben we geordend op basis van UML diagram types, UML element types en UML relatie types. We zien dat met de nieuwe indeling er 
+		minder cyclische relaties zijn en het eenvoudiger is om over de correctheid van de relaties te redeneren.
+    </p>
+    <iframe id="dsm8" src="./refactoring/view_and_control/diagrams/before.html" frameborder="0" height="840" name="dsm8"></iframe>
+    <p class="caption">
+        Figuur 19: Eind resultaat uml package
+    </p>
+	<h2>Vervolg</h2>
+    <h3>Doorvoeren aanpassingen in de code</h3>	
+	<p>
+        Als we na een succesvolle analyse de code conform de DSM willen maken, hoeven we alleen maar:
+	</p>
+	<ul>
+		<li>Source code files naar andere directories te verplaatsen.</li>
+		<li>Namespaces aan te passen.</li>
+		<li>Build files aan te passen.</li>
+	</ul>
+	<p>
+        Functionele aanpassingen in de code dus zijn niet nodig, hetgeen inhoud dat deze aanpassingen met weinig risico door te voeren zijn, 
+		terwijl de winst in termen van begrijpbaarheid, onderhoudbaarheid en testbaarheid groot is.
+    </p>
+	<h3>Verdere stappen ter verbetering van de architectuur</h3>
+    <p>
+        Om alle cyclische relaties te elimineren zijn nog verdere stappen nodig. 
+        We moeten ons realiseren dat we het bovenstaand resultaat bereikt hebben door slechts classes te verplaatsen. 
+		Verdere acties zouden kunnen zijn:
+    </p>
+    <ul>
+	    <li>Introduceer interfaces om cyclische relaties te elimineren.
+        </li>
+		<li>Splits classes met meerdere verantwoordelijkheden op, zoals we dit met de 'utils' package hebben gedaan. 
+		    Over het algemeen verbetert de dependency structuur hierdoor.
+	    </li>
+	</ul>
+    <p>Het is belangrijk te beseffen dat we de bovenbeschreven DSM aanpak behalve op architectuur nivo ook op individuele classes kunnen loslaten. 
+       Als we een DSM hebben waarin ook de attributen en methods van de classes weergegeven worden, kunnen we kijken in hoeverre het verplaatsen 
+       van een attribute of method naar een andere class de structuur verbetert. 
+	   Ook kunnen we een dergelijke DSM gebruiken om te analyseren hoe we een class met meerdere verantwoordelijkheden het beste op kunnen splitsen.
+    </p>
+    <h2>Conclusie</h2>
+    <p>
+		Met behulp van de DSM aanpak kunnen we de dependency structuur van software inzichtelijk maken, bewaken en indien nodig verbeteren. 
+		Door verbetering van de dependency structuur kunnen we zowel de productiviteit als defect rate aanzienlijk verbeteren. Het feit dat het met deze 
+		aanpak mogelijk is om een software architectuur te definiëren in termen van bestaande code elementen, maakt een weinig riskante en daarmee een aantrekkelijke benadering
+		voor projecten waarin verbetering van de productiviteit en defect rate vereist is. 
+    </p>
+</body>
+</html>
