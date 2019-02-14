@@ -7,7 +7,7 @@
 
 | Description            | Download                                                                                  |
 |:-----------------------|-------------------------------------------------------------------------------------------|
-| DSM Viewer             | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer.msi)             |
+| Viewer and builder     | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer.msi)             |
 | Transformer            | [link](https://dsmsuite.github.io/downloads/DsmSuite.Transformer.Installer.msi)           |
 | .Net analyzer          | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.DotNet.Installer.msi)       |
 | Java analyzer          | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Jdeps.Installer.msi)        |
