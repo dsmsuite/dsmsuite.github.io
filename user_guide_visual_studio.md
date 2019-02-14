@@ -4,10 +4,9 @@ layout: default
   
 # Analyzing VC++ projects
 
-The Visual studio analyzer can analyze in two ways:
-* **IncludeDependencies**: The Visual studio analyzer parses C/C++ source files a determines dependencies based on header file includes. 
-* **ProjectDependencies**: This analyzer can also analyze just the project dependencies. This is suitable for Visual Studio solution with many projects or with a mix of C++ and .Net projects.
- 
+The Visual studio analyzer parses C/C++ source files a determines dependencies based on header file includes. 
+Also IDL files are taken into account.
+
 The element hierarchy used to visualize the DSM can be based on:
 * **PhysicalView**: The element hierarchy is based on directories. 
 * **LogicalView**: The element hierarchy is based on solution folders and project filters. 
