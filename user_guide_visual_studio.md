@@ -23,15 +23,16 @@ Namespaces are not taken into account.
 
 The following settings are defined:
 
-| Setting                  | Description                                                                    | 
-|:-------------------------|:-------------------------------------------------------------------------------|
-| LoggingEnabled           | Log information to file for diagnostic purposes                                |
-| SolutionFilename         | Full path to visual studio solution file                                       |
-| AnalyzeMode              | Analyze source file or project dependencies                                    |
-| ViewMode                 | Based the element hierarchy on directorie or solution folders and project filters | 
-| IncludeDirectories       | List of additional directories where include files can be found. Think of system and third party include files. |
-| EnvironmentVariables     | List of key/value pairs. It replaces '$(key)' in include paths by 'Value'       |
-| OutputFilename           | Filename with dsi extension to which results will be written                   |   
+| Setting                     | Description                                                                          | 
+|:----------------------------|:-------------------------------------------------------------------------------------|
+| LoggingEnabled              | Log information to file for diagnostic purposes                                      |
+| SolutionGroups              | Full path to visual studio solution files organized in groups                        |
+| AnalyzeMode                 | Analyze source file or project dependencies                                          |
+| ViewMode                    | Based the element hierarchy on directorie or solution folders and project filters    | 
+| SystemIncludeDirectories    | List of directories where system include files can be found.                         |
+| InterfaceIncludeDirectories | List of directories where interface include files can be found. These can be clones. |
+| ExternalIncludeDirectories  | List of directories where third party include files can be found.                    |
+| OutputFilename              | Filename with dsi extension to which results will be written                         |   
 
 ## Performing analysis
 
@@ -48,22 +49,38 @@ Example for analyzing C++ in a D:\MyProject\MyProject.sln directory.
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <LoggingEnabled>false</LoggingEnabled>
-  <SolutionFilename>D:\MyProject\MyProject.sln</SolutionFilename>
-  <AnalyzeMode>IncludeDependencies</AnalyzeMode>
-  <ViewMode>LogicalView</ViewMode>
-  <RootDirectory>D:\MyProject</RootDirectory>
-  <IncludeDirectories>
-    <string>C:\Program Files (x86)\Windows Kits\10\Include</string>
+  <LoggingEnabled>true</LoggingEnabled>
+  <SolutionGroups>
+    <SolutionGroup>
+      <Name>Name1</Name>
+      <SolutionFilenames>
+        <string>D:\MyProjects\Solution1.sln</string>
+        <string>D:\MyProjects\Solution2.sln</string>
+      </SolutionFilenames>
+    </SolutionGroup>
+    <SolutionGroup>
+      <Name>Name2</Name>
+      <SolutionFilenames>
+        <string>D:\MyProjects\Solution3.sln</string>
+      </SolutionFilenames>
+    </SolutionGroup>
+  </SolutionGroups>
+  <RootDirectory>D:\MyProjects</RootDirectory>
+  <SystemIncludeDirectories>
+    <string>C:\Program Files (x86)\Windows Kits\8.1\Include\um</string>
+    <string>C:\Program Files (x86)\Windows Kits\8.1\Include\shared</string>
+    <string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt</string>
     <string>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include</string>
-  </IncludeDirectories>
-  <EnvironmentVariables>
-    <EnvironmentVariable>
-      <Key>SolutionDir</Key>
-      <Value>D:\MyProject</Value>
-    </EnvironmentVariable>
-  </EnvironmentVariables>
-  <OutputFilename>Output.dsi</OutputFilename>
+    <string>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include</string>
+  </SystemIncludeDirectories>
+  <InterfaceIncludeDirectories>
+    <string>D:\MyInterfacesIncludes</string>
+  </InterfaceIncludeDirectories>
+  <ExternalIncludeDirectories>
+    <string>D:\MyThirdPartyIncludes</string>  
+  </ExternalIncludeDirectories>
+  <ViewMode>LogicalView</ViewMode>
+  <OutputFilename>MyProject.dsi</OutputFilename>
 </AnalyzerSettings>
 ```
 
