@@ -5,15 +5,15 @@
 
 ## Downloads
 
-| Description            | Download                                                                             |
-|:-----------------------|--------------------------------------------------------------------------------------|
-| DSM Viewer             | [link](https://dsmsuite.github.io/downloads/DsmSuite.Viewer.msi)                     |
-| Transformer            | [link](https://dsmsuite.github.io/downloads/DsmSuite.Transformer.msi)                |
-| .Net analyzer          | [link](https://dsmsuite.github.io/downloads/DsmSuite.DotNetAnalyzer.msi)             |
-| Java analyzer          | [link](https://dsmsuite.github.io/downloads/DsmSuite.JdepsAnalyzer.msi)              |
-| C++ analyzer           | [link](https://dsmsuite.github.io/downloads/DsmSuite.CppAnalyzer.msi)                |
-| Visual Studio analyzer | [link](https://dsmsuite.github.io/downloads/DsmSuite.VisualStudioAnalyzer.msi)       |
-| UML analyzer           | [link](https://dsmsuite.github.io/downloads/DsmSuite.UmlAnalyzer.msi)                |
+| Description            | Download                                                                                  |
+|:-----------------------|-------------------------------------------------------------------------------------------|
+| DSM Viewer             | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer.msi)             |
+| Transformer            | [link](https://dsmsuite.github.io/downloads/DsmSuite.Transformer.Installer.msi)           |
+| .Net analyzer          | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.DotNet.Installer.msi)       |
+| Java analyzer          | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Jdeps.Installer.msi)        |
+| C++ analyzer           | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Cpp.Installer.msi)          |
+| Visual Studio analyzer | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.VisualStudio.Installer.msi) |
+| UML analyzer           | [link](https://dsmsuite.github.io/downloads/Analyzer.Uml.Installer.msi)                   |
 
 # Change History
 
