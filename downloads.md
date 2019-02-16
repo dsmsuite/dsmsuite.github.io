@@ -25,14 +25,18 @@
 
 * Support relative filenames in settings  
 * Switched over to WIX installer
-* Auto uninstall when installing next update  
 
-## 14 feb 2019
+## 16 feb 2019
 
-* Improved visual studio installer
- * Solution and project analysis using Microsoft.Build API
- * Improved processing IDL files
- * Improved processing duplicated/copied header files 
+* Improved support relative filenames in settings 
+* Always log user messages
+* Log name and build date of executable
+* Fixed files not register for C++ and Visual Studio analyzer
+* Improved visual studio analyzer
+ - Solution and project analysis using Microsoft.Build API
+ - Improved processing IDL files
+ - Improved processing duplicated/copied header files 
+* Add EA.Interop.dll to UML installer
 
 
 
