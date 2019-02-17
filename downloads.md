@@ -26,7 +26,7 @@
 * Support relative filenames in settings  
 * Switched over to WIX installer
 
-## 16 feb 2019
+## 17 feb 2019
 
 * Improved support relative filenames in settings 
 * Always log user messages
