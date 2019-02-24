@@ -51,21 +51,16 @@ Example for analyzing the installed DSM viewer.
 
 When logging is enabled the following types of logging are provided of the analysis:
 
-| Log file                        | Description                                                   | 
-|:--------------------------------|:--------------------------------------------------------------|
-| userMessages.log                | All messages as shown in the console                          |
-| info.log                        | Informational messages                                        |
-| warnings.log                    | Warnings                                                      |
-| errors.log                      | General error messages                                        |
-| exceptions.log                  | Exceptions during the analysis                                |
-| filesNotFound.log               | Files not found in the file system                            |
-| pathsNotResolved.log            | Relative include files which could not be resolved to an absolute path |
-| includePathsNotFound.log        | Include paths not found in the file system                             |
-| includeFilesNotFound.log        | Absolute include files which could not be found in the file system  
-| includeFilesAmbigious.log       | Relative include files which can be resolved to multiple absolute include files  |
+| Log file                        | Description                                                                          | 
+|:--------------------------------|:-------------------------------------------------------------------------------------|
+| userMessages.log                | All messages as shown in the console                                                 |
+| info.log                        | Information messages                                                                 |
+| warnings.log                    | Warnings messages                                                                    |
+| errors.log                      | Error messages                                                                       |
+| exceptions.log                  | Lists exceptions during the analysis                                                 |
 | dataModelActions.log            | Actions on the data model like load, save and registration of an element or relation |
-| dataModelElementsNotFound.log   | Actions on the data model to find a specific element |
-| dataModelRelationsSkipped.log   | Action to indicate that a relation can not be resolved |
+| dataModelElementsNotFound.log   | Actions on the data model to find a specific element                                 |
+| dataModelRelationsSkipped.log   | Actions on the data model to indicate that a relation can not be resolved            |                          |
 
 The user messages log shows what percentage of the relations could be resolved. This is an indication of the
 reliability of the dependency model.
