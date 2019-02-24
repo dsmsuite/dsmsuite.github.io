@@ -54,7 +54,6 @@ When logging is enabled the following types of logging are provided of the analy
 | exceptions.log                  | Lists exceptions during the analysis                                                 |
 | dataModelActions.log            | Actions on the data model like load, save and registration of an element or relation |
 | dataModelRelationsNotResolved.log | Actions on the data model to indicate that a relation could not be resolved          |                              |
-| dataModelRelationsSkipped.log     | Actions on the data model to indicate that a relation has been skipped               |                          |
 
 The user messages log shows what percentage of the relations could be resolved. This is an indication of the
 reliability of the dependency model.
