@@ -13,7 +13,7 @@
 | Java analyzer          | 1.0.7007.12234 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Jdeps.Installer_1.0.7007.12234.msi)        |
 | C++ analyzer           | 1.0.7007.12234 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Cpp.Installer_1.0.7007.12234.msi)          |
 | Visual Studio analyzer | 1.0.7007.12234 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.VisualStudio.Installer_1.0.7007.12234.msi) |
-| UML analyzer           | 1.0.7007.12234 | [link](https://dsmsuite.github.io/downloads/Analyzer.Uml.Installer_1.0.7007.12234.msi)                   |
+| UML analyzer           | 1.0.7007.12234 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Uml.Installer_1.0.7007.12234.msi)          |       |
 
 # Change History
 
