@@ -18,7 +18,7 @@ Mono.Cecil to determine dependencies between .Net types. The element hierarchy i
 * Place the assemblies to be analyzed in a single directory.
 * Create an analyzer settings file. This can be done by: 
     * Using the example below or 
-	* Running the analyzer with a not existing file. This file will be created using default settings.
+	* Running the analyzer with a not existing settings file. A settings file using default settings will be created.
 * Edit the analyzer settings file if required:
     * Update the AssemblyDirectory setting to point to the directory where the assemblies to be anayzed have been located.
 	* Update the OutputFilename to the name of the product to which the assemblies belong.
@@ -36,9 +36,17 @@ Mono.Cecil to determine dependencies between .Net types. The element hierarchy i
 * If the percentage lower than 100% look at the 'dataModelRelationsNotResolved' log files to find out the reason.
     * If it is a missing product assembly, add it to the AssemblyDirectory	
 	* If it is a missing thrd party assembly, add it to the AssemblyDirectory or ignore these relation by adding the namespace of the assembly to the list of ExternalNames.
-* Optionally perform transformations on the OutputFilename. See section on Transformer for details.
-* Convert the OutputFilename into a DSM file. See section on Builder for details.
+* Optionally perform transformations on the OutputFilename. See [User guide](user_guide) for details.
+* Convert the OutputFilename into a DSM file. See [User guide](user_guide) for details.
 * Open the DSM file in the Viewer.
+
+## Command line
+
+Use the following command to run a analysis:
+
+```
+DsmSuite.Analyzer.DotNet.exe AnalyzerSettings.xml
+```
 
 ## Settings
 
@@ -50,14 +58,6 @@ The following analyzer settings are defined:
 | AssemblyDirectory | Directory where assemblies to be analyzed have been located.                   |
 | ExternalNames     | Namespace which start with these names will be ignored when finding relations. |
 | OutputFilename    | Filename with dsi extension to which results will be written.                  |
-
-## Command line
-
-Use the following command:
-
-DsmSuite.Analyzer.DotNet.exe AnalyzerSettings.xml
-
-If the setting file does not exist a default one will be created.
 
 ## AnalyzerSettings.xml example 
 
@@ -90,8 +90,5 @@ When logging is enabled the following types of logging are provided of the analy
 | exceptions                    | Contains information about any exceptions that occured during the analysis.          |
 | dataModelActions              | Contains all actions on the data model like load, save and registration.             |
 | dataModelRelationsNotResolved | Contains queried relations that could not be resolved.                               |
-
-The user messages log shows what percentage of the relations could be resolved. This is an indication of the
-reliability of the dependency model.
 
 [back](user_guide)
