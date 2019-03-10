@@ -4,12 +4,28 @@ layout: default
 
 # Analyzing Java code
 
-This Java analyzer reads a Jdeps .dot file to determine dependencies between Java types.
-The element hierarchy is based on namespaces.
+## Purpose
+
+The Java analyzer is intended to analyse dependencies between Java types. It parses reads a Jdeps .dot file to determine dependencies between Java types.
+The element hierarchy is based on types and namespaces.
 
 ## Pre requisites
 * Java SDK 8 or higher which contains Jdeps must be installed .
 
+## Performing analysis
+
+Use the following command (Example for analyzing [ArgoUML](http://argouml.tigris.org/) binaries) to analyze the dependencies between Java types using Jdeps:
+
+```
+jdeps -verbose:class -recursive -dotoutput D:\ArgoUmlAnalysisResults d:\ArgoUml\argouml.jar 
+```
+
+Then use the 
+DsmSuite.Analyzer.Jdeps.exe AnalyzerSettings.xml
+
+```
+If the setting file does not exist a default one will be created.
+```
 ## Settings
 
 The following settings are defined:
@@ -19,16 +35,6 @@ The following settings are defined:
 | LoggingEnabled    | Log information to file for diagnostic purposes                    |
 | InputFilename     | Filename of Jdeps .dot file used to extract dependency information |
 | OutputFilename    | Filename with dsi extension to which results will be written       |     
-
-## Performing analysis
-
-Use the following command (Example for analyzing [ArgoUML](http://argouml.tigris.org/) binaries):
-
-jdeps -verbose:class -recursive -dotoutput D:\ArgoUmlAnalysisResults d:\ArgoUml\argouml.jar 
-
-DsmSuite.Analyzer.Jdeps.exe AnalyzerSettings.xml
-
-If the setting file does not exist a default one will be created.
 
 ## AnalyzerSettings.xml example 
 
@@ -45,16 +51,14 @@ If the setting file does not exist a default one will be created.
 
 When logging is enabled the following types of logging are provided of the analysis:
 
-| Log file                        | Description                                                                          | 
-|:--------------------------------|:-------------------------------------------------------------------------------------|
-| userMessages.log                | All messages as shown in the console                                                 |
-| info.log                        | Information messages                                                                 |
-| warnings.log                    | Warnings messages                                                                    |
-| errors.log                      | Error messages                                                                       |
-| exceptions.log                  | Lists exceptions during the analysis                                                 |
-| dataModelActions.log            | Actions on the data model like load, save and registration of an element or relation |
-| dataModelRelationsNotResolved.log | Actions on the data model to indicate that a relation could not be resolved          |                              |
+| Log file                      | Description                                                                          | 
+|:------------------------------|:-------------------------------------------------------------------------------------|
+| userMessages                  | Contains all messages as shown in the console.                                       |
+| info                          | Contains information messages.                                                       |
+| warnings                      | Contains warnings messages.                                                          |
+| errors                        | Contains error messages.                                                             |
+| exceptions                    | Contains information about any exceptions that occured during the analysis.          |
+| dataModelActions              | Contains all actions on the data model like load, save and registration.             |
+| dataModelRelationsNotResolved | Contains queried relations that could not be resolved.                               |                            |
 
-The user messages log shows what percentage of the relations could be resolved. This is an indication of the
-reliability of the dependency model.
 [back](user_guide)

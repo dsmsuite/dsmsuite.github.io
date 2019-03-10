@@ -45,15 +45,15 @@ Example for analyzing the [DSMViewer UML model](https://github.com/dsmsuite/dsms
 
 When logging is enabled the following types of logging are provided of the analysis:
 
-| Log file                        | Description                                                                          | 
-|:--------------------------------|:-------------------------------------------------------------------------------------|
-| userMessages.log                | All messages as shown in the console                                                 |
-| info.log                        | Information messages                                                                 |
-| warnings.log                    | Warnings messages                                                                    |
-| errors.log                      | Error messages                                                                       |
-| exceptions.log                  | Lists exceptions during the analysis                                                 |
-| dataModelActions.log            | Actions on the data model like load, save and registration of an element or relation |
-| dataModelRelationsNotResolved.log | Actions on the data model to indicate that a relation could not be resolved          |                              |
+| Log file                      | Description                                                                          | 
+|:------------------------------|:-------------------------------------------------------------------------------------|
+| userMessages                  | Contains all messages as shown in the console.                                       |
+| info                          | Contains information messages.                                                       |
+| warnings                      | Contains warnings messages.                                                          |
+| errors                        | Contains error messages.                                                             |
+| exceptions                    | Contains information about any exceptions that occured during the analysis.          |
+| dataModelActions              | Contains all actions on the data model like load, save and registration.             |
+| dataModelRelationsNotResolved | Contains queried relations that could not be resolved.                               |                            |
 
 The user messages log shows what percentage of the relations could be resolved. This is an indication of the
 reliability of the dependency model.
