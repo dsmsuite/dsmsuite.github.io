@@ -4,7 +4,9 @@ layout: default
   
 # Analyzing VC++ projects
 
-The Visual studio analyzer parses C/C++ source files a determines dependencies based on header file includes. 
+## Purpose
+
+The Visual studio analyzer is intended to determine dependencies between C/C++ source files based on header file includes. 
 Also IDL files are taken into account.
 
 The element hierarchy used to visualize the DSM can be based on:

@@ -26,16 +26,16 @@ Mono.Cecil to determine dependencies between .Net types. The element hierarchy i
 * Run the analyzer from the command line with the analyzer settings filename as argument.
 * The analyzer will:
     * Load each assembly found in the AssemblyDirectory.
-    * Look for types in the load assemblies and register them.
+    * Look for types in the loaded assemblies and register them.
     * Look for dependencies between types and register them. It will look at:
 	    * Type members, properties, methods and events. 
 		* Method return types, parameters and variables. 
 		* Generic types and their parameters.	
 	* The found elements and dependencies are written to the OutputFilename.
-	* At the end of the analysis the percentage of the relations could be resolved is shown. This is an indication of the reliability of the dependency model.
+	* At the end of the analysis the percentage of the relations that could be resolved is shown. This is an indication of the reliability of the dependency model.
 * If the percentage lower than 100% look at the log files to find out the reason.
     * If it is a missing product assembly, add it to the AssemblyDirectory	
-	* If it is a missing third party or system assembly, add it to the AssemblyDirectory or ignore these relations by adding the namespace of the assembly to the list of ExternalNames.
+	* If it is a missing third party or system assembly, add it to the AssemblyDirectory or ignore these relations by adding its namespace to the list of ExternalNames.
 * Optionally perform transformations on the the OutputFilename. See [User guide](user_guide) for details.
 * Convert the OutputFilename into a DSM file. See [User guide](user_guide) for details.
 * Open the DSM file in the Viewer.
@@ -56,7 +56,7 @@ The following analyzer settings are defined:
 |:------------------|:--------------------------------------------------------------------------------|
 | LoggingEnabled    | Log information for diagnostic purposes.                                        |
 | AssemblyDirectory | Directory where assemblies to be analyzed are located.                          |
-| ExternalNames     | Namespacez which start with these names will be ignored when finding relations. |
+| ExternalNames     | Namespaces starting with these names will be ignored when finding relations.    |
 | OutputFilename    | Filename with dsi extension to which results will be written.                   |
 
 ## Settings example 
@@ -65,7 +65,8 @@ An example settings file is shown below:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <LoggingEnabled>true</LoggingEnabled>
   <AssemblyDirectory>D:\DsmAnalysis\DotNet\MyProduct\Binaries</AssemblyDirectory>
   <ExternalNames>
@@ -87,7 +88,7 @@ When logging is enabled the following types of logging are provided of the analy
 | info                          | Contains information messages.                                                       |
 | warnings                      | Contains warnings messages.                                                          |
 | errors                        | Contains error messages.                                                             |
-| exceptions                    | Contains information about any exceptions that occured during the analysis.          |
+| exceptions                    | Contains the exceptions that occured during the analysis.                            |
 | dataModelActions              | Contains all actions on the data model like load, save and registration.             |
 | dataModelRelationsNotResolved | Contains queried relations that could not be resolved.                               |
 

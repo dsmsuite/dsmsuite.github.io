@@ -6,11 +6,11 @@ layout: default
 
 ## Purpose
 
-The Java analyzer is intended to analyse dependencies between Java types. It parses reads a Jdeps .dot file to determine dependencies between Java types.
+The Java analyzer is intended to analyse dependencies between Java types. It use a JDeps output file as input.
 The element hierarchy is based on types and namespaces.
 
 ## Pre requisites
-* Java SDK 8 or higher which contains Jdeps must be installed .
+* Java SDK 8 or higher, which contains Jdeps must be installed .
 
 ## Performing analysis
 

@@ -4,6 +4,8 @@ layout: default
   
 # Analyzing Sparx System EA UML models
 
+## Purpose
+
 This analyzer reads Sparx System Enterprise Architect UML models to determine dependencies between model packages and elements.
 The element hierarchy bases on UML package and structure in the model.
 

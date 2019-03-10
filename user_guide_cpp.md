@@ -3,7 +3,12 @@ layout: default
 ---
 
 # Analyzing C/C++ code
-The C++ analyzer parses C/C++ source files and determines dependencies based on header file includes.
+
+## Purpose
+
+The C++ analyzer is intended to determine dependencies between C/C++ source files based on header file includes. 
+
+is intended parses C/C++ source files and determines dependencies based on header file includes.
 The element hierarchy is based on the directory structure of the source code. Namespaces are not taken into account.
 
 It is important to understand that this analyzer does not have any knowledge on how to build the code and 
