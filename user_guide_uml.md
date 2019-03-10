@@ -6,11 +6,37 @@ layout: default
 
 ## Purpose
 
-This analyzer reads Sparx System Enterprise Architect UML models to determine dependencies between model packages and elements.
+The UML analyzer is intended to analyse dependencies between UML elements of a Sparx System Enterprise Architect UML model.
 The element hierarchy bases on UML package and structure in the model.
 
 ## Pre requisites
 Sparx Systems Enterprise Architect installed
+
+## Performing an analysis
+
+* Create an analyzer settings file. This can be done by: 
+    * Using the example below or 
+	* Running the analyzer with a not existing settings file. A settings file using default settings will be created.
+* Edit the analyzer settings file if required:
+    * Update the InputFilename setting to point to the UML model file.
+	* Update the OutputFilename to the name of the product.
+	* Set LoggingEnabled if required.
+* Run the analyzer from the command line with the analyzer settings filename as argument.
+* The analyzer will:
+    * Read Sparx System Enterprise Architect UML models to determine dependencies between model packages and elements.
+	* The found elements and dependencies are written to the OutputFilename.
+	* At the end of the analysis the percentage of the relations that could be resolved is shown. This is an indication of the reliability of the dependency model.
+* Optionally perform transformations on the the OutputFilename. See [User guide](user_guide) for details.
+* Convert the OutputFilename into a DSM file. See [User guide](user_guide) for details.
+* Open the DSM file in the Viewer.
+
+## Command line usage
+
+Use the following command to run a analysis:
+
+```
+"C:\Program Files (x86)\DsmSuite\Analyzers\UML\DsmSuite.Analyzer.Uml.exe" AnalyzerSettings.xml
+```
 
 ## Settings
 
@@ -18,17 +44,9 @@ The following settings are defined:
 
 | Setting           | Description                                                   | 
 | ------------------|:--------------------------------------------------------------|
-| LoggingEnabled    | Log information to file for diagnostic purposes               |
+| LoggingEnabled    | Log information for diagnostic purposes                       |
 | InputFilename     | Filename of the EA model                                      |
 | OutputFilename    | Filename with dsi extension to which results will be written  |
-
-## Performing analysis
-
-Use the following command:
-
-DsmSuite.Analyzer.Uml.exe D:\DsmAnalysis\Uml\AnalyzerSettings.xml
-
-If the setting file does not exist a default one will be created.
 
 ## AnalyzerSettings.xml example 
 
@@ -56,8 +74,5 @@ When logging is enabled the following types of logging are provided of the analy
 | exceptions                    | Contains information about any exceptions that occured during the analysis.          |
 | dataModelActions              | Contains all actions on the data model like load, save and registration.             |
 | dataModelRelationsNotResolved | Contains queried relations that could not be resolved.                               |                            |
-
-The user messages log shows what percentage of the relations could be resolved. This is an indication of the
-reliability of the dependency model.
 
 [back](user_guide)

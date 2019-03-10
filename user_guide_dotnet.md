@@ -21,7 +21,7 @@ Mono.Cecil to determine dependencies between .Net types. The element hierarchy i
 	* Running the analyzer with a not existing settings file. A settings file using default settings will be created.
 * Edit the analyzer settings file if required:
     * Update the AssemblyDirectory setting to point to the directory where the assemblies to be anayzed have been located.
-	* Update the OutputFilename to the name of the product to which the assemblies belong.
+	* Update the OutputFilename to the name of the product.
 	* Set LoggingEnabled if required.
 * Run the analyzer from the command line with the analyzer settings filename as argument.
 * The analyzer will:
@@ -61,20 +61,19 @@ The following analyzer settings are defined:
 
 ## Settings example 
 
-An example settings file is shown below:
+An example settings file is shown below (DSM Suite analysis example):
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <LoggingEnabled>true</LoggingEnabled>
-  <AssemblyDirectory>D:\DsmAnalysis\DotNet\MyProduct\Binaries</AssemblyDirectory>
+  <AssemblyDirectory>D:\DsmAnalysis\DotNet\DsmSuite\Binaries</AssemblyDirectory>
   <ExternalNames>
     <string>System.</string>
     <string>Microsoft.</string>
     <string>Interop/</string>
   </ExternalNames>
-  <OutputFilename>MyProduct.dsi</OutputFilename>
+  <OutputFilename>DsmSuite.dsi</OutputFilename>
 </AnalyzerSettings>
 ```
 

@@ -20,6 +20,41 @@ Namespaces are not taken into account.
 ## Pre requisites
 * Visual Studio 2012 or higher.
 
+## Performing an analysis
+
+* Place the assemblies to be analyzed in a single directory.
+* Create an analyzer settings file. This can be done by: 
+    * Using the example below or 
+	* Running the analyzer with a not existing settings file. A settings file using default settings will be created.
+* Edit the analyzer settings file if required:
+    * Update the AssemblyDirectory setting to point to the directory where the assemblies to be anayzed have been located.
+	* Update the OutputFilename to the name of the product.
+	* Set LoggingEnabled if required.
+* Run the analyzer from the command line with the analyzer settings filename as argument.
+* The analyzer will:
+    * Load each assembly found in the AssemblyDirectory.
+    * Look for types in the loaded assemblies and register them.
+    * Look for dependencies between types and register them. It will look at:
+	    * Type members, properties, methods and events. 
+		* Method return types, parameters and variables. 
+		* Generic types and their parameters.	
+	* The found elements and dependencies are written to the OutputFilename.
+	* At the end of the analysis the percentage of the relations that could be resolved is shown. This is an indication of the reliability of the dependency model.
+* If the percentage lower than 100% look at the log files to find out the reason.
+    * If it is a missing product assembly, add it to the AssemblyDirectory	
+	* If it is a missing third party or system assembly, add it to the AssemblyDirectory or ignore these relations by adding its namespace to the list of ExternalNames.
+* Optionally perform transformations on the the OutputFilename. See [User guide](user_guide) for details.
+* Convert the OutputFilename into a DSM file. See [User guide](user_guide) for details.
+* Open the DSM file in the Viewer.
+
+## Command line usage
+
+Use the following command to run a analysis:
+
+```
+"C:\Program Files (x86)\DsmSuite\Analyzers\DotNet\DsmSuite.Analyzer.DotNet.exe" AnalyzerSettings.xml
+```
+
 ## Settings
 
 The following settings are defined:

@@ -7,12 +7,10 @@ layout: default
 ## Purpose
 
 The C++ analyzer is intended to determine dependencies between C/C++ source files based on header file includes. 
-
-is intended parses C/C++ source files and determines dependencies based on header file includes.
-The element hierarchy is based on the directory structure of the source code. Namespaces are not taken into account.
+The element hierarchy is based on the directory structure of the source code. Namespaces and types are not taken into account.
 
 It is important to understand that this analyzer does not have any knowledge on how to build the code and 
-therefore does not known the include paths used during the build.It simply uses all source code directories and their nested directories as include paths.
+therefore does not known the include paths used during the build. It simply uses all source code directories and their nested directories as include paths.
  
 This technique works well when source filenames are unique. It this is not the case it can be ambiguous which file is intended.
 
@@ -27,27 +25,48 @@ How this ambiguity is resolved  can be configured:
 ## Pre requisites
 * None
 
+## Performing an analysis
+
+* Create an analyzer settings file. This can be done by: 
+    * Using the example below or 
+	* Running the analyzer with a not existing settings file. A settings file using default settings will be created.
+* Edit the analyzer settings file if required:
+    * Update the SourceDirectories setting to point to the directory where the source code to be analyzed is located.
+	* Update the IncludeDirectories setting to point to third party and system includes can be found.
+	* Update the RootDirectory to point to the base directory of the source code.
+	* Update the OutputFilename to the name of the product.
+	* Set LoggingEnabled if required.
+* Run the analyzer from the command line with the analyzer settings filename as argument.
+* The analyzer will:
+    * Parse C/C++ source files and determines dependencies based on header file includes.
+	* The found elements and dependencies are written to the OutputFilename.
+	* At the end of the analysis the percentage of the relations that could be resolved is shown. This is an indication of the reliability of the dependency model.
+* If the percentage lower than 100% look at the log files to find out the reason.
+* Optionally perform transformations on the the OutputFilename. See [User guide](user_guide) for details.
+* Convert the OutputFilename into a DSM file. See [User guide](user_guide) for details.
+* Open the DSM file in the Viewer.
+
+## Command line usage
+
+Use the following command to run a analysis:
+
+```
+"C:\Program Files (x86)\DsmSuite\Analyzers\C++\DsmSuite.Analyzer.Cpp.Exe" AnalyzerSettings.xml
+```
+
 ## Settings
 
 The following settings are defined:
 
 | Setting                 | Description                                                                    | 
 |:------------------------|:-------------------------------------------------------------------------------|
-| LoggingEnabled          | Log information to file for diagnostic purposes                                |
+| LoggingEnabled          | Log information for diagnostic purposes                                        |
 | RootDirectory           | Root of source code directory used to determine root of names in DSM           |
 | SourceDirectories       | List of directories where source code can be found                             |
 | IncludeDirectories      | List of additional directories where include files can be found. Think of system and third party include files. |
 | IgnorePaths             | List of directories in the source code tree which need to be excluded          |
 | ResolveMethod           | How to resolve ambiguity when filenames are not unique                         |
 | OutputFilename          | Filename with dsi extension to which results will be written                   |     
-
-## Performing analysis
-
-Use the following command:
-
-DsmSuite.Analyzer.Cpp.exe AnalyzerSettings.xml
-
-If the setting file does not exist a default one will be created.
 
 ## AnalyzerSettings.xml example 
 
@@ -57,42 +76,42 @@ Example for analyzing C++ in a D:\MyProject source directory.
 <?xml version="1.0" encoding="utf-8"?>
 <AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                   xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <LoggingEnabled>false</LoggingEnabled>
-  <RootDirectory> D:\MyProject</RootDirectory>
+  <LoggingEnabled>true</LoggingEnabled>
+  <RootDirectory>D:\MyProduct</RootDirectory>
   <SourceDirectories>
-    <string> D:\MyProject</string>
+    <string>D:\MyProduct\Src</string>
   </SourceDirectories>
-  <IncludeDirectories>
-    <string>C:\Program Files (x86)\Windows Kits\10\Include</string>
+  <ExternalIncludeDirectories>
+    <string>C:\Program Files (x86)\Windows Kits\8.1\Include\um</string>
+    <string>C:\Program Files (x86)\Windows Kits\8.1\Include\shared</string>
+    <string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt</string>
     <string>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include</string>
-  </IncludeDirectories>
+    <string>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include</string>
+    <string>D:\RTCSandboxes\Allura_Main_Infra_PreInt\Externals</string>	
+  </ExternalIncludeDirectories>
   <IgnorePaths>
-    <string> D:\MyProject\Test</string>
   </IgnorePaths>
   <ResolveMethod>AddBestMatch</ResolveMethod>
-  <OutputFilename>Output.dsi</OutputFilename>
+  <OutputFilename>MyProduct.dsi</OutputFilename>
 </AnalyzerSettings>
 ```
 ## Logging
 
 When logging is enabled the following types of logging are provided of the analysis:
 
-| Log file                          | Description                                                                          | 
-|:----------------------------------|:-------------------------------------------------------------------------------------|
-| userMessages.log                  | All messages as shown in the console                                                 |
-| info.log                          | Information messages                                                                 |
-| warnings.log                      | Warnings messages                                                                    |
-| errors.log                        | Error messages                                                                       |
-| exceptions.log                    | Lists exceptions during the analysis                                                 |
-| filesNotFound.log                 | Source files not found in the file system                                            |
-| includePathsNotFound.log          | Include paths not found in the file system                                           |
-| pathsNotResolved.log              | Relative include files which could not be resolved to an absolute path               |
-| includeFilesAmbigious.log         | Relative include files which can be resolved to multiple absolute include files      |
-| includeFilesNotFound.log          | Absolute include files which could not be found in the file system                   |
-| dataModelActions.log              | Actions on the data model like load, save and registration of an element or relation |
-| dataModelRelationsNotResolved.log | Actions on the data model to indicate that a relation could not be resolved          |                              |
-
-The user messages log shows what percentage of the relations could be resolved. This is an indication of the
-reliability of the dependency model.
+| Log file                      | Description                                                                          | 
+|:------------------------------|:-------------------------------------------------------------------------------------|
+| userMessages                  | Contains all messages as shown in the console.                                       |
+| info                          | Contains information messages.                                                       |
+| warnings                      | Contains warnings messages.                                                          |
+| errors                        | Contains error messages.                                                             |
+| exceptions                    | Contains the exceptions that occured during the analysis.                            |
+| filesNotFound                 | Source files not found in the file system                                            |
+| includePathsNotFound          | Include paths not found in the file system                                           |
+| pathsNotResolved              | Relative include files which could not be resolved to an absolute path               |
+| includeFilesAmbigious         | Relative include files which can be resolved to multiple absolute include files      |
+| includeFilesNotFound          | Absolute include files which could not be found in the file system                   |
+| dataModelActions              | Contains all actions on the data model like load, save and registration.             |
+| dataModelRelationsNotResolved | Contains queried relations that could not be resolved.                               |                             |
 
 [back](user_guide)
