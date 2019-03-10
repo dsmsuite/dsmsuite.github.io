@@ -9,7 +9,7 @@ layout: default
 The Visual studio analyzer is intended to determine dependencies between C/C++ source files based on header file includes. 
 Also IDL files and their generated files are taken into account.
 
-This analyzer used the Microsoft.Build.Evaluation API. For proper analysis it is required that solutions compile successfully.
+> This analyzer used the Microsoft.Build.Evaluation API. For proper analysis it is required that solutions compile successfully.
 
 The element hierarchy used to visualize the DSM can be based on:
 * **PhysicalView**: The element hierarchy is based on directories. 
