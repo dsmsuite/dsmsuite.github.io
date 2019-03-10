@@ -1,42 +1,26 @@
 # Downloads
 
-## System requirements:
+## System requirements
 * Windows platform with .NET 4.6.2 framework
 
-## Downloads
+## Latest versions
 
-| Description            | Download                                                                                  |
-|:-----------------------|-------------------------------------------------------------------------------------------|
-| Viewer and builder     | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer.msi)             |
-| Transformer            | [link](https://dsmsuite.github.io/downloads/DsmSuite.Transformer.Installer.msi)           |
-| .Net analyzer          | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.DotNet.Installer.msi)       |
-| Java analyzer          | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Jdeps.Installer.msi)        |
-| C++ analyzer           | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Cpp.Installer.msi)          |
-| Visual Studio analyzer | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.VisualStudio.Installer.msi) |
-| UML analyzer           | [link](https://dsmsuite.github.io/downloads/Analyzer.Uml.Installer.msi)                   |
+| Description            | Version        | Download                                                                                                 |
+|:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
+| Viewer and builder     | 1.0.7007.12555 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer_1.0.7007.12555.msi)             |
+| Transformer            | 1.0.7007.12234 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Transformer.Installer_1.0.7007.12234.msi)           |
+| .Net analyzer          | 1.0.7007.12234 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.DotNet.Installer_1.0.7007.12234.msi)       |
+| Java analyzer          | 1.0.7007.12234 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Jdeps.Installer_1.0.7007.12234.msi)        |
+| C++ analyzer           | 1.0.7007.12234 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Cpp.Installer_1.0.7007.12234.msi)          |
+| Visual Studio analyzer | 1.0.7007.12234 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.VisualStudio.Installer_1.0.7007.12234.msi) |
+| UML analyzer           | 1.0.7007.12234 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Uml.Installer_1.0.7007.12234.msi)          |       |
 
 # Change History
 
-## 13 aug 2018
+## 9 March 2019
 
-* Initial release 
+* Initial release 1.0.7007
 
-## 10 jan 2019
-
-* Support relative filenames in settings  
-* Switched over to WIX installer
-
-## 17 feb 2019
-
-* Improved support relative filenames in settings 
-* Always log user messages
-* Log name and build date of executable
-* Fixed files not register for C++ and Visual Studio analyzer
-* Improved visual studio analyzer
- - Solution and project analysis using Microsoft.Build API
- - Improved processing IDL files
- - Improved processing duplicated/copied header files 
-* Add EA.Interop.dll to UML installer
 
 
 
