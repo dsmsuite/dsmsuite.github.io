@@ -6,7 +6,7 @@ layout: default
 
 ## Purpose
 
-The Java analyzer is intended to analyse dependencies between Java types. It use a JDeps output file as input.
+The Java analyzer is intended to analyse dependencies between Java types. It use a Jdeps output file as input.
 The element hierarchy is based on types and namespaces.
 
 ## Pre requisites
@@ -15,19 +15,18 @@ The element hierarchy is based on types and namespaces.
 ## Performing an analysis
 
 * Place the JAR files to be analyzed in a single directory.
-* Run a JDeps analysis.
+* Run a Jdeps analysis.
 * Create an analyzer settings file. This can be done by: 
     * Using the example below or 
 	* Running the analyzer with a not existing settings file. A settings file using default settings will be created.
 * Edit the analyzer settings file if required:
-    * Update the InputFilename setting to point to the JDeps outout file.
+    * Update the InputFilename setting to point to the Jdeps output file.
 	* Update the OutputFilename to the name of the product.
 	* Set LoggingEnabled if required.
-* Run the analyzer from the command line with the analyzer settings filename as argument.
-* The analyzer will:
+* Run the analyzer from the command line with the analyzer settings filename as argument. The analyzer will:
     * Parse the JDeps output file to determine types and their dependencies.
-	* The found elements and dependencies are written to the OutputFilename.
-	* At the end of the analysis the percentage of the relations that could be resolved is shown. This is an indication of the reliability of the dependency model.
+	* The found types and dependencies are written to the OutputFilename.
+* At the end of the analysis the percentage of the relations that could be resolved is shown. This is an indication of the reliability of the dependency model.
 * Optionally perform transformations on the the OutputFilename. See [User guide](user_guide) for details.
 * Convert the OutputFilename into a DSM file. See [User guide](user_guide) for details.
 * Open the DSM file in the Viewer.

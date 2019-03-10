@@ -34,8 +34,8 @@ Mono.Cecil to determine dependencies between .Net types. The element hierarchy i
 * At the end of the analysis the percentage of the relations that could be resolved is shown. This is an indication of the reliability of the dependency model. If the percentage lower than 100% look at the log files to find out the reason.
     * If it is a missing product assembly, add it to the AssemblyDirectory	
 	* If it is a missing third party or system assembly, add it to the AssemblyDirectory or ignore these relations by adding its namespace to the list of ExternalNames.
-* Optionally perform transformations on the the output file. See [User guide](user_guide) for details.
-* Convert the output file into a DSM file. See [User guide](user_guide) for details.
+* Optionally perform transformations on the the OutputFilename. See [User guide](user_guide) for details.
+* Convert the OutputFilename into a DSM file. See [User guide](user_guide) for details.
 * Open the DSM file in the DSM viewer.
 
 ## Command line usage
