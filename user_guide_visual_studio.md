@@ -7,7 +7,7 @@ layout: default
 ## Purpose
 
 The Visual studio analyzer is intended to determine dependencies between C/C++ source files based on header file includes. 
-Also IDL files are taken into account.
+Also IDL files and their generated files are taken into account.
 
 The element hierarchy used to visualize the DSM can be based on:
 * **PhysicalView**: The element hierarchy is based on directories. 
@@ -17,12 +17,12 @@ Namespaces are not taken into account.
 > This analyzer provides more accurate results than the C++ analyzer, because include path per visual studio 
 > project are taken into account. Therefor if you analyzer VC++ chose this analyzer and not the C++ analyzer.
 
+
 ## Pre requisites
 * Visual Studio 2012 or higher.
 
 ## Performing an analysis
 
-* Place the assemblies to be analyzed in a single directory.
 * Create an analyzer settings file. This can be done by: 
     * Using the example below or 
 	* Running the analyzer with a not existing settings file. A settings file using default settings will be created.
