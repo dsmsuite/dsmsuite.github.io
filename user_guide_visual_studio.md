@@ -14,11 +14,10 @@ Also IDL files and their generated files are taken into account.
 The element hierarchy used to visualize the DSM can be based on:
 * **PhysicalView**: The element hierarchy is based on directories. 
 * **LogicalView**: The element hierarchy is based on solution folders and project filters. 
-Namespaces are not taken into account.
+Namespaces and types are not taken into account.
 
 > This analyzer provides more accurate results than the C++ analyzer, because include path per visual studio 
 > project are taken into account. Therefor if you analyzer VC++ chose this analyzer and not the C++ analyzer.
-
 
 ## Pre requisites
 * Visual Studio 2012 or higher.
