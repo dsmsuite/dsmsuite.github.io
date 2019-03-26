@@ -7,7 +7,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Viewer and builder     | 1.0.7010.9643  | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer_1.0.7010.9643.msi)              |
+| Viewer and builder     | 1.0.7024.20818 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer_1.0.7024.20818.msi)             |
 | Transformer            | 1.0.7007.12234 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Transformer.Installer_1.0.7007.12234.msi)           |
 | .Net analyzer          | 1.0.7007.12234 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.DotNet.Installer_1.0.7007.12234.msi)       |
 | Java analyzer          | 1.0.7007.12234 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Jdeps.Installer_1.0.7007.12234.msi)        |
@@ -35,4 +35,9 @@ See [All downloads](all_downloads) for all downloads including older versions.
 
 * Make tools version configurable (default is 14.0)
 * Improved exception logging
+* Log error instead of exception when source file in visual studio project not found
+
+## 26 March 2019 - Version 1.0.7024.20818
+
+* Performance improvements on DSM builder and viewer to support large models
 
