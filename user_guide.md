@@ -156,6 +156,9 @@ The following settings are defined:
 | SplitProductAndTestElementsSettings.Enabled                  | Split test and product code enabled                                   |
 | SplitProductAndTestElementsSettings.TestElementIdentifier    | Name of test code packages                                            |
 | SplitProductAndTestElementsSettings.ProductElementIdentifier | Name of product code packages                                         |
+| PreFixSingleRootSettings.Enabled                             | Put all elements in single Root element for easy partioning           |
+| IncludeFilterSettings.Enabled                                | Include only elements starting with one of selected names in output   |
+| IncludeFilterSettings.Names                                  | List of names to be included                                          |
 | OutputFilename                                               | File name with .dsi extension used to write transformed information.  |      
 
 ## Example
@@ -187,6 +190,15 @@ The following settings are defined:
     <TestElementIdentifier>Test</TestElementIdentifier>
     <ProductElementIdentifier>Src</ProductElementIdentifier>
   </SplitProductAndTestElementsSettings>
+  <PreFixSingleRootSettings>
+    <Enabled>false</Enabled>
+  </PreFixSingleRootSettings>
+  <IncludeFilterSettings>
+    <Enabled>false</Enabled>
+    <Names>
+      <string>Somename</string>                                    
+    </Names>
+  </IncludeFilterSettings>  
   <OutputFilename>Output.dsi</OutputFilename>
 </TransformerSettings>
 ```
