@@ -7,7 +7,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Viewer and builder     | 1.0.7024.20818 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer_1.0.7024.20818.msi)             |
+| Viewer and builder     | 1.0.7024.23215 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer_1.0.7024.23215.msi)             |
 |                        | 1.0.7007.12555 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer_1.0.7007.12555.msi)             |
 |                        | 1.0.7010.9643  | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer_1.0.7010.9643.msi)              |
 | Transformer            | 1.0.7007.12234 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Transformer.Installer_1.0.7007.12234.msi)           |
