@@ -30,16 +30,24 @@ See [All downloads](all_downloads) for all downloads including older versions.
 
 ## 19 March 2019 - Version 1.0.7017
 
-* Added exception logging to when filter file can not be parsed
+* Visual studio analyzer
+	* Added exception logging to when filter file can not be parsed
 
 ## 20 March 2019 - Version 1.0.7018
 
-* Make tools version configurable (default is 14.0)
-* Improved exception logging
-* Log error instead of exception when source file in visual studio project not found
+* Visual studio analyzer 
+	* Make tools version configurable (default is 14.0)
+	* Log error instead of exception when source file in visual studio project not found  
+* Log full stack trace when logging exception
+
 
 ## 26 March 2019 - Version 1.0.7025.10822
 
-* Performance improvements on DSM builder and viewer to support large models
-* DSM builder and viewer are now 64bits processes
+* DSM viewer and builder
+	* Performance improvements on DSM builder and viewer to support large models
+	* DSM builder and viewer are now 64bits processes
 
+## 26 March 2019
+
+* Visual studio analyzer 
+	* Show solution and project file extensions as separate elements in DSM
