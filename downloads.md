@@ -47,7 +47,8 @@ See [All downloads](all_downloads) for all downloads including older versions.
 	* Performance improvements on DSM builder and viewer to support large models
 	* DSM builder and viewer are now 64bits processes
 
-## 26 March 2019
+## 2 April 2019 - To be release
 
 * Visual studio analyzer 
 	* Show solution and project file extensions as separate elements in DSM
+	* Compress files when extension dsiz or dsmz
