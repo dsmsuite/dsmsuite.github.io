@@ -54,3 +54,8 @@ See [All downloads](all_downloads) for all downloads including older versions.
 	* Speedup loading DSM files by avoiding multiple xml parse runs
 * General
 	* Compress files when extension .dsiz or .dsmz
+	
+## 5 April - Version ?
+
+* General
+    * Add metadata to dsi and dsm files
