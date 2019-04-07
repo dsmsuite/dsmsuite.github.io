@@ -55,7 +55,7 @@ See [All downloads](all_downloads) for all downloads including older versions.
 * General
 	* Compress files when extension .dsiz or .dsmz
 	
-## 5 April - Version ?
+## 7 April 2019 - Upcoming release
 
 * General
-    * Add metadata to dsi and dsm files
+    * Add metadata to dsi and dsm files and show them in overview report
