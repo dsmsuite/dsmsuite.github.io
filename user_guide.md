@@ -160,7 +160,7 @@ The following settings are defined:
 | IncludeFilterSettings.Enabled                                | Include only elements starting with one of selected names in output   |
 | IncludeFilterSettings.Names                                  | List of names to be included                                          |
 | OutputFilename                                               | File name with .dsi extension used to write transformed information.  |      
-
+| CompressOutputFile                                           | Compress output                                                       |
 ## Example
 
 **TransformerSetting**
@@ -200,6 +200,7 @@ The following settings are defined:
     </Names>
   </IncludeFilterSettings>  
   <OutputFilename>Output.dsi</OutputFilename>
+  <CompressOutputFile>true</CompressOutputFile>
 </TransformerSettings>
 ```
 
@@ -213,12 +214,12 @@ C:\Program Files (x86)\DsmSuite\Transformer\DsmSuite.Transformer.exe Transformer
 
 The following settings are defined:
 
-| Setting          | Description                                                          | 
-|:-----------------|:---------------------------------------------------------------------|
-| LoggingEnabled   | Log information to file for diagnostic purposes                      |
-| InputFilename    | File name with .dsi extension used to extract dependency information |     
-| OutputFilename   | File name with .dsm extension used to write DSM information          |      
-
+| Setting                     | Description                                                          | 
+|:----------------------------|:---------------------------------------------------------------------|
+| LoggingEnabled              | Log information to file for diagnostic purposes                      |
+| InputFilename               | File name with .dsi extension used to extract dependency information |     
+| OutputFilename              | File name with .dsm extension used to write DSM information          |      
+| CompressOutputFile          | Compress output                                                      |
 ## Example
 
 **BuilderSettings.xml**
@@ -230,6 +231,7 @@ The following settings are defined:
   <LoggingEnabled>false</LoggingEnabled>
   <InputFilename>Input.dsi</InputFilename>
   <OutputFilename>Output.dsm</OutputFilename>
+  <CompressOutputFile>true</CompressOutputFile>  
 </BuilderSettings>
 ```
 

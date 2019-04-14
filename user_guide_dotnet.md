@@ -50,13 +50,13 @@ Use the following command to run a analysis:
 
 The following analyzer settings are defined:
 
-| Setting           | Description                                                                        | 
-|:------------------|:-----------------------------------------------------------------------------------|
-| LoggingEnabled    | Log information for diagnostic purposes.                                           |
-| AssemblyDirectory | Directory where assemblies to be analyzed are located.                             |
-| ExternalNames     | Namespaces starting with these names will be ignored when looking for dependencies.|
-| OutputFilename    | Filename with dsi extension to which results will be written.                      |
-
+| Setting                     | Description                                                                        | 
+|:----------------------------|:-----------------------------------------------------------------------------------|
+| LoggingEnabled              | Log information for diagnostic purposes.                                           |
+| AssemblyDirectory           | Directory where assemblies to be analyzed are located.                             |
+| ExternalNames               | Namespaces starting with these names will be ignored when looking for dependencies.|
+| OutputFilename              | Filename with dsi extension to which results will be written.                      |
+| CompressOutputFile          | Compress output                                                                      |
 ## Settings example 
 
 An example settings file is shown below (DSM Suite analysis example):
@@ -73,6 +73,7 @@ An example settings file is shown below (DSM Suite analysis example):
     <string>Interop/</string>
   </ExternalNames>
   <OutputFilename>DsmSuite.dsi</OutputFilename>
+  <CompressOutputFile>true</CompressOutputFile>  
 </AnalyzerSettings>
 ```
 

@@ -67,6 +67,7 @@ The following settings are defined:
 | IgnorePaths             | List of directories in the source code tree which need to be excluded          |
 | ResolveMethod           | How to resolve ambiguity when filenames are not unique                         |
 | OutputFilename          | Filename with dsi extension to which results will be written                   |     
+| CompressOutputFile      | Compress output                                                                |
 
 ## AnalyzerSettings.xml example 
 
@@ -93,6 +94,7 @@ Example for analyzing C++ in a D:\MyProject source directory.
   </IgnorePaths>
   <ResolveMethod>AddBestMatch</ResolveMethod>
   <OutputFilename>MyProduct.dsi</OutputFilename>
+  <CompressOutputFile>true</CompressOutputFile>  
 </AnalyzerSettings>
 ```
 ## Logging

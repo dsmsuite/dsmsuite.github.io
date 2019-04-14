@@ -49,12 +49,12 @@ Use the following command to run a analysis using the JDeps output file:
 
 The following settings are defined:
 
-| Setting           | Description                                                        | 
-|:------------------|:-------------------------------------------------------------------|
-| LoggingEnabled    | Log information for diagnostic purposes                            |
-| InputFilename     | Filename of Jdeps .dot file used to extract dependency information |
-| OutputFilename    | Filename with dsi extension to which results will be written       |     
-
+| Setting                     | Description                                                        | 
+|:----------------------------|:-------------------------------------------------------------------|
+| LoggingEnabled              | Log information for diagnostic purposes                            |
+| InputFilename               | Filename of Jdeps .dot file used to extract dependency information |
+| OutputFilename              | Filename with dsi extension to which results will be written       |     
+| CompressOutputFile          | Compress output                                                                      |
 ## AnalyzerSettings.xml example 
 
 An example settings file is shown below  (ArgoUML analysis example):
@@ -66,6 +66,7 @@ An example settings file is shown below  (ArgoUML analysis example):
   <LoggingEnabled>false</LoggingEnabled>
   <InputFilename>D:\ArgoUmlAnalysisResults\argouml.jar.dot</InputFilename>
   <OutputFilename>Output.dsi</OutputFilename>
+  <CompressOutputFile>true</CompressOutputFile>  
 </AnalyzerSettings>
 ```
 ## Logging

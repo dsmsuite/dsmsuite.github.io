@@ -43,7 +43,7 @@ See [All downloads](all_downloads) for all downloads including older versions.
 ## 26 March 2019 - Version 1.0.7025
 
 * DSM viewer and builder
-	* Performance improvements on DSM builder and viewer to support large models
+	* Very large performance improvements on DSM builder and viewer to support large models
 	* DSM builder and viewer are now 64bits processes
 
 ## 2 April 2019 - Version 1.0.7031
@@ -52,13 +52,12 @@ See [All downloads](all_downloads) for all downloads including older versions.
 	* Do not remove solution and project file extensions show they show up as separate elements in DSM
 * DSM viewer and builder
 	* Speedup loading DSM files by avoiding multiple xml parse runs
-* General
-	* Compress files when extension .dsiz or .dsmz
 	
-## 9 April 2019 - Upcoming release
+## 14 April 2019 - Upcoming release
 
 * General
     * Add metadata to dsi and dsm files and show them in overview report
-	* Auto detect compressed .dsi or .dsm files
+	* Add setting to determine if output should be written in compressed format
+	* Auto detect compressed .dsi or .dsm files during reading
 * DSM viewer
     * Improved overview html report	

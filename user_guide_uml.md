@@ -42,11 +42,12 @@ Use the following command to run a analysis:
 
 The following settings are defined:
 
-| Setting           | Description                                                   | 
-| ------------------|:--------------------------------------------------------------|
-| LoggingEnabled    | Log information for diagnostic purposes                       |
-| InputFilename     | Filename of the EA model                                      |
-| OutputFilename    | Filename with dsi extension to which results will be written  |
+| Setting              | Description                                                   | 
+| ---------------------|:--------------------------------------------------------------|
+| LoggingEnabled       | Log information for diagnostic purposes                       |
+| InputFilename        | Filename of the EA model                                      |
+| OutputFilename       | Filename with dsi extension to which results will be written  |
+| CompressOutputFile   | Compress output                                                                      |
 
 ## AnalyzerSettings.xml example 
 
@@ -59,6 +60,7 @@ Example for analyzing the [DSMViewer UML model](https://github.com/dsmsuite/dsms
   <LoggingEnabled>false</LoggingEnabled>
   <InputFilename>d:\Github\DsmSuite\DsmViewer\DsmViewer.eap</InputFilename>
   <OutputFilename>Output.dsi</OutputFilename>
+  <CompressOutputFile>true</CompressOutputFile>  
 </AnalyzerSettings>
 ```
 ## Logging

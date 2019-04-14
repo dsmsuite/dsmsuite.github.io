@@ -77,7 +77,8 @@ The following settings are defined:
 | InterfaceIncludeDirectories | List of directories where interface include files can be found. These can be clones. |
 | ExternalIncludeDirectories  | List of directories where third party include files can be found.                    |
 | ToolsVersion                | Should matche installed version (14.0=VS2015 15.0=VS2017)                            |
-| OutputFilename              | Filename with dsi extension to which results will be written                         |   
+| OutputFilename              | Filename with dsi extension to which results will be written                         |  
+| CompressOutputFile          | Compress output                                                                      |
 
 ## AnalyzerSettings.xml example 
 
@@ -116,6 +117,7 @@ Example for analyzing C++ in a D:\MyProject\MyProject.sln directory.
   <ViewMode>LogicalView</ViewMode>
   <ToolsVersion>14.0</ToolsVersion>  
   <OutputFilename>MyProduct.dsi</OutputFilename>
+  <CompressOutputFile>true</CompressOutputFile>  
 </AnalyzerSettings>
 ```
 
