@@ -8,13 +8,13 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Viewer and builder     | 1.0.7031.30501 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer_1.0.7031.30501.msi)             |
-| Transformer            | 1.0.7031.30489 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Transformer.Installer_1.0.7031.30489.msi)           |
-| .Net analyzer          | 1.0.7031.30489 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.DotNet.Installer_1.0.7031.30489.msi)       |
-| Java analyzer          | 1.0.7031.30489 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Jdeps.Installer_1.0.7031.30489.msi)        |
-| C++ analyzer           | 1.0.7031.30489 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Cpp.Installer_1.0.7031.30489.msi)          |
-| Visual Studio analyzer | 1.0.7031.30489 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.VisualStudio.Installer_1.0.7031.30489.msi) |
-| UML analyzer           | 1.0.7031.30489 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Uml.Installer_1.0.7031.30489.msi)          |
+| Viewer and builder     | 1.0.7045.39558 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer_1.0.7045.39558.msi)             |
+| Transformer            | 1.0.7045.39561 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Transformer.Installer_1.0.7045.39561.msi)           |
+| .Net analyzer          | 1.0.7045.39561 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.DotNet.Installer_1.0.7045.39561.msi)       |
+| Java analyzer          | 1.0.7045.39561 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Jdeps.Installer_1.0.7045.39561.msi)        |
+| C++ analyzer           | 1.0.7045.39561 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Cpp.Installer_1.0.7045.39561.msi)          |
+| Visual Studio analyzer | 1.0.7045.39561 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.VisualStudio.Installer_1.0.7045.39561.msi) |
+| UML analyzer           | 1.0.7045.39561 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Uml.Installer_1.0.7045.39561.msi)          |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -53,7 +53,7 @@ See [All downloads](all_downloads) for all downloads including older versions.
 * DSM viewer and builder
 	* Speedup loading DSM files by avoiding multiple xml parse runs
 	
-## 14 April 2019 - Upcoming release
+## 16 April 2019 - Version 1.0.7045
 
 * General
     * Add metadata to dsi and dsm files and show them in overview report
@@ -61,3 +61,4 @@ See [All downloads](all_downloads) for all downloads including older versions.
 	* Auto detect compressed .dsi or .dsm files during reading
 * DSM viewer
     * Improved overview html report	
+	* Improve visibility numbers in matrix column header
