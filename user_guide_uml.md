@@ -47,7 +47,7 @@ The following settings are defined:
 | LoggingEnabled       | Log information for diagnostic purposes                       |
 | InputFilename        | Filename of the EA model                                      |
 | OutputFilename       | Filename with dsi extension to which results will be written  |
-| CompressOutputFile   | Compress output                                                                      |
+| CompressOutputFile   | Compress output                                               |
 
 ## AnalyzerSettings.xml example 
 

@@ -54,7 +54,8 @@ The following settings are defined:
 | LoggingEnabled              | Log information for diagnostic purposes                            |
 | InputFilename               | Filename of Jdeps .dot file used to extract dependency information |
 | OutputFilename              | Filename with dsi extension to which results will be written       |     
-| CompressOutputFile          | Compress output                                                                      |
+| CompressOutputFile          | Compress output                                                    |
+
 ## AnalyzerSettings.xml example 
 
 An example settings file is shown below  (ArgoUML analysis example):

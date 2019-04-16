@@ -56,7 +56,8 @@ The following analyzer settings are defined:
 | AssemblyDirectory           | Directory where assemblies to be analyzed are located.                             |
 | ExternalNames               | Namespaces starting with these names will be ignored when looking for dependencies.|
 | OutputFilename              | Filename with dsi extension to which results will be written.                      |
-| CompressOutputFile          | Compress output                                                                      |
+| CompressOutputFile          | Compress output                                                                    |
+
 ## Settings example 
 
 An example settings file is shown below (DSM Suite analysis example):

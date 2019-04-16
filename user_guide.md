@@ -171,6 +171,7 @@ The following settings are defined:
 | IncludeFilterSettings.Names                                  | List of names to be included                                          |
 | OutputFilename                                               | File name with .dsi extension used to write transformed information.  |      
 | CompressOutputFile                                           | Compress output                                                       |
+
 ## Example
 
 **TransformerSetting**
@@ -230,6 +231,7 @@ The following settings are defined:
 | InputFilename               | File name with .dsi extension used to extract dependency information |     
 | OutputFilename              | File name with .dsm extension used to write DSM information          |      
 | CompressOutputFile          | Compress output                                                      |
+
 ## Example
 
 **BuilderSettings.xml**
