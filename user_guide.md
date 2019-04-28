@@ -268,6 +268,7 @@ The DSM viewer has the following features:
 	* Change the zoom level
 	* Highlight cyclic dependencies on or off
 * Reporting
-	* Report all cyclic dependencies
-	* Report all dependency between two elements by selecting a cell and right clicking it
+	* Report meta data
+	* Report relations, consumers and providers of selected matrix cell
+	* Report provided and required interfaces of selected element
 

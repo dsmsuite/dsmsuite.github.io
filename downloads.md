@@ -8,7 +8,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Viewer and builder     | 1.0.7045.39558 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer_1.0.7045.39558.msi)             |
+| Viewer and builder     | 1.0.7057.16808 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer_1.0.7057.16808.msi)             |
 | Transformer            | 1.0.7045.39561 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Transformer.Installer_1.0.7045.39561.msi)           |
 | .Net analyzer          | 1.0.7045.39561 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.DotNet.Installer_1.0.7045.39561.msi)       |
 | Java analyzer          | 1.0.7045.39561 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Jdeps.Installer_1.0.7045.39561.msi)        |
@@ -62,3 +62,10 @@ See [All downloads](all_downloads) for all downloads including older versions.
 * DSM viewer
     * Improved overview html report	
 	* Improve visibility numbers in matrix column header
+	
+## 28 April 2019 - Version 1.0.7057
+
+* DSM viewer
+    * Added new html reports
+	    * Consumers and providers of selected matrix cell
+		* Provided and required interfaces of selected element
