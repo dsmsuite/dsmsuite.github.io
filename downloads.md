@@ -69,3 +69,14 @@ See [All downloads](all_downloads) for all downloads including older versions.
     * Added new html reports
 	    * Consumers and providers of selected matrix cell
 		* Provided and required interfaces of selected element
+		
+		## 28 April 2019 - Version 1.0.7057
+
+## 4 May 2019 - Version ?
+		
+* DSM viewer
+    * Improved html reports
+* Transformer  
+    * Used regex for filters
+* Visual studio analyzer
+    * Extended unit tests for dynamic folder property	
