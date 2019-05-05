@@ -8,9 +8,9 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Viewer and builder     | 1.0.7064.15505 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer_1.0.7064.15508.msi)             |
+| Viewer and builder     | 1.0.7064.15505 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer_1.0.7064.15505.msi)             |
 | Transformer            | 1.0.7064.15508 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Transformer.Installer_1.0.7064.15508.msi)           |
-| .Net analyzer          | 1.0.7064.15507 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.DotNet.Installer_1.0.7064.15508.msi)       |
+| .Net analyzer          | 1.0.7064.15507 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.DotNet.Installer_1.0.7064.15507.msi)       |
 | Java analyzer          | 1.0.7064.15508 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Jdeps.Installer_1.0.7064.15508.msi)        |
 | C++ analyzer           | 1.0.7064.15508 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Cpp.Installer_1.0.7064.15508.msi)          |
 | Visual Studio analyzer | 1.0.7064.15508 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.VisualStudio.Installer_1.0.7064.15508.msi) |

@@ -7,7 +7,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Viewer and builder     | 1.0.7064.15505 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer_1.0.7064.15508.msi)             |
+| Viewer and builder     | 1.0.7064.15505 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer_1.0.7064.15505.msi)             |
 |                        | 1.0.7057.16808 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer_1.0.7057.16808.msi)             |
 |                        | 1.0.7045.39558 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer_1.0.7045.39558.msi)             |
 |                        | 1.0.7031.30501 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer_1.0.7031.30501.msi)             |
@@ -18,7 +18,7 @@
 |                        | 1.0.7045.39561 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Transformer.Installer_1.0.7045.39561.msi)           |
 |                        | 1.0.7031.30489 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Transformer.Installer_1.0.7031.30489.msi)           |
 |                        | 1.0.7007.12234 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Transformer.Installer_1.0.7007.12234.msi)           |
-| .Net analyzer          | 1.0.7064.15507 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.DotNet.Installer_1.0.7064.15508.msi)       |
+| .Net analyzer          | 1.0.7064.15507 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.DotNet.Installer_1.0.7064.15507.msi)       |
 | .                      | 1.0.7045.39561 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.DotNet.Installer_1.0.7045.39561.msi)       |
 |                        | 1.0.7031.30489 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.DotNet.Installer_1.0.7031.30489.msi)       |
 |                        | 1.0.7007.12234 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.DotNet.Installer_1.0.7007.12234.msi)       |
