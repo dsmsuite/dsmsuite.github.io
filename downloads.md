@@ -13,7 +13,7 @@
 | .Net analyzer          | 1.0.7064.15507 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.DotNet.Installer_1.0.7064.15507.msi)       |
 | Java analyzer          | 1.0.7064.15508 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Jdeps.Installer_1.0.7064.15508.msi)        |
 | C++ analyzer           | 1.0.7064.15508 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Cpp.Installer_1.0.7064.15508.msi)          |
-| Visual Studio analyzer | 1.0.7064.15508 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.VisualStudio.Installer_1.0.7064.15508.msi) |
+| Visual Studio analyzer | 1.0.7072.37000 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.VisualStudio.Installer_1.0.7072.37000.msi) |
 | UML analyzer           | 1.0.7064.15508 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Uml.Installer_1.0.7064.15508.msi)          |
 
 See [All downloads](all_downloads) for all downloads including older versions.
@@ -77,4 +77,9 @@ See [All downloads](all_downloads) for all downloads including older versions.
 * Transformer  
     * Used regex for filters
 * Visual studio analyzer
-    * Extended unit tests for dynamic folder property	
+    * Extended unit tests for dynamic folder property
+
+## 13 May 2019 - Version 1.0.7072	
+
+* Visual studio analyzer 
+	* Add target extension to visual studio project file element

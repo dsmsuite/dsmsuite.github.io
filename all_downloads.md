@@ -30,7 +30,8 @@
 |                        | 1.0.7045.39561 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Cpp.Installer_1.0.7045.39561.msi)          |
 |                        | 1.0.7031.30489 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Cpp.Installer_1.0.7031.30489.msi)          |
 |                        | 1.0.7007.12234 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Cpp.Installer_1.0.7007.12234.msi)          |
-| Visual Studio analyzer | 1.0.7064.15508 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.VisualStudio.Installer_1.0.7064.15508.msi) |
+| Visual Studio analyzer | 1.0.7072.37000 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.VisualStudio.Installer_1.0.7072.37000.msi) |
+|                        | 1.0.7064.15508 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.VisualStudio.Installer_1.0.7064.15508.msi) |
 |                        | 1.0.7045.39561 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.VisualStudio.Installer_1.0.7045.39561.msi) |
 |                        | 1.0.7031.30489 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.VisualStudio.Installer_1.0.7031.30489.msi) |
 |                        | 1.0.7018.37117 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.VisualStudio.Installer_1.0.7018.37117.msi) |
