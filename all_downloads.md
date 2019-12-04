@@ -2,11 +2,13 @@
 
 ## System requirements
 * Windows platform with .NET 4.6.2 framework
+* 64 bits CPU
 
 ## All versions
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
+| Full dsm suite         | 1.0.7277.38011 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7277.38011.msi)                                 |
 | Viewer and builder     | 1.0.7064.15505 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer_1.0.7064.15505.msi)             |
 |                        | 1.0.7057.16808 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer_1.0.7057.16808.msi)             |
 |                        | 1.0.7045.39558 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer_1.0.7045.39558.msi)             |

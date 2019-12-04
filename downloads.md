@@ -8,13 +8,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Viewer and builder     | 1.0.7064.15505 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DsmViewer.Installer_1.0.7064.15505.msi)             |
-| Transformer            | 1.0.7064.15508 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Transformer.Installer_1.0.7064.15508.msi)           |
-| .Net analyzer          | 1.0.7064.15507 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.DotNet.Installer_1.0.7064.15507.msi)       |
-| Java analyzer          | 1.0.7064.15508 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Jdeps.Installer_1.0.7064.15508.msi)        |
-| C++ analyzer           | 1.0.7064.15508 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Cpp.Installer_1.0.7064.15508.msi)          |
-| Visual Studio analyzer | 1.0.7073.30644 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.VisualStudio.Installer_1.0.7073.30644.msi) |
-| UML analyzer           | 1.0.7064.15508 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Analyzer.Uml.Installer_1.0.7064.15508.msi)          |
+| Full dsm suite         | 1.0.7277.38011 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7277.38011.msi)                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -83,3 +77,14 @@ See [All downloads](all_downloads) for all downloads including older versions.
 
 * Visual studio analyzer 
 	* Add target extension to visual studio project file element
+	
+## 4 December 2019 - Version 1.0.7277.38011
+
+* Single installer for entire DSM suite
+* Minor non compatible changes in DSI and DSM model formats
+* Viewer fully rewritten in WPF
+    * Improved look & feel 
+	* Show detail matrix for element or relation
+	* Search element feature
+	* Progress bar while opening or saving files
+	* Open dsm file by clicking it after associating .dsm extension with DSM viewer
