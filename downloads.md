@@ -8,7 +8,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7277.38011 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7277.38011.msi)                                 |
+| Full dsm suite         | 1.0.7291.22335 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7291.22335.msi)                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -88,3 +88,11 @@ See [All downloads](all_downloads) for all downloads including older versions.
 	* Search element feature
 	* Progress bar while opening or saving files
 	* Open dsm file by clicking it after associating .dsm extension with DSM viewer
+	
+## 18 December - Version 1.0.7291.22335
+
+* Functionality to edit models 
+    * Create, edit and delete elements
+    * Create, edit and delete relations    
+    * Move up/ move down partition
+    * Undo functionality	
