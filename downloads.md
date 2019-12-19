@@ -6,9 +6,9 @@
 
 ## Latest versions
 
-| Description            | Version        | Download                                                                                                 |
-|:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7291.22335 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7291.22335.msi)                                 |
+| Description            | Version        | Download                                                                 |
+|:-----------------------|----------------+--------------------------------------------------------------------------|
+| Full dsm suite         | 1.0.7292.9302  | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7292.9302.msi)  |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -89,7 +89,7 @@ See [All downloads](all_downloads) for all downloads including older versions.
 	* Progress bar while opening or saving files
 	* Open dsm file by clicking it after associating .dsm extension with DSM viewer
 	
-## 18 December - Version 1.0.7291.22335
+## 19 December - Version 1.0.7292.9302
 
 * Functionality to edit models 
     * Create, edit and delete elements
