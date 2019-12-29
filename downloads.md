@@ -8,7 +8,7 @@
 
 | Description            | Version        | Download                                                                 |
 |:-----------------------|----------------+--------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7302.29693 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7302.29693.msi) | 
+| Full dsm suite         | 1.0.7302.34526 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7302.34526.msi) | 
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -107,7 +107,7 @@ See [All downloads](all_downloads) for all downloads including older versions.
 * Implemented option update existing dsm model with new dsi model
 * Refined look&feel
 
-## 29 December - Version 1.0.7302.29693
+## 29 December - Version 1.0.7302.34526
 
 * Again refined look&feel
 * Metrics bar in matrix currently showing number of elements
@@ -116,3 +116,5 @@ See [All downloads](all_downloads) for all downloads including older versions.
 * Fixed model not cleared when loading new model
 * Improved performance matrix view for large expanded models
 * Reduce font size to 11 and limit weight to max 9999 to avoid drawing out side of cell
+* Fixed thats actions in data model where not cleared when clearing actions via UI
+* Fixed crash when element at bottom of dsm was deleted
