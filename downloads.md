@@ -8,7 +8,7 @@
 
 | Description            | Version        | Download                                                                 |
 |:-----------------------|----------------+--------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7302.34526 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7302.34526.msi) | 
+| Full dsm suite         | 1.0.7303.12948 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7303.12948.msi) | 
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -107,10 +107,10 @@ See [All downloads](all_downloads) for all downloads including older versions.
 * Implemented option update existing dsm model with new dsi model
 * Refined look&feel
 
-## 29 December - Version 1.0.7302.34526
+## 30 December - Version 1.0.7303.12948
 
 * Again refined look&feel
-* Metrics bar in matrix currently showing number of elements
+* Metrics bar in matrix currently showing number of elements and consumers and providers
 * Enable ok button if edit dialogs when data is valid
 * Made element search by name case insensitive
 * Fixed model not cleared when loading new model
