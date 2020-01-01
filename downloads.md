@@ -8,7 +8,7 @@
 
 | Description            | Version        | Download                                                                 |
 |:-----------------------|----------------+--------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7303.12948 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7303.12948.msi) | 
+| Full dsm suite         | 1.0.7305.36212 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7305.36212.msi) | 
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -89,7 +89,7 @@ See [All downloads](all_downloads) for all downloads including older versions.
 	* Progress bar while opening or saving files
 	* Open dsm file by clicking it after associating .dsm extension with DSM viewer
 	
-## 19 December - Version 1.0.7292.9302
+## 19 December 2019 - Version 1.0.7292.9302
 
 * Functionality to edit models 
     * Create, edit and delete elements
@@ -97,17 +97,17 @@ See [All downloads](all_downloads) for all downloads including older versions.
     * Move up/ move down partition
     * Undo functionality	
 	
-## 23 December - Version 1.0.7296.39969
+## 23 December 2019 - Version 1.0.7296.39969
 
 * Improved edit model features
 * Saving edit actions to file
 
-## 26 December - Version 1.0.7299.26182
+## 26 December 2019 - Version 1.0.7299.26182
 
 * Implemented option update existing dsm model with new dsi model
 * Refined look&feel
 
-## 30 December - Version 1.0.7303.12948
+## 30 December 2019 - Version 1.0.7303.12948
 
 * Again refined look&feel
 * Metrics bar in matrix currently showing number of elements and consumers and providers
@@ -118,3 +118,14 @@ See [All downloads](all_downloads) for all downloads including older versions.
 * Reduce font size to 11 and limit weight to max 9999 to avoid drawing out side of cell
 * Fixed thats actions in data model where not cleared when clearing actions via UI
 * Fixed crash when element at bottom of dsm was deleted
+
+## 1 Januari 2020 - Version 1.0.7305.36212
+
+* Improved metrics view including cyles
+* UI themes support
+* Persist viewer settings in user folder
+* Make visual distinction between system and hierarchical cycle
+* Indicate consumers and providers with small colored status bar upon hovering over element
+* Fix actions properly cleaned
+* Fixed that dependency weights were not properly calculated after moving an element
+
