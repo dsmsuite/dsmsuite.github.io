@@ -6,9 +6,9 @@
 
 ## Latest versions
 
-| Description            | Version        | Download                                                                 |
-|:-----------------------|----------------+--------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7305.36212 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7305.36212.msi) | 
+| Description            | Version        | Download                                                                                                 |
+|:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
+| Full dsm suite         | 1.0.7310.12684 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7310.12684.msi)                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -129,3 +129,13 @@ See [All downloads](all_downloads) for all downloads including older versions.
 * Fix actions properly cleaned
 * Fixed that dependency weights were not properly calculated after moving an element
 
+## 6 Januari 2020 - Version 1.0.7310.12684
+
+* Add beta feature toggle
+    * Added to settings dialog
+    * Changed 'move element in hierarchy using drag and drop' to beta feature, because it is not fully mature
+* Always log exceptions
+* Fix element order always updated after any element edit action
+* Several UI layout and theme changes
+* Fixed cell colors when first child expanded
+* Fixed issue with show cycles setting
