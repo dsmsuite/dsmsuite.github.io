@@ -8,7 +8,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7310.12684 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7310.12684.msi)                                 |
+| Full dsm suite         | 1.0.7318.12574 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7318.12574.msi)                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -139,3 +139,8 @@ See [All downloads](all_downloads) for all downloads including older versions.
 * Several UI layout and theme changes
 * Fixed cell colors when first child expanded
 * Fixed issue with show cycles setting
+
+## 14 Januari - Version 1.0.7318.12574
+
+* Fixed feature change element parent
+* Added name to single root
