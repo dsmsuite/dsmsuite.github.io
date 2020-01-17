@@ -142,6 +142,9 @@ See [All downloads](all_downloads) for all downloads including older versions.
 
 ## 14 Januari - Version DsmSuite_1.0.7318.22276
 
+* Single toot introduced in DSM
+* Fixed some defects related to change element parent
+* Fixed issue with show cycles setting
 * Fixed feature change element parent
 * Added name to single root
 * Fix enable undo buton after dragging element
