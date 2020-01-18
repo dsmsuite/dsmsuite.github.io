@@ -9,6 +9,8 @@
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
 | Full dsm suite         | 1.0.7322.12041 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7322.12041.msi)                                 |
+| DsmSuite example model | -              | [link](https://dsmsuite.github.io/downloads/DsmSuite.dsm)                                                |
+| ArgoUml example model  | -              | [link](https://dsmsuite.github.io/downloads/ArgoUml.dsm)                                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
