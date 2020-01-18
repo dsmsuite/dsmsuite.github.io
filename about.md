@@ -19,7 +19,7 @@ The goals of the DSM tool suite are:
 
 # Credits
 
-The DSM suite is based on the source code of the [DSM plugin for Visual Studio](https://github.com/tecsoft/dsm-vs-addin) developed by Tom Carter. This open source DSM implementation provided the best starting point for developing the DSM tool suite.
+The DSM suite was initially based on the source code of the [DSM plugin for Visual Studio](https://github.com/tecsoft/dsm-vs-addin) developed by Tom Carter. This open source DSM implementation provided the best starting point for developing the DSM tool suite.
 
 # History
 
@@ -28,8 +28,7 @@ To achieve the goals above the following major modifications have been made:
 * Separated the C# code analyzer from the plug-in and converted it into command line code executable.
 * Separated the building of the DSM model from the plug-in and converted it into command line executable.
 * Added command line code analyzers for C++, Java, UML and Visual Studio.
-
-I also did some cleanup of the code and used JetBrains Resharper to inspect and fix coding issues. 
+Later in time almost the entire software has been rewritten from a Windows Forms application to a WPF application. 
 
 # Source Code
 

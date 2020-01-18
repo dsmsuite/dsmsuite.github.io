@@ -145,8 +145,6 @@ because the software designed and the actual software architecture often do not 
 
 > To perform this kind of refactoring transformation rules can be applied on the DSI file using the transformer. After transformation on the DSI file, the DSI file needs to be used to create a new DSM file, which in turn can be imported in the viewer. 
 
-> The commercial [Lattix  DSM tool](http://lattix.com/) allows direct manipulation of the elements in the DSM, which is more convenient.
-
 ### Key strength 5 - Communication
 
 ![dsm dependency rules](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_7_rules.png "dsm dependency rules")

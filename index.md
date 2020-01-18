@@ -44,7 +44,7 @@ is delivered in half the time, at half the cost, with 8x less bugs.
 
 > For detailed information about this study see this [document](https://dsmsuite.github.io/documents/mitre-architecture-report.pdf) 
 
-# Why we fail
+# Why software dependency management is hard
 
 Although the impact of poor dependencies is well known, many projects are still struggling with it.
 This can have one of the following reasons:

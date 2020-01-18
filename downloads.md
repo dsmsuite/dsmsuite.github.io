@@ -8,7 +8,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7322.12041 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7322.12041.msi)                                 |
+| Full dsm suite         | 1.0.7322.12836 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7322.12836.msi)                                 |
 | DsmSuite example model | -              | [link](https://dsmsuite.github.io/downloads/DsmSuite.dsm)                                                |
 | ArgoUml example model  | -              | [link](https://dsmsuite.github.io/downloads/ArgoUml.dsm)                                                 |
 
@@ -151,9 +151,10 @@ See [All downloads](all_downloads) for all downloads including older versions.
 * Added name to single root
 * Fix enable undo buton after dragging element
 
-## 18 Januari 2020 - Version 1.0.7322.12041
+## 18 Januari 2020 - Version 1.0.7322.12836
 
 * Improved layout settings dialog
 * Remove prefix single root from transformer
 * Fixed create element in root
 * Ensure undo command is enabled again after element is dragged
+* Change name builder setting

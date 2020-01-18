@@ -115,14 +115,14 @@ Each relation has the following properties:
 
 | Name                   | Description                                          |
 |:-----------------------|:-----------------------------------------------------|
-| providerId             | The id of the provider element.                      |
-| consumerId             | The id of the consumer element.                      |
+| from                   | The id of the provider element.                      |
+| to                     | The id of the consumer element.                      |
 | type                   | The type of relation e.g. include, inherit, realize. |
 | weight                 | The strength of the relation.                        |
 
 # Installation
 
-Download the viewer and the analyzer which best suits your needs. Optionally you can download the transformer, when needed.
+Download the installer and install whatever best suits your needs.
 
 See [downloads](downloads)
 
@@ -166,7 +166,6 @@ The following settings are defined:
 | SplitProductAndTestElementsSettings.Enabled                  | Split test and product code enabled                                   |
 | SplitProductAndTestElementsSettings.TestElementIdentifier    | Name of test code packages                                            |
 | SplitProductAndTestElementsSettings.ProductElementIdentifier | Name of product code packages                                         |
-| PreFixSingleRootSettings.Enabled                             | Put all elements in single Root element for easy partioning           |
 | IncludeFilterSettings.Enabled                                | Include only elements starting with one of selected names in output   |
 | IncludeFilterSettings.Names                                  | List of names to be included                                          |
 | OutputFilename                                               | File name with .dsi extension used to write transformed information.  |      
@@ -201,9 +200,6 @@ The following settings are defined:
     <TestElementIdentifier>Test</TestElementIdentifier>
     <ProductElementIdentifier>Src</ProductElementIdentifier>
   </SplitProductAndTestElementsSettings>
-  <PreFixSingleRootSettings>
-    <Enabled>false</Enabled>
-  </PreFixSingleRootSettings>
   <IncludeFilterSettings>
     <Enabled>false</Enabled>
     <Names>
@@ -225,12 +221,14 @@ C:\Program Files (x86)\DsmSuite\Transformer\DsmSuite.Transformer.exe Transformer
 
 The following settings are defined:
 
-| Setting                     | Description                                                          | 
-|:----------------------------|:---------------------------------------------------------------------|
-| LoggingEnabled              | Log information to file for diagnostic purposes                      |
-| InputFilename               | File name with .dsi extension used to extract dependency information |     
-| OutputFilename              | File name with .dsm extension used to write DSM information          |      
-| CompressOutputFile          | Compress output                                                      |
+| Setting                     | Description                                                                | 
+|:----------------------------|:---------------------------------------------------------------------------|
+| LoggingEnabled              | Log information to file for diagnostic purposes                            |
+| InputFilename               | File name with .dsi extension used to extract dependency information       |     
+| OutputFilename              | File name with .dsm extension used to write DSM information                |  
+| ApplyPartitioningAlgorithm  | Automatically apply partitioning algorithm on the model to sort it         |
+| RecordChanges               | Record changes with previous model as actions viewable in the mode history |                                                      |    
+| CompressOutputFile          | Compress output                                                            |
 
 ## Example
 
@@ -243,7 +241,9 @@ The following settings are defined:
   <LoggingEnabled>false</LoggingEnabled>
   <InputFilename>Input.dsi</InputFilename>
   <OutputFilename>Output.dsm</OutputFilename>
-  <CompressOutputFile>true</CompressOutputFile>  
+  <ApplyPartitioningAlgorithm>false</ApplyPartitioningAlgorithm>
+  <RecordChanges>false</RecordChanges>
+  <CompressOutputFile>false</CompressOutputFile>
 </BuilderSettings>
 ```
 
