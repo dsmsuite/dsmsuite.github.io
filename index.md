@@ -6,21 +6,21 @@ layout: default
 
 The following are some aspects which are important for good software design:
 
-|            | Guideline                                                             | Metric                     | Visibility |                                                                                |
-|:-----------|-----------------------------------------------------------------------|:---------------------------|:-----------|
-| Naming     | Names should reflect problem domain                                   | None                       | High       |
-| Complexity | Low complexity                                                        | Cyclomatic Complexity < 10 | High       |
-| Cohesion   | Single responsibility principle                                       | Module size < 500LOC       | High       |
-| Coupling   | Low coupling Depend towards abstractions and interface and no cycles  | No single standard         | Low        |
+|            | Guideline                                                                      | Metric                     | Visibility |                                                                                |
+|:-----------|--------------------------------------------------------------------------------|:---------------------------|:-----------|
+| Naming     | Names should reflect problem domain                                            | None                       | High       |
+| Complexity | Low complexity                                                                 | Cyclomatic Complexity < 10 | High       |
+| Cohesion   | Single responsibility principle                                                | Module size < 500LOC       | High       |
+| Coupling   | Low coupling and dependencies towards abstractions and interfaces. No cycles.  | No single standard         | Low        |
 
-All aspects except coupling can be easily observed from the source code using an IDE or editor. The impact of this lack of visibliblity 
-of software dependencies is that problems in this area of software design often are not noticed.
+All these aspects except coupling can be easily observed from the source code using an IDE or editor. 
+The impact of this lack of visibliblity for software dependencies is that problems in this area of software design often go undetected.
 
 # Why software dependencies matter
 
 Ideally, software can be easily modified, is understandable, reliable and reusable. 
 In practice, this often remains an ideal and over the course of time the software becomes increasingly rigid, 
-opaque and fragile. The underlying cause is that the dependency structure of the software degrades over time.
+opaque and fragile. In many cases the underlying cause is that the dependency structure of the software degrades over time.
 
 ![evolution of junit dependencies across releases](https://dsmsuite.github.io/assets/img/index/nunit.gif "evolution of junit dependencies across releases")
 
@@ -76,12 +76,6 @@ This is essential because developers can easily violate intended architecture by
 	
 # Design structure matrix
 
-Using a design structure matrix to visualize the code architecture addresses some of the problems described above:
-* It can be used to visualize very complex software systems without overwhelming the user.
-* It can be used to validate that the source code conforms to the intended architecture.
-* It can be easily kept in sync with the code.
-Is a powerful technique for analyzing, improving, and managing software architecture and can be adopted at any stage of the project
-
 A design structure matrix consists of a matrix to visualize dependencies of hierarchically organized elements and 
 a set of algorithms which can be applied on the matrix to sort the elements in order to discover layering.
 
@@ -89,5 +83,11 @@ An example of a design structure matrix is shown below:
 
 ![example dsm](https://dsmsuite.github.io/assets/img/index/dsm_example.png "example dsm")
 *Figure 3: Design structure matrix*
+
+Using a design structure matrix to visualize the code architecture addresses some of the problems described above:
+* It can be used to visualize very complex software systems without overwhelming the user.
+* It can be used to validate that the source code conforms to the intended architecture.
+* It can be easily kept in sync with the code.
+Is a powerful technique for analyzing, improving, and managing software architecture and can be adopted at any stage of the project
 
 > For more information on design structure matrix see the [DSM Overview](dsm_overview) or [DSM Powerpoint](https://dsmsuite.github.io/documents/DsmPresentation.pptx)
