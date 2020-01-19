@@ -6,12 +6,12 @@ layout: default
 
 The following are some aspects which are important for good software design:
 
-|                | Guideline                                                | Metric                     | Visibility |                                                                                |
-|:---------------|----------------------------------------------------------|----------------------------|------------|
-| Good naming    | Names should reflect problem domain                      | None                       | High       |
-| Low complexity | Low complexity                                           | Cyclomatic Complexity < 10 | High       |
-| High cohesion  | Single responsibility principle                          | Module size <500 LOC       | High       |
-| Low coupling   | Depend towards abstractions and interface and no cycles  | No single standard         | Low        |
+|            | Guideline                                                             | Metric                     | Visibility |                                                                                |
+|:-----------|-----------------------------------------------------------------------|:---------------------------|:-----------|
+| Naming     | Names should reflect problem domain                                   | None                       | High       |
+| Complexity | Low complexity                                                        | Cyclomatic Complexity < 10 | High       |
+| Cohesion   | Single responsibility principle                                       | Module size < 500LOC       | High       |
+| Coupling   | Low coupling Depend towards abstractions and interface and no cycles  | No single standard         | Low        |
 
 All aspects except coupling can be easily observed from the source code using an IDE or editor. The impact of this lack of visibliblity 
 of software dependencies is that problems in this area of software design often are not noticed.
