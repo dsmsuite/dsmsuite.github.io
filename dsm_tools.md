@@ -13,12 +13,11 @@ layout: default
 | [CppDepend](https://www.cppdepend.com/)                   | Software architecture/code analysis        | commercial  | 
 | [NDepend](https://www.ndepend.com/)                       | Software architecture/code analysis        | commercial  | 
 | [JArchitect](https://www.jarchitect.com/)                 | Software architecture/code analysis        | commercial  | 
-| [DSM plugin](https://github.com/tecsoft/dsm-vs-addin)     | Software architecture analysis             | open source | 
 | [DSMSuite](https://dsmsuite.github.io/)                   | Software architecture analysis             | open source | 
 
 > The tools CppDepend, Ndepend and JArchitect are identical, but support different programming languages. They will be listed below a XDepend
 
-> The DSMSuite is based on the DSM plugin. Because they currently have the features they will not be compared in the table below.
+> The DSMSuite is based on the DSM plugin. Because it extends the features of the DSM plugin, this DSM plugin is not included in the table comparison below.
 
 > Other well known tools for architecture analysis and refactoring are [Structure101](http://structure101.com/) 
 > and [SonarSource](https://www.sonarsource.com/). Both however do not support DSM visualization. 
@@ -27,25 +26,28 @@ layout: default
 # Feature overview
 
 
-|	                                          | Lattix | Intelij Ultimate  | XDepend | DsmSuite |
+|	                                          | Lattix | Intelij  | XDepend    | DsmSuite  |
 |:--------------------------------------------|:-------|:---------|:-----------|:----------|
 | **Visualization dependencies**              |        |          |            |           |           
 | Hierarchical matrix	                      | Yes	   | Yes	  | Yes        | Yes	   |  
 | Cyclic dependencies	                      | Yes    | Yes	  | Yes	       | Yes       |
-| Indirect dependencies	                      | No	   | No	      | Yes	       | No        |	
+| Indirect dependencies	                      | No	   | No	      | Yes	       | Yes       |	
 | Dependencies up to method / attribute level | Yes	   | No	      | Yes	       | No        |	
 | **Architecture analysis and assessment**    |        |          |            |           |
-| Number of partitioning algorithms           | 11	   | 1	      | 1	       | 1         |
+| Number of partitioning algorithms           | 11	   | 1	      | 1	       | 2         |
 | Number of software metrics	              | 24	   | 0	      | 82	       | 0         |
 | **Architecture control**                    |        |          |            |           |
-| Simulate refactoring	                      | Yes    | No       | No	       | No        |
+| Simulate refactoring	                      | Yes    | No       | No	       | Yes       |
 | Definition dependency rules	              | Yes	   | no       | Yes        | No        |
 | Build integration	                          | Yes	   | No       | Yes	       | Yes	   |
 | Metrics trends	                          | Yes    | No       | Yes        | No        |
 | Automation	                              | Yes	   | No	      | Yes	       | No        |
+| Web based dashboard                         | Yes    | No       | Yes        | No        |
 
 # Summary
 
-Intelij Ultimate, JArchitect, CppDepend, NDepend and the DsmSuite have more or less similar DSM capabilities.
-If architecture refactoring is necessary, then Lattix is the best choice. 
+Intelij Ultimate, JArchitect, CppDepend, NDepend have more or less similar DSM capabilities.
+If architecture refactoring is necessary, then Lattix or the DSMSuite are required. 
+The commercial Lattix tool is still the best choice, when advanced DSM features are required.
+
 Structure101 also supports architectural refactoring, but does not support DSM visualization. 
