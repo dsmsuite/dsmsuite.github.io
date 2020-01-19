@@ -23,12 +23,28 @@ The DSM suite was initially based on the source code of the [DSM plugin for Visu
 
 # History
 
-To achieve the goals above the following major modifications have been made:
+## Initial changes
+To achieve the goals above the following initial modifications were made:
 * Converted it from a Visual Studio plug-in into a standalone application.
 * Separated the C# code analyzer from the plug-in and converted it into command line code executable.
 * Separated the building of the DSM model from the plug-in and converted it into command line executable.
 * Added command line code analyzers for C++, Java, UML and Visual Studio.
-Later in time almost the entire software has been rewritten from a Windows Forms application to a WPF application. 
+
+## Further improvements
+Later almost the entire software has been rewritten from a Windows Forms application to a WPF application. 
+
+## Future plans
+The following features are considered for future implementation (in order of priority):
+* Architecture rules and architecture validation.
+* CMake support for C++.
+* Architecture metrics:
+  * Percentage cycles
+  * Relation density
+  * Average impact
+  * Classification like in study by Dan Sturtevant
+* Maintaining history when model is updated using continuous integration. This might include:
+  * Improved data storage model for scalability (when model updates are done each day for a long period of time)
+  * Keep history of metrics
 
 # Source Code
 

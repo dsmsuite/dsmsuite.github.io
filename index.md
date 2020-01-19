@@ -2,6 +2,20 @@
 layout: default
 ---
 
+# Aspects of good software design
+
+The following are some aspects which are important for good software design:
+
+|                | Guideline                                                | Metric                     | Visibility |                                                                                |
+|:---------------|----------------------------------------------------------|----------------------------|------------|
+| Good naming    | Names should reflect problem domain                      | None                       | High       |
+| Low complexity | Low complexity                                           | Cyclomatic Complexity < 10 | High       |
+| High cohesion  | Single responsibility principle                          | Module size <500 LOC       | High       |
+| Low coupling   | Depend towards abstractions and interface and no cycles  | No single standard         | Low        |
+
+All aspects except coupling can be easily observed from the source code using an IDE or editor. The impact of this lack of visibliblity 
+of software dependencies is that problems in this area of software design often are not noticed.
+
 # Why software dependencies matter
 
 Ideally, software can be easily modified, is understandable, reliable and reusable. 
@@ -62,18 +76,18 @@ This is essential because developers can easily violate intended architecture by
 	
 # Design structure matrix
 
-A design structure matrix consists of a matrix to visualize dependencies of hierarchically organized elements and 
-a set of algorithms which can be applied on the matrix to sort the elements in order to discover layering.
-The technique has been used to visualize very complex systems. An example of a design structure matrix is shown below:
-
-![example dsm](https://dsmsuite.github.io/assets/img/index/dsm_example.png "example dsm")
-*Figure 3: Design structure matrix*
-
 Using a design structure matrix to visualize the code architecture addresses some of the problems described above:
 * It can be used to visualize very complex software systems without overwhelming the user.
 * It can be used to validate that the source code conforms to the intended architecture.
 * It can be easily kept in sync with the code.
-
 Is a powerful technique for analyzing, improving, and managing software architecture and can be adopted at any stage of the project
+
+A design structure matrix consists of a matrix to visualize dependencies of hierarchically organized elements and 
+a set of algorithms which can be applied on the matrix to sort the elements in order to discover layering.
+
+An example of a design structure matrix is shown below:
+
+![example dsm](https://dsmsuite.github.io/assets/img/index/dsm_example.png "example dsm")
+*Figure 3: Design structure matrix*
 
 > For more information on design structure matrix see the [DSM Overview](dsm_overview) or [DSM Powerpoint](https://dsmsuite.github.io/documents/DsmPresentation.pptx)
