@@ -262,11 +262,14 @@ The DSM viewer has the following features:
 * Opening DSM file
 * Modifying the DSM file 	
 	* Move elements up or down
+	* Create, edit, and delete elements
+	* Create, edit, and delete relations
+	* Seach for elements
 	* Partition a section of the DSM model
 	* Saving the changes in the DSM file
 * Changing the view of the DSM
 	* Change the zoom level
-	* Highlight cyclic dependencies on or off
+	* Making screenshots
 * Reporting
 	* Report meta data
 	* Report relations, consumers and providers of selected matrix cell
