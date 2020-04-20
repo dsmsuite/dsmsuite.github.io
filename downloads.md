@@ -4,6 +4,30 @@
 * Windows platform with .NET 4.6.2 framework
 * 64 bits CPU
 
+## Sample models 
+
+### Android Covid Apps
+
+An dependency analysis of the Android apps submitted to Dutch government for fighting COVID-19.
+See https://www.rijksoverheid.nl/onderwerpen/coronavirus-app/broncode 
+ 
+All external dependencies of the application are all listed in the item 'external'.
+
+| Organization           | Application            | Download                                                                         |
+|:-----------------------|------------------------+----------------------------------------------------------------------------------|
+| Sia Partners           | OpenTrace              | [link](https://dsmsuite.github.io/downloads/Covid/OpenTrace.dsm)                 |
+| Capgemini              | Erouska                | [link](https://dsmsuite.github.io/downloads/Covid/Erouska.dsm)                   |
+| Deus                   | covid19-dp3t           | [link](https://dsmsuite.github.io/downloads/Covid/Covid19-dp3t.dsm)              |
+| Covid-19 Alert         | covid19-alert-android  | [link](https://dsmsuite.github.io/downloads/Covid/Covid19Alert.dsm)              |
+| DDT                    | digime-sdk             | [link](https://dsmsuite.github.io/downloads/Covid/Digime.dsm)                    |
+
+### Other
+
+| Description            | Version        | Download                                                                                                 |
+|:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
+| DsmSuite example model | -              | [link](https://dsmsuite.github.io/downloads/DsmSuite.dsm)                                                |
+| ArgoUml example model  | -              | [link](https://dsmsuite.github.io/downloads/ArgoUml.dsm)  
+
 ## Latest versions
 
 | Description            | Version        | Download                                                                                                 |
