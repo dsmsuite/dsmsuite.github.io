@@ -13,13 +13,14 @@ See https://www.rijksoverheid.nl/onderwerpen/coronavirus-app/broncode
  
 All external dependencies of the application are all listed in the item 'external'.
 
-| Organization           | Application            | Download                                                                         |
-|:-----------------------|------------------------+----------------------------------------------------------------------------------|
-| Sia Partners           | OpenTrace              | [link](https://dsmsuite.github.io/downloads/Covid/OpenTrace.dsm)                 |
-| Capgemini              | Erouska                | [link](https://dsmsuite.github.io/downloads/Covid/Erouska.dsm)                   |
-| Deus                   | covid19-dp3t           | [link](https://dsmsuite.github.io/downloads/Covid/Covid19-dp3t.dsm)              |
-| Covid-19 Alert         | covid19-alert-android  | [link](https://dsmsuite.github.io/downloads/Covid/Covid19Alert.dsm)              |
-| DDT                    | digime-sdk             | [link](https://dsmsuite.github.io/downloads/Covid/Digime.dsm)                    |
+| Organization           | Application            | Website                      |  Download                                                                         |
+|:-----------------------|------------------------+------------------------------+-------------------------------------------------------------------------|
+| Sia Partners           | OpenTrace              | https://bluetrace.io/        | [link](https://dsmsuite.github.io/downloads/Covid/OpenTrace.dsm)                 |
+| Capgemini              | Erouska                | https://erouska.cz/          | [link](https://dsmsuite.github.io/downloads/Covid/Erouska.dsm)                   |
+| Deus                   | covid19-dp3t           |                              | [link](https://dsmsuite.github.io/downloads/Covid/Covid19-dp3t.dsm)              |
+| Covid-19 Alert         | covid19-alert          | https://www.covid19-alert.eu | [link](https://dsmsuite.github.io/downloads/Covid/Covid19Alert.dsm)              |
+| DDT                    | Digime                 |                              | [link](https://dsmsuite.github.io/downloads/Covid/Digime.dsm)                    |
+| ITO                    | Ito                    | https://www.ito-app.org/     | [link](https://dsmsuite.github.io/downloads/Covid/Ito.dsm)                       |
 
 ### Other
 
@@ -32,7 +33,7 @@ All external dependencies of the application are all listed in the item 'externa
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7407.13761 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7407.13761.msi)                                 |
+| Full dsm suite         | 1.0.7422.19649 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7422.19649.msi)                                 |
 | DsmSuite example model | -              | [link](https://dsmsuite.github.io/downloads/DsmSuite.dsm)                                                |
 | ArgoUml example model  | -              | [link](https://dsmsuite.github.io/downloads/ArgoUml.dsm)                                                 |
 
@@ -194,3 +195,7 @@ See [All downloads](all_downloads) for all downloads including older versions.
 * Extend relations view with consumer and provider type
 * Always log user messages
 * Speedup dsm builder performance
+
+## 27 April 2020 - Version 1.0.7422.19649
+
+* Fix cell tooltip
