@@ -33,7 +33,7 @@ All external dependencies of the application are all listed in the item 'externa
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7422.19649 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7422.19649.msi)                                 |
+| Full dsm suite         | 1.0.7425.17003 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7425.17003.msi)                                 |
 | DsmSuite example model | -              | [link](https://dsmsuite.github.io/downloads/DsmSuite.dsm)                                                |
 | ArgoUml example model  | -              | [link](https://dsmsuite.github.io/downloads/ArgoUml.dsm)                                                 |
 
@@ -199,3 +199,7 @@ See [All downloads](all_downloads) for all downloads including older versions.
 ## 27 April 2020 - Version 1.0.7422.19649
 
 * Fix cell tooltip
+
+## 30 april 2020 - Version 1.0.7425.17003
+
+* Fix matrix not always fully visible when scrolling 
