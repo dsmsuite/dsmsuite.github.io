@@ -15,7 +15,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7431.21869 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7431.21869.msi)                                 |
+| Full dsm suite         | 1.0.7431.22253 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7431.22253.msi)                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -184,6 +184,6 @@ See [All downloads](all_downloads) for all downloads including older versions.
 
 * Fix matrix not always fully visible when scrolling 
 
-## 5 May 2020 - Version 1.0.7431.21869
+## 5 May 2020 - Version 1.0.7431.22253
 
 * Improved search feature
