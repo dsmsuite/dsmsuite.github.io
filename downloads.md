@@ -6,24 +6,6 @@
 
 ## Sample models 
 
-### Android Covid Apps
-
-An dependency analysis of the Android apps submitted to Dutch government for fighting COVID-19.
-See https://www.rijksoverheid.nl/onderwerpen/coronavirus-app/broncode 
- 
-All external dependencies of the application are all listed in the item 'external'.
-
-| Organization           | Application            | Website                      |  Download                                                                         |
-|:-----------------------|------------------------+------------------------------+-------------------------------------------------------------------------|
-| Sia Partners           | OpenTrace              | https://bluetrace.io/        | [link](https://dsmsuite.github.io/downloads/Covid/OpenTrace.dsm)                 |
-| Capgemini              | Erouska                | https://erouska.cz/          | [link](https://dsmsuite.github.io/downloads/Covid/Erouska.dsm)                   |
-| Deus                   | covid19-dp3t           |                              | [link](https://dsmsuite.github.io/downloads/Covid/Covid19-dp3t.dsm)              |
-| Covid-19 Alert         | covid19-alert          | https://www.covid19-alert.eu | [link](https://dsmsuite.github.io/downloads/Covid/Covid19Alert.dsm)              |
-| DDT                    | Digime                 |                              | [link](https://dsmsuite.github.io/downloads/Covid/Digime.dsm)                    |
-| ITO                    | Ito                    | https://www.ito-app.org/     | [link](https://dsmsuite.github.io/downloads/Covid/Ito.dsm)                       |
-
-### Other
-
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
 | DsmSuite example model | -              | [link](https://dsmsuite.github.io/downloads/DsmSuite.dsm)                                                |
