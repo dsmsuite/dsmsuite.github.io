@@ -16,7 +16,7 @@
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
 | Full dsm suite         | 1.0.7431.13320 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7431.13320.msi)                                 |
-                                              |
+
 See [All downloads](all_downloads) for all downloads including older versions.
 
 # Change History
