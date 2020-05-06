@@ -15,10 +15,8 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7425.17003 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7425.17003.msi)                                 |
-| DsmSuite example model | -              | [link](https://dsmsuite.github.io/downloads/DsmSuite.dsm)                                                |
-| ArgoUml example model  | -              | [link](https://dsmsuite.github.io/downloads/ArgoUml.dsm)                                                 |
-
+| Full dsm suite         | 1.0.7431.13320 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7431.13320.msi)                                 |
+                                              |
 See [All downloads](all_downloads) for all downloads including older versions.
 
 # Change History
@@ -185,3 +183,7 @@ See [All downloads](all_downloads) for all downloads including older versions.
 ## 30 april 2020 - Version 1.0.7425.17003
 
 * Fix matrix not always fully visible when scrolling 
+
+## 5 May 2020 - Version 1.0.7431.13320
+
+* Improved search feature
