@@ -15,7 +15,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7438.17206 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7438.17206.msi)                                 |
+| Full dsm suite         | 1.0.7438.21088 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7438.21088.msi)                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -192,6 +192,7 @@ See [All downloads](all_downloads) for all downloads including older versions.
 
 * Added case sensitive search option
 
-## 13 May 2020 - Version 1.0.7438.17206
+## 13 May 2020 - Version 1.0.7438.21088
 
 * Added relative size and cycality percentage metrics
+* Fixed defect with element expand when last element moved out
