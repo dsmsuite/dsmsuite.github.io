@@ -15,7 +15,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7440.13841 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7440.13841.msi)                                 |
+| Full dsm suite         | 1.0.7510.32647 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7510.32647.msi)                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -201,3 +201,8 @@ See [All downloads](all_downloads) for all downloads including older versions.
 
 * Updated metrics visualization
 * Color code consumers and providers for selected instead of hovered element
+
+## 24 July 2020 - Version 1.0.7510.32647
+
+* Removed scanning for duplicated files from Visual Studio analyzer
+* Implemented context DSM in Viewer
