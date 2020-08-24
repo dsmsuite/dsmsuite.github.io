@@ -15,7 +15,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7510.32647 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7510.32647.msi)                                 |
+| Full dsm suite         | 1.0.7541.12466 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7541.12466.msi)                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -206,3 +206,8 @@ See [All downloads](all_downloads) for all downloads including older versions.
 
 * Removed scanning for duplicated files from Visual Studio analyzer
 * Implemented context DSM in Viewer
+
+## 24 August 2020 - Version 1.0.7541.12466
+
+* Improved screenshot image size
+* Drastically improved performance of move element by only recalculating weight relations outside moved element and by reducing number of dictionary lookups
