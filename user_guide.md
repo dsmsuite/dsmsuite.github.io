@@ -253,25 +253,61 @@ C:\Program Files (x86)\DsmSuite\DsmViewer\DsmSuite.DsmBuilder.exe BuilderSetting
 
 ### Step 4: Viewing and modifying the DSM
 
-![DSM viewer](https://dsmsuite.github.io/assets/img/user_manual/dsm_viewer.png "DSM viewer")
-
-*Figure 2: DSM Viewer*
-
 The DSM viewer has the following features:
 
-* Opening DSM file
-* Modifying the DSM file 	
+#### Model navigation
+
+![Model navigation](https://dsmsuite.github.io/assets/img/features/Feature1_model_navigation.png "Model navigation")
+
+*Figure 2: Model navigation*
+
+#### Dependency visualization
+
+![Dependency visualization](https://dsmsuite.github.io/assets/img/features/Feature2_dependency_visualization.png "Dependency visualization")
+
+*Figure 3: Dependency visualization*
+
+#### Metrics
+
+![Metrics](https://dsmsuite.github.io/assets/img/features/Feature3_metrics.png "Metrics")
+
+*Figure 4: Metrics*
+
+#### Element search
+
+![Element search](https://dsmsuite.github.io/assets/img/features/Feature4-search.png "Element search")
+
+*Figure 5: Element search*
+
+#### Zoom and screenshot
+
+![Zoom and screenshot](https://dsmsuite.github.io/assets/img/features/Feature5_zoom_and_screenshot.png "Zoom and screenshot")
+
+*Figure 6: Zoom and screenshot*
+
+#### Queries
+
+![Queries](https://dsmsuite.github.io/assets/img/features/Feature6_queries.png "Queries")
+
+*Figure 7: Queries*
+
+#### Detail matrix
+
+![Detail matrix](https://dsmsuite.github.io/assets/img/features/Feature7_detail_matrix.png "Detail matrix")
+
+*Figure 8: Detail matrix*
+
+#### Model editing
+Models can be editing by:
 	* Move elements up or down
 	* Create, edit, and delete elements
 	* Create, edit, and delete relations
-	* Seach for elements
 	* Partition a section of the DSM model
 	* Saving the changes in the DSM file
-* Changing the view of the DSM
-	* Change the zoom level
-	* Making screenshots
-* Reporting
-	* Report meta data
-	* Report relations, consumers and providers of selected matrix cell
-	* Report provided and required interfaces of selected element
+	
+![Model editing](https://dsmsuite.github.io/assets/img/features/Feature8_editing.png "Model editing")
+
+*Figure 9: Model editing*
+
+
 
