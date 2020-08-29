@@ -10,27 +10,27 @@ The DSM viewer has the following features:
 ## Model navigation
 The tool will have the element hierarchy and dependencies between the elements. The hovered and selected element or dependency are highlighted.
 
-![Model navigation](https://dsmsuite.github.io/assets/img/features/feature1_model_navigation.png "Model navigation")
+![Model navigation](https://dsmsuite.github.io/assets/img/features/model_navigation.png "Model navigation")
 
 *Figure 1: Model navigation*
 
 ## Dependency visualization
 It will show the dependency strength in the matrix.  Cycles will be highlighted. Consumers and providers of the selected element are highlighted as well.
 
-![Dependency visualization](https://dsmsuite.github.io/assets/img/features/feature2_dependency_visualization.png "Dependency visualization")
+![Dependency visualization](https://dsmsuite.github.io/assets/img/features/dependency_visualization.png "Dependency visualization")
 
 *Figure 2: Dependency visualization*
 
 ## Metrics
 It has a  metrics view which can be expanded and will show metrics per element.
 
-![Metrics](https://dsmsuite.github.io/assets/img/features/feature3_metrics.png "Metrics")
+![Metrics](https://dsmsuite.github.io/assets/img/features/metrics.png "Metrics")
 
 *Figure 3: Metrics*
 
 ## Element search
 It allows searching for elemets by name or part of the name. The number of found elements is indicated. In the matrix elements containing the found elements are highlighted so it is easy to navigate to the found elements.
-![Element search](https://dsmsuite.github.io/assets/img/features/feature4-search.png "Element search")
+![Element search](https://dsmsuite.github.io/assets/img/features/search.png "Element search")
 
 *Figure 5: Element search*
 
@@ -38,21 +38,21 @@ It allows searching for elemets by name or part of the name. The number of found
 A screenshot can be taken and the zoomlevel can be adjusted.
 
 A jus can be taken and the zoom level can be ad
-![Zoom and screenshot](https://dsmsuite.github.io/assets/img/features/feature5_zoom_and_screenshot.png "Zoom and screenshot")
+![Zoom and screenshot](https://dsmsuite.github.io/assets/img/features/zoom_and_screenshot.png "Zoom and screenshot")
 
 *Figure 5: Zoom and screenshot*
 
 ## Queries
 A list of consumers and providers can be shown for an element.
 
-![Queries](https://dsmsuite.github.io/assets/img/features/feature6_queries.png "Queries")
+![Queries](https://dsmsuite.github.io/assets/img/features/queries.png "Queries")
 
 *Figure 6: Queries*
 
 ## Detail matrix
 A detailed matrix can be show for s selected element or dependency.
 
-![Detail matrix](https://dsmsuite.github.io/assets/img/features/feature7_detail_matrix.png "Detail matrix")
+![Detail matrix](https://dsmsuite.github.io/assets/img/features/detail_matrix.png "Detail matrix")
 
 *Figure 7: Detail matrix*
 
@@ -64,7 +64,7 @@ Models can be editing by:
 	* Partition a section of the DSM model
 	* Saving the changes in the DSM file
 	
-![Model editing](https://dsmsuite.github.io/assets/img/features/feature8_editing.png "Model editing")
+![Model editing](https://dsmsuite.github.io/assets/img/features/editing.png "Model editing")
 
 *Figure 8: Model editing*
 
