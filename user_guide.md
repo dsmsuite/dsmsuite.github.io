@@ -2,11 +2,77 @@
 layout: default
 ---
 
+# Features
+The DsmSuite has the following features:
+
+The DSM viewer has the following features:
+
+## Model navigation
+The tool will have the element hierarchy and dependencies between the elements. The hovered and selected element or dependency are highlighted.
+
+![Model navigation](https://dsmsuite.github.io/assets/img/features/feature1_model_navigation.png "Model navigation")
+
+*Figure 1: Model navigation*
+
+## Dependency visualization
+It will show the dependency strength in the matrix.  Cycles will be highlighted. Consumers and providers of the selected element are highlighted as well.
+
+![Dependency visualization](https://dsmsuite.github.io/assets/img/features/feature2_dependency_visualization.png "Dependency visualization")
+
+*Figure 2: Dependency visualization*
+
+## Metrics
+It has a  metrics view which can be expanded and will show metrics per element.
+
+![Metrics](https://dsmsuite.github.io/assets/img/features/feature3_metrics.png "Metrics")
+
+*Figure 3: Metrics*
+
+## Element search
+It allows searching for elemets by name or part of the name. The number of found elements is indicated. In the matrix elements containing the found elements are highlighted so it is easy to navigate to the found elements.
+![Element search](https://dsmsuite.github.io/assets/img/features/feature4-search.png "Element search")
+
+*Figure 5: Element search*
+
+## Zoom and screenshot
+A screenshot can be taken and the zoomlevel can be adjusted.
+
+A jus can be taken and the zoom level can be ad
+![Zoom and screenshot](https://dsmsuite.github.io/assets/img/features/feature5_zoom_and_screenshot.png "Zoom and screenshot")
+
+*Figure 5: Zoom and screenshot*
+
+## Queries
+A list of consumers and providers can be shown for an element.
+
+![Queries](https://dsmsuite.github.io/assets/img/features/feature6_queries.png "Queries")
+
+*Figure 6: Queries*
+
+## Detail matrix
+A detailed matrix can be show for s selected element or dependency.
+
+![Detail matrix](https://dsmsuite.github.io/assets/img/features/feature7_detail_matrix.png "Detail matrix")
+
+*Figure 7: Detail matrix*
+
+## Model editing
+Models can be editing by:
+	* Move elements up or down
+	* Create, edit, and delete elements
+	* Create, edit, and delete relations
+	* Partition a section of the DSM model
+	* Saving the changes in the DSM file
+	
+![Model editing](https://dsmsuite.github.io/assets/img/features/feature8_editing.png "Model editing")
+
+*Figure 8: Model editing*
+
 # Technical Overview
 
 ![Technical Overview](https://dsmsuite.github.io/assets/img/user_manual/technical_overview.png "Technical Overview")
 
-*Figure 1: DSM Suite Key Components*
+*Figure 9: DSM Suite Key Components*
 
 The DSM suite consists of the following components:
 
@@ -253,61 +319,7 @@ C:\Program Files (x86)\DsmSuite\DsmViewer\DsmSuite.DsmBuilder.exe BuilderSetting
 
 ### Step 4: Viewing and modifying the DSM
 
-The DSM viewer has the following features:
 
-#### Model navigation
-
-![Model navigation](https://dsmsuite.github.io/assets/img/features/Feature1_model_navigation.png "Model navigation")
-
-*Figure 2: Model navigation*
-
-#### Dependency visualization
-
-![Dependency visualization](https://dsmsuite.github.io/assets/img/features/Feature2_dependency_visualization.png "Dependency visualization")
-
-*Figure 3: Dependency visualization*
-
-#### Metrics
-
-![Metrics](https://dsmsuite.github.io/assets/img/features/Feature3_metrics.png "Metrics")
-
-*Figure 4: Metrics*
-
-#### Element search
-
-![Element search](https://dsmsuite.github.io/assets/img/features/Feature4-search.png "Element search")
-
-*Figure 5: Element search*
-
-#### Zoom and screenshot
-
-![Zoom and screenshot](https://dsmsuite.github.io/assets/img/features/Feature5_zoom_and_screenshot.png "Zoom and screenshot")
-
-*Figure 6: Zoom and screenshot*
-
-#### Queries
-
-![Queries](https://dsmsuite.github.io/assets/img/features/Feature6_queries.png "Queries")
-
-*Figure 7: Queries*
-
-#### Detail matrix
-
-![Detail matrix](https://dsmsuite.github.io/assets/img/features/Feature7_detail_matrix.png "Detail matrix")
-
-*Figure 8: Detail matrix*
-
-#### Model editing
-Models can be editing by:
-	* Move elements up or down
-	* Create, edit, and delete elements
-	* Create, edit, and delete relations
-	* Partition a section of the DSM model
-	* Saving the changes in the DSM file
-	
-![Model editing](https://dsmsuite.github.io/assets/img/features/Feature8_editing.png "Model editing")
-
-*Figure 9: Model editing*
 
 
 
