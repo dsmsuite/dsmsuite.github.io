@@ -15,7 +15,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7541.13270 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7541.13270.msi)                                 |
+| Full dsm suite         | 1.0.7553.19656 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7553.19656.msi)                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -212,3 +212,8 @@ See [All downloads](all_downloads) for all downloads including older versions.
 * Improved screenshot image size
 * Drastically improved performance of move element by only recalculating weight relations outside moved element and by reducing number of dictionary lookups
 * Show external relations metric
+
+## 9 Sep 2020 - Version 1.0.7553.19656
+
+* Fixed hangup when dragging element to one of its children
+* Fixed defect in name editing and provide user help why name change not allowed
