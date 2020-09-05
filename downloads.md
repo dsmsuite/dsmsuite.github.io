@@ -216,4 +216,7 @@ See [All downloads](all_downloads) for all downloads including older versions.
 ## 9 Sep 2020 - Version 1.0.7553.19656
 
 * Fixed hangup when dragging element to one of its children
-* Fixed defect in name editing and provide user help why name change not allowed
+* Fixed defect in element name editing and provide user help condition why name change is not allowed
+  * Name unchanged
+  * Name empty
+  * Name conflicts with existing name because each full name should unique
