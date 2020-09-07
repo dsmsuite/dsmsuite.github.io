@@ -15,7 +15,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7554.23972 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7554.23972.msi)                                 |
+| Full dsm suite         | 1.0.7555.13887 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7555.13887.msi)                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -221,8 +221,8 @@ See [All downloads](all_downloads) for all downloads including older versions.
   * Name empty
   * Name contains dot character
   * Name conflicts with existing name because each full name should unique
-  
-## 6 Sep 2020 - Version 1.0.7554.23972
 
-* Fixed defect in derived weight calculated due to error in get external relations of element
+## 7 Sep 2020 - Version .0.7555.13887
 
+* Fixed defect in derived weight calculated at slight performance cost
+* Show version number in title bar
