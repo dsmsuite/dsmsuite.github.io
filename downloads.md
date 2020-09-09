@@ -15,7 +15,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7557.29284 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7557.29284.msi)                                 |
+| Full dsm suite         | 1.0.7557.30930 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7557.30930.msi)                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -227,7 +227,8 @@ See [All downloads](all_downloads) for all downloads including older versions.
 * Fixed defect in derived weight calculated at slight performance cost
 * Show version number in title bar
 
-## 9 Sep 2020 - Version 1.0.7557.29284
+## 9 Sep 2020 - Version 1.0.7557.30930
 
 * Fixed defect that only four digits show in column header
 * Changed settings default from hide cycles to show cycles
+* Reverted change logging path to avoid crash
