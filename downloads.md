@@ -15,7 +15,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7558.15280 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7558.15280.msi)                                 |
+| Full dsm suite         | 1.0.7569.21989 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7569.21989.msi)                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -236,3 +236,13 @@ See [All downloads](all_downloads) for all downloads including older versions.
 ## 10 Sep 2020 - Version 1.0.7558.15280
 
 * Fixed defect in derived weight calculated without performance cost and added unit tests
+
+## 21 Sep 2020 - Version 1.0.7569.21989 
+
+* DSM Viewer
+  * Bookmarks and annotations added
+  * No compatible change in persisting edit action  in DSM 
+  * Added legend
+* DSM builder
+  * Restored import by updating existing model restored
+* Compare tool added to report differences between two DSI files
