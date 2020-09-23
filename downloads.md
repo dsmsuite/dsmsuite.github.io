@@ -15,7 +15,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7571.13938 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7571.13938.msi)                                 |
+| Full dsm suite         | 1.0.7571.15419 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7571.15419.msi)                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -247,7 +247,7 @@ See [All downloads](all_downloads) for all downloads including older versions.
   * Restored import by updating existing model restored
 * Compare tool added to report differences between two DSI files
 
-## 23 Sep 2020 - Version 1.0.7571.13938
+## 23 Sep 2020 - Version 1.0.7571.15419
 
 * DSM Viewer 
   * Implemented rich tooltips for matrix
