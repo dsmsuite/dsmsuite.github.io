@@ -15,7 +15,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7571.15419 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7571.15419.msi)                                 |
+| Full dsm suite         | 1.0.7573.13752 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7573.13752.msi)                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -251,3 +251,9 @@ See [All downloads](all_downloads) for all downloads including older versions.
 
 * DSM Viewer 
   * Implemented rich tooltips for matrix
+  
+## 25 Sep 2020 - Version 1.0.7573.13752
+  
+  * DSM Viewer
+    * When moving element drop at correct location
+	* When undoing move element restore at original location
