@@ -15,7 +15,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7573.13752 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7573.13752.msi)                                 |
+| Full dsm suite         | 1.0.7574.17964 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7574.17964.msi)                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -254,6 +254,11 @@ See [All downloads](all_downloads) for all downloads including older versions.
   
 ## 25 Sep 2020 - Version 1.0.7573.13752
   
-  * DSM Viewer
-    * When moving element drop at correct location
-	* When undoing move element restore at original location
+* DSM Viewer
+  * When moving element drop at correct location
+ When undoing move element restore at original location
+	
+## 26 Sep 2020 - Version 1.0.7574.17964
+
+* DSM Viewer
+  * Improved selection of element indicator view mode (consumer/provider, search, bookmarks, annatations)
