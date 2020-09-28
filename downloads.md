@@ -15,7 +15,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7574.17964 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7574.17964.msi)                                 |
+| Full dsm suite         | 1.0.7576.14412 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7576.14412.msi)                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -262,3 +262,8 @@ See [All downloads](all_downloads) for all downloads including older versions.
 
 * DSM Viewer
   * Improved selection of element indicator view mode (consumer/provider, search, bookmarks, annatations)
+  
+## 28 Sep 2020 - Version 1.0.7576.14412
+  
+* DSM Viewer
+  * Introduced search settings: case sensitive and search scope
