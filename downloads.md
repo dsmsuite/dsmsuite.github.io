@@ -15,7 +15,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7576.14412 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7576.14412.msi)                                 |
+| Full dsm suite         | 1.0.7580.14844 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7580.14844.msi)                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -267,3 +267,13 @@ See [All downloads](all_downloads) for all downloads including older versions.
   
 * DSM Viewer
   * Introduced search settings: case sensitive and search scope
+  
+## 2 Okt 2020 - Version 1.0.7580.14844
+
+* DSM Viewer
+  * Fix problem that when model becomes corrupted progress bar not hidden when loading or saving model
+  * Fix problem index out range when moving elements
+  * Rename element automatically when moving element to new parent where another child with same name as the moved element exist to avoid model corruption
+* Visual Studio Analyzer
+  * Improve setting global properties of projects to avoid exceptions when loading projects
+  * Use Microsoft.Build api to analyze solution file
