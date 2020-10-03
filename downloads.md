@@ -15,7 +15,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7580.14844 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7580.14844.msi)                                 |
+| Full dsm suite         | 1.0.7581.18682 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7581.18682.msi)                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -268,7 +268,7 @@ See [All downloads](all_downloads) for all downloads including older versions.
 * DSM Viewer
   * Introduced search settings: case sensitive and search scope
   
-## 2 Okt 2020 - Version 1.0.7580.14844
+## 2 Oct 2020 - Version 1.0.7580.14844
 
 * DSM Viewer
   * Fix problem that when model becomes corrupted progress bar not hidden when loading or saving model
@@ -277,3 +277,12 @@ See [All downloads](all_downloads) for all downloads including older versions.
 * Visual Studio Analyzer
   * Improve setting global properties of projects to avoid exceptions when loading projects
   * Use Microsoft.Build api to analyze solution file
+  
+## 3 Oct 2020 - Version 1.0.7581.18682
+
+* DSM Viewer
+  * Remove noticable delay in cell context menu
+  * Validate actions for valid data and clear when not all actions valid
+  * Sort element and relation lists
+* Visual Studio Analyzer
+  * Write list of analyzed projects to log file
