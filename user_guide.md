@@ -37,7 +37,7 @@ In the future it might also evaluate dependency rules to verify that the code co
 ## DSM Viewer
 The DSM viewer reads the DSM file and visualizes the element hierarchy and dependencies.
 
-# DSM Viewer Feature
+# DSM Viewer Features
 
 The viewer has the following features:
 
