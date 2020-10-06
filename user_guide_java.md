@@ -42,7 +42,7 @@ Use the following command to run JDeps (ArgoUML analysis example):
 Use the following command to run a analysis using the JDeps output file:
 
 ```
-"C:\Program Files (x86)\DsmSuite\Analyzers\Java\DsmSuite.Analyzer.Jdeps.exe" AnalyzerSettings.xml
+"C:\Program Files\DsmSuite\Analyzers\Java\DsmSuite.Analyzer.Jdeps.exe" AnalyzerSettings.xml
 ```
 
 ## Settings

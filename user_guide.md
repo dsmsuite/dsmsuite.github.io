@@ -2,10 +2,44 @@
 layout: default
 ---
 
-# Features
-The DsmSuite has the following features:
+# Technical Overview
 
-The DSM viewer has the following features:
+![Technical Overview](https://dsmsuite.github.io/assets/img/user_manual/technical_overview.png "Technical Overview")
+
+*Figure 9: DSM Suite Key Components*
+
+The DSM suite consists of the following components:
+
+## Analyzer
+An analyzer, which extracts information on elements and their relations from source, binaries or other data. An analyzer exports this information to a DSI file.
+
+A few standard analyzers are provided. If none of the provided analyzers suites your needs, 
+it is possible to write your own analyzer as long as its writes the result to a DSI file.
+
+> The DSI file must conform to the XSD schema described below. The DSM file format can be changed without any notice. 
+> For backwards compatibility it currently it still is unchanged with respect to the original DSM plug in format, 
+> but this could change in the future.
+
+## Transformer
+A transformer can be used to apply transformations on the DSI file. These transformations can for example:
+* Add transitive relations e.g. for C++ not only direct includes, but also indirect includes.
+* Transform elements, so they are moved in the element hierarchy. This feature can be used to analysis potential refactorings  as as described in the [DSM Overview](dsm_overview).
+
+## DSM builder
+The DSM builder uses a DSI file to create a DSM file. To build the DSM file it:
+* Reads the components and elements from the DSI file.
+* Builds an element hierarchy as can be observed on the left side of the DSM viewer.
+* Reads the relations between the elements from the file.
+* Calculates the derived dependency weights for all cells.
+* Flags cyclic relations, so the can emphasised in the DSM.
+In the future it might also evaluate dependency rules to verify that the code conforms to the defined architecture.
+
+## DSM Viewer
+The DSM viewer reads the DSM file and visualizes the element hierarchy and dependencies.
+
+# DSM Viewer Feature
+
+The viewer has the following features:
 
 ## Model navigation
 The tool will have the element hierarchy and dependencies between the elements. The hovered and selected element or dependency are highlighted.
@@ -67,44 +101,6 @@ Models can be editing by:
 ![Model editing](https://dsmsuite.github.io/assets/img/features/editing.png "Model editing")
 
 *Figure 8: Model editing*
-
-# Technical Overview
-
-![Technical Overview](https://dsmsuite.github.io/assets/img/user_manual/technical_overview.png "Technical Overview")
-
-*Figure 9: DSM Suite Key Components*
-
-The DSM suite consists of the following components:
-
-## Analyzer
-An analyzer, which extracts information on elements and their relations from source, binaries or other data. An analyzer exports this information to a DSI file.
-
-A few standard analyzers are provided. If none of the provided analyzers suites your needs, 
-it is possible to write your own analyzer as long as its writes the result to a DSI file.
-
-> The DSI file must conform to the XSD schema described below. The DSM file format can be changed without any notice. 
-> For backwards compatibility it currently it still is unchanged with respect to the original DSM plug in format, 
-> but this could change in the future.
-
-## Transformer
-A transformer can be used to apply transformations on the DSI file. These transformations can for example:
-* Add transitive relations e.g. for C++ not only direct includes, but also indirect includes.
-* Transform elements, so they are moved in the element hierarchy. This feature can be used to analysis potential refactorings  as as described in the [DSM Overview](dsm_overview).
-
-## DSM builder
-The DSM builder uses a DSI file to create a DSM file. To build the DSM file it:
-* Reads the components and elements from the DSI file.
-* Builds an element hierarchy as can be observed on the left side of the DSM viewer.
-* Reads the relations between the elements from the file.
-* Calculates the derived dependency weights for all cells.
-* Flags cyclic relations, so the can emphasised in the DSM.
-In the future it might also evaluate dependency rules to verify that the code conforms to the defined architecture.
-
-## DSM Viewer
-The DSM viewer reads the DSM file and visualizes the element hierarchy and dependencies.
-
-# Continuous Integration
-The analyzers, transformer and the builder are command line tools, so they can be easily integrated into continuous integration.
 
 # The DSI file format
 
@@ -192,14 +188,13 @@ Download the installer and install whatever best suits your needs.
 
 See [downloads](downloads)
 
-# Using the DSM Suite
+# Analyzing Code
 
-The following steps are required to be able to view dependencies in the DSM viewer.
+The following steps are required to be able to analyze code dependencies.
 
 1. Analyze the code with a suitable analyzer. Export the result to a DSI file.
 2. Optionally transform the model using the transformer. Export the result to a DSI file.
-3. Build the DSM file.
-4. Open the DSM file to show it in the viewer.
+3. Build the DSM file. This file can be opened in the viewer.
 
 ## Step 1: Perform dependency analysis
 
@@ -279,7 +274,7 @@ The following settings are defined:
 
 ### Run the transformer
 
-C:\Program Files (x86)\DsmSuite\Transformer\DsmSuite.Transformer.exe TransformerSettings.xml
+C:\Program Files\DsmSuite\Transformer\DsmSuite.Transformer.exe TransformerSettings.xml
 
 ## Step 3: Running the DSM builder
 
@@ -315,9 +310,8 @@ The following settings are defined:
 
 ### Run the builder
 
-C:\Program Files (x86)\DsmSuite\DsmViewer\DsmSuite.DsmBuilder.exe BuilderSettings.xml
+C:\Program Files\DsmSuite\DsmViewer\DsmSuite.DsmBuilder.exe BuilderSettings.xml
 
-### Step 4: Viewing and modifying the DSM
 
 
 

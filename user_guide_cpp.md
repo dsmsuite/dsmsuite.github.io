@@ -51,7 +51,7 @@ How this ambiguity is resolved  can be configured:
 Use the following command to run a analysis:
 
 ```
-"C:\Program Files (x86)\DsmSuite\Analyzers\C++\DsmSuite.Analyzer.Cpp.Exe" AnalyzerSettings.xml
+"C:\Program Files\DsmSuite\Analyzers\C++\DsmSuite.Analyzer.Cpp.Exe" AnalyzerSettings.xml
 ```
 
 ## Settings

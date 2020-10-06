@@ -35,8 +35,8 @@ Sparx Systems Enterprise Architect installed
 Use the following command to run a analysis:
 
 ```
-"C:\Program Files (x86)\DsmSuite\Analyzers\UML\DsmSuite.Analyzer.Uml.exe" AnalyzerSettings.xml
-```
+"C:\Program Files\DsmSuite\Analyzers\UML\DsmSuite.Analyzer.Uml.exe" AnalyzerSettings.xml
+
 
 ## Settings
 

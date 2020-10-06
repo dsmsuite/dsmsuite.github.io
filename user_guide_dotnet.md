@@ -43,7 +43,7 @@ Mono.Cecil to determine dependencies between .Net types. The element hierarchy i
 Use the following command to run a analysis:
 
 ```
-"C:\Program Files (x86)\DsmSuite\Analyzers\DotNet\DsmSuite.Analyzer.DotNet.exe" AnalyzerSettings.xml
+"C:\Program Files\DsmSuite\Analyzers\DotNet\DsmSuite.Analyzer.DotNet.exe" AnalyzerSettings.xml
 ```
 
 ## Settings
