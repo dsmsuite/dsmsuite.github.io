@@ -15,7 +15,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7581.18682 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7581.18682.msi)                                 |
+| Full dsm suite         | 1.0.7598.39024 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7598.39024.msi)                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -286,3 +286,8 @@ See [All downloads](all_downloads) for all downloads including older versions.
   * Sort element and relation lists
 * Visual Studio Analyzer
   * Write list of analyzed projects to log file
+  
+## 20 Oct 2020 - Version 1.0.7598.39024
+  
+* Visual Studio Analyzer
+  * Restored ToolsVersion settings    
