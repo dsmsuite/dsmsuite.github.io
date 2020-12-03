@@ -15,7 +15,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7641.11706 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7641.11706.msi)                                 |
+| Full dsm suite         | 1.0.7642.13094 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7642.13094.msi)                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -302,3 +302,7 @@ See [All downloads](all_downloads) for all downloads including older versions.
 * Visual Studio Analyzer  
   * Support macros in AdditionalIncludeDirectories improved logging
 
+## 3 Dec 2020 - Version 1.0.7642.13094
+
+* Visual Studio Analyzer  
+  * Support macros in AdditionalIncludeDirectories improved logging
