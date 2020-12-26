@@ -34,7 +34,7 @@ The DSM viewer reads the DSM file and visualizes the element hierarchy and depen
 
 The tooling supports the following log levels:
 
-| Name           | Description                                          |
+| Log Level      | Description                                          |
 |:---------------|:-----------------------------------------------------|
 | None           | Nothing is logged                                    |
 | User           | User messages are logged to a file                   |
@@ -44,9 +44,23 @@ The tooling supports the following log levels:
 | Data           | Data model actions are logged to a file              |
 | All            | Detailed information is logged to  file              |
 
-Each log level also includes logging of all previous log levels.
-Exceptions and user message are always written to the console independent of the selected log level.
-  	
+Standard the following log file can be generated:
+
+| Log Level      | Log file                          | Description                                                                          | 
+|:---------------|:----------------------------------|:-------------------------------------------------------------------------------------|
+| User           | userMessages.log                  | Contains all messages as shown in the console.                                       |
+| Error          | errorMessages.log                 | Contains error messages.                                                             |
+| Error          | exceptions.log                    | Contains information about any exceptions that occured during the analysis.          |
+| Warning        | warningMessages.log               | Contains warnings messages.                                                          |
+| User           | infoMessages.log                  | Contains information messages.                                                       |
+| Data           | dataModelActions.log              | Contains all actions on the data model like load, save and registration.             |
+|                | dataModelRelationsNotResolved.log | Contains queried relations that could not be resolved.                               | 
+
+Notes:
+* Each log level also includes logging of all previous log levels.
+* Exceptions and user message are always written to the console independent of the selected log level.
+* For each level an analyzer may add additional log files. If so details can be found in the documentation for that analyzer.
+
 ## File compression
 
 Both .dsi and .dsm files can be written as a compressed file or as plain xml. Compression can be used to reduce file size.
@@ -237,7 +251,7 @@ The following settings are defined:
 | LogLevel                                   | Log level as described above                                               |
 | Input.Filename                             | File name with .dsi extension used to extract dependency information       |     
 | Transformation.ApplyPartitioningAlgorithm  | Automatically apply partitioning algorithm on the model to sort it         |
-| Output.Filename                            | File name with .dsm extension used to write DSM information                |                                                  |    
+| Output.Filename                            | File name with .dsm extension used to write DSM information                |  
 | Output.Compress                            | Compress output file                                                       |
 
 ## Example
