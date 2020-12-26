@@ -4,11 +4,11 @@ layout: default
 
 # Technical Overview
 
+The DSM suite consists of the following components:
+
 ![Technical Overview](https://dsmsuite.github.io/assets/img/user_manual/technical_overview.png "Technical Overview")
 
 *Figure 9: DSM Suite Key Components*
-
-The DSM suite consists of the following components:
 
 ## Analyzer
 An analyzer, which extracts information on elements and their relations from source, binaries or other data. An analyzer exports this information to a DSI file.
