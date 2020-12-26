@@ -34,7 +34,7 @@ The DSM viewer reads the DSM file and visualizes the element hierarchy and depen
 
 The tooling supports the following log levels:
 
-| Log Level      | Description                                          |
+| Level          | Description                                          |
 |:---------------|:-----------------------------------------------------|
 | None           | Nothing is logged                                    |
 | User           | User messages are logged to a file                   |
@@ -46,7 +46,7 @@ The tooling supports the following log levels:
 
 Standard the following log file can be generated:
 
-| Log Level      | Log file                          | Description                                                                          | 
+| Level          | Log file                          | Description                                                                          | 
 |:---------------|:----------------------------------|:-------------------------------------------------------------------------------------|
 | User           | userMessages.log                  | Contains all messages as shown in the console.                                       |
 | Error          | errorMessages.log                 | Contains error messages.                                                             |
