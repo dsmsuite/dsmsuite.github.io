@@ -9,6 +9,8 @@ layout: default
 The C++ analyzer is intended to determine dependencies between C/C++ source files based on header file includes. 
 The element hierarchy is based on the directory structure of the source code. Namespaces and types are not taken into account.
 
+### Potential ambiguity
+
 It is important to understand that this analyzer does not have any knowledge on how to build the code and 
 therefore does not known the include paths used during the build. It simply uses all source code directories and their nested directories as include paths.
  
@@ -21,6 +23,14 @@ How this ambiguity is resolved  can be configured:
 
 > When building VC++ projects using Visual Studio selecting the Visual Studio analyzers gives more reliable results, 
 > because the actual include paths used during building are used.
+
+### Merging source and header files
+
+A C++ module consists in most cases of a header and a source file. In many cases externally visible header files are located in a different directory the private header files or source files.
+For proper analysis it is better to merge them to a single location in the DSM. Three strategies are possible:
+* **No merge**: The model is unchanged.
+* **Move header file**: The header file is move next to the source file with an identical name.
+* **Move header file directory**: Entire header file directory contents is moved to a source file directory based on a configurable naming rule.
 
 ## Pre requisites
 * None
@@ -42,7 +52,6 @@ How this ambiguity is resolved  can be configured:
 	* The found elements and dependencies are written to the OutputFilename.
 	* At the end of the analysis the percentage of the relations that could be resolved is shown. This is an indication of the reliability of the dependency model.
 * If the percentage lower than 100% look at the log files to find out the reason.
-* Optionally perform transformations on the the OutputFilename. See [User guide](user_guide) for details.
 * Convert the OutputFilename into a DSM file. See [User guide](user_guide) for details.
 * Open the DSM file in the Viewer.
 

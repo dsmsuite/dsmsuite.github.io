@@ -11,10 +11,20 @@ Also IDL files and their generated files are taken into account.
 
 > This analyzer used the Microsoft.Build.Evaluation API. For proper analysis it is required that solutions compile successfully.
 
+### Selectable model view
+
 The element hierarchy used to visualize the DSM can be based on:
 * **PhysicalView**: The element hierarchy is based on directories. 
 * **LogicalView**: The element hierarchy is based on solution folders and project filters. 
 Namespaces and types are not taken into account.
+
+### Merging source and header files
+
+A C++ module consists in most cases of a header and a source file. In many cases externally visible header files are located in a different directory the private header files or source files.
+For proper analysis it is better to merge them to a single location in the DSM. Three strategies are possible:
+* **No merge**: The model is unchanged.
+* **Move header file**: The header file is move next to the source file with an identical name.
+* **Move header file directory**: Entire header file directory contents is moved to a source file directory based on a configurable naming rule.
 
 > This analyzer provides more accurate results than the C++ analyzer, because include path per visual studio 
 > project are taken into account. Therefor if you analyzer VC++ chose this analyzer and not the C++ analyzer.
@@ -51,7 +61,6 @@ Namespaces and types are not taken into account.
     * If it is due to a third party include path add it to ExternalIncludeDirectories and resolve it in the proper way.
 	* If it is due to a interface include path add it to InterfaceIncludeDirectories.
 	* If it is because the include file missing in the Visual Studio projects add its path to ExternalIncludeDirectories and resolve it in the proper way.
-* Optionally perform transformations on the the OutputFilename. See [User guide](user_guide) for details.
 * Convert the OutputFilename into a DSM file. See [User guide](user_guide) for details.
 * Open the DSM file in the Viewer.
 
