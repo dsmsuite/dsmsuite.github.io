@@ -17,8 +17,6 @@ A few standard analyzers are provided. If none of the provided analyzers suites 
 it is possible to write your own analyzer as long as its writes the result to a DSI file.
 
 > The DSI file must conform to the XSD schema described below. The DSM file format can be changed without any notice. 
-> For backwards compatibility it currently it still is unchanged with respect to the original DSM plug in format, 
-> but this could change in the future.
 
 ## DSM builder
 The DSM builder uses a DSI file to create a DSM file. To build the DSM file it:
@@ -176,20 +174,42 @@ Each relation has the following properties:
 | to                     | The id of the consumer element.                      |
 | type                   | The type of relation e.g. include, inherit, realize. |
 | weight                 | The strength of the relation.                        |
-
+o
 # Installation
 
 Download the installer and install whatever best suits your needs.
 
 See [downloads](downloads)
 
+# Logging
+
+The tooling the following log levels:
+
+| Name           | Description                                          |
+|:---------------|:-----------------------------------------------------|
+| None           | Nothing is logged                                    |
+| User           | User messages are logged to a file                   |
+| Warning        | Warnings messages are logged to a file               |
+| Error          | Errors messages are logged to a file                 |
+| Info           | Info message are logged to a file                    |
+| Data           | Data model actions are logged to a file              |
+| All            | Detailed information is logged to  file              |
+
+Each log level also includes logging of all previous log levels.
+Exceptions and user message are always written to the console independent of the selected log level.
+  	
+# File compression
+
+Both .dsi and .dsm files can be written as a compressed file or as plain xml. Compression can be used to reduce file size.
+Upon reading the tooling automatically detects if a file is compressed, so separate extension is used for the compressed format.
+The used compression is the zip format.
+
 # Analyzing Code
 
 The following steps are required to be able to analyze code dependencies.
 
-1. Analyze the code with a suitable analyzer. Export the result to a DSI file.
-2. Optionally transform the model using the transformer. Export the result to a DSI file.
-3. Build the DSM file. This file can be opened in the viewer.
+1. Analyze the code with a suitable analyzer, which export the result to a DSI file.
+2. Build the DSM file. This file can be opened in the viewer.
 
 ## Step 1: Perform dependency analysis
 
@@ -211,14 +231,13 @@ This step results in DSI file.
 
 The following settings are defined:
 
-| Setting                     | Description                                                                | 
-|:----------------------------|:---------------------------------------------------------------------------|
-| LogLevel              | Log information to file for diagnostic purposes                            |
-| Input.Filename               | File name with .dsi extension used to extract dependency information       |     
-| Output.Filename              | File name with .dsm extension used to write DSM information                |  
+| Setting                                    | Description                                                                | 
+|:-------------------------------------------|:---------------------------------------------------------------------------|
+| LogLevel                                   | Log level as described above                                               |
+| Input.Filename                             | File name with .dsi extension used to extract dependency information       |     
 | Transformation.ApplyPartitioningAlgorithm  | Automatically apply partitioning algorithm on the model to sort it         |
-                                                  |    
-| Output.Compress          | Compress output                                                            |
+| Output.Filename                            | File name with .dsm extension used to write DSM information                |                                                  |    
+| Output.Compress                            | Compress output file                                                       |
 
 ## Example
 
