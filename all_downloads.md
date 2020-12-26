@@ -8,7 +8,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7665.22892 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7665.22892.msi)                                 |
+| Full dsm suite         | 1.0.7665.27971 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7665.27971.msi)                                 |
 |                        | 1.0.7644.16475 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7644.16475.msi)                                 |
 |                        | 1.0.7643.13145 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7643.13145.msi)                                 |
 |                        | 1.0.7642.14529 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7642.14529.msi)                                 |
