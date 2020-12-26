@@ -76,22 +76,22 @@ Use the following command to run a analysis:
 
 The following settings are defined:
 
-| Setting                                               | Description                                                                                                     | 
-|:------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------|
-| LogLevel                                              | Log level as described above                                                                                    |
-| Input.Filename                                        | Full path to visual studio solution files organized in named or unnamed groups                                  |
-| Input.RootDirectory                                   |                                                                                                                 |
-| Input.SystemIncludeDirectories                        | List of directories where system include files can be found.                                                    |
-| Input.ExternalIncludeDirectories                      | List of directories where third party include files can be found.                                               |
-| Input.InterfaceIncludeDirectories                     | List of directories where interface include files can be found. These can be clones.                            |
-| Analysis.ViewMode                                     | Based the element hierarchy on directorie or solution folders and project filters                               | 
-| Analysis.ToolsVersion                                 | Should match installed version (14.0=VS2015 15.0=VS2017)                                                        |
-| Transformation.IgnoredNames                           | Names in input data which will be ignore. Defines as regular expression.                                        |  
-| Transformation.AddTransitiveIncludes                  |                                                                                                                 |  
-| Transformation.HeaderSourceFileMergeStrategy          |                                                                                                                 |  
-| Transformation.MergeHeaderAndSourceFileDirectoryRules |                                                                                                                 |  
-| Output.Filename                                       | Filename with dsi extension to which results will be written                                                    |
-| Output.Compress                                       | Compress output file                                                                                            |
+| Setting                                | Description                                                                                                     | 
+|:---------------------------------------|:----------------------------------------------------------------------------------------------------------------|
+| LogLevel                               | Log level as described above                                                                                    |
+| Input.Filename                         | Full path to visual studio solution files organized in named or unnamed groups                                  |
+| Input.RootDirectory                    |                                                                                                                 |
+| Input.SystemIncludeDirectories         | List of directories where system include files can be found.                                                    |
+| Input.ExternalIncludeDirectories       | List of directories where third party include files can be found.                                               |
+| Input.InterfaceIncludeDirectories      | List of directories where interface include files can be found. These can be clones.                            |
+| Analysis.ViewMode                      | Based the element hierarchy on directorie or solution folders and project filters                               | 
+| Analysis.ToolsVersion                  | Should match installed version (14.0=VS2015 15.0=VS2017)                                                        |
+| Transformation.IgnoredNames            | Names in input data which will be ignore. Defines as regular expression.                                        |  
+| Transformation.AddTransitiveIncludes   |                                                                                                                 |  
+| Transformation.ModuleMergeStrategy     |                                                                                                                 |  
+| Transformation.ModuleMergeRules        |                                                                                                                 |   
+| Output.Filename                        | Filename with dsi extension to which results will be written                                                    |
+| Output.Compress                        | Compress output file                                                                                            |
 
 ## AnalyzerSettings.xml example 
 
