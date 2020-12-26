@@ -67,16 +67,20 @@ Use the following command to run a analysis:
 
 The following settings are defined:
 
-| Setting                 | Description                                                                    | 
-|:------------------------|:-------------------------------------------------------------------------------|
-| LoggingEnabled          | Log information for diagnostic purposes                                        |
-| RootDirectory           | Root of source code directory used to determine root of names in DSM           |
-| SourceDirectories       | List of directories where source code can be found                             |
-| IncludeDirectories      | List of additional directories where include files can be found. Think of system and third party include files. |
-| IgnorePaths             | List of directories in the source code tree which need to be excluded          |
-| ResolveMethod           | How to resolve ambiguity when filenames are not unique                         |
-| OutputFilename          | Filename with dsi extension to which results will be written                   |     
-| CompressOutputFile      | Compress output                                                                |
+| Setting                                               | Description                                                                                                     | 
+|:------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------|
+| LogLevel                                              | Log level as described above                                                                                    |
+| Input.RootDirectory                                   | Root of source code directory used to determine root of names in DSM                                            |
+| Input.SourceDirectories                               | List of directories where source code can be found                                                              |
+| Input.IncludeDirectories                              | List of additional directories where include files can be found. Think of system and third party include files. |
+| Input.IgnorePaths                                     | List of directories in the source code tree which need to be excluded                                           |
+| Analysis.ResolveMethod                                | How to resolve ambiguity when filenames are not unique                                                          |
+| Transformation.IgnoredNames                           | Names in input data which will be ignore. Defines as regular expression.                                        |  
+| Transformation.AddTransitiveIncludes                  |                                                                                                                 |  
+| Transformation.HeaderSourceFileMergeStrategy          |                                                                                                                 |  
+| Transformation.MergeHeaderAndSourceFileDirectoryRules |                                                                                                                 |  
+| Output.Filename                                       | Filename with dsi extension to which results will be written                                                    |
+| Output.Compress                                       | Compress output file                                                                                            |
 
 ## AnalyzerSettings.xml example 
 
@@ -85,7 +89,7 @@ Example for analyzing C++ in a D:\MyProject source directory.
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <AnalyzerSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <LogLevel>None</LogLevel>
+  <LogLevel>Error</LogLevel>
   <Input>
     <RootDirectory>C:\</RootDirectory>
     <SourceDirectories>
@@ -118,23 +122,19 @@ Example for analyzing C++ in a D:\MyProject source directory.
   </Output>
 </AnalyzerSettings>
 ```
-## Logging
+## Additional Logging
+
+The following additional logging files defined.
 
 When logging is enabled the following types of logging are provided of the analysis:
 
 | Log file                      | Description                                                                          | 
 |:------------------------------|:-------------------------------------------------------------------------------------|
-| userMessages                  | Contains all messages as shown in the console.                                       |
-| info                          | Contains information messages.                                                       |
-| warnings                      | Contains warnings messages.                                                          |
-| errors                        | Contains error messages.                                                             |
-| exceptions                    | Contains the exceptions that occured during the analysis.                            |
-| filesNotFound                 | Source files not found in the file system                                            |
-| includePathsNotFound          | Include paths not found in the file system                                           |
-| pathsNotResolved              | Relative include files which could not be resolved to an absolute path               |
-| includeFilesAmbigious         | Relative include files which can be resolved to multiple absolute include files      |
-| includeFilesNotFound          | Absolute include files which could not be found in the file system                   |
-| dataModelActions              | Contains all actions on the data model like load, save and registration.             |
-| dataModelRelationsNotResolved | Contains queried relations that could not be resolved.                               |                             |
+| filesNotFound.log             | Source files not found in the file system                                            |
+| includePathsNotFound.log      | Include paths not found in the file system                                           |
+| pathsNotResolved.log          | Relative include files which could not be resolved to an absolute path               |
+| includeFilesAmbigious.log     | Relative include files which can be resolved to multiple absolute include files      |
+| includeFilesNotFound.log      | Absolute include files which could not be found in the file system                   |
+
 
 [back](user_guide)

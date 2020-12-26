@@ -63,7 +63,7 @@ An example settings file is shown below  (ArgoUML analysis example):
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <AnalyzerSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <LogLevel>Detailed</LogLevel>
+  <LogLevel>Error</LogLevel>
   <Input>
     <Filename>ArgoUml\JdepsOutput\argouml.jar.dot</Filename>
   </Input>
