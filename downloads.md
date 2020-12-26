@@ -15,7 +15,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7665.39827 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7665.39827.msi)                                 |
+| Full dsm suite         | 1.0.7665.40636 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7665.40636.msi)                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -318,7 +318,7 @@ See [All downloads](all_downloads) for all downloads including older versions.
 * Visual Studio Analyzer  
   * Restored cloned interface file during analysis
   
-## 26 Dec 2020 - Version 1.0.7665.39827
+## 26 Dec 2020 - Version 1.0.7665.40636
 
 * Split settings files into input, analysis, transformation and output section
 * Replace logging enabled by loglevel

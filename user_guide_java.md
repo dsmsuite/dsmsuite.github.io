@@ -44,6 +44,8 @@ Use the following command to run a analysis using the JDeps output file:
 "C:\Program Files\DsmSuite\Analyzers\Java\DsmSuite.Analyzer.Jdeps.exe" AnalyzerSettings.xml
 ```
 
+Note: You can also analyze Android projects by converting the APK file into JAR files using DEX2JAR.
+
 ## Settings
 
 The following settings are defined:
