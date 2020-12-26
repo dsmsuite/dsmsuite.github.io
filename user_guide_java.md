@@ -27,7 +27,6 @@ The element hierarchy is based on types and namespaces.
     * Parse the JDeps output file to determine types and their dependencies.
 	* The found types and dependencies are written to the OutputFilename.
 * At the end of the analysis the percentage of the relations that could be resolved is shown. This is an indication of the reliability of the dependency model.
-* Optionally perform transformations on the the OutputFilename. See [User guide](user_guide) for details.
 * Convert the OutputFilename into a DSM file. See [User guide](user_guide) for details.
 * Open the DSM file in the Viewer.
 
@@ -49,12 +48,13 @@ Use the following command to run a analysis using the JDeps output file:
 
 The following settings are defined:
 
-| Setting                     | Description                                                        | 
-|:----------------------------|:-------------------------------------------------------------------|
-| LoggingEnabled              | Log information for diagnostic purposes                            |
-| InputFilename               | Filename of Jdeps .dot file used to extract dependency information |
-| OutputFilename              | Filename with dsi extension to which results will be written       |     
-| CompressOutputFile          | Compress output                                                    |
+| Setting                                    | Description                                                                | 
+|:-------------------------------------------|:---------------------------------------------------------------------------|
+| LogLevel                                   | Log level as described above                                               |
+| Input.Filename                             | Filename of Jdeps .dot file used to extract dependency information         | 
+| Transformation.IgnoredNames                | Names in input data which will be ignore. Defines as regular expression.   |     
+| Output.Filename                            | Filename with dsi extension to which results will be written               |
+| Output.Compress                            | Compress output file                                                       |
 
 ## AnalyzerSettings.xml example 
 
@@ -76,18 +76,9 @@ An example settings file is shown below  (ArgoUML analysis example):
   </Output>
 </AnalyzerSettings>
 ```
-## Logging
 
-When logging is enabled the following types of logging are provided of the analysis:
+## Additional Logging
 
-| Log file                      | Description                                                                          | 
-|:------------------------------|:-------------------------------------------------------------------------------------|
-| userMessages                  | Contains all messages as shown in the console.                                       |
-| info                          | Contains information messages.                                                       |
-| warnings                      | Contains warnings messages.                                                          |
-| errors                        | Contains error messages.                                                             |
-| exceptions                    | Contains the exceptions that occured during the analysis.                            |
-| dataModelActions              | Contains all actions on the data model like load, save and registration.             |
-| dataModelRelationsNotResolved | Contains queried relations that could not be resolved.                               |                           |
+No additional logging files defined.
 
 [back](user_guide)

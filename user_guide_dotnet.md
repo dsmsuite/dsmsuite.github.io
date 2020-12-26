@@ -34,7 +34,6 @@ Mono.Cecil to determine dependencies between .Net types. The element hierarchy i
 * At the end of the analysis the percentage of the relations that could be resolved is shown. This is an indication of the reliability of the dependency model. If the percentage lower than 100% look at the log files to find out the reason.
     * If it is a missing product assembly, add it to the AssemblyDirectory	
 	* If it is a missing third party or system assembly, add it to the AssemblyDirectory or ignore these relations by adding its namespace to the list of ExternalNames.
-* Optionally perform transformations on the the OutputFilename. See [User guide](user_guide) for details.
 * Convert the OutputFilename into a DSM file. See [User guide](user_guide) for details.
 * Open the DSM file in the DSM viewer.
 
@@ -50,13 +49,13 @@ Use the following command to run a analysis:
 
 The following analyzer settings are defined:
 
-| Setting                     | Description                                                                        | 
-|:----------------------------|:-----------------------------------------------------------------------------------|
-| LoggingEnabled              | Log information for diagnostic purposes.                                           |
-| AssemblyDirectory           | Directory where assemblies to be analyzed are located.                             |
-| ExternalNames               | Namespaces starting with these names will be ignored when looking for dependencies.|
-| OutputFilename              | Filename with dsi extension to which results will be written.                      |
-| CompressOutputFile          | Compress output                                                                    |
+| Setting                                    | Description                                                                | 
+|:-------------------------------------------|:---------------------------------------------------------------------------|
+| LogLevel                                   | Log level as described above                                               |
+| Input.AssemblyDirectory                    | Directory where assemblies to be analyzed are located.                     |
+| Transformation.IgnoredNames                | Names in input data which will be ignore. Defines as regular expression.   |     
+| Output.Filename                            | Filename with dsi extension to which results will be written               |
+| Output.Compress                            | Compress output file                                                       |
 
 ## Settings example 
 
@@ -89,14 +88,8 @@ An example settings file is shown below (DSM Suite analysis example):
 
 When logging is enabled the following types of logging are provided of the analysis:
 
-| Log file                      | Description                                                                          | 
-|:------------------------------|:-------------------------------------------------------------------------------------|
-| userMessages                  | Contains all messages as shown in the console.                                       |
-| info                          | Contains information messages.                                                       |
-| warnings                      | Contains warnings messages.                                                          |
-| errors                        | Contains error messages.                                                             |
-| exceptions                    | Contains the exceptions that occured during the analysis.                            |
-| dataModelActions              | Contains all actions on the data model like load, save and registration.             |
-| dataModelRelationsNotResolved | Contains queried relations that could not be resolved.                               |
+## Additional Logging
+
+No additional logging files defined.
 
 [back](user_guide)

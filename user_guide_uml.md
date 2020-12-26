@@ -45,7 +45,7 @@ The following settings are defined:
 |:-------------------------------------------|:---------------------------------------------------------------------------|
 | LogLevel                                   | Log level as described above                                               |
 | Input.Filename                             | EA model filename                                                          |     
-| Output.Filename                            | File name with .dsi extension                                              |  
+| Output.Filename                            | Filename with dsi extension to which results will be written               |
 | Output.Compress                            | Compress output file                                                       |
 
 ## AnalyzerSettings.xml example 
