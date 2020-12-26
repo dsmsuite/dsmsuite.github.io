@@ -30,6 +30,29 @@ In the future it might also evaluate dependency rules to verify that the code co
 ## DSM Viewer
 The DSM viewer reads the DSM file and visualizes the element hierarchy and dependencies.
 
+## Logging
+
+The tooling supports the following log levels:
+
+| Name           | Description                                          |
+|:---------------|:-----------------------------------------------------|
+| None           | Nothing is logged                                    |
+| User           | User messages are logged to a file                   |
+| Warning        | Warnings messages are logged to a file               |
+| Error          | Errors messages are logged to a file                 |
+| Info           | Info message are logged to a file                    |
+| Data           | Data model actions are logged to a file              |
+| All            | Detailed information is logged to  file              |
+
+Each log level also includes logging of all previous log levels.
+Exceptions and user message are always written to the console independent of the selected log level.
+  	
+## File compression
+
+Both .dsi and .dsm files can be written as a compressed file or as plain xml. Compression can be used to reduce file size.
+Upon reading the tooling automatically detects if a file is compressed, so separate extension is used for the compressed format.
+The used compression is the zip format.
+
 # DSM Viewer Features
 
 The viewer has the following features:
@@ -174,42 +197,20 @@ Each relation has the following properties:
 | to                     | The id of the consumer element.                      |
 | type                   | The type of relation e.g. include, inherit, realize. |
 | weight                 | The strength of the relation.                        |
-o
+
 # Installation
 
 Download the installer and install whatever best suits your needs.
 
 See [downloads](downloads)
 
-# Logging
-
-The tooling the following log levels:
-
-| Name           | Description                                          |
-|:---------------|:-----------------------------------------------------|
-| None           | Nothing is logged                                    |
-| User           | User messages are logged to a file                   |
-| Warning        | Warnings messages are logged to a file               |
-| Error          | Errors messages are logged to a file                 |
-| Info           | Info message are logged to a file                    |
-| Data           | Data model actions are logged to a file              |
-| All            | Detailed information is logged to  file              |
-
-Each log level also includes logging of all previous log levels.
-Exceptions and user message are always written to the console independent of the selected log level.
-  	
-# File compression
-
-Both .dsi and .dsm files can be written as a compressed file or as plain xml. Compression can be used to reduce file size.
-Upon reading the tooling automatically detects if a file is compressed, so separate extension is used for the compressed format.
-The used compression is the zip format.
-
 # Analyzing Code
 
 The following steps are required to be able to analyze code dependencies.
 
 1. Analyze the code with a suitable analyzer, which export the result to a DSI file.
-2. Build the DSM file. This file can be opened in the viewer.
+2. Build the DSM file. 
+3. Open the DSM file in the viewer.
 
 ## Step 1: Perform dependency analysis
 
