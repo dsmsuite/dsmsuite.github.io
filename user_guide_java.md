@@ -62,12 +62,18 @@ An example settings file is shown below  (ArgoUML analysis example):
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <LoggingEnabled>false</LoggingEnabled>
-  <InputFilename>D:\ArgoUmlAnalysisResults\argouml.jar.dot</InputFilename>
-  <OutputFilename>Output.dsi</OutputFilename>
-  <CompressOutputFile>true</CompressOutputFile>  
+<AnalyzerSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LogLevel>Detailed</LogLevel>
+  <Input>
+    <Filename>ArgoUml\JdepsOutput\argouml.jar.dot</Filename>
+  </Input>
+  <Transformation>
+    <IgnoredNames />
+  </Transformation>
+  <Output>
+    <Filename>argouml.dsi</Filename>
+    <Compress>true</Compress>
+  </Output>
 </AnalyzerSettings>
 ```
 ## Logging

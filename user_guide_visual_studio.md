@@ -86,38 +86,45 @@ Example for analyzing C++ in a D:\MyProject\MyProject.sln directory.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <LoggingEnabled>true</LoggingEnabled>
- <SolutionGroups>
-    <SolutionGroup>
-      <Name></Name>
-      <SolutionFilenames>
-        <string>D:\MyProduct\MyProduct.sln</string>
-      </SolutionFilenames>
-    </SolutionGroup>
-  </SolutionGroups>
-  <RootDirectory>D:\MyProduct</RootDirectory>
-  <SystemIncludeDirectories>
-    <string>C:\Program Files (x86)\Windows Kits\8.1\Include\um</string>
-    <string>C:\Program Files (x86)\Windows Kits\8.1\Include\shared</string>
-    <string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt</string>
-    <string>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include</string>
-    <string>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include</string>
-  </SystemIncludeDirectories>
-  <InterfaceIncludeDirectories>
-      <string>D:\Interfaces</string>
-  </InterfaceIncludeDirectories>
-  <ExternalIncludeDirectories>
-    <ExternalIncludeDirectory>
-      <Path>D:\Externals</Path>
-      <ResolveAs>External</ResolveAs>
-    </ExternalIncludeDirectory>
-  </ExternalIncludeDirectories>
-  <ViewMode>LogicalView</ViewMode>
-  <ToolsVersion>14.0</ToolsVersion>  
-  <OutputFilename>MyProduct.dsi</OutputFilename>
-  <CompressOutputFile>true</CompressOutputFile>  
+<AnalyzerSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LogLevel>None</LogLevel>
+  <Input>
+    <Filename>C:\Example.sln</Filename>
+    <RootDirectory>C:\</RootDirectory>
+    <SystemIncludeDirectories>
+      <string>C:\Program Files (x86)\Windows Kits\8.1\Include\um</string>
+      <string>C:\Program Files (x86)\Windows Kits\8.1\Include\shared</string>
+      <string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt</string>
+      <string>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include</string>
+      <string>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include</string>
+    </SystemIncludeDirectories>
+    <ExternalIncludeDirectories>
+      <ExternalIncludeDirectory>
+        <Path>C\:External</Path>
+        <ResolveAs>External</ResolveAs>
+      </ExternalIncludeDirectory>
+    </ExternalIncludeDirectories>
+    <InterfaceIncludeDirectories />
+  </Input>
+  <Analysis>
+    <ToolsVersion>14.0</ToolsVersion>
+    <ViewMode>LogicalView</ViewMode>
+  </Analysis>
+  <Transformation>
+    <IgnoredNames />
+    <AddTransitiveIncludes>false</AddTransitiveIncludes>
+    <HeaderSourceFileMergeStrategy>None</HeaderSourceFileMergeStrategy>
+    <MergeHeaderAndSourceFileDirectoryRules>
+      <TransformationMergeRule>
+        <From>Header Files.</From>
+        <To>Source Files.</To>
+      </TransformationMergeRule>
+    </MergeHeaderAndSourceFileDirectoryRules>
+  </Transformation>
+  <Output>
+    <Filename>Output.dsi</Filename>
+    <Compress>true</Compress>
+  </Output>
 </AnalyzerSettings>
 ```
 

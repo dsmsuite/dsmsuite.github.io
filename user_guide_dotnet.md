@@ -64,17 +64,24 @@ An example settings file is shown below (DSM Suite analysis example):
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <LoggingEnabled>true</LoggingEnabled>
-  <AssemblyDirectory>D:\DsmAnalysis\DotNet\DsmSuite\Binaries</AssemblyDirectory>
-  <ExternalNames>
-    <string>System.</string>
-    <string>Microsoft.</string>
-    <string>Interop/</string>
-  </ExternalNames>
-  <OutputFilename>DsmSuite.dsi</OutputFilename>
-  <CompressOutputFile>true</CompressOutputFile>  
+<AnalyzerSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LogLevel>Detailed</LogLevel>
+  <Input>
+    <AssemblyDirectory>D:\GithubArchives\dsmsuite.sourcecode\build\bin</AssemblyDirectory>
+  </Input>
+  <Transformation>
+    <IgnoredNames>
+      <string>^System.</string>
+      <string>^Microsoft.</string>
+      <string>^Interop</string>
+      <string>&lt;</string>
+      <string>^_</string>
+    </IgnoredNames>
+  </Transformation>
+  <Output>
+    <Filename>DsmSuite.dsi</Filename>
+    <Compress>false</Compress>
+  </Output>
 </AnalyzerSettings>
 ```
 

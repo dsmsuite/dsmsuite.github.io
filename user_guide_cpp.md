@@ -75,26 +75,38 @@ Example for analyzing C++ in a D:\MyProject source directory.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <LoggingEnabled>true</LoggingEnabled>
-  <RootDirectory>D:\MyProduct</RootDirectory>
-  <SourceDirectories>
-    <string>D:\MyProduct\Src</string>
-  </SourceDirectories>
-  <ExternalIncludeDirectories>
-    <string>C:\Program Files (x86)\Windows Kits\8.1\Include\um</string>
-    <string>C:\Program Files (x86)\Windows Kits\8.1\Include\shared</string>
-    <string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt</string>
-    <string>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include</string>
-    <string>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include</string>
-    <string>D:\RTCSandboxes\Allura_Main_Infra_PreInt\Externals</string>	
-  </ExternalIncludeDirectories>
-  <IgnorePaths>
-  </IgnorePaths>
-  <ResolveMethod>AddBestMatch</ResolveMethod>
-  <OutputFilename>MyProduct.dsi</OutputFilename>
-  <CompressOutputFile>true</CompressOutputFile>  
+<AnalyzerSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LogLevel>None</LogLevel>
+  <Input>
+    <RootDirectory>C:\</RootDirectory>
+    <SourceDirectories>
+      <string>C:\</string>
+    </SourceDirectories>
+    <ExternalIncludeDirectories>
+      <string>C:\</string>
+    </ExternalIncludeDirectories>
+    <IgnorePaths>
+      <string>C:\</string>
+    </IgnorePaths>
+  </Input>
+  <Analysis>
+    <ResolveMethod>AddBestMatch</ResolveMethod>
+  </Analysis>
+  <Transformation>
+    <IgnoredNames />
+    <AddTransitiveIncludes>false</AddTransitiveIncludes>
+    <HeaderSourceFileMergeStrategy>None</HeaderSourceFileMergeStrategy>
+    <MergeHeaderAndSourceFileDirectoryRules>
+      <TransformationMergeRule>
+        <From>inc.</From>
+        <To>src.</To>
+      </TransformationMergeRule>
+    </MergeHeaderAndSourceFileDirectoryRules>
+  </Transformation>
+  <Output>
+    <Filename>Output.dsi</Filename>
+    <Compress>true</Compress>
+  </Output>
 </AnalyzerSettings>
 ```
 ## Logging

@@ -55,14 +55,18 @@ Example for analyzing the [DSMViewer UML model](https://github.com/dsmsuite/dsms
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<AnalyzerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <LoggingEnabled>false</LoggingEnabled>
-  <InputFilename>d:\Github\DsmSuite\DsmViewer\DsmViewer.eap</InputFilename>
-  <OutputFilename>Output.dsi</OutputFilename>
-  <CompressOutputFile>true</CompressOutputFile>  
+<AnalyzerSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LogLevel>Detailed</LogLevel>
+  <Input>
+    <Filename>SampleModel.EAP</Filename>
+  </Input>
+  <Output>
+    <Filename>SampleModel.dsi</Filename>
+    <Compress>true</Compress>
+  </Output>
 </AnalyzerSettings>
 ```
+
 ## Logging
 
 When logging is enabled the following types of logging are provided of the analysis:
