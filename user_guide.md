@@ -20,11 +20,6 @@ it is possible to write your own analyzer as long as its writes the result to a 
 > For backwards compatibility it currently it still is unchanged with respect to the original DSM plug in format, 
 > but this could change in the future.
 
-## Transformer
-A transformer can be used to apply transformations on the DSI file. These transformations can for example:
-* Add transitive relations e.g. for C++ not only direct includes, but also indirect includes.
-* Transform elements, so they are moved in the element hierarchy. This feature can be used to analysis potential refactorings  as as described in the [DSM Overview](dsm_overview).
-
 ## DSM builder
 The DSM builder uses a DSI file to create a DSM file. To build the DSM file it:
 * Reads the components and elements from the DSI file.
@@ -135,7 +130,7 @@ it must conform the DSI file XSD schema below:
                   <xs:attribute name="id" type="xs:int"></xs:attribute>
                   <xs:attribute name="name" type="xs:string"></xs:attribute>
                   <xs:attribute name="type" type="xs:string"></xs:attribute>
-                  <xs:attribute name="source" type="xs:string"></xs:attribute>
+                  <xs:attribute name="annotation" type="xs:string"></xs:attribute>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
@@ -146,8 +141,8 @@ it must conform the DSI file XSD schema below:
             <xs:sequence>
               <xs:element name="relation" maxOccurs="unbounded">
                 <xs:complexType>
-                  <xs:attribute name="consumerId" type="xs:int"></xs:attribute>
-                  <xs:attribute name="providerId" type="xs:int"></xs:attribute>
+                  <xs:attribute name="from" type="xs:int"></xs:attribute>
+                  <xs:attribute name="to" type="xs:int"></xs:attribute>
                   <xs:attribute name="type" type="xs:string"></xs:attribute>
                   <xs:attribute name="weight" type="xs:int"></xs:attribute>
                 </xs:complexType>
@@ -171,7 +166,7 @@ Each element has the following properties:
 | id            | An unique integer value defining the element.                     |
 | name          | An unique name of the element. The name consists of dot separated elements. Each element represents a part in a element hierarchy e.g. a directory or a namespace.               |
 | type          | The type of element e.g. class, enum of file.                 |
-| source        | The source from which the element was generated e.g. the full path of the source file.             |
+| annotation    | Additional information about the element.             |
 
 Each relation has the following properties:
 
@@ -210,73 +205,7 @@ Follow the detailed instruction of the selected analyzer:
 
 This step results in DSI file.
 
-## Step 2: Optionally apply transformations
-
-### Configure the transformer
-
-The following settings are defined:
-
-| Setting                                                      | Description                                                           | 
-|:-------------------------------------------------------------|:----------------------------------------------------------------------|
-| LoggingEnabled                                               | Log information to file for diagnostic purposes.                      |
-| InputFilename                                                | File name with .dsi extension used to extract dependency information. |  
-| AddTransitiveRelationsSettings.enabled                       | Add transitive relations.                                             | 
-| MoveElementsSettings.Enabled                                 | Transformation rules are enabled to move elements in the DSM.         | 
-| MoveElementsSettings.Rules                                   | Set of rules specifying move transformation actions.                  | 
-| MoveHeaderElementsSettings.Enabled                           | Move C/C++ header to implementation.                                  |  
-| SplitProductAndTestElementsSettings.Enabled                  | Split test and product code enabled                                   |
-| SplitProductAndTestElementsSettings.TestElementIdentifier    | Name of test code packages                                            |
-| SplitProductAndTestElementsSettings.ProductElementIdentifier | Name of product code packages                                         |
-| IncludeFilterSettings.Enabled                                | Include only elements starting with one of selected names in output   |
-| IncludeFilterSettings.Names                                  | List of names to be included                                          |
-| OutputFilename                                               | File name with .dsi extension used to write transformed information.  |      
-| CompressOutputFile                                           | Compress output                                                       |
-
-## Example
-
-**TransformerSetting**
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<TransformerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <LoggingEnabled>false</LoggingEnabled>
-  <InputFilename>Input.dsi</InputFilename>
-  <AddTransitiveRelationsSettings>
-    <Enabled>true</Enabled>
-  </AddTransitiveRelationsSettings>
-  <MoveElementsSettings>
-    <Enabled>true</Enabled>
-    <Rules>
-      <MoveElementRule>
-        <From>Header Files.</From>
-        <To>Source Files.</To>
-      </MoveElementRule>
-    </Rules>
-  </MoveElementsSettings>
-  <MoveHeaderElementsSettings>
-    <Enabled>false</Enabled>
-  </MoveHeaderElementsSettings>
-  <SplitProductAndTestElementsSettings>
-    <Enabled>true</Enabled>
-    <TestElementIdentifier>Test</TestElementIdentifier>
-    <ProductElementIdentifier>Src</ProductElementIdentifier>
-  </SplitProductAndTestElementsSettings>
-  <IncludeFilterSettings>
-    <Enabled>false</Enabled>
-    <Names>
-      <string>Somename</string>                                    
-    </Names>
-  </IncludeFilterSettings>  
-  <OutputFilename>Output.dsi</OutputFilename>
-  <CompressOutputFile>true</CompressOutputFile>
-</TransformerSettings>
-```
-
-### Run the transformer
-
-C:\Program Files\DsmSuite\Transformer\DsmSuite.Transformer.exe TransformerSettings.xml
-
-## Step 3: Running the DSM builder
+## Step 2: Running the DSM builder
 
 ### Configure the builder
 
@@ -284,12 +213,12 @@ The following settings are defined:
 
 | Setting                     | Description                                                                | 
 |:----------------------------|:---------------------------------------------------------------------------|
-| LoggingEnabled              | Log information to file for diagnostic purposes                            |
-| InputFilename               | File name with .dsi extension used to extract dependency information       |     
-| OutputFilename              | File name with .dsm extension used to write DSM information                |  
-| ApplyPartitioningAlgorithm  | Automatically apply partitioning algorithm on the model to sort it         |
-| RecordChanges               | Record changes with previous model as actions viewable in the mode history |                                                      |    
-| CompressOutputFile          | Compress output                                                            |
+| LogLevel              | Log information to file for diagnostic purposes                            |
+| Input.Filename               | File name with .dsi extension used to extract dependency information       |     
+| Output.Filename              | File name with .dsm extension used to write DSM information                |  
+| Transformation.ApplyPartitioningAlgorithm  | Automatically apply partitioning algorithm on the model to sort it         |
+                                                  |    
+| Output.Compress          | Compress output                                                            |
 
 ## Example
 
@@ -297,14 +226,18 @@ The following settings are defined:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
-<BuilderSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <LoggingEnabled>false</LoggingEnabled>
-  <InputFilename>Input.dsi</InputFilename>
-  <OutputFilename>Output.dsm</OutputFilename>
-  <ApplyPartitioningAlgorithm>false</ApplyPartitioningAlgorithm>
-  <RecordChanges>false</RecordChanges>
-  <CompressOutputFile>false</CompressOutputFile>
+<BuilderSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LogLevel>Detailed</LogLevel>
+  <Input>
+    <Filename>SampleModel.dsi</Filename>
+  </Input>
+  <Transformation>
+    <ApplyPartitioningAlgorithm>false</ApplyPartitioningAlgorithm>
+  </Transformation>
+  <Output>
+    <Filename>SampleModel.dsm</Filename>
+    <Compress>true</Compress>
+  </Output>
 </BuilderSettings>
 ```
 
