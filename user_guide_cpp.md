@@ -67,20 +67,20 @@ Use the following command to run a analysis:
 
 The following settings are defined:
 
-| Setting                                               | Description                                                                                                     | 
-|:------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------|
-| LogLevel                                              | Log level as described above                                                                                    |
-| Input.RootDirectory                                   | Root of source code directory used to determine root of names in DSM                                            |
-| Input.SourceDirectories                               | List of directories where source code can be found                                                              |
-| Input.IncludeDirectories                              | List of additional directories where include files can be found. Think of system and third party include files. |
-| Input.IgnorePaths                                     | List of directories in the source code tree which need to be excluded                                           |
-| Analysis.ResolveMethod                                | How to resolve ambiguity when filenames are not unique                                                          |
-| Transformation.IgnoredNames                           | Names in input data which will be ignore. Defines as regular expression.                                        |  
-| Transformation.AddTransitiveIncludes                  |                                                                                                                 |  
-| Transformation.HeaderSourceFileMergeStrategy          |                                                                                                                 |  
-| Transformation.MergeHeaderAndSourceFileDirectoryRules |                                                                                                                 |  
-| Output.Filename                                       | Filename with dsi extension to which results will be written                                                    |
-| Output.Compress                                       | Compress output file                                                                                            |
+| Setting                                | Description                                                                                                     | 
+|:---------------------------------------|:----------------------------------------------------------------------------------------------------------------|
+| LogLevel                               | Log level as described above                                                                                    |
+| Input.RootDirectory                    | Root of source code directory used to determine root of names in DSM                                            |
+| Input.SourceDirectories                | List of directories where source code can be found                                                              |
+| Input.IncludeDirectories               | List of additional directories where include files can be found. Think of system and third party include files. |
+| Input.IgnorePaths                      | List of directories in the source code tree which need to be excluded                                           |
+| Analysis.ResolveMethod                 | How to resolve ambiguity when filenames are not unique                                                          |
+| Transformation.IgnoredNames            | Names in input data which will be ignore. Defines as regular expression.                                        |  
+| Transformation.AddTransitiveIncludes   |                                                                                                                 |  
+| Transformation.ModuleMergeStrategy     |                                                                                                                 |  
+| Transformation.ModuleMergeRules        |                                                                                                                 |  
+| Output.Filename                        | Filename with dsi extension to which results will be written                                                    |
+| Output.Compress                        | Compress output file                                                                                            |
 
 ## AnalyzerSettings.xml example 
 
