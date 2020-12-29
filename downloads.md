@@ -15,7 +15,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7668.18684 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7668.18684.msi)                                 |
+| Full dsm suite         | 1.0.7668.27752 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7668.27752.msi)                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -334,6 +334,6 @@ See [All downloads](all_downloads) for all downloads including older versions.
 * DSM Viewer
   * Fix take screenshot
   
-## 29 Dec 2020 - Version 1.0.7668.18684
+## 29 Dec 2020 - Version 1.0.7668.27752
 
 * Log datamodel relation not resolved as error  
