@@ -30,6 +30,13 @@ In the future it might also evaluate dependency rules to verify that the code co
 ## DSM Viewer
 The DSM viewer reads the DSM file and visualizes the element hierarchy and dependencies.
 
+## Compare Tool
+Can compare two dsi model files and reports the deltas.
+
+C:\Program Files\DsmSuite\Comparer\DsmSuite.Analyzer.Compare.exe <file1>.xml <file2>.dsi.
+
+Note: The compare tool reports added/removed elements and relations. The order of the two files does not matter, because they are sorted on timestamp.
+
 ## Logging
 
 The tooling supports the following log levels:
