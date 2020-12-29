@@ -33,7 +33,7 @@ The DSM viewer reads the DSM file and visualizes the element hierarchy and depen
 ## Compare Tool
 Can compare two dsi model files and reports the deltas.
 
-C:\Program Files\DsmSuite\Comparer\DsmSuite.Analyzer.Compare.exe <file1>.xml <file2>.dsi.
+C:\Program Files\DsmSuite\Comparer\DsmSuite.Analyzer.Compare.exe file1.xml file2.dsi.
 
 Note: The compare tool reports added/removed elements and relations. The order of the two files does not matter, because they are sorted on timestamp.
 
