@@ -15,7 +15,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7667.40861 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7667.40861.msi)                                 |
+| Full dsm suite         | 1.0.7668.18684 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7668.18684.msi)                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
@@ -333,3 +333,7 @@ See [All downloads](all_downloads) for all downloads including older versions.
   * Only verify checksums when interface directories defined
 * DSM Viewer
   * Fix take screenshot
+  
+## 29 Dec 2020 - Version 1.0.7668.18684
+
+* Log datamodel relation not resolved as error  
