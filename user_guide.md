@@ -4,6 +4,8 @@ layout: default
 
 # Technical Overview
 
+![Dependency visualization](https://dsmsuite.github.io/assets/img/features/animation.gif "Dependency visualization")
+
 The DSM suite consists of the following components:
 
 ![Technical Overview](https://dsmsuite.github.io/assets/img/user_manual/technical_overview.png "Technical Overview")
