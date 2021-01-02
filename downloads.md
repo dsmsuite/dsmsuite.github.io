@@ -8,7 +8,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7668.40674 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7668.40674.msi)                                 |
+| Full dsm suite         | 1.0.7672.40163 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7672.40163.msi)                                 |
 
 ## Sample models 
 
@@ -341,3 +341,12 @@ See [All downloads](all_downloads) for all downloads including older versions.
 * Improved compare tool
 * Visual Studio Analyzer
   * Fix incorrect reported resolved relation count due to not ignoring system includes
+  
+## 02 Jan 2021 - Version 1.0.7672.40163
+
+* DSM Viewer
+  * Improved look&feel DSM 
+  * Direct import DSI file
+  * Avoid errors when editing and provide help messages for editing errors
+* Visual Studio Analyzer
+  * Improved performance by using Parallel.ForEach
