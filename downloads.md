@@ -4,18 +4,19 @@
 * Windows platform with .NET 4.6.2 framework
 * 64 bits CPU
 
-## Sample models 
-
-| Description            | Version        | Download                                                                                                 |
-|:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| DsmSuite example model | -              | [link](https://dsmsuite.github.io/downloads/DsmSuite.dsm)                                                |
-| ArgoUml example model  | -              | [link](https://dsmsuite.github.io/downloads/ArgoUml.dsm)  
-
-## Latest versions
+## Latest version
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
 | Full dsm suite         | 1.0.7668.40674 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7668.40674.msi)                                 |
+
+## Sample models 
+
+| Description            | Download                                                                                                 |
+|:-----------------------+----------------------------------------------------------------------------------------------------------|
+| Example model          | [link](https://dsmsuite.github.io/downloads/SampleModel.dsm)                                             |
+| DsmSuite model         | [link](https://dsmsuite.github.io/downloads/DsmSuite.dsm)                                                |
+| ArgoUml model          | [link](https://dsmsuite.github.io/downloads/ArgoUml.dsm)                                                 |
 
 See [All downloads](all_downloads) for all downloads including older versions.
 
