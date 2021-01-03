@@ -9,9 +9,9 @@ The following are some aspects which are important for good software design:
 |            | Guideline                                                                      | Metric                     | Visibility |                                                                                |
 |:-----------|--------------------------------------------------------------------------------|:---------------------------|:-----------|
 | Naming     | Names should reflect problem domain                                            | None                       | High       |
-| Complexity | Low complexity                                                                 | Cyclomatic Complexity < 10 | High       |
-| Cohesion   | Single responsibility principle                                                | Module size < 500LOC       | High       |
-| Coupling   | Low coupling and dependencies towards abstractions and interfaces. No cycles.  | No single standard         | Low        |
+| Complexity | Low cyclomatic complexity                                                      | < 10                       | High       |
+| Cohesion   | Single responsibility principle                                                | < 500LOC                   | High       |
+| Coupling   | Low coupling and dependencies towards abstractions and interfaces. No cycles.  | None                       | Low        |
 
 All these aspects except coupling can be easily observed from the source code using an IDE or editor. 
 The impact of this lack of visibliblity for software dependencies is that problems in this area of software design often go undetected.
@@ -89,5 +89,23 @@ Using a design structure matrix to visualize the code architecture addresses som
 * It can be used to validate that the source code conforms to the intended architecture.
 * It can be easily kept in sync with the code.
 Is a powerful technique for analyzing, improving, and managing software architecture and can be adopted at any stage of the project
+
+# Advantages
+DSM is a technique for analysing, improving, and managing complex system architectures.
+
+* Powerful technique 
+  * Scales better than boxes and lines diagram.
+  * Highlighting dependency cycles is a key strength.
+  * Partitioning algorithms provide mechanism for architectural discovery in large code base.
+
+* Proven technique 
+  * Has been used successfully in a wide variety of projects in many industries.
+  * Can be adopted at any stage of the project.
+  * Enforce architecture: Check if implemented software architecture conforms to defined one. 
+  * Architectural Discovery: Identify structure existing code base. 
+  * Re-engineer/refactor: Impact analysis of architectural refactoring scenarios prior to implementation.
+
+* Can be applied at multiple levels
+  * Architecture, Component and Class
 
 > For more information on design structure matrix see the [DSM Overview](dsm_overview) or [DSM Powerpoint](https://dsmsuite.github.io/documents/DsmPresentation.pptx)
