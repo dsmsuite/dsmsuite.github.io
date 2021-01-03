@@ -108,4 +108,14 @@ DSM is a technique for analysing, improving, and managing complex system archite
 * Can be applied at multiple levels
   * Architecture, Component and Class
 
+From the book ‘Making Software’ chapter 25. Where Do Most Software Flaws Come From?:
+
+We close with several lessons learned that may go a long way toward the improvement of future system developments:
+•	The fastest way to product improvement as measured by reduced faults is to hire people who are knowledgeable about the domain of the product. Remember, lack of knowledge tended to dominate the underlying causes. The fastest way to increase the knowledge needed to reduce faults is to hire knowledgeable people.
+•	One of the least important ways to improve software developments is to use a “better” programming language. We found relatively few problems that would have been solved by the use of better programming languages.
+•	Techniques and tools that help to understand the system and the implications of change should be emphasized in improving a development environment. Remember that knowledge-intensive activities tended to dominate the means of prevention.
+
+Using DSM tooling might be useful in reducing product defect by addressing the last bullet point.
+
+
 > For more information on design structure matrix see the [DSM Overview](dsm_overview) or [DSM Powerpoint](https://dsmsuite.github.io/documents/DsmPresentation.pptx)
