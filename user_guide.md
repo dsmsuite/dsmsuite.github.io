@@ -30,7 +30,8 @@ The DSM builder uses a DSI file to create a DSM file. To build the DSM file it:
 In the future it might also evaluate dependency rules to verify that the code conforms to the defined architecture.
 
 ## DSM Viewer
-The DSM viewer reads the DSM file and visualizes the element hierarchy and dependencies.
+The DSI file can be directly imported by the DSM viewer and can then visualizes the element hierarchy and dependencies. 
+The DSM viewer saves its model as a DSM file.
 
 ## Compare Tool
 Can compare two dsi model files and reports the deltas.
@@ -232,8 +233,7 @@ See [downloads](downloads)
 The following steps are required to be able to analyze code dependencies.
 
 1. Analyze the code with a suitable analyzer, which export the result to a DSI file.
-2. Build the DSM file. 
-3. Open the DSM file in the viewer.
+2. Open the DSI file in the viewer. The imported file will be saved as a DSM file.
 
 ## Step 1: Perform dependency analysis
 
@@ -248,46 +248,6 @@ Follow the detailed instruction of the selected analyzer:
 | UML analyzer           | [Analyzing Sparx System EA UML models](user_guide_uml)  |
 
 This step results in DSI file.
-
-## Step 2: Running the DSM builder
-
-### Configure the builder
-
-The following settings are defined:
-
-| Setting                                    | Description                                                                | 
-|:-------------------------------------------|:---------------------------------------------------------------------------|
-| LogLevel                                   | Log level as described above                                               |
-| Input.Filename                             | File name with .dsi extension used to extract dependency information       |     
-| Transformation.ApplyPartitioningAlgorithm  | Automatically apply partitioning algorithm on the model to sort it         |
-| Output.Filename                            | File name with .dsm extension used to write DSM information                |  
-| Output.Compress                            | Compress output file                                                       |
-
-## Example
-
-**BuilderSettings.xml**
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<BuilderSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <LogLevel>Detailed</LogLevel>
-  <Input>
-    <Filename>SampleModel.dsi</Filename>
-  </Input>
-  <Transformation>
-    <ApplyPartitioningAlgorithm>false</ApplyPartitioningAlgorithm>
-  </Transformation>
-  <Output>
-    <Filename>SampleModel.dsm</Filename>
-    <Compress>true</Compress>
-  </Output>
-</BuilderSettings>
-```
-
-### Run the builder
-
-C:\Program Files\DsmSuite\DsmViewer\DsmSuite.DsmBuilder.exe BuilderSettings.xml
-
 
 
 
