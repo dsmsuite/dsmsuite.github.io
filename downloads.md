@@ -8,7 +8,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7673.19862 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7673.19862.msi)                                 |
+| Full dsm suite         | 1.0.7673.39548 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7673.39548.msi)                                 |
 
 ## Sample models 
 
@@ -349,8 +349,13 @@ See [All downloads](all_downloads) for all downloads including older versions.
   * Direct import DSI file
   * Avoid errors when editing and provide help messages for editing errors
   
-## 03 Jan 2021 - Version 1.0.7673.19862
+## 03 Jan 2021 - Version 1.0.7673.39548
 
 * Removed not longer needed DSM builder to simplify workfow
-* Improved speed visual studio analyzer
-* DSM Viewer fix screenshot
+* Visual Studio Analyzer
+  * Improved speed 
+  * Improved distinction between solution and directory view
+  * Improved logging of files found in multiple visual studio projects or none at all
+
+* DSM Viewer 
+Fix screenshot
