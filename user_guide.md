@@ -18,20 +18,11 @@ it is possible to write your own analyzer as long as its writes the result to a 
 
 > The DSI file must conform to the XSD schema described below. The DSM file format can be changed without any notice. 
 
-## DSM builder
-The DSM builder uses a DSI file to create a DSM file. To build the DSM file it:
-* Reads the components and elements from the DSI file.
-* Builds an element hierarchy as can be observed on the left side of the DSM viewer.
-* Reads the relations between the elements from the file.
-* Calculates the derived dependency weights for all cells.
-* Flags cyclic relations, so the can emphasised in the DSM.
-In the future it might also evaluate dependency rules to verify that the code conforms to the defined architecture.
-
 ## DSM Viewer
 The DSI file can be directly imported by the DSM viewer and can then visualizes the element hierarchy and dependencies. 
 The DSM viewer saves its model as a DSM file.
 
-## Compare Tool
+## Comparer
 Can compare two dsi model files and reports the deltas.
 
 C:\Program Files\DsmSuite\Comparer\DsmSuite.Analyzer.Compare.exe file1.xml file2.dsi.
