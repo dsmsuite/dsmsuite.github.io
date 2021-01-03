@@ -118,10 +118,9 @@ There are different types of cyclic relations.
 
 Each type requires a specific type of refactoring
 
-| Dependency type    | Description                                                    | Required refactoring       |
-|:-------------------|:---------------------------------------------------------------|:---------------------------|
-| System Cycle       | Cycles between elements in same component                      | Introduce interface        |
-| Intercomponent     | Cycle Cycles between elements in different component           | Introduce interface        |
+| Dependency type    | Description                                                    | Required refactoring         |
+|:-------------------|:---------------------------------------------------------------|:-----------------------------|
+| System Cycle       | Cycles between elements in same component                      | Introduce interface          |
 | Hierarchical Cycle | elements involved in cycle or creating cycle between component | Move element to other module |
 
 #### Remove a cyclic relation
@@ -142,8 +141,6 @@ The advantages of such an impact analysis are particularly evident in improvemen
 that take place at the architectural level and thus affect multiple components. 
 Without the use of a DSM, such analyzes are unreliable, 
 because the software designed and the actual software architecture often do not match.
-
-> To perform this kind of refactoring transformation rules can be applied on the DSI file using the transformer. After transformation on the DSI file, the DSI file needs to be used to create a new DSM file, which in turn can be imported in the viewer. 
 
 ### Key strength 5 - Communication
 
