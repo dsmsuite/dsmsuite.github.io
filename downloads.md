@@ -8,7 +8,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7673.39548 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7673.39548.msi)                                 |
+| Full dsm suite         | 1.0.7674.15678 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7674.15678.msi)                                 |
 
 ## Sample models 
 
@@ -349,7 +349,7 @@ See [All downloads](all_downloads) for all downloads including older versions.
   * Direct import DSI file
   * Avoid errors when editing and provide help messages for editing errors
   
-## 03 Jan 2021 - Version 1.0.7673.39548
+## 04 Jan 2021 - Version 1.0.7674.15678
 
 * Removed not longer needed DSM builder to simplify workfow
 * Visual Studio Analyzer
