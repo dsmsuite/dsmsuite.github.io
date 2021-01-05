@@ -8,7 +8,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7674.19700 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7674.19700.msi)                                 |
+| Full dsm suite         | 1.0.7675.30795 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7675.30795.msi)                                 |
 
 ## Sample models 
 
@@ -356,6 +356,12 @@ See [All downloads](all_downloads) for all downloads including older versions.
   * Improved speed 
   * Improved distinction between solution and directory view
   * Improved logging of files found in multiple visual studio projects or none at all
-
 * DSM Viewer 
-Fix screenshot
+  * Fix screenshot
+  
+## 05 Jan 2021 - Version 1.0.7675.30795
+  
+* Visual Studio Analyzer
+  * Improved speed  
+* DSM Viewer 
+  *Allow open dsi file when file type associated  
