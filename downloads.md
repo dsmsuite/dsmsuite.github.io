@@ -8,7 +8,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7677.13782 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7677.13782.msi)                                 |
+| Full dsm suite         | 1.0.7681.13625 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7681.13625.msi)                                 |
 
 ## Sample models 
 
@@ -372,3 +372,11 @@ See [All downloads](all_downloads) for all downloads including older versions.
   * Design cleanup analyzer 
 * All
   * Fixed resharper issues  
+  
+## 11 Jan 2021 - Version 1.0.7681.13625
+
+* Visual Studio Analyzer
+  * Improved include file detection
+  * Support forced includes
+* C++ Analyzer
+  * Improved include file detection
