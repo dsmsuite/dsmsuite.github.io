@@ -87,23 +87,18 @@ An example of a design structure matrix is shown below:
 # Application Area
 
 Some common usage scenarios for the use of DSM visualization of the code architecture are:
+* Reduce defects
+  * Help to reduce complex software dependencies.
+  * Help to understand the system and the implications of change. See the book ‘Making Software’ chapter 25. Where Do Most Software Flaws Come From?.
 * Reduce learning time for unfamiliar code bases:
   * Allows you to get a high level overview of a code base.
 * Asses software architecture:
   * Check if it is in line with the documented architecture.
-  * Discovery of emergent architecture. See [Scaled Agile] (https://www.scaledagileframework.com/agile-architecture/).
+  * Discovery of emergent architecture. See [Scaled Agile](https://www.scaledagileframework.com/agile-architecture/).
 * Impact analysis of architecture refactoring:
-  * Reduce complex dependendy structures to improve testability and reduce defects.
   * Isolate parts of the software so they can be outsourced.
   * Encapsulate third party software so it can be easily replaced.
   * Separating critical software from non critical software, so only critical part need to be developed using more formal processes e.g. in health domain.
-
-The book ‘Making Software’ chapter 25. Where Do Most Software Flaws Come From? mentions several lessons they learned that may go a long way toward the improvement of future system developments:
-  * The fastest way to product improvement as measured by reduced faults is to hire people who are knowledgeable about the domain of the product. Remember, lack of knowledge tended to dominate the underlying causes. The fastest way to increase the knowledge needed to reduce faults is to hire knowledgeable people.
-  * One of the least important ways to improve software developments is to use a “better” programming language. We found relatively few problems that would have been solved by the use of better programming languages.
-  * Techniques and tools that help to understand the system and the implications of change should be emphasized in improving a development environment. Remember that knowledge-intensive activities tended to dominate the means of prevention.
-
-Using DSM tooling might be useful in reducing product defect by addressing the last bullet point.
 
 # Advantages
 DSM visualization is a technique for analysing, improving, and managing complex system architectures.
