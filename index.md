@@ -42,7 +42,7 @@ The outcome of the study was that software dependencies have the following impac
 
 ![cost of complexity](https://dsmsuite.github.io/assets/img/index/cost_of_complexity.png "cost of complexity")
 
-*Figure 2: Defect rate*
+*Figure 2: Complexity versus defect rate*
 
 **Lower productivity**
 * 50% decline as developer moves from periphery to core (conservatively) 
@@ -84,20 +84,36 @@ An example of a design structure matrix is shown below:
 ![example dsm](https://dsmsuite.github.io/assets/img/index/dsm_example.png "example dsm")
 *Figure 3: Design structure matrix*
 
-Using a design structure matrix to visualize the code architecture addresses some of the problems described above:
-* It can be used to visualize very complex software systems without overwhelming the user.
-* It can be used to validate that the source code conforms to the intended architecture.
-* It can be easily kept in sync with the code.
-Is a powerful technique for analyzing, improving, and managing software architecture and can be adopted at any stage of the project
+# Application Area
+
+Some common usage scenarios for the use of DSM visualization of the code architecture are:
+* Reduce learning time for unfamiliar code bases:
+  * Allows you to get a high level overview of a code base.
+* Asses software architecture:
+  * Check if it is in line with the documented architecture.
+  * Discovery of emergent architecture. See [Scaled Agile] (https://www.scaledagileframework.com/agile-architecture/).
+* Impact analysis of architecture refactoring:
+  * Reduce complex dependendy structures to improve testability and reduce defects.
+  * Isolate parts of the software so they can be outsourced.
+  * Encapsulate third party software so it can be easily replaced.
+  * Separating critical software from non critical software, so only critical part need to be developed using more formal processes e.g. in health domain.
+
+The book ‘Making Software’ chapter 25. Where Do Most Software Flaws Come From? mentions several lessons they learned that may go a long way toward the improvement of future system developments:
+  * The fastest way to product improvement as measured by reduced faults is to hire people who are knowledgeable about the domain of the product. Remember, lack of knowledge tended to dominate the underlying causes. The fastest way to increase the knowledge needed to reduce faults is to hire knowledgeable people.
+  * One of the least important ways to improve software developments is to use a “better” programming language. We found relatively few problems that would have been solved by the use of better programming languages.
+  * Techniques and tools that help to understand the system and the implications of change should be emphasized in improving a development environment. Remember that knowledge-intensive activities tended to dominate the means of prevention.
+
+Using DSM tooling might be useful in reducing product defect by addressing the last bullet point.
 
 # Advantages
-DSM is a technique for analysing, improving, and managing complex system architectures.
+DSM visualization is a technique for analysing, improving, and managing complex system architectures.
 
 * Powerful technique 
   * Scales better than boxes and lines diagram.
   * Highlighting dependency cycles is a key strength.
   * Partitioning algorithms provide mechanism for architectural discovery in large code base.
-
+  * It can be easily kept in sync with the code.
+  
 * Proven technique 
   * Has been used successfully in a wide variety of projects in many industries.
   * Can be adopted at any stage of the project.
@@ -108,14 +124,4 @@ DSM is a technique for analysing, improving, and managing complex system archite
 * Can be applied at multiple levels
   * Architecture, Component and Class
 
-From the book ‘Making Software’ chapter 25. Where Do Most Software Flaws Come From?:
-
-We close with several lessons learned that may go a long way toward the improvement of future system developments:
-  * The fastest way to product improvement as measured by reduced faults is to hire people who are knowledgeable about the domain of the product. Remember, lack of knowledge tended to dominate the underlying causes. The fastest way to increase the knowledge needed to reduce faults is to hire knowledgeable people.
-  * One of the least important ways to improve software developments is to use a “better” programming language. We found relatively few problems that would have been solved by the use of better programming languages.
-  * Techniques and tools that help to understand the system and the implications of change should be emphasized in improving a development environment. Remember that knowledge-intensive activities tended to dominate the means of prevention.
-
-Using DSM tooling might be useful in reducing product defect by addressing the last bullet point.
-
-
-> For more information on design structure matrix see the [DSM Overview](dsm_overview) or [DSM Powerpoint](https://dsmsuite.github.io/documents/DsmPresentation.pptx)
+> For more information on design structure matrix see the [DSM Overview](dsm_overview).

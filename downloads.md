@@ -10,6 +10,14 @@
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
 | Full dsm suite         | 1.0.7681.13625 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7681.13625.msi)                                 |
 
+## Presenation
+
+| Description                         | Download                                                                                                 |
+|:------------------------------------+----------------------------------------------------------------------------------------------------------|
+| DSM Powerpoint Presentation         | [link](https://dsmsuite.github.io/documents/DsmPresentation.pptx)                                        |
+
+[DSM Powerpoint]
+
 ## Sample models 
 
 | Description            | Download                                                                                                 |

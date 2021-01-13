@@ -35,16 +35,9 @@ Later almost the entire software has been rewritten from a Windows Forms applica
 
 ## Future plans
 The following features are considered for future implementation (in order of priority):
-* Architecture rules and architecture validation.
-* CMake support for C++.
-* Architecture metrics:
-  * Percentage cycles
-  * Relation density
-  * Average impact
-  * Classification like in study by Dan Sturtevant
-* Maintaining history when model is updated using continuous integration. This might include:
-  * Improved data storage model for scalability (when model updates are done each day for a long period of time)
-  * Keep history of metrics
+* Export of DSM model into graph file format like GraphML, Gexf or Graphviz, so it it can imported in tools like Yed, Gephi, Graphviz or Neo4j.
+* Support for CMake build system for C++.
+* Maintaining history of multiple imports in a style like in the Gexf file format.
 
 # Source Code
 
