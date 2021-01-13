@@ -10,7 +10,7 @@ The following are some aspects which are important for good software design:
 |:-----------|--------------------------------------------------------------------------------|:---------------------------|:-----------|
 | Naming     | Names should reflect problem domain                                            | None                       | High       |
 | Complexity | Low cyclomatic complexity                                                      | <10                        | High       |
-| Cohesion   | Single responsibility principle                                                | <500LOC                    | High       |
+| Cohesion   | Single responsibility principle                                                | <1KLOC                     | High       |
 | Coupling   | Low coupling and dependencies towards abstractions and interfaces. No cycles.  | None                       | Low        |
 
 All these aspects except coupling can be easily observed from the source code using an IDE or editor. 
