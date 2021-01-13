@@ -88,16 +88,18 @@ An example of a design structure matrix is shown below:
 
 Some common usage scenarios for the use of DSM visualization of the code architecture are:
 * Reduce defects
-  * Help to reduce complex software dependencies.
-  * Help to understand the system and the implications of change. See the book ‘Making Software’ chapter 25. Where Do Most Software Flaws Come From?.
+  * By helping to reduce complex software dependencies.
+  * By improving the understanding the system and the implications of change. See the book ‘Making Software’ chapter 25. Where Do Most Software Flaws Come From?.
 * Reduce learning time for unfamiliar code bases:
-  * Allows you to get a high level overview of a code base.
+  * By allowing you to get a high level overview of a code base.
 * Asses software architecture:
-  * Check if it is in line with the documented architecture.
-  * Discovery of emergent architecture. See [Scaled Agile](https://www.scaledagileframework.com/agile-architecture/).
+  * By checking if it is in line with the documented architecture.
+* Discovery of emergent architecture. See [Scaled Agile](https://www.scaledagileframework.com/agile-architecture/).
+  * By presenting you a high level overview of the implemented architecture.
 * Impact analysis of architecture refactoring:
-  * Isolate parts of the software so they can be outsourced.
-  * Encapsulate third party software so it can be easily replaced.
+  * Align implemented architecture with intended architecture.
+  * Isolate parts of the software, so they can be outsourced.
+  * Encapsulate third party software, so it can be easily replaced.
   * Separating critical software from non critical software, so only critical part need to be developed using more formal processes e.g. in health domain.
 
 # Advantages
