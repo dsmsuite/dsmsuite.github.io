@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<dsmmodel elementCount="21" relationCount="43" actionCount="0">
+<dsmmodel elementCount="21" relationCount="43" actionCount="2" elementAnnotationCount="2" relationAnnotationCount="0">
   <metadatagroup name="Viewer">
     <metadata name="Executable" value="DsmSuite.DsmViewer.View version=1.0.7287.27722 build=12/14/2019 3:24:04 PM" />
-    <metadata name="Total elements found" value="22" />
+    <metadata name="Total elements found" value="21" />
   </metadatagroup>
   <metadatagroup name="Builder">
     <metadata name="Executable" value="DsmSuite.DsmViewer.Builder version=1.0.7284.32041 build=12/11/2019 5:48:04 PM" />
@@ -12,7 +12,7 @@
     <element id="2" order="2" name="Utility" type="Package" expanded="True" />
     <element id="3" order="3" name="U3" type="Class" expanded="False" parent="2" />
     <element id="4" order="4" name="U2" type="Class" expanded="False" parent="2" />
-    <element id="5" order="5" name="U1" type="Class" expanded="False" parent="2" />
+    <element id="5" order="5" name="U1" type="Class" expanded="False" bookmarked="true" parent="2" />
     <element id="6" order="6" name="Presentation" type="Package" expanded="True" />
     <element id="7" order="7" name="P5" type="Class" expanded="False" parent="6" />
     <element id="8" order="8" name="P4" type="Class" expanded="False" parent="6" />
@@ -25,7 +25,7 @@
     <element id="15" order="15" name="D1" type="Class" expanded="False" parent="12" />
     <element id="16" order="16" name="Application" type="Package" expanded="True" />
     <element id="17" order="17" name="A6" type="Class" expanded="False" parent="16" />
-    <element id="18" order="18" name="A5" type="Class" expanded="False" parent="16" />
+    <element id="18" order="18" name="A5" type="Class" expanded="False" bookmarked="true" parent="16" />
     <element id="19" order="19" name="A4" type="Class" expanded="False" parent="16" />
     <element id="20" order="20" name="A3" type="Class" expanded="False" parent="16" />
     <element id="21" order="21" name="A2" type="Class" expanded="False" parent="16" />
@@ -76,5 +76,17 @@
     <relation id="42" from="22" to="20" type="" weight="1" />
     <relation id="43" from="20" to="9" type="" weight="1" />
   </relations>
-  <actions />
+  <actions>
+    <action id="1" type="ElementChangeAnnotation">
+      <data element="8" old="" new="P4 Annotation" />
+    </action>
+    <action id="2" type="ElementChangeAnnotation">
+      <data element="13" old="" new="D3 Annotation" />
+    </action>
+  </actions>
+  <elementAnnotations>
+    <elementAnnotation id="8" text="P4 Annotation" />
+    <elementAnnotation id="13" text="D3 Annotation" />
+  </elementAnnotations>
+  <relationAnnotations />
 </dsmmodel>

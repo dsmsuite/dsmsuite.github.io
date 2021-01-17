@@ -8,7 +8,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7681.13625 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7681.13625.msi)                                 |
+| Full dsm suite         | 1.0.7687.15052 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7687.15052.msi)                                 |
 
 ## Presentation
 
@@ -388,3 +388,8 @@ See [All downloads](all_downloads) for all downloads including older versions.
   * Support forced includes
 * C++ Analyzer
   * Improved include file detection
+  
+## 17 Kan 2021 - Version 1.0.7687.15052
+
+* DSMViewer
+  * Improved selection element indicator view mode
