@@ -186,18 +186,30 @@ It will show the dependency strength in the matrix.  Cycles will be highlighted.
 
 *Figure 2: Dependency visualization*
 
+## Element search
+It allows searching for elements by name or part of the name. The number of found elements is indicated. In the matrix elements containing the found elements are highlighted so it is easy to navigate to the found elements.
+![Element search](https://dsmsuite.github.io/assets/img/features/search.png "Element search")
+
+*Figure 3: Element search*
+
+## Element bookmarking
+It allows bookmarking for elements.
+![Element bookmarking](https://dsmsuite.github.io/assets/img/features/bookmarks.png "Element bookmarking")
+
+*Figure 4: Element bookmarking*
+
+## Element annotation
+It allows annotation for elements.
+![Element annotation](https://dsmsuite.github.io/assets/img/features/search.png "Element annotations")
+
+*Figure 5: Element annotation*
+
 ## Metrics
 It has a  metrics view which can be expanded and will show metrics per element.
 
 ![Metrics](https://dsmsuite.github.io/assets/img/features/metrics.png "Metrics")
 
-*Figure 3: Metrics*
-
-## Element search
-It allows searching for elemets by name or part of the name. The number of found elements is indicated. In the matrix elements containing the found elements are highlighted so it is easy to navigate to the found elements.
-![Element search](https://dsmsuite.github.io/assets/img/features/search.png "Element search")
-
-*Figure 5: Element search*
+*Figure 6: Metrics*
 
 ## Zoom and screenshot
 A screenshot can be taken and the zoomlevel can be adjusted.
@@ -205,21 +217,7 @@ A screenshot can be taken and the zoomlevel can be adjusted.
 A jus can be taken and the zoom level can be ad
 ![Zoom and screenshot](https://dsmsuite.github.io/assets/img/features/zoom_and_screenshot.png "Zoom and screenshot")
 
-*Figure 5: Zoom and screenshot*
-
-## Queries
-A list of consumers and providers can be shown for an element.
-
-![Queries](https://dsmsuite.github.io/assets/img/features/queries.png "Queries")
-
-*Figure 6: Queries*
-
-## Detail matrix
-A detailed matrix can be show for s selected element or dependency.
-
-![Detail matrix](https://dsmsuite.github.io/assets/img/features/detail_matrix.png "Detail matrix")
-
-*Figure 7: Detail matrix*
+*Figure 7: Zoom and screenshot*
 
 ## Model editing
 Models can be editing by:
@@ -232,3 +230,18 @@ Models can be editing by:
 ![Model editing](https://dsmsuite.github.io/assets/img/features/editing.png "Model editing")
 
 *Figure 8: Model editing*
+
+## Element Context Menu
+A list of consumers and providers can be shown for an element.
+
+![Element context menu](https://dsmsuite.github.io/assets/img/features/element_context_menu.png "Queries")
+
+*Figure 9: Element Context Menu
+
+## Relation Context Menu
+A list of consumers and providers can be shown for an element.
+
+![Element context menu](https://dsmsuite.github.io/assets/img/features/relation_context_menu.png "Queries")
+
+*Figure 10: Relation Context Menu
+
