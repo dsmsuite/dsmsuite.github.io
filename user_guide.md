@@ -34,71 +34,18 @@ it must conform the DSI file XSD schema below:
 
 ![DSI XSD Schema](https://dsmsuite.github.io/assets/img/user_manual/xsd_schema.png "DSI XSD Schema")
 
-```xml
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
-  <xs:element name="system">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element name="metadatagroup">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="metadata" maxOccurs="unbounded">
-                <xs:complexType>
-                  <xs:attribute name="name" type="xs:string"></xs:attribute>
-                  <xs:attribute name="value" type="xs:int"></xs:attribute>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-            <xs:attribute name="name" type="xs:string"></xs:attribute>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="elements">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="element" maxOccurs="unbounded">
-                <xs:complexType>
-                  <xs:attribute name="id" type="xs:int"></xs:attribute>
-                  <xs:attribute name="name" type="xs:string"></xs:attribute>
-                  <xs:attribute name="type" type="xs:string"></xs:attribute>
-                  <xs:attribute name="annotation" type="xs:string"></xs:attribute>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="relations">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="relation" maxOccurs="unbounded">
-                <xs:complexType>
-                  <xs:attribute name="from" type="xs:int"></xs:attribute>
-                  <xs:attribute name="to" type="xs:int"></xs:attribute>
-                  <xs:attribute name="type" type="xs:string"></xs:attribute>
-                  <xs:attribute name="weight" type="xs:int"></xs:attribute>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-      </xs:sequence>
-      <xs:attribute name="xmlns" type="xs:string"></xs:attribute>
-    </xs:complexType>
-  </xs:element>
-</xs:schema>
-```
-
 [download XSD](https://dsmsuite.github.io/downloads/dsi.xsd "XSD Schema")
 
-Each element has the following properties:
+Each element has the following attributes:
 
-| Name          | Description                                                   |
-|:--------------|:--------------------------------------------------------------|
-| id            | An unique integer value defining the element.                     |
-| name          | An unique name of the element. The name consists of dot separated elements. Each element represents a part in a element hierarchy e.g. a directory or a namespace.               |
-| type          | The type of element e.g. class, enum of file.                 |
-| annotation    | Additional information about the element.             |
+| Name          | Description                                                                                                                                                        |
+|:--------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| id            | An unique integer value defining the element.                                                                                                                      |
+| name          | An unique name of the element. The name consists of dot separated elements. Each element represents a part in a element hierarchy e.g. a directory or a namespace. |
+| type          | The type of element e.g. class, enum of file.                                                                                                                      |
+| annotation    | Additional information about the element.                                                                                                                          |
 
-Each relation has the following properties:
+Each relation has the following attributes:
 
 | Name                   | Description                                          |
 |:-----------------------|:-----------------------------------------------------|
@@ -143,6 +90,8 @@ The analyzers support the following log levels:
 | Data           | Data model actions are logged to a file              |
 | All            | Detailed information is logged to  file              |
 
+Each log level also includes logging of all previous log levels. Exceptions and user message are always written to the console independent of the selected log level.
+
 Standard the following log file can be generated:
 
 | Level          | Log file                          | Description                                                                          | 
@@ -155,25 +104,26 @@ Standard the following log file can be generated:
 | Data           | dataModelActions.log              | Contains all actions on the data model like load, save and registration.             |
 |                | dataModelRelationsNotResolved.log | Contains queried relations that could not be resolved.                               | 
 
-Notes:
-* Each log level also includes logging of all previous log levels.
-* Exceptions and user message are always written to the console independent of the selected log level.
-* For each level an analyzer may add additional log files. If so details can be found in the documentation for that analyzer.
+For each level an analyzer may add additional log files. If so details can be found in the documentation for that analyzer.
 
 # Comparing models
 
 Two DSI model files can be compare.
 
-C:\Program Files\DsmSuite\Comparer\DsmSuite.Analyzer.Compare.exe file1.xml file2.dsi.
+```
+C:\Program Files\DsmSuite\Comparer\DsmSuite.Analyzer.Compare.exe oldfile.xml newfile.dsi
+...
 
-Note: The compare tool reports added/removed elements and relations. The order of the two files does not matter, because they are sorted on timestamp.
+The compare tool reports added/removed elements and relations.
 
 # View and optionally edit DSM model
+
+The DSI file can be directly imported into the DSM viewer.
 
 The viewer has the following features:
 
 ## Model navigation
-The tool will have the element hierarchy and dependencies between the elements. The hovered and selected element or dependency are highlighted.
+The tool will show the element hierarchy and dependencies between the elements. The hovered and selected element or dependency are highlighted.
 
 ![Model navigation](https://dsmsuite.github.io/assets/img/features/model_navigation.png "Model navigation")
 
@@ -193,19 +143,19 @@ It allows searching for elements by name or part of the name. The number of foun
 *Figure 3: Element search*
 
 ## Element bookmarking
-It allows bookmarking for elements.
+It allows bookmarking of elements.
 ![Element bookmarking](https://dsmsuite.github.io/assets/img/features/bookmarks.png "Element bookmarking")
 
 *Figure 4: Element bookmarking*
 
 ## Element annotation
-It allows annotation for elements.
-![Element annotation](https://dsmsuite.github.io/assets/img/features/annotations.png "Element annotations")
+It allows adding annotations to elements.
+![Element annotations](https://dsmsuite.github.io/assets/img/features/annotations.png "Element annotations")
 
 *Figure 5: Element annotation*
 
 ## Metrics
-It has a  metrics view which can be expanded and will show metrics per element.
+It has a  metrics view which can be expanded and will show metrics per element. Several metrics are supported.
 
 ![Metrics](https://dsmsuite.github.io/assets/img/features/metrics.png "Metrics")
 
@@ -214,17 +164,16 @@ It has a  metrics view which can be expanded and will show metrics per element.
 ## Zoom and screenshot
 A screenshot can be taken and the zoomlevel can be adjusted.
 
-A jus can be taken and the zoom level can be ad
 ![Zoom and screenshot](https://dsmsuite.github.io/assets/img/features/zoom_and_screenshot.png "Zoom and screenshot")
 
 *Figure 7: Zoom and screenshot*
 
 ## Model editing
 Models can be editing by:
-	* Move elements up or down
+	* Move selected element up or down with the range of its parent.
+	* Sort children of the selected element. Partioning and alphabetically sorting algorithms are available. 
 	* Create, edit, and delete elements
 	* Create, edit, and delete relations
-	* Partition a section of the DSM model
 	* Saving the changes in the DSM file
 	
 ![Model editing](https://dsmsuite.github.io/assets/img/features/editing.png "Model editing")
@@ -232,14 +181,21 @@ Models can be editing by:
 *Figure 8: Model editing*
 
 ## Element Context Menu
-A list of consumers and providers can be shown for an element.
+The context menu of an element allow:
+* Moving, creating, editing and deleting elements.
+* Showing a list of consumers or providers of the selected element.
+* Showing a list of relations of the selected element.
+* Showing a detailed matrix of the selected element.
 
 ![Element context menu](https://dsmsuite.github.io/assets/img/features/element_context_menu.png "Queries")
 
 *Figure 9: Element Context Menu
 
 ## Relation Context Menu
-A list of consumers and providers can be shown for an element.
+The context menu of an relation allow:
+* Creating, editing and deleting relations.
+* Showing a list of relations of the selected cell.
+* Showing a detailed matrix of the selected cell.
 
 ![Element context menu](https://dsmsuite.github.io/assets/img/features/relation_context_menu.png "Queries")
 
