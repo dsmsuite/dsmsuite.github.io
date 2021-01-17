@@ -6,7 +6,7 @@ layout: default
 
 The following are some aspects which are important for good software design:
 
-|            | Guideline                                                                      | Metric                     | Visibility |                                                                                |
+| Aspect     | Guideline                                                                      | Metric                     | Visibility |                                                                                |
 |:-----------|--------------------------------------------------------------------------------|:---------------------------|:-----------|
 | Naming     | Names should reflect problem domain                                            | None                       | High       |
 | Complexity | Low cyclomatic complexity                                                      | <10                        | High       |
@@ -14,7 +14,7 @@ The following are some aspects which are important for good software design:
 | Coupling   | Low coupling and dependencies towards abstractions and interfaces. No cycles.  | None                       | Low        |
 
 All these aspects except coupling can be easily observed from the source code using an IDE or editor. 
-The impact of this lack of visibliblity for software dependencies is that problems in this area of software design often go undetected.
+The impact of the lack of visibility for software dependencies is that problems in this area of software design often go undetected.
 
 # Why software dependencies matter
 
@@ -60,19 +60,18 @@ is delivered in half the time, at half the cost, with 8x less bugs.
 
 # Why software dependency management is hard
 
-Although the impact of poor dependencies is well known, many projects are still struggling with it.
+Although the impact of poor dependencies is well known, many software projects are struggling with it.
 This can have one of the following reasons:
 
 **Human**
-* Consistent high project pressure will lead to accumulation of technical debt and will hurt productivity
+* Consistent high project pressure will lead to accumulation of technical debt and will hurt productivity.
 
 **Architecture Control**
 * In many cases an architectural definition is absent or is at a too high conceptual level to provide guidance on which dependencies are allowed. 
-Also no validation is performed if the implementation conforms to the architectural definition. 
-This is essential because developers can easily violate intended architecture by simply modifying the source code
+* Also no validation is performed if the implementation conforms to the architectural definition. This is essential because developers can easily violate intended architecture by simply modifying the source code
 
 **Architecture Visualization**
-* UML is not suitable for managing software architecture, because it is difficult to keep the model in sync with code. One is also easily overwhelmed when showing all dependencies. For this reason dependencies are often ignored on a view making the view incomplete.
+* The commonly used UML notation is not suitable for managing software architecture, because it is difficult to keep the model in sync with code. When showing all actual  dependencies using the UML notation one is also easily overwhelmed.
 	
 # Design structure matrix
 
@@ -93,9 +92,8 @@ Some common usage scenarios for the use of DSM visualization of the code archite
 * Reduce learning time for unfamiliar code bases:
   * By allowing you to get a high level overview of a code base.
 * Asses software architecture:
-  * By checking if it is in line with the documented architecture.
-* Discovery of emergent architecture. See [Scaled Agile](https://www.scaledagileframework.com/agile-architecture/).
-  * By presenting you a high level overview of the implemented architecture.
+  * Checking if it is in line with the documented architecture.
+  * Discovery of emergent architecture. See [Scaled Agile](https://www.scaledagileframework.com/agile-architecture/).
 * Impact analysis of architecture refactoring:
   * Align implemented architecture with intended architecture.
   * Isolate parts of the software, so they can be outsourced.

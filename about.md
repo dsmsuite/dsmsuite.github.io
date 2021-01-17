@@ -36,8 +36,10 @@ Later almost the entire software has been rewritten from a Windows Forms applica
 ## Future plans
 The following features are considered for future implementation (in order of priority):
 * Export of DSM model into graph file format like GraphML, Gexf or Graphviz, so it it can imported in tools like Yed, Gephi, Graphviz or Neo4j.
-* Support for CMake build system for C++.
+* Support visualization of parent-child relations.
+* Improved partitioning algorithms including those with clustering.
 * Maintaining history of multiple imports in a style like in the Gexf file format.
+* Support for CMake build system for C++.
 
 # Source Code
 
