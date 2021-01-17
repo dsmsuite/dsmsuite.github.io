@@ -14,7 +14,7 @@ The following are some aspects which are important for good software design:
 | Coupling   | Low coupling and dependencies towards abstractions and interfaces. No cycles.  | None                       | Low        |
 
 All these aspects except coupling can be easily observed from the source code using an IDE or editor. 
-The impact of the lack of visibility for software dependencies is that problems in this area of software design often go undetected.
+The impact of the lack of visibility for coupling is that problems with software dependencies often go undetected.
 
 # Why software dependencies matter
 
