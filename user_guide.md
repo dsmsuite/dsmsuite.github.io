@@ -200,7 +200,7 @@ It allows bookmarking for elements.
 
 ## Element annotation
 It allows annotation for elements.
-![Element annotation](https://dsmsuite.github.io/assets/img/features/search.png "Element annotations")
+![Element annotation](https://dsmsuite.github.io/assets/img/features/annotations.png "Element annotations")
 
 *Figure 5: Element annotation*
 
