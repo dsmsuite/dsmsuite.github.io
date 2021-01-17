@@ -13,13 +13,11 @@ layout: default
 | [CppDepend](https://www.cppdepend.com/)                   | Software architecture/code analysis        | commercial  | 
 | [NDepend](https://www.ndepend.com/)                       | Software architecture/code analysis        | commercial  | 
 | [JArchitect](https://www.jarchitect.com/)                 | Software architecture/code analysis        | commercial  | 
-| [DSMSuite](https://dsmsuite.github.io/)                   | Software architecture analysis             | open source | 
+| [DSMSuite](https://dsmsuite.github.io/)                   | Software architecture analysis/refactoring | open source | 
 | [DSM Plugin](https://github.com/tecsoft/dsm-vs-addin)     | Software architecture analysis             | open source | 
-| [dtangler]{https://github.com/vladdu/dtangler}            | Software architecture analysis             | open source | 
+| [dtangler](https://github.com/vladdu/dtangler)            | Software architecture analysis             | open source | 
 
 > The tools CppDepend, Ndepend and JArchitect are identical, but support different programming languages. They will be listed below a XDepend
-
-> The DSMSuite is based on the DSM plugin. Because it extends the features of the DSM plugin, this DSM plugin is not included in the table comparison below.
 
 > Other well known tools for architecture analysis and refactoring are [Structure101](http://structure101.com/) 
 > and [SonarSource](https://www.sonarsource.com/). Both however do not support DSM visualization. 
@@ -27,7 +25,7 @@ layout: default
 
 # Feature overview
 
-Below the DSMSuite will be compared with some commercial DSM tools:
+Below the DSMSuite will be compared with some commercial DSM tools.
 
 |	                                          | Lattix | Intelij  | XDepend    | DsmSuite  |
 |:--------------------------------------------|:-------|:---------|:-----------|:----------|
@@ -50,8 +48,5 @@ Below the DSMSuite will be compared with some commercial DSM tools:
 
 # Summary
 
-Intelij Ultimate, JArchitect, CppDepend, NDepend have more or less similar DSM capabilities.
-
 If architecture refactoring is necessary, then Lattix or the DSMSuite are required. 
-
-The commercial Lattix tool is still the best choice, when advanced DSM features are required.
+Lattix tool is the most extensive tool.
