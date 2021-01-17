@@ -14,6 +14,8 @@ layout: default
 | [NDepend](https://www.ndepend.com/)                       | Software architecture/code analysis        | commercial  | 
 | [JArchitect](https://www.jarchitect.com/)                 | Software architecture/code analysis        | commercial  | 
 | [DSMSuite](https://dsmsuite.github.io/)                   | Software architecture analysis             | open source | 
+| [DSM Plugin] (https://github.com/tecsoft/dsm-vs-addin)    | Software architecture analysis             | open source | 
+| [dtangler] {https://github.com/vladdu/dtangler}           | Software architecture analysis             | open source | 
 
 > The tools CppDepend, Ndepend and JArchitect are identical, but support different programming languages. They will be listed below a XDepend
 
@@ -25,6 +27,7 @@ layout: default
 
 # Feature overview
 
+Below the DSMSuite will be compared with some commercial DSM tools:
 
 |	                                          | Lattix | Intelij  | XDepend    | DsmSuite  |
 |:--------------------------------------------|:-------|:---------|:-----------|:----------|
@@ -40,6 +43,7 @@ layout: default
 | Simulate refactoring	                      | Yes    | No       | No	       | Yes       |
 | Definition dependency rules	              | Yes	   | no       | Yes        | No        |
 | Build integration	                          | Yes	   | No       | Yes	       | Yes	   |
+| Metrics       	                          | Yes    | No       | Yes        | Yes       |
 | Metrics trends	                          | Yes    | No       | Yes        | No        |
 | Automation	                              | Yes	   | No	      | Yes	       | No        |
 | Web based dashboard                         | Yes    | No       | Yes        | No        |
@@ -47,7 +51,7 @@ layout: default
 # Summary
 
 Intelij Ultimate, JArchitect, CppDepend, NDepend have more or less similar DSM capabilities.
-If architecture refactoring is necessary, then Lattix or the DSMSuite are required. 
-The commercial Lattix tool is still the best choice, when advanced DSM features are required.
 
-Structure101 also supports architectural refactoring, but does not support DSM visualization. 
+If architecture refactoring is necessary, then Lattix or the DSMSuite are required. 
+
+The commercial Lattix tool is still the best choice, when advanced DSM features are required.

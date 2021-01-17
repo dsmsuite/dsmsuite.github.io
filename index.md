@@ -68,10 +68,10 @@ This can have one of the following reasons:
 
 **Architecture Control**
 * In many cases an architectural definition is absent or is at a too high conceptual level to provide guidance on which dependencies are allowed. 
-* Also no validation is performed if the implementation conforms to the architectural definition. This is essential because developers can easily violate intended architecture by simply modifying the source code
+* Also no validation is performed if the implementation conforms to the architectural definition. This is essential because developers can easily violate intended architecture by simply modifying the source code. 
 
 **Architecture Visualization**
-* The commonly used UML notation is not suitable for managing software architecture, because it is difficult to keep the model in sync with code. When showing all actual  dependencies using the UML notation one is also easily overwhelmed.
+* The commonly used UML notation is not suitable for managing software architecture, because when showing all actual dependencies using the UML notation one is also easily overwhelmed. It is also difficult to keep the model in sync with code. 
 	
 # Design structure matrix
 
