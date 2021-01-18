@@ -22,12 +22,12 @@ The design shown above intentionally contains the some typical design errors:
 * A relation from A3 to P3 against the expected layering.
 * A relationship from P5 to D3 that skips a layer.
 * An unused element A6 without incoming relationships.
-* A element U2 with many in- and outgoing relationships (not shown)
+* A element U2 with many in- and outgoing relationships (not shown to avoid cluttering the diagram)
 
 Showing the many relations to and from the elements U1 to U3 obfuscates the diagram.
 This illustrates that the widely used UML notation is not suitable for representation of large amounts of dependencies.
 For that reason, UML diagrams often does not show all relationships, but only the most essential, 
-making it an incomplete view of the model.
+making it an incomplete representation.
  
 ## Design in DSM
 
@@ -38,15 +38,15 @@ making it an incomplete view of the model.
 The figure above shows the same design in a DSM. 
 * The DSM consists of a matrix with the same elements in the rows and columns. 
 * The hierarchy of packages and elements is visible on the left. 
-* The relations between the elements are in the cells. 
+* The relations between the elements are shown in the cells. 
 
-That column 5 (P4) of row 16 (A2) is filled, for example, means that P4 is dependent on A2. This is in accordance with the UML diagram. 
+That column 7 (P5) of row 13 (D3) is filled, for example, means that P5 is dependent on D3. This is in accordance with the UML diagram. 
 
 The number in the cell represents the strength of the relationship and is usually the number of dependencies between the elements. 
 
 The cells on the diagonal represent the relationship of an element with itself and are usually empty.
 
-Although it takes some time to read the matrices, there are a number of important advantages over UML.
+Although it takes some time to get comfortable with reading the matrices, there are a number of important advantages over UML.
 These key strengths are discussed below.
 
 ## Key strengths
