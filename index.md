@@ -8,9 +8,9 @@ The following are some aspects which are important for good software design:
 
 | Aspect     | Guideline                                                                      | Metric                     | Visibility |                                                                                |
 |:-----------|--------------------------------------------------------------------------------|:---------------------------|:-----------|
-| Naming     | Names should reflect problem domain                                            | None                       | High       |
-| Complexity | Low cyclomatic complexity                                                      | <10                        | High       |
-| Cohesion   | Single responsibility principle                                                | <1KLOC                     | High       |
+| Naming     | Names should reflect problem domain.                                           | None                       | High       |
+| Complexity | Methods should have a low cyclomatic complexity.                               | <10                        | High       |
+| Cohesion   | Modules should be small and follow the single responsibility principle.        | <1KLOC                     | High       |
 | Coupling   | Low coupling and dependencies towards abstractions and interfaces. No cycles.  | None                       | Low        |
 
 All these aspects except coupling can be easily observed from the source code using an IDE or editor. 
@@ -26,7 +26,6 @@ opaque and fragile. In many cases the underlying cause is that the dependency st
 
 *Figure 1: The evolution of the dependency structure of JUnit*
 
-# The cost of software complexity
 A study by Dan Sturtevant investigated the impact of software dependencies on defect rate, productivity and staff turnover. It classified modules into the following types:
 * Peripheral: Few dependencies
 * Utility: Many ingoing dependencies
@@ -67,8 +66,8 @@ This can have one of the following reasons:
 * Consistent high project pressure will lead to accumulation of technical debt and will hurt productivity.
 
 **Architecture Control**
-* In many cases an architectural definition is absent or is at a too high conceptual level to provide guidance on which dependencies are allowed. 
-* Also no validation is performed if the implementation conforms to the architectural definition. This is essential because developers can easily violate intended architecture by simply modifying the source code. 
+* An architectural definition is absent or is at a too high conceptual level to provide guidance on which dependencies are allowed. 
+* No validation is performed if the implementation conforms to the architectural definition. This is essential because developers can easily violate intended architecture by simply modifying the source code. 
 
 **Architecture Visualization**
 * The commonly used UML notation is not suitable for managing software architecture, because when showing all actual dependencies using the UML notation one is also easily overwhelmed. It is also difficult to keep the model in sync with code. 
@@ -85,20 +84,20 @@ An example of a design structure matrix is shown below:
 
 # Application Area
 
-Some common usage scenarios for the use of DSM visualization of the code architecture are:
+Some common usage scenarios for DSM visualization of the code architecture are:
 * Reduce defects
   * By helping to reduce complex software dependencies.
-  * By improving the understanding the system and the implications of change. See the book ‘Making Software’ chapter 25. Where Do Most Software Flaws Come From?.
+  * By improving the understanding the system and the implications of change. See the conclusion of chapter 25 'Where Do Most Software Flaws Come From?' from the book ‘Making Software’. See [oreilly](https://www.oreilly.com/library/view/making-software/9780596808310/),
 * Reduce learning time for unfamiliar code bases:
   * By allowing you to get a high level overview of a code base.
 * Asses software architecture:
   * Checking if it is in line with the documented architecture.
-  * Discovery of emergent architecture. See [Scaled Agile](https://www.scaledagileframework.com/agile-architecture/).
+  * Discovery of emergent architecture. See [Scaled Agile](https://www.scaledagileframework.com/agile-architecture/) on intentional versus emergent architecture.
 * Impact analysis of architecture refactoring:
   * Align implemented architecture with intended architecture.
   * Isolate parts of the software, so they can be outsourced.
   * Encapsulate third party software, so it can be easily replaced.
-  * Separating critical software from non critical software, so only critical part need to be developed using more formal processes e.g. in health domain.
+  * Separating critical software from non critical software, so only critical parts need to be developed using more formal processes e.g. in health domain.
 
 # Advantages
 DSM visualization is a technique for analysing, improving, and managing complex system architectures.
