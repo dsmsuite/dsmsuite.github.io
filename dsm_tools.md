@@ -38,7 +38,7 @@ Below the DSMSuite will be compared with some commercial DSM tools.
 | Number of partitioning algorithms           | 11	   | 1	      | 1	       | 2         |
 | Number of software metrics	              | 24	   | 0	      | 82	       | 0         |
 | **Architecture control**                    |        |          |            |           |
-| Simulate refactoring	                      | Yes    | No       | No	       | Yes       |
+| Refactoring support by impact analysis      | Yes    | No       | No	       | Yes       |
 | Definition dependency rules	              | Yes	   | no       | Yes        | No        |
 | Build integration	                          | Yes	   | No       | Yes	       | Yes	   |
 | Metrics       	                          | Yes    | No       | Yes        | Yes       |
@@ -48,5 +48,6 @@ Below the DSMSuite will be compared with some commercial DSM tools.
 
 # Summary
 
-If architecture refactoring is necessary, then Lattix or the DSMSuite are required. 
-Lattix tool is the most extensive tool.
+Most tools offer basic DSM functionality. Advanced features like impact analysis are only supported by Lattix and the DSMSuite/
+Lattix has the most extensive feature set.
+

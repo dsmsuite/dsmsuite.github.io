@@ -7,12 +7,12 @@ Existing open source DSM tools offer insufficient functionality and fully featur
 
 For details on tools supporting DSM see the [dsm tools](dsm_tools)
 
-The aim of the DSM tool suite is to offer a free solution and thereby significantly lowering the  threshold for applying DSMs. 
+The aim of the DSM tool suite is to offer a free DSM solution thereby significantly lowering the threshold for applying DSMs. 
 
 # Goals
 
 The goals of the DSM tool suite are:
-* To provide a free open source tool suite for DSM visualization.
+* To provide a free open source tool suite for DSM visualization supporting at least dependency visualization and impact analysis.
 * To support a number of well known programming languages and environments.
 * To allow for easy extension to support other programming languages and environments.
 * To allow integration into a continuous integration build chain.
@@ -34,11 +34,11 @@ To achieve the goals above the following initial modifications were made:
 Later almost the entire software has been rewritten from a Windows Forms application to a WPF application. 
 
 ## Future plans
-The following features are considered for future implementation (in order of priority):
+The following features are considered for future implementation:
 * Export of DSM model into graph file format like GraphML, Gexf or Graphviz, so it it can imported in tools like Yed, Gephi, Graphviz or Neo4j.
 * Support visualization of parent-child relations.
 * Improved partitioning algorithms including those with clustering.
-* Maintaining history of multiple imports in a style like in the Gexf file format.
+* Maintaining history in a style like in the Gexf file format.
 * Support for CMake build system for C++.
 
 # Source Code
