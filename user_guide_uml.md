@@ -26,8 +26,7 @@ Sparx Systems Enterprise Architect installed
     * Read Sparx System Enterprise Architect UML models to determine dependencies between model packages and elements.
 	* The found elements and dependencies are written to the Output.Filename.
 	* At the end of the analysis the percentage of the relations that could be resolved is shown. This is an indication of the reliability of the dependency model.
-* Convert the Output.Filename into a DSM file. See [User guide](user_guide) for details.
-* Open the DSM file in the Viewer.
+* Import the DSI file in the DSM viewer.
 
 ## Command line usage
 

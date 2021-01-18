@@ -14,17 +14,17 @@ Also IDL files and their generated files are taken into account.
 ### Selectable model view
 
 The element hierarchy used to visualize the DSM can be based on:
-* **PhysicalView**: The element hierarchy is based on directories. 
-* **LogicalView**: The element hierarchy is based on solution folders and project filters. 
+* **DirectoryView**: The element hierarchy is based on directories. 
+* **SolutionView**: The element hierarchy is based on solution folders and project filters. 
 Namespaces and types are not taken into account.
 
 ### Merging source and header files
 
 A C++ module consists in most cases of a header and a source file. In many cases externally visible header files are located in a different directory the private header files or source files.
 For proper analysis it is better to merge them to a single location in the DSM. Three strategies are possible:
-* **No merge**: The model is unchanged.
-* **Move header file**: The header file is move next to the source file with an identical name.
-* **Move header file directory**: Entire header file directory contents is moved to a source file directory based on a configurable naming rule.
+* **None**: The model is unchanged.
+* **MoveHeaderFileToSourceFile**: The header file is move next to the source file with an identical name.
+* **MergeHeaderAndSourceFileDirectory**: Entire header file directory contents is moved to a source file directory based on a configurable naming rule.
 
 > This analyzer provides more accurate results than the C++ analyzer, because include path per visual studio 
 > project are taken into account. Therefor if you analyzer VC++ chose this analyzer and not the C++ analyzer.
@@ -45,7 +45,7 @@ For proper analysis it is better to merge them to a single location in the DSM. 
 	the AssemblyDirectory setting to point to the directory where the assemblies to be anayzed have been located.
 	* Add interface include paths to InterfaceIncludeDirectories. These directories will be searched for interface files.
 	* Update the OutputFilename to the name of the product.
-	* Set LoggingEnabled if required.
+	* Update LogLevel if required.
 * Run the analyzer from the command line with the analyzer settings filename as argument.
 * The analyzer will:
     * Scan all Visual Studio solutions and projects for source files.
@@ -61,8 +61,7 @@ For proper analysis it is better to merge them to a single location in the DSM. 
     * If it is due to a third party include path add it to ExternalIncludeDirectories and resolve it in the proper way.
 	* If it is due to a interface include path add it to InterfaceIncludeDirectories.
 	* If it is because the include file missing in the Visual Studio projects add its path to ExternalIncludeDirectories and resolve it in the proper way.
-* Convert the OutputFilename into a DSM file. See [User guide](user_guide) for details.
-* Open the DSM file in the Viewer.
+* Import the DSI file in the DSM viewer.
 
 ## Command line usage
 
@@ -84,12 +83,12 @@ The following settings are defined:
 | Input.SystemIncludeDirectories         | List of directories where system include files can be found.                                                    |
 | Input.ExternalIncludeDirectories       | List of directories where third party include files can be found.                                               |
 | Input.InterfaceIncludeDirectories      | List of directories where interface include files can be found. These can be clones.                            |
-| Analysis.ViewMode                      | Based the element hierarchy on directorie or solution folders and project filters                               | 
+| Analysis.ViewMode                      | Base the element hierarchy on directories or solution folders and project filters                               | 
 | Analysis.ToolsVersion                  | Should match installed version (14.0=VS2015 15.0=VS2017)                                                        |
 | Transformation.IgnoredNames            | Names in input data which will be ignore. Defines as regular expression.                                        |  
-| Transformation.AddTransitiveIncludes   |                                                                                                                 |  
-| Transformation.ModuleMergeStrategy     |                                                                                                                 |  
-| Transformation.ModuleMergeRules        |                                                                                                                 |   
+| Transformation.AddTransitiveIncludes   | Add transitive includes.                                                                                        |  
+| Transformation.ModuleMergeStrategy     | Strategy to merge source and related header file into a single module.                                          |  
+| Transformation.ModuleMergeRules        | Rules to merge header and source file directories.                                                              |   
 | Output.Filename                        | Filename with dsi extension to which results will be written                                                    |
 | Output.Compress                        | Compress output file                                                                                            |
 
