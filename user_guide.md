@@ -130,7 +130,7 @@ The tool will show the element hierarchy and dependencies between the elements. 
 *Figure 1: Model navigation*
 
 ## Dependency visualization
-It will show the dependency strength in the matrix.  Cycles will be highlighted. Consumers and providers of the selected element are highlighted as well.
+It will show the dependency strength in the matrix.  Cycles will be highlighted. Consumers and providers of the selected element are highlighted as well if the element indicator view mode is 'default'.
 
 ![Dependency visualization](https://dsmsuite.github.io/assets/img/features/dependency_visualization.png "Dependency visualization")
 
@@ -143,19 +143,20 @@ It allows searching for elements by name or part of the name. The number of foun
 *Figure 3: Element search*
 
 ## Element bookmarking
-It allows bookmarking of elements.
+It allows bookmarking of elements. Bookmarks can only be edited when the element indicator view mode is 'bookmarks'.
 ![Element bookmarking](https://dsmsuite.github.io/assets/img/features/bookmarks.png "Element bookmarking")
 
 *Figure 4: Element bookmarking*
 
 ## Element annotation
-It allows adding annotations to elements.
+It allows adding annotations to elements. Annotations can only be edited when the element indicator view mode is 'annotations'.
+Annotations are shown in the element tooltip.
 ![Element annotations](https://dsmsuite.github.io/assets/img/features/annotations.png "Element annotations")
 
 *Figure 5: Element annotation*
 
 ## Metrics
-It has a  metrics view which can be expanded and will show metrics per element. Several metrics are supported.
+The metrics cab show several sort of metricss. It can be expanded/collapsed and will show metrics per element. Several metrics are supported.
 
 ![Metrics](https://dsmsuite.github.io/assets/img/features/metrics.png "Metrics")
 
