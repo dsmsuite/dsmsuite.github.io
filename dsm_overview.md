@@ -121,13 +121,11 @@ The DSM above shows that elements U1, U2 and U3 are used throughout the software
 The DSM above shows that element U2 is problematic, because in addition to incoming relationships it also has outgoing relationships. 
 It is called a change propagator. Changing this elements has impact on many pieces of the software.
 
-There DSM also allow to spot different types of cyclic relations.
-
 ![dsm cycles](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_6a_cycles.png "dsm cycles")
 
 *Figure 11: DSM cycle types*
 
-Each type requires a specific type of refactoring to remove it:
+The DSM above shows two different types of cyclic relations. Each type requires a specific type of refactoring to remove it:
 
 | Dependency type    | Description                                                                                                                  | Required refactoring         |
 |:-------------------|:-----------------------------------------------------------------------------------------------------------------------------|:-----------------------------|
