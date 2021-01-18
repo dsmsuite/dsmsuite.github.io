@@ -48,6 +48,6 @@ Below the DSMSuite will be compared with some commercial DSM tools.
 
 # Summary
 
-Most tools offer basic DSM functionality. Advanced features like impact analysis are only supported by Lattix and the DSMSuite/
+Most tools offer basic DSM functionality. Advanced features like impact analysis are only supported by Lattix and the DSMSuite.
 Lattix has the most extensive feature set.
 
