@@ -91,6 +91,7 @@ Some common usage scenarios for DSM visualization of the code architecture are:
 * Reduce learning time for unfamiliar code bases:
   * By allowing you to get a high level overview of a code base.
 * Asses software architecture:
+  * Discovery of software architecture of undocumented software. 
   * Checking if it is in line with the documented architecture.
   * Discovery of emergent architecture. See [Scaled Agile](https://www.scaledagileframework.com/agile-architecture/) on intentional versus emergent architecture.
 * Impact analysis of architecture refactoring:
