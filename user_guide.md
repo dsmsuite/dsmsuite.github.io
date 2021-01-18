@@ -194,7 +194,7 @@ The context menu of an element allow:
 
 ![Element context menu](https://dsmsuite.github.io/assets/img/features/element_context_menu.png "Queries")
 
-*Figure 9: Element Context Menu
+*Figure 9: Element Context Menu*
 
 ## Relation Context Menu
 The context menu of an relation allow:
@@ -205,5 +205,5 @@ The context menu of an relation allow:
 
 ![Element context menu](https://dsmsuite.github.io/assets/img/features/relation_context_menu.png "Queries")
 
-*Figure 10: Relation Context Menu
+*Figure 10: Relation Context Menu*
 
