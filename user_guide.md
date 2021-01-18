@@ -123,7 +123,7 @@ The DSI file can be directly imported into the DSM viewer.
 The viewer has the following features:
 
 ## Model navigation
-The tool will show the element hierarchy and dependencies between the elements. The hovered and selected element or dependency are highlighted.
+The tool will show the element hierarchy and dependencies between the elements. The hovered and selected element or cell are highlighted.
 
 ![Model navigation](https://dsmsuite.github.io/assets/img/features/model_navigation.png "Model navigation")
 
