@@ -138,12 +138,14 @@ It will show the dependency strength in the matrix.  Cycles will be highlighted.
 
 ## Element search
 It allows searching for elements by name or part of the name. The number of found elements is indicated. In the matrix elements containing the found elements are highlighted so it is easy to navigate to the found elements.
+
 ![Element search](https://dsmsuite.github.io/assets/img/features/search.png "Element search")
 
 *Figure 3: Element search*
 
 ## Element bookmarking
 It allows bookmarking of elements. Bookmarks can only be edited when the element indicator view mode is 'bookmarks'.
+
 ![Element bookmarking](https://dsmsuite.github.io/assets/img/features/bookmarks.png "Element bookmarking")
 
 *Figure 4: Element bookmarking*
@@ -151,6 +153,7 @@ It allows bookmarking of elements. Bookmarks can only be edited when the element
 ## Element annotation
 It allows adding annotations to elements. Annotations can only be edited when the element indicator view mode is 'annotations'.
 Annotations are shown in the element tooltip.
+
 ![Element annotations](https://dsmsuite.github.io/assets/img/features/annotations.png "Element annotations")
 
 *Figure 5: Element annotation*
