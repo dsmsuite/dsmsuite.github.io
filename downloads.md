@@ -387,7 +387,7 @@ See [All downloads](all_downloads) for all downloads including older versions.
 * C++ Analyzer
   * Improved include file detection
   
-## 17 Kan 2021 - Version 1.0.7687.15052
+## 17 Jan 2021 - Version 1.0.7687.15052
 
 * DSMViewer
   * Improved selection element indicator view mode
