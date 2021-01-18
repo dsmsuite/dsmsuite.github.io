@@ -108,7 +108,7 @@ For each level an analyzer may add additional log files. Details can be found in
 
 # Comparing Models
 
-Two DSI model files can be compare.
+Two DSI model files can be compared as follows:
 
 ```
 C:\Program Files\DsmSuite\Comparer\DsmSuite.Analyzer.Compare.exe oldfile.xml newfile.dsi
