@@ -25,11 +25,11 @@ Can compare two DSI files and reports the deltas.
 
 ### DSM Viewer
 The DSI file can be directly imported by the DSM viewer and can then visualizes the element hierarchy and dependencies. 
-The DSM viewer saves its model as a DSM file.
+The DSM viewer saves its model as a DSM file. The DSM viewer supports editing models for impact analysis.
 
 ## The DSI file format
 
-Each analyzer must export its results to DSI file. To ensure that the DSM builder can import this file,
+Each analyzer must export its results to DSI file. To ensure that the DSM viewer can import this file,
 it must conform the DSI file XSD schema below:
 
 ![DSI XSD Schema](https://dsmsuite.github.io/assets/img/user_manual/xsd_schema.png "DSI XSD Schema")
@@ -57,7 +57,7 @@ Each relation has the following attributes:
 ## File compression
 
 Both DSI and DSM files can be written as a compressed file or as plain xml. Compression can be used to reduce file size.
-Upon reading the tooling automatically detects if a file is compressed, so separate extension is used for the compressed format.
+Upon reading the tooling automatically detects if a file is compressed, so no separate extension is used for the compressed format.
 The used compression is the zip format.
 
 # Installation
@@ -92,7 +92,7 @@ The analyzers support the following log levels:
 
 Each log level also includes logging of all previous log levels. Exceptions and user message are always written to the console independent of the selected log level.
 
-Standard the following log file can be generated:
+Standard the following log files can be generated:
 
 | Level          | Log file                          | Description                                                                          | 
 |:---------------|:----------------------------------|:-------------------------------------------------------------------------------------|
@@ -104,19 +104,19 @@ Standard the following log file can be generated:
 | Data           | dataModelActions.log              | Contains all actions on the data model like load, save and registration.             |
 |                | dataModelRelationsNotResolved.log | Contains queried relations that could not be resolved.                               | 
 
-For each level an analyzer may add additional log files. If so details can be found in the documentation for that analyzer.
+For each level an analyzer may add additional log files. Details can be found in the documentation for that analyzer.
 
-# Comparing models
+# Comparing Models
 
 Two DSI model files can be compare.
 
 ```
 C:\Program Files\DsmSuite\Comparer\DsmSuite.Analyzer.Compare.exe oldfile.xml newfile.dsi
-...
+```
 
 The compare tool reports added/removed elements and relations.
 
-# View and optionally edit DSM model
+# Viewing and Editing Models
 
 The DSI file can be directly imported into the DSM viewer.
 
@@ -170,8 +170,8 @@ A screenshot can be taken and the zoomlevel can be adjusted.
 
 ## Model editing
 Models can be editing by:
-	* Move selected element up or down with the range of its parent.
-	* Sort children of the selected element. Partioning and alphabetically sorting algorithms are available. 
+	* Move the selected element up or down within the range of its parent.
+	* Sort children of the selected element. Partioning and alphabetical sorting algorithms are available. 
 	* Create, edit, and delete elements
 	* Create, edit, and delete relations
 	* Saving the changes in the DSM file
@@ -183,6 +183,7 @@ Models can be editing by:
 ## Element Context Menu
 The context menu of an element allow:
 * Moving, creating, editing and deleting elements.
+* Add or remove bookmark or annotation.
 * Showing a list of consumers or providers of the selected element.
 * Showing a list of relations of the selected element.
 * Showing a detailed matrix of the selected element.
@@ -194,6 +195,7 @@ The context menu of an element allow:
 ## Relation Context Menu
 The context menu of an relation allow:
 * Creating, editing and deleting relations.
+* Showing a list of consumers or providers of the selected cell.
 * Showing a list of relations of the selected cell.
 * Showing a detailed matrix of the selected cell.
 
