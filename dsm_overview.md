@@ -121,6 +121,19 @@ The DSM above shows that elements U1, U2 and U3 are used throughout the software
 The DSM above shows that element U2 is problematic, because in addition to incoming relationships it also has outgoing relationships. 
 It is called a change propagator. Changing this elements has impact on many pieces of the software.
 
+There DSM also allow to spot different types of cyclic relations.
+
+![dsm cycles](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_6a_cycles.png "dsm cycles")
+
+*Figure 11: DSM cycle types*
+
+Each type requires a specific type of refactoring to remove it:
+
+| Dependency type    | Description                                                                                                                  | Required refactoring         |
+|:-------------------|:-----------------------------------------------------------------------------------------------------------------------------|:-----------------------------|
+| System Cycle       | Direct cycle between elements e.g A4 <-> A5                                                                                  | Introduce interface          |
+| Hierarchical Cycle | Cycle between packages caused by relations between elements not being in a single direction e.g. A3->P3 combined with P2->A2 | Move element to other module |
+
 ### Key strength 4 - Assist in refactoring
 
 A DSM can be used to improve the dependency structure. One can think of:
@@ -129,23 +142,6 @@ A DSM can be used to improve the dependency structure. One can think of:
 
 In the matrix we can move an element to another component or layer, combine it with other elements or split and 
 then recalculate all dependencies to see if this yields a better dependency structure. 
-
-#### Cyclic relations type
-
-There are different types of cyclic relations.
-
-![dsm cycles](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_6a_cycles.png "dsm cycles")
-
-*Figure 11: DSM cycle types*
-
-Each type requires a specific type of refactoring
-
-| Dependency type    | Description                                                    | Required refactoring         |
-|:-------------------|:---------------------------------------------------------------|:-----------------------------|
-| System Cycle       | Cycles between elements in same component                      | Introduce interface          |
-| Hierarchical Cycle | elements involved in cycle or creating cycle between component | Move element to other module |
-
-#### Remove a cyclic relation
 
 In our example we had a relation from A3 to P3 against the expected layering. Now suppose after inspecting the source code we
 discover that P3 does not contain user interface but application code. 
@@ -165,8 +161,8 @@ between the presentation and application layer has disappeared.
 
 The advantages of such an impact analysis are particularly evident in improvement scenarios 
 that take place at the architectural level and thus affect multiple components. 
-Without the use of a DSM, such analyzes are unreliable, 
-because the software designed and the actual software architecture often do not match.
+Without the use of a DSM, such analysis are unreliable, 
+because the intended and the actual software architecture often do not match.
 
 # References
 
