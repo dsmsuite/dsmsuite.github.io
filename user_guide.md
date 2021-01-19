@@ -174,11 +174,11 @@ A screenshot can be taken and the zoomlevel can be adjusted.
 
 ## Model editing
 Models can be editing by:
-	* Move the selected element up or down within the range of its parent.
-	* Sort children of the selected element. Partioning and alphabetical sorting algorithms are available. 
-	* Create, edit, and delete elements
-	* Create, edit, and delete relations
-	* Saving the changes in the DSM file
+* Move the selected element up or down within the range of its parent.
+* Sort children of the selected element. Partioning and alphabetical sorting algorithms are available. 
+* Create, edit, and delete elements
+* Create, edit, and delete relations
+* Saving the changes in the DSM file
 	
 ![Model editing](https://dsmsuite.github.io/assets/img/features/editing.png "Model editing")
 
