@@ -8,7 +8,7 @@
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7689.19484 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7689.19484.msi)                                 |
+| Full dsm suite         | 1.0.7690.38992 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7690.38992.msi)                                 |
 
 ## Presentation
 
@@ -392,8 +392,10 @@ See [All downloads](all_downloads) for all downloads including older versions.
 * DSMViewer
   * Improved selection element indicator view mode
   
-## 19 Jan 2021 - Version 1.0.7689.19484
+## 20 Jan 2021 - Version 1.0.7690.38992
 
 * Analyzers
   * Fix include file parsing
   * Filter ignored name in data model
+* DSM Viewer
+  * Import element annotations only on leaf elements
