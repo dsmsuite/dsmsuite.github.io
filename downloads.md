@@ -1,8 +1,14 @@
 # Downloads
 
 ## System requirements
-* Windows platform with .NET 4.6.2 framework
+
+Installation:
+* Windows 7 or 10
+* .NET 4.6.2 framework
 * 64 bits CPU
+
+Buildng from source code:
+* Visual Studio 2015 (will be upgraded to Visual Studio 2019 soon)
 
 ## Latest version
 
