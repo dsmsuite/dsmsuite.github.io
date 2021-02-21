@@ -3,18 +3,23 @@
 ## System requirements
 
 Installation:
-* Windows 7 or 10
+* Windows 7, 8 or 10
 * .NET 4.6.2 framework
 * 64 bits CPU
 
-Buildng from source code:
-* Visual Studio 2015 (will be upgraded to Visual Studio 2019 soon)
+Building from source code:
+* Visual Studio 2019
+* Wix 311 installer
+* Wix Visual Studio 2019 plugin
+
+Has been tested using Visual Studio 2019 Community Edition and Windows 10 SDK 10.0.18362.0
+
 
 ## Latest version
 
 | Description            | Version        | Download                                                                                                 |
 |:-----------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite         | 1.0.7690.38992 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7690.38992.msi)                                 |
+| Full dsm suite         | 1.0.7722.22038 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7722.22038.msi)                                 |
 
 ## Presentation
 
@@ -405,3 +410,7 @@ See [All downloads](all_downloads) for all downloads including older versions.
   * Filter ignored name in data model
 * DSM Viewer
   * Import element annotations only on leaf elements
+  
+## 21 Feb 2021 - Version 1.0.7722.22038
+
+* Upgrade from Visual Studio 2015 to 2019
