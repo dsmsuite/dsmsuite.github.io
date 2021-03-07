@@ -1,0 +1,3 @@
+call "c:\dex-tools-2.1-SNAPSHOT\d2j-dex2jar.bat" -f D:\DsmInputData\Android\OpenTrace\OpenTrace.apk -o D:\DsmInputData\Android\OpenTrace\OpenTrace.jar
+"C:\Program Files\Java\jdk-15.0.2\bin\jdeps" -verbose:class -recursive -classpath D:\DsmInputData\Android\OpenTrace -dotoutput JdepsOutput D:\DsmInputData\Android\OpenTrace\OpenTrace.jar
+rem "C:\Program Files\DsmSuite\Analyzers\Java\DsmSuite.Analyzer.Jdeps.exe" AnalyzerSettings.xml
