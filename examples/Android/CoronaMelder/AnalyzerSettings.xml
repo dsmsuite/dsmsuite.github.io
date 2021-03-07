@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AnalyzerSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LogLevel>All</LogLevel>
+  <Input>
+    <Filename>JdepsOutput\coronamelder.jar.dot</Filename>
+  </Input>
+  <Transformation>
+    <IgnoredNames />
+  </Transformation>
+  <Output>
+    <Filename>coronamelder.dsi</Filename>
+    <Compress>true</Compress>
+  </Output>
+</AnalyzerSettings>

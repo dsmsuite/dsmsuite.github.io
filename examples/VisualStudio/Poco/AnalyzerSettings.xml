@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AnalyzerSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LogLevel>Error</LogLevel>
+  <Input>
+    <Filename>D:\DsmInputData\VisualStudio\Poco\Src\cmake-build\poco.sln</Filename>
+    <RootDirectory>D:\DsmInputData\VisualStudio\Poco\Src\Src</RootDirectory>
+    <SystemIncludeDirectories>
+      <string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt</string>
+      <string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um</string>
+      <string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared</string>
+      <string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\winrt</string>
+      <string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\cppwinrt</string>
+      <string>C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um</string>
+    </SystemIncludeDirectories>
+    <ExternalIncludeDirectories/>
+    <InterfaceIncludeDirectories />
+  </Input>
+  <Analysis>
+    <ToolsVersion>Current</ToolsVersion>
+    <ViewMode>SolutionView</ViewMode>
+  </Analysis>
+  <Transformation>
+    <IgnoredNames />
+    <AddTransitiveIncludes>false</AddTransitiveIncludes>
+    <ModuleMergeStrategy>MergeHeaderAndSourceFileDirectory</ModuleMergeStrategy>
+    <ModuleMergeRules>
+      <TransformationModuleMergeRule>
+        <From>Header Files.</From>
+        <To>Source Files.</To>
+      </TransformationModuleMergeRule>
+    </ModuleMergeRules>
+  </Transformation>
+  <Output>
+    <Filename>poco.dsi</Filename>
+    <Compress>true</Compress>
+  </Output>
+</AnalyzerSettings>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AnalyzerSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LogLevel>Error</LogLevel>
+  <Input>
+    <RootDirectory>D:\DsmInputData\Cpp\Telegram\Src</RootDirectory>
+    <SourceDirectories>
+      <string>D:\DsmInputData\Cpp\Telegram\Src</string>
+    </SourceDirectories>
+    <ExternalIncludeDirectories>
+    </ExternalIncludeDirectories>
+    <IgnorePaths>
+    </IgnorePaths>
+  </Input>
+  <Analysis>
+    <ResolveMethod>AddBestMatch</ResolveMethod>
+  </Analysis>
+  <Transformation>
+    <IgnoredNames />
+    <AddTransitiveIncludes>false</AddTransitiveIncludes>
+    <ModuleMergeStrategy>None</ModuleMergeStrategy>
+    <ModuleMergeRules>
+      <TransformationModuleMergeRule>
+        <From>inc.</From>
+        <To>src.</To>
+      </TransformationModuleMergeRule>
+    </ModuleMergeRules>
+  </Transformation>
+  <Output>
+    <Filename>Telegram.dsi</Filename>
+    <Compress>true</Compress>
+  </Output>
+</AnalyzerSettings>

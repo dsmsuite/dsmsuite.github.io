@@ -1,0 +1,1 @@
+"C:\Program Files\DsmSuite\Analyzers\UML\DsmSuite.Analyzer.Uml.exe" AnalyzerSettings.xml

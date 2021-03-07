@@ -1,0 +1,2 @@
+"C:\Program Files\Java\jdk-15.0.2\bin\jdeps" -verbose:class -recursive -classpath D:\DsmInputData\Java\ArgoUml -dotoutput JdepsOutput D:\DsmInputData\Java\ArgoUml\argouml.jar
+"C:\Program Files\DsmSuite\Analyzers\Java\DsmSuite.Analyzer.Jdeps.exe" AnalyzerSettings.xml

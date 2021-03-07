@@ -1,0 +1,1 @@
+"D:\Github\dsmsuite.sourcecode\build\bin\DsmSuite.Analyzer.VisualStudio.exe" AnalyzerSettings.xml

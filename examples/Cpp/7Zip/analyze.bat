@@ -1,0 +1,1 @@
+"C:\Program Files\DsmSuite\Analyzers\C++\DsmSuite.Analyzer.Cpp.Exe" AnalyzerSettings.xml
