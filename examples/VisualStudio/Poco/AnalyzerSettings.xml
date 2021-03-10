@@ -5,12 +5,16 @@
     <Filename>D:\DsmInputData\VisualStudio\Poco\Src\cmake-build\poco.sln</Filename>
     <RootDirectory>D:\DsmInputData\VisualStudio\Poco\Src\Src</RootDirectory>
     <SystemIncludeDirectories>
-      <string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt</string>
-      <string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um</string>
-      <string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared</string>
-      <string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\winrt</string>
-      <string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\cppwinrt</string>
-      <string>C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um</string>
+	<string>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include</string>
+	<string>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\atlmfc\include</string>
+	<string>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\include</string>
+	<string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt</string>
+	<string>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\UnitTest\include</string>
+	<string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um</string>
+	<string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared</string>
+	<string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\winrt</string>
+	<string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt</string>
+	<string>C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um</string>
     </SystemIncludeDirectories>
     <ExternalIncludeDirectories/>
     <InterfaceIncludeDirectories />

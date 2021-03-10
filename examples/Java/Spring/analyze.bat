@@ -1,0 +1,2 @@
+"C:\Program Files\Java\jdk-15.0.2\bin\jdeps" -verbose:class -recursive -classpath D:\DsmInputData\Java\Spring\spring-5.3.4-dist\spring-framework-5.3.4\libs  -dotoutput JdepsOutput D:\DsmInputData\Java\Spring\spring-5.3.4-dist\spring-framework-5.3.4\libs\*.jar
+"C:\Program Files\DsmSuite\Analyzers\Java\DsmSuite.Analyzer.Jdeps.exe" AnalyzerSettings.xml

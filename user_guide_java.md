@@ -49,13 +49,13 @@ Note: You can also analyze Android projects by converting the APK file into JAR 
 
 The following settings are defined:
 
-| Setting                                    | Description                                                                | 
-|:-------------------------------------------|:---------------------------------------------------------------------------|
-| LogLevel                                   | Log level as described above                                               |
-| Input.Filename                             | Filename of Jdeps .dot file used to extract dependency information         | 
-| Transformation.IgnoredNames                | Names in input data which will be ignore. Defines as regular expression.   |     
-| Output.Filename                            | Filename with dsi extension to which results will be written               |
-| Output.Compress                            | Compress output file                                                       |
+| Setting                                    | Description                                                                  | 
+|:-------------------------------------------|:-----------------------------------------------------------------------------|
+| LogLevel                                   | Log level as described above                                                 |
+| Input.DotFileDirectory                     | Directory containing Jdeps .dot file used to extract dependency information  | 
+| Transformation.IgnoredNames                | Names in input data which will be ignore. Defines as regular expression.     |     
+| Output.Filename                            | Filename with dsi extension to which results will be written                 |
+| Output.Compress                            | Compress output file                                                         |
 
 ## AnalyzerSettings.xml example 
 
@@ -66,7 +66,7 @@ An example settings file is shown below  (ArgoUML analysis example):
 <AnalyzerSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <LogLevel>Error</LogLevel>
   <Input>
-    <Filename>ArgoUml\JdepsOutput\argouml.jar.dot</Filename>
+    <DotFileDirectory >JdepsOutput</DotFileDirectory >
   </Input>
   <Transformation>
     <IgnoredNames />

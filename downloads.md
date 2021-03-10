@@ -19,7 +19,7 @@ Has been tested using Visual Studio 2019 Community Edition and Windows 10 SDK 10
 
 | Description                   | Version        | Download                                                                                                 |
 |:------------------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite msi installer  | 1.0.7722.22038 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7722.22038.msi)                                 |
+| Full dsm suite msi installer  | 1.0.7739.14096 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7739.14096.msi)                                 |
 
 In case you are not allowed to run a installer on your system use the zip file of the viewer binaries found [here](https://dsmsuite.github.io/downloads/DmsSuite.Viewer.zip).
 
@@ -416,3 +416,7 @@ See [All downloads](all_downloads) for all downloads including older versions.
 ## 21 Feb 2021 - Version 1.0.7722.22038
 
 * Upgrade from Visual Studio 2015 to 2019
+
+## 10 Mar 2021 - Version 1.0.7739.14096
+
+* Java analyzers support import of multiple dot files for multiple jar file projects

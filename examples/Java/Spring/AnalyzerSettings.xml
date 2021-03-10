@@ -8,7 +8,7 @@
     <IgnoredNames />
   </Transformation>
   <Output>
-    <Filename>argouml.dsi</Filename>
+    <Filename>Spring.dsi</Filename>
     <Compress>true</Compress>
   </Output>
 </AnalyzerSettings>
