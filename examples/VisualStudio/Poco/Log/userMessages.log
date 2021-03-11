@@ -1,0 +1,34 @@
+Analyzing VC++ source code
+==========================
+
+DsmSuite.Analyzer.VisualStudio version =1.0.7739.14094 build=10/03/2021 07:49:49
+
+Input parameters
+----------------
+Input filename:D:\DsmInputData\VisualStudio\Poco\Src\cmake-build\poco.sln
+
+Processing
+----------
+Analyzing project files 20/20 files 100%
+
+Analyzing source files 1394/1394 files 100%
+
+Registering source files 1394/1394 files 100%
+
+Registering source file includes 1394/1394 files 100%
+
+Move elements according specified rules 1394/1394 elements 100%
+
+Found elements=1394 relations=4501 resolvedRelations=97,4%
+
+Ouput parameters
+----------------
+Output file: D:\Github\dsmsuite.github.io\examples\VisualStudio\Poco\poco.dsi compressed=True
+
+Performance
+-----------
+Total elapsed time=00:01:14.3825320
+Peak physical memory usage 73,000MB
+Peak paged memory usage    62,000MB
+Peak virtual memory usage  4976,000MB
+

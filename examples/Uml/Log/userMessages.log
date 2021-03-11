@@ -1,0 +1,28 @@
+Analyzing UML model
+===================
+
+DsmSuite.Analyzer.Uml version =1.0.7739.14094 build=10/03/2021 07:49:50
+
+Input parameters
+----------------
+Input filename:D:\Github\dsmsuite.github.io\examples\Uml\uml_example.eap
+
+Processing
+----------
+Reading UML elements 17 elements
+
+Reading UML relations 80 relations
+
+Found elements=17 relations=40 resolvedRelations=100,0% ambiguousRelations=0,0%
+
+Ouput parameters
+----------------
+Output file: D:\Github\dsmsuite.github.io\examples\Uml\uml_example.dsi compressed=True
+
+Performance
+-----------
+Total elapsed time=00:00:28.4763802
+Peak physical memory usage 31,000MB
+Peak paged memory usage    24,000MB
+Peak virtual memory usage  4934,000MB
+

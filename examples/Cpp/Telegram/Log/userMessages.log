@@ -1,0 +1,30 @@
+Analyzing C++ source code
+=========================
+
+DsmSuite.Analyzer.Cpp version =1.0.7739.14094 build=10/03/2021 07:49:50
+
+Input parameters
+----------------
+Input directories:
+ D:\DsmInputData\Cpp\Telegram\Src
+Resolve method: AddBestMatch
+
+Processing
+----------
+Analyzing source files 1128/1128 files 100%
+
+Saving dsi model 7549/7549 items 100%
+
+Found elements=1128 relations=6421 resolvedRelations=65,6% ambiguousRelations=0,0%
+
+Ouput parameters
+----------------
+Output file: D:\Github\dsmsuite.github.io\examples\Cpp\Telegram\Telegram.dsi compressed=True
+
+Performance
+-----------
+Total elapsed time=00:00:59.4455145
+Peak physical memory usage 36,000MB
+Peak paged memory usage    31,000MB
+Peak virtual memory usage  4923,000MB
+

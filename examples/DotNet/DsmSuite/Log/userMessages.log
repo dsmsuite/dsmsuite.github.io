@@ -1,0 +1,252 @@
+Analyzing .Net code
+===================
+
+DsmSuite.Analyzer.DotNet version =1.0.7739.14094 build=10/03/2021 07:49:50
+
+Input parameters
+----------------
+Assembly directory:D:\Github\dsmsuite.sourcecode\build\bin
+
+Processing
+----------
+Finding assemblies 56 assemblies
+
+Finding types: Castle.Core.dll 548 types
+
+Finding types: DsmSuite.Analyzer.Compare.exe 2 types
+
+Finding types: DsmSuite.Analyzer.Compare.Test.dll 1 types
+
+Finding types: DsmSuite.Analyzer.CompareLib.dll 1 types
+
+Finding types: DsmSuite.Analyzer.Cpp.exe 20 types
+
+Finding types: DsmSuite.Analyzer.Cpp.Test.dll 9 types
+
+Finding types: DsmSuite.Analyzer.DotNet.exe 7 types
+
+Finding types: DsmSuite.Analyzer.DotNet.Lib.dll 4 types
+
+Finding types: DsmSuite.Analyzer.DotNet.Test.Data.dll 25 types
+
+Finding types: DsmSuite.Analyzer.DotNet.Test.dll 3 types
+
+Finding types: DsmSuite.Analyzer.Jdeps.exe 7 types
+
+Finding types: DsmSuite.Analyzer.Jdeps.Test.dll 2 types
+
+Finding types: DsmSuite.Analyzer.Model.dll 11 types
+
+Finding types: DsmSuite.Analyzer.Model.Test.dll 8 types
+
+Finding types: DsmSuite.Analyzer.Transformations.dll 5 types
+
+Finding types: DsmSuite.Analyzer.Transformations.Test.dll 4 types
+
+Finding types: DsmSuite.Analyzer.Uml.exe 21 types
+
+Finding types: DsmSuite.Analyzer.Uml.Test.dll 2 types
+
+Finding types: DsmSuite.Analyzer.VisualStudio.exe 28 types
+
+Finding types: DsmSuite.Analyzer.VisualStudio.Test.Data.Clr.dll 39 types
+
+Finding types: DsmSuite.Analyzer.VisualStudio.Test.Data.DotNet.dll 1 types
+
+Finding types: DsmSuite.Analyzer.VisualStudio.Test.dll 9 types
+
+Finding types: DsmSuite.Common.Model.dll 5 types
+
+Finding types: DsmSuite.Common.Model.Test.dll 2 types
+
+Finding types: DsmSuite.Common.Util.dll 11 types
+
+Finding types: DsmSuite.Common.Util.Test.dll 5 types
+
+Finding types: DsmSuite.DsmViewer.Application.dll 45 types
+
+Finding types: DsmSuite.DsmViewer.Application.Test.dll 45 types
+
+Finding types: DsmSuite.DsmViewer.Model.dll 30 types
+
+Finding types: DsmSuite.DsmViewer.Model.Test.dll 13 types
+
+Finding types: DsmSuite.DsmViewer.View.exe 44 types
+
+Finding types: DsmSuite.DsmViewer.ViewModel.dll 112 types
+
+Finding types: DsmSuite.DsmViewer.ViewModel.Test.dll 2 types
+
+Finding types: Interop.DsmSuiteAnalyzerVisualStudioTestDataComLib.dll 3 types
+
+Finding types: Microsoft.Bcl.AsyncInterfaces.dll 15 types
+
+Finding types: Microsoft.Build.dll 1022 types
+
+Finding types: Microsoft.Build.Framework.dll 140 types
+
+Finding types: Microsoft.Build.Tasks.Core.dll 708 types
+
+Finding types: Microsoft.Build.Utilities.Core.dll 244 types
+
+Finding types: Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll 80 types
+
+Finding types: Mono.Cecil.dll 266 types
+
+Finding types: Mono.Cecil.Mdb.dll 39 types
+
+Finding types: Mono.Cecil.Pdb.dll 233 types
+
+Finding types: Mono.Cecil.Rocks.dll 16 types
+
+Finding types: Moq.dll 223 types
+
+Finding types: System.Buffers.dll 8 types
+
+Finding types: System.Collections.Immutable.dll 110 types
+
+Finding types: System.Memory.dll 75 types
+
+Finding types: System.Numerics.Vectors.dll 10 types
+
+Finding types: System.Resources.Extensions.dll 32 types
+
+Finding types: System.Runtime.CompilerServices.Unsafe.dll 3 types
+
+Finding types: System.Text.Encodings.Web.dll 21 types
+
+Finding types: System.Text.Json.dll 140 types
+
+Finding types: System.Threading.Tasks.Dataflow.dll 127 types
+
+Finding types: System.Threading.Tasks.Extensions.dll 23 types
+
+Finding types: System.ValueTuple.dll 2 types
+
+Finding relations: Castle.Core.dll 29572 relations
+
+Finding relations: DsmSuite.Analyzer.Compare.exe 190 relations
+
+Finding relations: DsmSuite.Analyzer.Compare.Test.dll 274 relations
+
+Finding relations: DsmSuite.Analyzer.CompareLib.dll 493 relations
+
+Finding relations: DsmSuite.Analyzer.Cpp.exe 1263 relations
+
+Finding relations: DsmSuite.Analyzer.Cpp.Test.dll 385 relations
+
+Finding relations: DsmSuite.Analyzer.DotNet.exe 352 relations
+
+Finding relations: DsmSuite.Analyzer.DotNet.Lib.dll 668 relations
+
+Finding relations: DsmSuite.Analyzer.DotNet.Test.Data.dll 193 relations
+
+Finding relations: DsmSuite.Analyzer.DotNet.Test.dll 250 relations
+
+Finding relations: DsmSuite.Analyzer.Jdeps.exe 293 relations
+
+Finding relations: DsmSuite.Analyzer.Jdeps.Test.dll 53 relations
+
+Finding relations: DsmSuite.Analyzer.Model.dll 1599 relations
+
+Finding relations: DsmSuite.Analyzer.Model.Test.dll 1402 relations
+
+Finding relations: DsmSuite.Analyzer.Transformations.dll 371 relations
+
+Finding relations: DsmSuite.Analyzer.Transformations.Test.dll 296 relations
+
+Finding relations: DsmSuite.Analyzer.Uml.exe 708 relations
+
+Finding relations: DsmSuite.Analyzer.Uml.Test.dll 11 relations
+
+Finding relations: DsmSuite.Analyzer.VisualStudio.exe 3118 relations
+
+Finding relations: DsmSuite.Analyzer.VisualStudio.Test.Data.Clr.dll 212 relations
+
+Finding relations: DsmSuite.Analyzer.VisualStudio.Test.Data.DotNet.dll 9 relations
+
+Finding relations: DsmSuite.Analyzer.VisualStudio.Test.dll 1169 relations
+
+Finding relations: DsmSuite.Common.Model.dll 156 relations
+
+Finding relations: DsmSuite.Common.Model.Test.dll 313 relations
+
+Finding relations: DsmSuite.Common.Util.dll 639 relations
+
+Finding relations: DsmSuite.Common.Util.Test.dll 450 relations
+
+Finding relations: DsmSuite.DsmViewer.Application.dll 3898 relations
+
+Finding relations: DsmSuite.DsmViewer.Application.Test.dll 7149 relations
+
+Finding relations: DsmSuite.DsmViewer.Model.dll 3777 relations
+
+Finding relations: DsmSuite.DsmViewer.Model.Test.dll 4418 relations
+
+Finding relations: DsmSuite.DsmViewer.View.exe 2770 relations
+
+Finding relations: DsmSuite.DsmViewer.ViewModel.dll 5653 relations
+
+Finding relations: DsmSuite.DsmViewer.ViewModel.Test.dll 11 relations
+
+Finding relations: Interop.DsmSuiteAnalyzerVisualStudioTestDataComLib.dll 5 relations
+
+Finding relations: Microsoft.Bcl.AsyncInterfaces.dll 246 relations
+
+Finding relations: Microsoft.Build.dll 111827 relations
+
+Finding relations: Microsoft.Build.Framework.dll 5848 relations
+
+Finding relations: Microsoft.Build.Tasks.Core.dll 68106 relations
+
+Finding relations: Microsoft.Build.Utilities.Core.dll 23307 relations
+
+Finding relations: Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll 4056 relations
+
+Finding relations: Mono.Cecil.dll 24884 relations
+
+Finding relations: Mono.Cecil.Mdb.dll 3489 relations
+
+Finding relations: Mono.Cecil.Pdb.dll 5568 relations
+
+Finding relations: Mono.Cecil.Rocks.dll 1014 relations
+
+Finding relations: Moq.dll 8901 relations
+
+Finding relations: System.Buffers.dll 241 relations
+
+Finding relations: System.Collections.Immutable.dll 3302 relations
+
+Finding relations: System.Memory.dll 8451 relations
+
+Finding relations: System.Numerics.Vectors.dll 7682 relations
+
+Finding relations: System.Resources.Extensions.dll 2597 relations
+
+Finding relations: System.Runtime.CompilerServices.Unsafe.dll 75 relations
+
+Finding relations: System.Text.Encodings.Web.dll 2181 relations
+
+Finding relations: System.Text.Json.dll 24792 relations
+
+Finding relations: System.Threading.Tasks.Dataflow.dll 5999 relations
+
+Finding relations: System.Threading.Tasks.Extensions.dll 572 relations
+
+Finding relations: System.ValueTuple.dll 62 relations
+
+Saving dsi model 32736/32736 items 100%
+
+Found elements=3507 relations=29229 resolvedRelations=47,0%
+
+Ouput parameters
+----------------
+Output file: D:\Github\dsmsuite.github.io\examples\DotNet\DsmSuite\DsmSuite.dsi compressed=True
+
+Performance
+-----------
+Total elapsed time=00:00:22.6614877
+Peak physical memory usage 205,000MB
+Peak paged memory usage    202,000MB
+Peak virtual memory usage  4928,000MB
+

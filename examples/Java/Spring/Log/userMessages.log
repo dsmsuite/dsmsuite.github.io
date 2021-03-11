@@ -1,0 +1,28 @@
+Analyzing Java code
+===================
+
+DsmSuite.Analyzer.Jdeps version =1.0.7739.14094 build=10/03/2021 07:49:50
+
+Input parameters
+----------------
+Input directory:D:\Github\dsmsuite.github.io\examples\Java\Spring\JdepsOutput
+
+Processing
+----------
+Parse lines 99481 lines
+
+Saving dsi model 109569/109569 items 100%
+
+Found elements=10156 relations=99413 resolvedRelations=100,0%
+
+Ouput parameters
+----------------
+Output file: D:\Github\dsmsuite.github.io\examples\Java\Spring\Spring.dsi compressed=True
+
+Performance
+-----------
+Total elapsed time=00:02:03.8084949
+Peak physical memory usage 73,000MB
+Peak paged memory usage    71,000MB
+Peak virtual memory usage  4926,000MB
+

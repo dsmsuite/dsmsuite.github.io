@@ -7,7 +7,7 @@
   <Transformation>
     <IgnoredNames>
       <!-- <string>^System.</string> -->
-      <string>^Microsoft.</string>
+      <!-- <string>^Microsoft.</string> -->
       <string>^Interop</string>
       <string>&lt;</string>
       <string>^_</string>

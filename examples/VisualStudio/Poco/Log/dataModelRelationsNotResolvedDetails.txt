@@ -1,0 +1,163 @@
+Relations not resolved
+---------------------------------------------
+C:\Program Files (x86)\PostgreSQL\10\include\libpq-fe.h 4 occurrences
+   From poco.sln.DataPostgreSQL.vcxproj (dll).PostgreSQL.Header Files.Binder.h
+   From poco.sln.DataPostgreSQL.vcxproj (dll).PostgreSQL.Header Files.PostgreSQLTypes.h
+   From poco.sln.DataPostgreSQL.vcxproj (dll).PostgreSQL.Header Files.SessionHandle.h
+   From poco.sln.DataPostgreSQL.vcxproj (dll).PostgreSQL.Header Files.StatementExecutor.h
+D:\DsmInputData\VisualStudio\Poco\Src\Foundation\src\bignum.cc 1 occurrences
+   From poco.sln.Foundation.vcxproj (dll).Core.Source Files.NumericString.cpp
+D:\DsmInputData\VisualStudio\Poco\Src\Foundation\src\bignum-dtoa.cc 1 occurrences
+   From poco.sln.Foundation.vcxproj (dll).Core.Source Files.NumericString.cpp
+D:\DsmInputData\VisualStudio\Poco\Src\Foundation\src\cached-powers.cc 1 occurrences
+   From poco.sln.Foundation.vcxproj (dll).Core.Source Files.NumericString.cpp
+D:\DsmInputData\VisualStudio\Poco\Src\Foundation\src\crc32.h 1 occurrences
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.crc32.c
+D:\DsmInputData\VisualStudio\Poco\Src\Foundation\src\deflate.h 2 occurrences
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.deflate.c
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.trees.c
+D:\DsmInputData\VisualStudio\Poco\Src\Foundation\src\diy-fp.cc 1 occurrences
+   From poco.sln.Foundation.vcxproj (dll).Core.Source Files.NumericString.cpp
+D:\DsmInputData\VisualStudio\Poco\Src\Foundation\src\double-conversion.cc 1 occurrences
+   From poco.sln.Foundation.vcxproj (dll).Core.Source Files.NumericString.cpp
+D:\DsmInputData\VisualStudio\Poco\Src\Foundation\src\fast-dtoa.cc 1 occurrences
+   From poco.sln.Foundation.vcxproj (dll).Core.Source Files.NumericString.cpp
+D:\DsmInputData\VisualStudio\Poco\Src\Foundation\src\fixed-dtoa.cc 1 occurrences
+   From poco.sln.Foundation.vcxproj (dll).Core.Source Files.NumericString.cpp
+D:\DsmInputData\VisualStudio\Poco\Src\Foundation\src\gzguts.h 1 occurrences
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.zutil.c
+D:\DsmInputData\VisualStudio\Poco\Src\Foundation\src\inffast.h 3 occurrences
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.infback.c
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.inffast.c
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.inflate.c
+D:\DsmInputData\VisualStudio\Poco\Src\Foundation\src\inffixed.h 2 occurrences
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.infback.c
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.inflate.c
+D:\DsmInputData\VisualStudio\Poco\Src\Foundation\src\inflate.h 3 occurrences
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.infback.c
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.inffast.c
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.inflate.c
+D:\DsmInputData\VisualStudio\Poco\Src\Foundation\src\inftrees.h 4 occurrences
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.infback.c
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.inffast.c
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.inflate.c
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.inftrees.c
+D:\DsmInputData\VisualStudio\Poco\Src\Foundation\src\pcre.h 1 occurrences
+   From poco.sln.Foundation.vcxproj (dll).RegExp.Source Files.RegularExpression.cpp
+D:\DsmInputData\VisualStudio\Poco\Src\Foundation\src\pcre_config.h 23 occurrences
+   From poco.sln.Foundation.vcxproj (dll).RegExp.Source Files.RegularExpression.cpp
+   From poco.sln.Foundation.vcxproj (dll).Text.Source Files.Unicode.cpp
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_config.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_byte_order.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_chartables.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_compile.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_exec.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_fullinfo.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_globals.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_maketables.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_newline.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_ord2utf8.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_study.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_tables.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_dfa_exec.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_get.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_jit_compile.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_refcount.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_string_utils.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_version.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_ucd.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_valid_utf8.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_xclass.c
+D:\DsmInputData\VisualStudio\Poco\Src\Foundation\src\pcre_internal.h 22 occurrences
+   From poco.sln.Foundation.vcxproj (dll).Text.Source Files.Unicode.cpp
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_config.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_byte_order.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_chartables.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_compile.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_exec.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_fullinfo.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_globals.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_maketables.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_newline.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_ord2utf8.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_study.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_tables.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_dfa_exec.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_get.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_jit_compile.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_refcount.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_string_utils.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_version.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_ucd.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_valid_utf8.c
+   From poco.sln.Foundation.vcxproj (dll).pcre.Source Files.pcre_xclass.c
+D:\DsmInputData\VisualStudio\Poco\Src\Foundation\src\strtod.cc 1 occurrences
+   From poco.sln.Foundation.vcxproj (dll).Core.Source Files.NumericString.cpp
+D:\DsmInputData\VisualStudio\Poco\Src\Foundation\src\trees.h 1 occurrences
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.trees.c
+D:\DsmInputData\VisualStudio\Poco\Src\Foundation\src\zlib.h 2 occurrences
+   From poco.sln.Foundation.vcxproj (dll).Core.Source Files.Checksum.cpp
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.compress.c
+D:\DsmInputData\VisualStudio\Poco\Src\Foundation\src\zutil.h 7 occurrences
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.adler32.c
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.crc32.c
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.infback.c
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.inffast.c
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.inflate.c
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.inftrees.c
+   From poco.sln.Foundation.vcxproj (dll).zlib.Source Files.zutil.c
+D:\DsmInputData\VisualStudio\Poco\Src\JSON\src\pdjson.h 2 occurrences
+   From poco.sln.JSON.vcxproj (dll).JSON.Source Files.ParserImpl.cpp
+   From poco.sln.JSON.vcxproj (dll).pdjson.Source Files.pdjson.c
+D:\DsmInputData\VisualStudio\Poco\Src\PageCompiler\src\ApacheCodeWriter.h 2 occurrences
+   From poco.sln.PageCompiler.vcxproj (exe).Unknown.Source Files.ApacheCodeWriter.cpp
+   From poco.sln.PageCompiler.vcxproj (exe).Unknown.Source Files.PageCompiler.cpp
+D:\DsmInputData\VisualStudio\Poco\Src\PageCompiler\src\CodeWriter.h 2 occurrences
+   From poco.sln.PageCompiler.vcxproj (exe).Unknown.Source Files.CodeWriter.cpp
+   From poco.sln.PageCompiler.vcxproj (exe).Unknown.Source Files.PageCompiler.cpp
+D:\DsmInputData\VisualStudio\Poco\Src\PageCompiler\src\OSPCodeWriter.h 2 occurrences
+   From poco.sln.PageCompiler.vcxproj (exe).Unknown.Source Files.OSPCodeWriter.cpp
+   From poco.sln.PageCompiler.vcxproj (exe).Unknown.Source Files.PageCompiler.cpp
+D:\DsmInputData\VisualStudio\Poco\Src\PageCompiler\src\Page.h 6 occurrences
+   From poco.sln.PageCompiler.vcxproj (exe).Unknown.Source Files.ApacheCodeWriter.cpp
+   From poco.sln.PageCompiler.vcxproj (exe).Unknown.Source Files.CodeWriter.cpp
+   From poco.sln.PageCompiler.vcxproj (exe).Unknown.Source Files.OSPCodeWriter.cpp
+   From poco.sln.PageCompiler.vcxproj (exe).Unknown.Source Files.Page.cpp
+   From poco.sln.PageCompiler.vcxproj (exe).Unknown.Source Files.PageCompiler.cpp
+   From poco.sln.PageCompiler.vcxproj (exe).Unknown.Source Files.PageReader.cpp
+D:\DsmInputData\VisualStudio\Poco\Src\PageCompiler\src\PageReader.h 2 occurrences
+   From poco.sln.PageCompiler.vcxproj (exe).Unknown.Source Files.PageCompiler.cpp
+   From poco.sln.PageCompiler.vcxproj (exe).Unknown.Source Files.PageReader.cpp
+D:\DsmInputData\VisualStudio\Poco\Src\XML\src\ascii.h 3 occurrences
+   From poco.sln.XML.vcxproj (dll).expat.Source Files.xmlparse.cpp
+   From poco.sln.XML.vcxproj (dll).expat.Source Files.xmlrole.c
+   From poco.sln.XML.vcxproj (dll).expat.Source Files.xmltok.c
+D:\DsmInputData\VisualStudio\Poco\Src\XML\src\asciitab.h 1 occurrences
+   From poco.sln.XML.vcxproj (dll).expat.Source Files.xmltok.c
+D:\DsmInputData\VisualStudio\Poco\Src\XML\src\expat_config.h 3 occurrences
+   From poco.sln.XML.vcxproj (dll).expat.Source Files.xmlparse.cpp
+   From poco.sln.XML.vcxproj (dll).expat.Source Files.xmlrole.c
+   From poco.sln.XML.vcxproj (dll).expat.Source Files.xmltok.c
+D:\DsmInputData\VisualStudio\Poco\Src\XML\src\iasciitab.h 1 occurrences
+   From poco.sln.XML.vcxproj (dll).expat.Source Files.xmltok.c
+D:\DsmInputData\VisualStudio\Poco\Src\XML\src\internal.h 3 occurrences
+   From poco.sln.XML.vcxproj (dll).expat.Source Files.xmlparse.cpp
+   From poco.sln.XML.vcxproj (dll).expat.Source Files.xmlrole.c
+   From poco.sln.XML.vcxproj (dll).expat.Source Files.xmltok.c
+D:\DsmInputData\VisualStudio\Poco\Src\XML\src\latin1tab.h 1 occurrences
+   From poco.sln.XML.vcxproj (dll).expat.Source Files.xmltok.c
+D:\DsmInputData\VisualStudio\Poco\Src\XML\src\nametab.h 1 occurrences
+   From poco.sln.XML.vcxproj (dll).expat.Source Files.xmltok.c
+D:\DsmInputData\VisualStudio\Poco\Src\XML\src\siphash.h 1 occurrences
+   From poco.sln.XML.vcxproj (dll).expat.Source Files.xmlparse.cpp
+D:\DsmInputData\VisualStudio\Poco\Src\XML\src\utf8tab.h 1 occurrences
+   From poco.sln.XML.vcxproj (dll).expat.Source Files.xmltok.c
+D:\DsmInputData\VisualStudio\Poco\Src\XML\src\xmlrole.h 2 occurrences
+   From poco.sln.XML.vcxproj (dll).expat.Source Files.xmlparse.cpp
+   From poco.sln.XML.vcxproj (dll).expat.Source Files.xmlrole.c
+D:\DsmInputData\VisualStudio\Poco\Src\XML\src\xmltok.h 2 occurrences
+   From poco.sln.XML.vcxproj (dll).expat.Source Files.xmlparse.cpp
+   From poco.sln.XML.vcxproj (dll).expat.Source Files.xmltok.c
+D:\DsmInputData\VisualStudio\Poco\Src\XML\src\xmltok_impl.h 1 occurrences
+   From poco.sln.XML.vcxproj (dll).expat.Source Files.xmltok.c
+40 items found in 120 occurrences

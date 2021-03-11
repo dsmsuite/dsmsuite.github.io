@@ -1,0 +1,28 @@
+Analyzing Java code
+===================
+
+DsmSuite.Analyzer.Jdeps version =1.0.7739.14094 build=10/03/2021 07:49:50
+
+Input parameters
+----------------
+Input directory:D:\Github\dsmsuite.github.io\examples\Java\ArgoUml\JdepsOutput
+
+Processing
+----------
+Parse lines 21965 lines
+
+Saving dsi model 24436/24436 items 100%
+
+Found elements=2476 relations=21960 resolvedRelations=100,0%
+
+Ouput parameters
+----------------
+Output file: D:\Github\dsmsuite.github.io\examples\Java\ArgoUml\argouml.dsi compressed=True
+
+Performance
+-----------
+Total elapsed time=00:00:27.3535463
+Peak physical memory usage 37,000MB
+Peak paged memory usage    37,000MB
+Peak virtual memory usage  4927,000MB
+

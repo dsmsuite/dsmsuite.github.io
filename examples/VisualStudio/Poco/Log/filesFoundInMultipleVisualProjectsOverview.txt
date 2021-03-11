@@ -1,0 +1,3 @@
+Files found in multiple visual studio projects
+--------------------------------------------
+1394 items found in 0 occurrences
