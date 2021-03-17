@@ -19,9 +19,9 @@ Has been tested using Visual Studio 2019 Community Edition and Windows 10 SDK 10
 
 | Description                   | Version        | Download                                                                                                 |
 |:------------------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite msi installer  | 1.0.7739.14096 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7739.14096.msi)                                 |
+| Full dsm suite msi installer  | 1.0.7690.38992 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7690.38992.msi)                                 |
 
-In case you are not allowed to run a installer on your system use the zip file of the viewer binaries found [here](https://dsmsuite.github.io/downloads/DmsSuite.Viewer.zip).
+Temporarily reverted installer to older version due to problems after porting from VS2015 to VS2019.
 
 ## Presentation
 
