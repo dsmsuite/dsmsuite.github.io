@@ -1,0 +1,30 @@
+Analyzing C++ source code
+=========================
+
+DsmSuite.Analyzer.Cpp version =1.0.7739.14094 build=10/03/2021 07:49:50
+
+Input parameters
+----------------
+Input directories:
+ C:\Qt\Qt5\src
+Resolve method: AddBestMatch
+
+Processing
+----------
+Analyzing source files 4554/4554 files 100%
+
+Saving dsi model 22293/22293 items 100%
+
+Found elements=4554 relations=17739 resolvedRelations=78,8% ambiguousRelations=3,0%
+
+Ouput parameters
+----------------
+Output file: D:\Github\dsmsuite.github.io\examples\Cpp\Bitcoin\Qt.dsi compressed=True
+
+Performance
+-----------
+Total elapsed time=00:08:27.7005341
+Peak physical memory usage 47,000MB
+Peak paged memory usage    45,000MB
+Peak virtual memory usage  4924,000MB
+

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AnalyzerSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LogLevel>Error</LogLevel>
+  <Input>
+    <RootDirectory>C:\Qt\Qt5\src</RootDirectory>
+    <SourceDirectories>
+      <string>C:\Qt\Qt5\src</string>
+    </SourceDirectories>
+    <ExternalIncludeDirectories>
+		<string>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include</string>
+	    <string>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\atlmfc\include</string>
+	    <string>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\include</string>
+	    <string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt</string>
+	    <string>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\UnitTest\include</string>
+	    <string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um</string>
+	    <string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared</string>
+	    <string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\winrt</string>
+	    <string>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt</string>
+	    <string>C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um</string>
+    </ExternalIncludeDirectories>
+    <IgnorePaths>
+    </IgnorePaths>
+  </Input>
+  <Analysis>
+    <ResolveMethod>AddBestMatch</ResolveMethod>
+  </Analysis>
+  <Transformation>
+    <IgnoredNames />
+    <AddTransitiveIncludes>false</AddTransitiveIncludes>
+    <ModuleMergeStrategy>None</ModuleMergeStrategy>
+    <ModuleMergeRules>
+      <TransformationModuleMergeRule>
+        <From>inc.</From>
+        <To>src.</To>
+      </TransformationModuleMergeRule>
+    </ModuleMergeRules>
+  </Transformation>
+  <Output>
+    <Filename>bitcoin.dsi</Filename>
+    <Compress>true</Compress>
+  </Output>
+</AnalyzerSettings>
