@@ -2,9 +2,9 @@
 <AnalyzerSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <LogLevel>Error</LogLevel>
   <Input>
-    <RootDirectory>C:\Qt\Qt5\src</RootDirectory>
+    <RootDirectory>D:\DsmInputData\Cpp\bitcoin-master\bitcoin-master</RootDirectory>
     <SourceDirectories>
-      <string>C:\Qt\Qt5\src</string>
+      <string>D:\DsmInputData\Cpp\bitcoin-master\bitcoin-masterc</string>
     </SourceDirectories>
     <ExternalIncludeDirectories>
 		<string>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include</string>
