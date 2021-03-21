@@ -1,0 +1,30 @@
+Analyzing C++ source code
+=========================
+
+DsmSuite.Analyzer.Cpp version =1.0.7739.14094 build=10/03/2021 07:49:50
+
+Input parameters
+----------------
+Input directories:
+ D:\DsmInputData\Cpp\bitcoin-master\bitcoin-master
+Resolve method: AddBestMatch
+
+Processing
+----------
+Analyzing source files 940/940 files 100%
+
+Saving dsi model 5058/5058 items 100%
+
+Found elements=940 relations=4118 resolvedRelations=84,1% ambiguousRelations=34,7%
+
+Ouput parameters
+----------------
+Output file: D:\Github\dsmsuite.github.io\examples\Cpp\Bitcoin\bitcoin.dsi compressed=True
+
+Performance
+-----------
+Total elapsed time=00:00:58.7796476
+Peak physical memory usage 33,000MB
+Peak paged memory usage    29,000MB
+Peak virtual memory usage  4923,000MB
+

@@ -4,7 +4,7 @@
   <Input>
     <RootDirectory>D:\DsmInputData\Cpp\bitcoin-master\bitcoin-master</RootDirectory>
     <SourceDirectories>
-      <string>D:\DsmInputData\Cpp\bitcoin-master\bitcoin-masterc</string>
+      <string>D:\DsmInputData\Cpp\bitcoin-master\bitcoin-master</string>
     </SourceDirectories>
     <ExternalIncludeDirectories>
 		<string>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include</string>
