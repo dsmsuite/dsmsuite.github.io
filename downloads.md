@@ -19,15 +19,7 @@ Has been tested using Visual Studio 2019 Community Edition and Windows 10 SDK 10
 
 | Description                   | Version        | Download                                                                                                 |
 |:------------------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite msi installer  | 1.0.7690.38992 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7690.38992.msi)                                 |
-
-Temporarily reverted installer to older version due to problems after porting from VS2015 to VS2019.
-
-## Presentation
-
-| Description                         | Download                                                                                                 |
-|:------------------------------------+----------------------------------------------------------------------------------------------------------|
-| DSM Powerpoint Presentation         | Coming soon                                                                                              |
+| Full dsm suite                | 1.0.7764.12160 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.7764.12160.msi)                                 |
 
 ## Sample models 
 
@@ -420,3 +412,7 @@ See [All downloads](all_downloads) for all downloads including older versions.
 ## 10 Mar 2021 - Version 1.0.7739.14096
 
 * Java analyzers support import of multiple dot files for multiple jar file projects
+
+## 4 Apr 2021 - Version 1.0.7764.12160
+
+* Fixed issues after port to Visual Studio 2019 by updating all nuget packages to latest version (except for Mono.Cecil).
