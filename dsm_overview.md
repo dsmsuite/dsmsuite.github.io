@@ -164,17 +164,18 @@ because the intended and the actual software architecture often do not match.
 
 # References
 
-* **List of supporting supportings DSM visualization** [dsm tools](dsm_tools)
+* General information about Design Structure Matrix [dsmweb.org](https://dsmweb.org/)
 
-* **Technical Debt in Large Systems: Understanding the cost of software complexity** [pdf](https://dsmsuite.github.io/documents/sturtevant_050613.pdf) 
+* List of supporting supportings DSM visualization [dsm tools](dsm_tools)
 
-* **Achieving Agility Through Architecture Visibility** Carl Hinsman, Neeraj Sangal and Judith Stafford [pdf](https://www.researchgate.net/profile/Judith_Stafford/publication/221146406_Achieving_Agility_through_Architecture_Visibility/links/02e7e526fd140022ec000000/Achieving-Agility-through-Architecture-Visibility.pdf)
+* Technical Debt in Large Systems: Understanding the cost of software complexity [pdf](https://dsmsuite.github.io/documents/sturtevant_050613.pdf) 
 
-* **Architecture migration using DSM in a large scale software project** Takashi Maki, Ricoh [pdf](https://www.semanticscholar.org/paper/Architecture-migration-using-DSM-in-a-large-scale-Maki/7760fbaad609bb13eba986d5dd9a02bd4c2d0717)
+* Achieving Agility Through Architecture Visibility Carl Hinsman, Neeraj Sangal and Judith Stafford [pdf](https://www.researchgate.net/profile/Judith_Stafford/publication/221146406_Achieving_Agility_through_Architecture_Visibility/links/02e7e526fd140022ec000000/Achieving-Agility-through-Architecture-Visibility.pdf)
 
-* **Well structured software is easier to maintain** [pdf](https://dsmsuite.github.io/documents/mitre-architecture-report.pdf) 
+* Architecture migration using DSM in a large scale software project Takashi Maki, Ricoh [pdf](https://www.semanticscholar.org/paper/Architecture-migration-using-DSM-in-a-large-scale-Maki/7760fbaad609bb13eba986d5dd9a02bd4c2d0717)
 
-* **Design Structure Matrix Methods and Applications** Steven D. Eppinger and Tyson R. Browning
+* Well structured software is easier to maintain [pdf](https://dsmsuite.github.io/documents/mitre-architecture-report.pdf) 
+* Design Structure Matrix Methods and ApplicationsSteven D. Eppinger and Tyson R. Browning
 
 ![book](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_book.jpg "dsm book")
 
