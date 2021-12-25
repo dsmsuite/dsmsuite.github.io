@@ -11,6 +11,7 @@ Building from source code:
 * Visual Studio 2019
 * Wix 311 installer
 * Wix Visual Studio 2019 plugin
+* Run visual studio as administrator (only required for Visual Studio analyzer COM support)
 
 Has been tested using Visual Studio 2019 Community Edition and Windows 10 SDK 10.0.18362.0
 
