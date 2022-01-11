@@ -21,7 +21,7 @@ Has been tested using Visual Studio 2019 Community Edition and Windows 10 SDK 10
 | Description                   | Version        | Download                                                                                                 |
 |:------------------------------|----------------+----------------------------------------------------------------------------------------------------------|
 | Full dsm suite                | 1.0.8046.17873 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.8046.17873.msi)                                 |
-
+| Full dsm suite viewer zip     | 1.0.8046.17873 | [link](https://dsmsuite.github.io/downloads/DmsSuite.Viewer.zip)                                         |
 ## Sample models 
 
 | Description            | Download                                                                                                 |
