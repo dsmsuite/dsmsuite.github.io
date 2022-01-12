@@ -20,8 +20,8 @@ Has been tested using Visual Studio 2019 Community Edition and Windows 10 SDK 10
 
 | Description                   | Version        | Download                                                                                                 |
 |:------------------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite                | 1.0.8047.18759 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.8047.18759.msi)                                 |
-| Full dsm suite viewer zip     | 1.0.8047.18759 | [link](https://dsmsuite.github.io/downloads/DmsSuite.Viewer.zip)                                         |
+| Full dsm suite                | 1.0.8047.21208 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.8047.21208.msi)                                 |
+| Full dsm suite viewer zip     | 1.0.8047.21208 | [link](https://dsmsuite.github.io/downloads/DmsSuite.Viewer.zip)                                         |
 
 ## Sample models 
 
@@ -426,7 +426,8 @@ See [All downloads](all_downloads) for all downloads including older versions.
   * Removed annotations
   * Added import custome properties
 
-## 12 Jan 2022 - Version 1.0.8047.18759
+## 12 Jan 2022 - Version 1.0.8047.21208
 
 * DSM Viewer
   * Minor fix search box
+  * Improve warning 'name not the same as existing element'in element edit dialog
