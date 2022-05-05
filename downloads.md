@@ -21,7 +21,8 @@ Has been tested using Visual Studio 2019 Community Edition and Windows 10 SDK 10
 | Description                   | Version        | Download                                                                                                 |
 |:------------------------------|----------------+----------------------------------------------------------------------------------------------------------|
 | Full dsm suite                | 1.0.8148.17025 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.8148.17025.msi)                                 |
-| Full dsm suite viewer zip     | 1.0.8148.17025 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Viewer_1.0.8148.17025.zip)                          |
+| Dsm suite viewer zip          | 1.0.8148.17025 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Viewer_1.0.8148.17025.zip)                          |
+| Dsm suite dot net analyzer    | 1.0.8148.17025 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DotNet.Analyzer_1.0.8148.17025.zip)                 |
 
 ## Sample models 
 
