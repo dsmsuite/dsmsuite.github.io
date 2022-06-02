@@ -168,13 +168,13 @@ because the intended and the actual software architecture often do not match.
 
 * List of supporting supportings DSM visualization [dsm tools](dsm_tools)
 
-* Technical Debt in Large Systems: Understanding the cost of software complexity [pdf](https://dsmsuite.github.io/documents/sturtevant_050613.pdf) 
+* Technical Debt in Large Systems: Understanding the cost of software complexity presentation [pdf](https://dsmsuite.github.io/external/CostOfComplexityPresentation.pdf) or full report [pdf](https://dsmsuite.github.io/external/CostOfComplexityReport.pdf)
 
 * Achieving Agility Through Architecture Visibility Carl Hinsman, Neeraj Sangal and Judith Stafford [pdf](https://www.researchgate.net/profile/Judith_Stafford/publication/221146406_Achieving_Agility_through_Architecture_Visibility/links/02e7e526fd140022ec000000/Achieving-Agility-through-Architecture-Visibility.pdf)
 
 * Architecture migration using DSM in a large scale software project Takashi Maki, Ricoh [pdf](https://www.semanticscholar.org/paper/Architecture-migration-using-DSM-in-a-large-scale-Maki/7760fbaad609bb13eba986d5dd9a02bd4c2d0717)
 
-* Well structured software is easier to maintain [pdf](https://dsmsuite.github.io/documents/mitre-architecture-report.pdf) 
+* Well structured software is easier to maintain [pdf](https://dsmsuite.github.io/external/WellStructuredSoftwareIsEasierToMaintain.pdf) 
 * Design Structure Matrix Methods and ApplicationsSteven D. Eppinger and Tyson R. Browning
 
 ![book](https://dsmsuite.github.io/assets/img/dsm_overview/dsm_book.jpg "dsm book")
