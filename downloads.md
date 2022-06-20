@@ -8,13 +8,12 @@ Installation:
 * 64 bits CPU
 
 Building from source code:
-* Visual Studio 2019
+* Visual Studio 2020
 * Wix 311 installer
-* Wix Visual Studio 2019 plugin
+* Wix Visual Studio 2020 plugin
 * Run visual studio as administrator (only required for Visual Studio analyzer COM support)
 
-Has been tested using Visual Studio 2019 Community Edition and Windows 10 SDK 10.0.18362.0
-
+Has been tested using Visual Studio 2020 Community Edition and Windows 10 SDK 10.0.18362.0
 
 ## Latest version
 
@@ -443,3 +442,8 @@ See [All downloads](all_downloads) for all downloads including older versions.
 
 * DSM Viewer
   * Fixed import error can not resolve relations when imported elements have names that start with a dot or space character.
+
+## 20 June 2022 - Version 1.0.8148.17025 (no number update)
+
+* DsmViewer ported to VS2022 and Visual Studio Analyzer removed
+* Only zip installer update because WIX does not work currently.
