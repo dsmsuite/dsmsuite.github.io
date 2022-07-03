@@ -4,7 +4,7 @@
 
 Installation:
 * Windows 7, 8 or 10
-* .NET 4.6.2 framework
+* .NET 4.7.2 framework
 * 64 bits CPU
 
 Building from source code:
