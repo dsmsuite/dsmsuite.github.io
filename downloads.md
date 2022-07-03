@@ -8,9 +8,9 @@ Installation:
 * 64 bits CPU
 
 Building from source code:
-* Visual Studio 2020
+* Visual Studio 2022
 * Wix 311 installer
-* Wix Visual Studio 2020 plugin
+* Wix Visual Studio 2022 plugin
 * Run visual studio as administrator (only required for Visual Studio analyzer COM support)
 
 Has been tested using Visual Studio 2020 Community Edition and Windows 10 SDK 10.0.18362.0
@@ -19,9 +19,9 @@ Has been tested using Visual Studio 2020 Community Edition and Windows 10 SDK 10
 
 | Description                   | Version        | Download                                                                                                 |
 |:------------------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite                | 1.0.8148.17025 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.8148.17025.msi)                                 |
-| Dsm suite viewer zip          | 1.0.8148.17025 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Viewer_1.0.8148.17025.zip)                          |
-| Dsm suite dot net analyzer    | 1.0.8148.17025 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DotNet.Analyzer_1.0.8148.17025.zip)                 |
+| Full dsm suite                | 1.0.8219.18234 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.8219.18234.msi)                                 |
+| Dsm suite viewer zip          | 1.0.8219.18234 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Viewer_1.0.8219.18234.zip)                          |
+| Dsm suite dot net analyzer    | 1.0.8219.18234 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DotNet.Analyzer_1.0.8148.17025.zip)                 |
 
 ## Sample models 
 
@@ -447,3 +447,8 @@ See [All downloads](all_downloads) for all downloads including older versions.
 
 * DsmViewer ported to VS2022 and Visual Studio Analyzer removed
 * Only zip installer update because WIX does not work currently.
+
+## 3 July 2022 - Version 1.0.8219.18234
+
+* Created new installer after fixing WIX install issue for VS2022
+* Visual Studio Analyzer broken after upgrade VS2019 to VS2022 (will be fixed at a later point)
