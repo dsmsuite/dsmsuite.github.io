@@ -19,7 +19,7 @@ Has been tested using Visual Studio 2020 Community Edition and Windows 10 SDK 10
 
 | Description                   | Version        | Download                                                                                                 |
 |:------------------------------|----------------+----------------------------------------------------------------------------------------------------------|
-| Full dsm suite                | 1.0.8344.20078 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.8344.20078.msi)                                 |
+| Full dsm suite                | 1.0.8651.14661 | [link](https://dsmsuite.github.io/downloads/DsmSuite_1.0.8651.14661.msi)                                 |
 | Dsm suite viewer zip          | 1.0.8219.18234 | [link](https://dsmsuite.github.io/downloads/DsmSuite.Viewer_1.0.8219.18234.zip)                          |
 | Dsm suite dot net analyzer    | 1.0.8219.18234 | [link](https://dsmsuite.github.io/downloads/DsmSuite.DotNet.Analyzer_1.0.8148.17025.zip)                 |
 
@@ -456,3 +456,7 @@ See [All downloads](all_downloads) for all downloads including older versions.
 ## 6 nov 2022 - Version 1.0.8344.20078
 
 * Removed broken Visual Studio Analyzer from Visual Studio solution and Wix installer (source code still in archive)
+
+## 8 aug 2023 - Version 1.0.8651.14661
+
+* Do not merge relations upon dsi import to avoid data loss
