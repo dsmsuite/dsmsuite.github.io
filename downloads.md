@@ -457,19 +457,14 @@ See [All downloads](all_downloads) for all downloads including older versions.
 
 * Removed broken Visual Studio Analyzer from Visual Studio solution and Wix installer (source code still in archive)
 
-## 8 sep 2023 - Version 1.0.8651.14661
+## 8 aug 2023 - Version 1.0.8651.14661
 
 * Do not merge relations upon dsi import to avoid data loss
 
-## 9 sep 2023 - Version 1.0.8652.13434
+## 9 aug 2023 - Version 1.0.8652.13434
 
 * Allow adding new elements in DSM at specfic position (above or below selected element)
 
-## 9 sep 2023 - Version 1.0.8652.14687
+## 9 aug 2023 - Version 1.0.8652.14687
 
 * Add visualization button pressed in dialogs
-
-## 10 sep 2023 - Version 1.0.8653.18035
-
-* Allow arbitrary number of element and relation attributes (assuming xsd has been adapted accordingly) and
-  include those custom properties in the copy to clipboard action in the element and relation list view.
