@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<dsimodel elementCount="17" relationCount="13" xmlns="urn:dsi-schema">
+<dsimodel elementCount="17" relationCount="13">
   <metadatagroup name="Analyzer">
     <metadata name="Executable" value="DsmSuite.Analyzer.Uml version=1.0.7328.22059 build=24-1-2020 12:15:18" />
     <metadata name="- 'Class' elements found" value="17" />
